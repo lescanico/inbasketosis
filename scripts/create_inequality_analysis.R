@@ -17,7 +17,7 @@ gini_coefficient <- function(x) {
 }
 
 # Set working directory
-setwd("/home/bog/repos/inbasketosis")
+setwd("/workspace")
 
 # Load the processed data
 time_data <- read.csv("data/processed/processed_time_data.csv")
@@ -36,18 +36,18 @@ lorenz_data <- data.frame(
 # Add perfect equality line
 lorenz_data$perfect_equality <- lorenz_data$cumulative_providers
 
-# Create Lorenz curve plot with professional styling
+# Create Lorenz curve plot with UPenn colors and professional styling
 p_lorenz <- ggplot(lorenz_data, aes(x = cumulative_providers, y = cumulative_workload)) +
-  # Perfect equality line - use blue for better contrast
-  geom_line(aes(y = perfect_equality), color = "#1f77b4", linetype = "dashed", linewidth = 1.5) +
-  # Actual distribution curve - use dark blue for professionalism
-  geom_line(color = "#2c3e50", linewidth = 2.5) +
-  # Inequality area - subtle gray fill
+  # Perfect equality line - use Penn Blue
+  geom_line(aes(y = perfect_equality), color = "#011F5B", linetype = "dashed", linewidth = 1.5) +
+  # Actual distribution curve - use Penn Red for main curve
+  geom_line(color = "#990000", linewidth = 2.5) +
+  # Inequality area - subtle Penn Blue fill
   geom_ribbon(aes(ymin = cumulative_providers, ymax = cumulative_workload), 
-              alpha = 0.15, fill = "#34495e") +
-  # Key data points with contrasting colors
-  annotate("point", x = 0.1, y = 0.259, color = "#e74c3c", size = 4, shape = 19) +
-  annotate("point", x = 0.5, y = 0.262, color = "#e74c3c", size = 4, shape = 19) +
+              alpha = 0.15, fill = "#011F5B") +
+  # Key data points with Penn Red
+  annotate("point", x = 0.1, y = 0.259, color = "#990000", size = 4, shape = 19) +
+  annotate("point", x = 0.5, y = 0.262, color = "#990000", size = 4, shape = 19) +
   # Clean labels and annotations
   labs(
     title = "Lorenz Curve: Workload Distribution Inequality",
@@ -61,42 +61,42 @@ p_lorenz <- ggplot(lorenz_data, aes(x = cumulative_providers, y = cumulative_wor
   scale_y_continuous(labels = percent_format(), limits = c(0, 1), breaks = seq(0, 1, 0.2)) +
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 18, face = "bold", color = "#2c3e50", margin = margin(b = 8)),
-    plot.subtitle = element_text(size = 14, color = "#7f8c8d", margin = margin(b = 20)),
-    axis.title = element_text(size = 13, color = "#2c3e50", face = "bold"),
-    axis.text = element_text(size = 12, color = "#34495e"),
-    panel.grid.major = element_line(color = "#ecf0f1", linewidth = 0.8),
+    plot.title = element_text(size = 18, face = "bold", color = "#011F5B", margin = margin(b = 8)),
+    plot.subtitle = element_text(size = 14, color = "#6B6B6B", margin = margin(b = 20)),
+    axis.title = element_text(size = 13, color = "#011F5B", face = "bold"),
+    axis.text = element_text(size = 12, color = "#6B6B6B"),
+    panel.grid.major = element_line(color = "#E5E5E5", linewidth = 0.8),
     panel.grid.minor = element_blank(),
     panel.background = element_rect(fill = "white", color = NA),
     plot.background = element_rect(fill = "white", color = NA),
     legend.position = "none",
     plot.margin = margin(30, 35, 30, 35),
-    plot.caption = element_text(size = 10, color = "#7f8c8d", hjust = 0)
+    plot.caption = element_text(size = 10, color = "#6B6B6B", hjust = 0)
   ) +
   coord_cartesian(clip = "off") +
-  # Clean, well-positioned annotations
-  annotate("label", x = 0.78, y = 0.20,
+  # Clean, well-positioned annotations with UPenn colors
+  annotate("label", x = 0.75, y = 0.25,
            label = "Perfect Equality\n(Gini = 0)",
-           color = "#1f77b4", fill = "white", label.size = 0,
+           color = "#011F5B", fill = "white", label.size = 0,
            size = 4.2, hjust = 0, fontface = "bold", alpha = 0.95) +
-  annotate("label", x = 0.20, y = 0.80,
+  annotate("label", x = 0.25, y = 0.75,
            label = paste("Actual Distribution\n(Gini =", round(gini_value, 3), ")"),
-           color = "#2c3e50", fill = "white", label.size = 0,
+           color = "#990000", fill = "white", label.size = 0,
            size = 4.2, hjust = 0, fontface = "bold", alpha = 0.95) +
-  # Key statistics with better positioning
-  annotate("label", x = 0.14, y = 0.37,
+  # Key statistics with improved positioning to avoid overlaps
+  annotate("label", x = 0.12, y = 0.45,
            label = "Top 10%\n25.9%",
-           color = "#e74c3c", fill = "white", label.size = 0,
+           color = "#990000", fill = "white", label.size = 0,
            size = 3.8, hjust = 0, fontface = "bold", alpha = 0.95) +
-  annotate("label", x = 0.54, y = 0.37,
+  annotate("label", x = 0.52, y = 0.45,
            label = "Bottom 50%\n26.2%",
-           color = "#e74c3c", fill = "white", label.size = 0,
+           color = "#990000", fill = "white", label.size = 0,
            size = 3.8, hjust = 0, fontface = "bold", alpha = 0.95) +
-  # Add subtle connecting lines to data points
-  annotate("segment", x = 0.1, xend = 0.1, y = 0.259, yend = 0.35, 
-           color = "#e74c3c", linewidth = 0.8, alpha = 0.6) +
-  annotate("segment", x = 0.5, xend = 0.5, y = 0.262, yend = 0.35, 
-           color = "#e74c3c", linewidth = 0.8, alpha = 0.6)
+  # Add subtle connecting lines to data points with Penn Red
+  annotate("segment", x = 0.1, xend = 0.1, y = 0.259, yend = 0.42, 
+           color = "#990000", linewidth = 0.8, alpha = 0.6) +
+  annotate("segment", x = 0.5, xend = 0.5, y = 0.262, yend = 0.42, 
+           color = "#990000", linewidth = 0.8, alpha = 0.6)
 
 # Save the plot
 ggsave("figures/Figure2_Lorenz_Curve_Workload_Inequality.png", 
