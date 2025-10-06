@@ -27,8 +27,8 @@ setwd(getwd())
 
 # Load the data
 cat("Loading data...\n")
-time_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
-messages_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
+time_data <- read_excel("data/raw/PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
+messages_data <- read_excel("data/raw/PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
 
 # Clean column names
 names(time_data)[1] <- "DE_ID"

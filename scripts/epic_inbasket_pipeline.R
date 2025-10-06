@@ -18,11 +18,10 @@ install_if_missing <- function(packages) {
   }
 }
 
-# Required packages
+# Required packages (excluding problematic ones)
 required_packages <- c(
   "readxl", "dplyr", "tidyr", "ggplot2", "scales", "viridis", 
-  "ggthemes", "patchwork", "corrplot", "psych", "broom", 
-  "kableExtra", "DT", "knitr", "rmarkdown", "quarto"
+  "ggthemes", "patchwork", "corrplot", "psych", "broom"
 )
 
 # Install missing packages
@@ -42,9 +41,6 @@ suppressMessages({
   library(corrplot)
   library(psych)
   library(broom)
-  library(kableExtra)
-  library(DT)
-  library(knitr)
 })
 
 # =============================================================================
@@ -54,16 +50,16 @@ suppressMessages({
 cat("Loading data from Excel files...\n")
 
 # Load main data
-time_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
-messages_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
+time_data <- read_excel("data/raw/PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
+messages_data <- read_excel("data/raw/PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
 
 # Clean column names
 names(time_data)[1] <- "DE_ID"
 names(messages_data)[1] <- "DE_ID"
 
 # Load financial data for opportunity cost calculation
-if (file.exists("Lescano_ProviderWorksheet_FY25.xlsx")) {
-  financial_data <- read_excel("Lescano_ProviderWorksheet_FY25.xlsx")
+if (file.exists("data/raw/Lescano_ProviderWorksheet_FY25.xlsx")) {
+  financial_data <- read_excel("data/raw/Lescano_ProviderWorksheet_FY25.xlsx")
   cat("Financial data loaded for opportunity cost calculation\n")
 } else {
   cat("Warning: Financial data file not found. Using default opportunity cost.\n")
