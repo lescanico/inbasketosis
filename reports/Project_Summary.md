@@ -7,7 +7,7 @@ subtitle: "BMIN 5070 – Human Factors in Biomedical Informatics"
 
 # Executive Summary
 
-This study quantifies the "invisible work" of Epic in-basket messaging in outpatient psychiatry. Using de-identified audit data (July 2024–June 2025) from 56 clinicians, we measured message volume, handling time, timing (after-hours), and variation across providers. Clinicians spent 1,925.4 hours on inbox work, equivalent to 1.01 FTE, with 40.2% after hours; workload varied 27.5× between lowest and highest. Twelve clinicians (21%) accounted for a disproportionate share, suggesting concentrated risk for burnout and error. This study evaluates the proposed MPM responsiveness metric (>=85% within two business days, 5% of incentive) and shows how unadjusted timeliness targets, without staffing or case-mix adjustment, can amplify burden on high-need panels. We recommend making inbox work visible in capacity planning, adjusting metrics for panel complexity and coverage, implementing team-based routing, and providing dedicated support. Recognizing and resourcing inbox work is essential for safe, sustainable outpatient psychiatry.
+This study quantifies the "invisible work" of Epic in-basket messaging in outpatient psychiatry. Using de-identified audit data (July 2024–June 2025) from 56 clinicians, we measured message volume, handling time, timing (after-hours), and variation across providers. Clinicians spent 15,439.5 hours on inbox work, equivalent to 8.0 FTE, with 5.1% after hours; workload varied 27.2× between lowest and highest. Fourteen clinicians (25%) accounted for a disproportionate share, suggesting concentrated risk for burnout and error. This study evaluates the proposed MPM responsiveness metric (≥85% within two business days, 5% of incentive) and shows how unadjusted timeliness targets, without staffing or case-mix adjustment, can amplify burden on high-need panels. We recommend making inbox work visible in capacity planning, adjusting metrics for panel complexity and coverage, implementing team-based routing, and providing dedicated support. Recognizing and resourcing inbox work is essential for safe, sustainable outpatient psychiatry.
 
 ---
 
@@ -15,9 +15,9 @@ This study quantifies the "invisible work" of Epic in-basket messaging in outpat
 
 ### 1.1 The Invisible Work Problem
 
-In the modern outpatient psychiatry setting, providers are tasked with a vast array of responsibilities that extend far beyond the traditional boundaries of face-to-face patient care. One of the most significant, yet often overlooked, components of their workload is the management of "invisible work" through Epic in-basket messaging. This invisible work encompasses a multitude of tasks, each demanding clinical expertise, careful judgment, and a considerable investment of time.
+In the modern outpatient psychiatry setting, providers are tasked with a vast array of responsibilities that extend far beyond the traditional boundaries of face-to-face patient care. One of the most significant, yet often overlooked, components of their workload is the management of "invisible work" through Epic in-basket messaging.
 
-Providers routinely respond to patient portal messages, which often involve medical advice requests that require thoughtful, individualized responses. They also manage patient call messages, which are documented and handled within the Epic system, ensuring that every patient concern is addressed in a timely and clinically appropriate manner. The review of laboratory and imaging results is another critical responsibility, as providers must interpret findings, communicate results, and coordinate any necessary follow-up care. Prescription refills and authorizations, while seemingly routine, require careful consideration of patient safety, medication interactions, and regulatory requirements. In addition, providers engage in inter-provider communication, such as consulting with colleagues or cosigning charts, which is essential for coordinated, high-quality care. There are also numerous other in-basket tasks that demand ongoing attention.
+This invisible work encompasses patient portal messages, call management, laboratory and imaging result review, prescription refills and authorizations, and inter-provider communication. Each task demands clinical expertise, careful judgment, and considerable time investment. Despite their complexity and importance, these tasks are almost entirely absent from traditional productivity metrics.
 
 It is important to note that this analysis focuses exclusively on work performed within the Epic system. Traditional phone calls and paperwork that occur outside of Epic are not captured here, meaning that the true scope of invisible work is likely even greater than what is described.
 
@@ -39,9 +39,9 @@ Finally, the persistent disconnect between the work that is recognized and the w
 
 A particularly troubling dimension of the invisible work problem is the pronounced inequity between psychiatry and other medical specialties in how in-basket work is managed and compensated. In many medical specialties, providers benefit from the support of dedicated staff who handle a substantial portion of patient communications. Physician Assistants (PAs) or nurses often triage phone calls and routine EHR messages, allowing physicians to focus on more complex clinical issues. When patients require direct physician input, they are typically scheduled for billable appointments, ensuring that the provider’s time is appropriately compensated. In these settings, in-basket management is a shared responsibility, with clear boundaries between billable and non-billable work.
 
-In stark contrast, psychiatry providers at Penn Medicine are expected to manage all patient communications independently. There is no dedicated support staff to assist with in-basket management; physicians themselves are responsible for handling every patient call, message, and request. There is no mechanism for billing patient communication and consultation that occurs outside of scheduled visits, meaning that a significant portion of the provider’s work is uncompensated. The responsibility for all aspects of patient care falls squarely on the shoulders of a single provider, with no opportunity to delegate or share the burden.
+In stark contrast, psychiatry providers at Penn Medicine are expected to manage all patient communications independently. No dedicated RN/PA inbox triage; no billable mechanism for asynchronous psychiatric advice at our site. Physicians themselves are responsible for handling every patient call, message, and request. There is no mechanism for billing patient communication and consultation that occurs outside of scheduled visits, meaning that a significant portion of the provider's work is uncompensated. The responsibility for all aspects of patient care falls squarely on the shoulders of a single provider, with no opportunity to delegate or share the burden.
 
-This inequity is not merely a matter of inconvenience—it has measurable consequences. Psychiatry providers are effectively performing the equivalent of 1.01 full-time employees (FTE) worth of uncompensated work, labor that in other specialties would either be delegated to support staff or billed as appointments. This creates a fundamental unfairness in both workload expectations and compensation models, placing psychiatry providers at a distinct disadvantage.
+This inequity is not merely a matter of inconvenience—it has measurable consequences. Psychiatry providers are effectively performing the equivalent of roughly eight FTE-years of uncompensated work, labor that in other specialties would either be delegated to support staff or billed as appointments. This creates a fundamental unfairness in both workload expectations and compensation models, placing psychiatry providers at a distinct disadvantage.
 
 ### 1.4 Specialty Inequity and System Impact
 
@@ -53,7 +53,7 @@ The invisible work problem has broader implications for healthcare system design
 
 ### 2.1 Electronic Health Record Burden
 
-A substantial and growing body of research has drawn attention to the hidden cognitive demands imposed by in-basket workload and its contribution to provider burnout. Studies have documented that the volume and frequency of inbox notifications can be overwhelming, with some physicians receiving more than 70 notifications per day. This deluge of information creates a high risk of missed messages and cognitive overload, as described by Murphy et al. (2016). Further, audit log analyses have revealed that physicians spend nearly half of their workday engaged in EHR-related tasks, including so-called "desktop medicine" such as responding to messages—time that often rivals or exceeds the hours spent in direct patient care (Tai-Seale et al., 2017). The correlation between heavy messaging workloads and increased EHR time is well established, with higher levels of multitasking and a greater risk of burnout observed among those with the heaviest messaging burdens (Tai-Seale et al., 2019; Shanafelt et al., 2016).
+A substantial and growing body of research has drawn attention to the hidden cognitive demands imposed by in-basket workload and its contribution to provider burnout. Studies have documented that the volume and frequency of inbox notifications can be overwhelming, with some physicians receiving more than 70 notifications per day, creating high risk of missed messages and cognitive overload (Murphy et al., 2016). Audit log analyses reveal that physicians spend nearly half of their workday engaged in EHR-related tasks, including so-called "desktop medicine" such as responding to messages—time that often rivals or exceeds direct patient care hours (Tai-Seale et al., 2017). The correlation between heavy messaging workloads and increased EHR time is well established, with higher multitasking and burnout risk among those with the heaviest messaging burdens (Tai-Seale et al., 2019; Shanafelt et al., 2016).
 
 ### 2.2 Usability and Design Issues
 
@@ -87,11 +87,13 @@ The analytical approach is comprehensive and multi-layered. Descriptive analysis
 
 **Methodological Specifications for Replicability:**
 
+- **Constants:** We defined 1 FTE as 1,920 clinical hours/year. Opportunity cost was fixed at $173/hour (FY2025 departmental benchmark). Normalization: hours_normalized = (hours_observed / days_observed) × 365. Inclusion: clinicians with ≥30 observed days.
 - **Message types included:** Patient call messages, patient medical advice requests, result messages, prescription authorization messages
 - **Message types excluded:** Phone calls and paperwork outside Epic system
 - **Definition of "handled/closed":** Messages marked as completed, resolved, forwarded, or delegated within Epic system
 - **Business-hours clock:** 7 AM to 7 PM, Monday through Friday
 - **After-hours detection:** Activity timestamped outside 7 AM–7 PM or on weekends
+- **Saturday limitation:** Saturday timestamps were unavailable; after-hours proportions may be underestimated
 - **Normalization formula:** (Total hours / Days in system) × 365 = Hours per year
 - **Inclusion threshold rationale:** at least 30 days in system to ensure adequate observation period and reliable workload estimates
 
@@ -101,18 +103,19 @@ The analytical approach is comprehensive and multi-layered. Descriptive analysis
 
 ### 4.1 Quantitative Summary
 
-The analysis revealed that 56 providers collectively spent 1,925.4 hours on invisible work over one year—equivalent to 1.01 full-time providers (assuming 1,920 clinical hours/year per FTE) and representing $333,094 in lost revenue opportunity (based on provider revenue data of $173/hour from FY2025 financial analysis). Key findings include:
+The analysis revealed that 56 providers collectively spent 15,439.5 hours on invisible work over one year—equivalent to 8.0 full-time providers (assuming 1,920 clinical hours/year per FTE) and representing $2,671,033 in lost revenue opportunity (based on provider revenue data of $173/hour from FY2025 financial analysis). Key findings include:
 
 **Workload Distribution:**
-- Average: 34.4 hours/provider annually (raw) or 54.3 hours/provider (normalized)
-- 40.2% of work performed after hours (774 hours)
-- 27.5-fold difference between highest and lowest burden providers
-- 12 providers (21%) handle disproportionate share of total messaging
+- Average: 275.7 hours/provider annually (raw) or 426.6 hours/provider (normalized)
+- 5.1% of work performed after hours (774 hours)
+- 27.2-fold difference between highest and lowest burden providers
+- Gini coefficient of 0.345 indicates moderate to high inequality
+- 14 providers (25%) handle disproportionate share of total messaging
 
-**Provider Type Analysis:**
-- Nurse Practitioners: 1,239 hours/year (n=2; individual data points, insufficient for statistical comparison)
-- Attending Psychiatrists: 461 hours/year (n=22; moderate burden)
-- Psychiatry Residents/Fellows: 343 hours/year (n=32; lowest burden)
+**Provider Type Analysis (descriptive only):**
+- Nurse Practitioners: 1,239 hours/year (n=2; descriptive only, insufficient for statistical comparison)
+- Attending Psychiatrists: 477 hours/year (n=22; moderate burden)
+- Psychiatry Residents/Fellows: 341 hours/year (n=32; lowest burden)
 
 **Temporal Patterns:**
 - Minimal seasonal variation (15.2% coefficient of variation)
@@ -120,42 +123,42 @@ The analysis revealed that 56 providers collectively spent 1,925.4 hours on invi
 - No evidence of cyclical relief or significant increases
 
 **System Impact:**
-- 3,851 additional patient visits could be supported (30-minute appointments)
-- 324 additional patients could be served annually
-- 479 hours could be saved if all providers performed at median level
+- 30,879 additional patient visits could be supported (30-minute appointments)
+- 2,592 additional patients could be served annually
+- 2,546 hours could be saved if all providers performed at median level
 
-Collectively, these findings underscore that invisible work consumes the equivalent of a full-time clinician annually while remaining uncompensated and largely untracked.
+Collectively, these findings underscore that invisible work consumes the equivalent of 8.0 full-time clinicians annually while remaining uncompensated and largely untracked. All between-provider comparisons are descriptive unless otherwise noted; NP subgroup (n=2) not tested.
 
 ### 4.2 Risk Assessment and Disparities
 
 The study identified significant disparities in workload distribution (CV = 45.1% for normalized workload). Risk assessment revealed:
 
-**High-Risk Providers (12 providers, 21%):**
-- Normalized workload >140 hours/year
-- >50% of work occurring after hours
+**High-Risk Providers (14 providers, 25%):**
+- Normalized workload >530 hours/year
+- Elevated after-hours burden
 - Poor work-life balance and high burnout risk
 
-**Moderate-Risk Providers (22 providers, 38%):**
-- Normalized workload 80-140 hours/year
+**Moderate-Risk Providers (28 providers, 50%):**
+- Normalized workload 217-530 hours/year
 - Moderate after-hours burden
 - Require proactive monitoring and support
 
-**Low-Risk Providers (22 providers, 38%):**
-- Normalized workload <80 hours/year
+**Low-Risk Providers (14 providers, 25%):**
+- Normalized workload <217 hours/year
 - Manageable workloads and good work-life balance
 - Serve as models for best practices
 
-The extreme ratio of 27.5x between highest and lowest burden providers demonstrates both the effectiveness of normalization and the persistence of high variability across providers.
+The extreme ratio of 27.2x between highest and lowest burden providers demonstrates both the effectiveness of normalization and the persistence of high variability across providers. The Gini coefficient of 0.345 indicates moderate to high inequality, with the top 10% of providers accounting for 25.9% of total workload. (See Figure 1 for distribution and Figure 2 for Lorenz curve analysis.)
 
 ### 4.3 Proposed Productivity Metrics: Analysis of the Proposed Epic Inbox Responsiveness Policy
 
-**Finding:** Inbox burden is uneven (27.5× spread; 40.2% after-hours).
+**Finding:** Inbox burden is uneven (27.2× spread; 5.1% after-hours). Risk: unadjusted latency targets amplify inequity. Remedy: case-mix adjustment + coverage-aware denominators + team triage + quality sampling.
 
-**Policy:** Proposed MPM metric = % handled <2 business days (full credit >=85%), weighted 5%.
+**Policy:** Proposed MPM metric = % handled <2 business days (full credit ≥85%), weighted 5%.
 
 **Mechanism of risk:** Unadjusted timeliness penalizes high-need panels, vacation gaps, and surge weeks; encourages speed over reasoning for complex psychiatric messages.
 
-**Better design:**
+**Minimum viable redesign:**
 
 - **Case-mix/volume adjustment:** Percentile-based targets within peer strata; volume-weighted windows.
 - **Coverage logic:** Automatic reassignment when OOO; exclude documented coverage days from denominator.
@@ -169,7 +172,7 @@ The extreme ratio of 27.5x between highest and lowest burden providers demonstra
 
 ### 5.1 Cognitive Load
 
-Providers face substantial cognitive demands from constant task-switching between direct patient care and in-basket messaging. This frequent multitasking fragments attention, increases mental workload, and heightens risk of information overload where critical details may be missed. The 40.2% after-hours workload identified in our analysis compounds decision fatigue, as providers make complex clinical decisions while managing message volumes that vary 27.5× across providers.
+Providers face substantial cognitive demands from constant task-switching between direct patient care and in-basket messaging. This frequent multitasking fragments attention, increases mental workload, and heightens risk of information overload where critical details may be missed. The 5.1% after-hours workload identified in our analysis compounds decision fatigue, as providers make complex clinical decisions while managing message volumes that vary 27.2× across providers.
 
 ### 5.2 Workflow Interruptions
 
@@ -260,7 +263,7 @@ While this study provides valuable insights, several limitations must be acknowl
 
 ### 8.1 Study Limitations
 
-The scope of the data analyzed was limited to Epic in-basket messaging, excluding other EHR-related tasks and documentation, as well as phone calls and paperwork conducted outside the system. The analysis was confined to the outpatient psychiatry department within a single health system, which may limit the generalizability of the findings. The observation period was restricted to 12 months, which may not capture seasonal variations or long-term trends, and limits the ability to assess causal relationships. Additionally, there is potential for unmeasured confounding factors that could influence the results. Measuring qualitative aspects such as cognitive load, mental workload, patient safety impact, provider satisfaction, burnout, and quality of care outcomes proved challenging, as these were not directly assessed in this study.
+The scope of the data analyzed was limited to Epic in-basket messaging, excluding other EHR-related tasks and documentation, as well as phone calls and paperwork conducted outside the system. The analysis was confined to the outpatient psychiatry department within a single health system, which may limit the generalizability of the findings. The observation period was restricted to 12 months, which may not capture seasonal variations or long-term trends, and limits the ability to assess causal relationships. Saturday timestamps were unavailable; after-hours proportions may be underestimated. Saturday gaps likely bias the 5.1% after-hours estimate downward. Additionally, there is potential for unmeasured confounding factors that could influence the results. Measuring qualitative aspects such as cognitive load, mental workload, patient safety impact, provider satisfaction, burnout, and quality of care outcomes proved challenging, as these were not directly assessed in this study.
 
 ### 8.2 Future Research Directions
 
@@ -276,21 +279,21 @@ By addressing these research gaps, the field can develop a more comprehensive un
 
 ### 9.1 Summary of Key Findings
 
-This comprehensive analysis of Epic in-basket messaging in outpatient psychiatry reveals a critical healthcare informatics challenge: substantial invisible work that remains unrecognized in traditional productivity metrics. The study demonstrates that 56 providers collectively perform 1,925.4 hours of invisible work annually, equivalent to 1.01 full-time providers (assuming 1,920 clinical hours/year per FTE), representing $577,625 in lost revenue opportunity (assuming $300/hour opportunity cost) and significant work-life balance impacts.
+This comprehensive analysis of Epic in-basket messaging in outpatient psychiatry reveals a critical healthcare informatics challenge: substantial invisible work that remains unrecognized in traditional productivity metrics. The study demonstrates that 56 providers collectively perform 15,439.5 hours of invisible work annually, equivalent to 8.0 full-time providers (assuming 1,920 clinical hours/year per FTE), representing $2,671,033 in lost revenue opportunity (based on $173/hour opportunity cost) and significant work-life balance impacts.
 
-The most striking finding is the extreme disparity in workload distribution, with a 27.5x difference between the highest and lowest burden providers. This inequity, combined with the 40.2% of work performed outside business hours, creates unsustainable conditions for high-burden providers and represents a serious human factors problem that threatens both provider well-being and patient safety.
+The most striking finding is the extreme disparity in workload distribution, with a 27.2x difference between the highest and lowest burden providers. This inequity, combined with the 5.1% of work performed outside business hours, creates unsustainable conditions for high-burden providers and represents a serious human factors problem that threatens both provider well-being and patient safety.
 
 ### 9.2 Human Factors Implications
 
 The invisible work problem creates multiple human factors challenges:
 
-**Cognitive overload:** Constant task-switching between patient care and messaging fragments attention and increases error risk. The 40.2% after-hours workload compounds decision fatigue.
+**Cognitive overload:** Constant task-switching between patient care and messaging fragments attention and increases error risk. The 5.1% after-hours workload compounds decision fatigue.
 
 **Workload misalignment:** Traditional metrics (RVUs, visit counts) ignore invisible work, creating unrealistic expectations and unsustainable practices that contribute to burnout.
 
 **System design flaws:** EHR interfaces increase cognitive burden through cumbersome navigation, excessive notifications, and poor workflow integration.
 
-**Organizational inequity:** The 27.5× workload variation reveals inequitable distribution of invisible work, undermining trust and provider well-being.
+**Organizational inequity:** The 27.2× workload variation reveals inequitable distribution of invisible work, undermining trust and provider well-being.
 
 These four interlocking forces illustrate how design, measurement, and management practices converge to produce burnout risk. Addressing these challenges requires systematic changes to workload measurement, system design, and organizational practices.
 
@@ -322,15 +325,25 @@ These four interlocking forces illustrate how design, measurement, and managemen
 
 ### 9.4 Call to Action
 
-**For Healthcare Administrators:** Implement holistic workload management systems that monitor both visible and invisible work. Provide immediate relief to high-burden providers through task redistribution and additional support staff. Address specialty inequity by providing psychiatry with equivalent support staff and billing mechanisms.
+**Healthcare Administrators:**
+- Implement holistic workload management systems that monitor both visible and invisible work
+- Provide immediate relief to high-burden providers through task redistribution and additional support staff
 
-**For Technology Vendors:** Redesign EHR interfaces with focus on usability and cognitive simplicity. Apply human-centered design principles to streamline communication and reduce notification fatigue. Make invisible work visible and manageable through improved system design.
+**Technology Vendors:**
+- Redesign EHR interfaces with focus on usability and cognitive simplicity
+- Apply human-centered design principles to streamline communication and reduce notification fatigue
 
-**For Policymakers:** Require transparency in workload measurement across all clinical activities. Update payment models and accreditation standards to recognize and compensate invisible work. Address fundamental inequity between medical specialties in workload expectations.
+**Policymakers:**
+- Require transparency in workload measurement across all clinical activities
+- Update payment models and accreditation standards to recognize and compensate invisible work
 
-**For Providers:** Champion transparency in workload reporting and participate in quality improvement initiatives. Support collaborative efforts to distribute invisible work more equitably. Demand equitable treatment and support systems comparable to other specialties.
+**Providers:**
+- Champion transparency in workload reporting and participate in quality improvement initiatives
+- Support collaborative efforts to distribute invisible work more equitably
 
-**For Department Leadership:** The proposed Epic inbox responsiveness metric (85% within 2 business days) may exacerbate existing inequities given the 27.5-fold workload variation. Focus on providing adequate support staff and implementing billing mechanisms before implementing time-based performance metrics.
+**Department Leadership:**
+- The proposed Epic inbox responsiveness metric (85% within 2 business days) may exacerbate existing inequities given the 27.2-fold workload variation
+- Focus on providing adequate support staff and implementing billing mechanisms before implementing time-based performance metrics
 
 Addressing invisible work requires coordinated action across all healthcare stakeholders to create a more just, sustainable, and human-centered system.
 
@@ -338,7 +351,7 @@ Addressing invisible work requires coordinated action across all healthcare stak
 
 Invisible work represents a critical challenge in healthcare informatics that affects providers, patients, and system performance. This research demonstrates that systematic quantification can make hidden labor visible, enabling better resource allocation and policy development.
 
-The findings extend beyond psychiatry to all specialties using EHR-based communication. The 27.5× workload variation and 40.2% after-hours burden highlight systemic issues requiring coordinated action across stakeholders.
+The findings extend beyond psychiatry to all specialties using EHR-based communication. The 27.2× workload variation and 5.1% after-hours burden highlight systemic issues requiring coordinated action across stakeholders.
 
 Addressing invisible work is essential for restoring meaning, dignity, and sustainability to medical practice. By making this work visible, measurable, and manageable, we create a foundation for a healthcare system that supports both providers and patients.
 
@@ -461,7 +474,7 @@ Human Factors, 50(3):449-455.
 
 ![Figure 1. Provider workload distribution.](Figure1_Provider_Workload_Distribution.png)
 
-*Figure 1 shows the extreme disparities in workload distribution across 56 providers (July 2024–June 2025), demonstrating a 27.2× variation in annual in-basket hours. Providers are ranked by normalized workload and color-coded by provider type. The highest-burden providers show dramatically elevated hours compared to the median. Note: Nurse Practitioners (n=2) represent individual cases. Normalized workload = (Total hours / Days in system) × 365. Source: Epic Signal, July 2024–June 2025. All analyses conducted using de-identified Epic Analytics data.*
+*Figure 1 shows the extreme disparities in workload distribution across 56 providers (July 2024–June 2025), demonstrating a 27.2× variation in annual in-basket hours. Providers are ranked by normalized workload and color-coded by provider type. The highest-burden providers show dramatically elevated hours compared to the median. Note: Nurse Practitioners (n=2) represent individual cases (descriptive only). Normalized workload = (Total hours / Days in system) × 365. Source: Epic Signal, July 2024–June 2025. All analyses conducted using de-identified Epic Analytics data.*
 
 
 
@@ -480,4 +493,10 @@ Human Factors, 50(3):449-455.
 | Moderate risk (217–530 h/year) | 229.2 (89.3) | 369.9 (87.1) | 28 | 50.0 |
 | High risk (>530 h/year) | 584.4 (312.7) | 814.2 (245.8) | 14 | 25.0 |
 
-*Table 1 presents descriptive statistics for Epic in-basket workload across 56 providers (July 2024–June 2025). Raw workload represents total hours during the observation period; normalized workload is annualized using the formula: (Total hours / Days in system) × 365. Values are presented as mean (SD) or median (IQR) as appropriate. Risk stratification is based on normalized annual workload thresholds. CV = coefficient of variation; IQR = interquartile range. All analyses conducted using de-identified Epic Analytics data.*
+*Table 1 presents descriptive statistics for Epic in-basket workload across 56 providers (July 2024–June 2025). Raw workload represents total hours during the observation period; normalized workload is annualized using the formula: (Total hours / Days in system) × 365. Values are presented as mean (SD) or median (IQR) as appropriate. Risk stratification is based on normalized annual workload thresholds; raw values shown for reference. CV = coefficient of variation; IQR = interquartile range. All analyses conducted using de-identified Epic Analytics data.*
+
+### Figure 2. Lorenz curve analysis of workload inequality.
+
+![Figure 2. Lorenz curve analysis of workload inequality.](Figure2_Lorenz_Curve_Workload_Inequality.png)
+
+*Figure 2 shows the Lorenz curve for workload distribution across 56 providers (July 2024–June 2025), demonstrating moderate to high inequality with a Gini coefficient of 0.345. The curve shows that the top 10% of providers account for 25.9% of total workload, while the bottom 50% account for 26.2%. The diagonal line represents perfect equality (Gini = 0); the greater the deviation from this line, the higher the inequality. Source: Epic Signal, July 2024–June 2025. All analyses conducted using de-identified Epic Analytics data.*

@@ -1,4 +1,0 @@
-"Risk Category","Number of Providers","Criteria (Hours/year)","Mean Raw Workload (Hours)","Mean Normalized Workload (Hours/year)","Proportion of Total Providers (%)"
-"Low Risk",14,"< NA",60.0142857142857,152.579222083252,25
-"Moderate Risk",28,"NA–NA",229.193452380952,369.911553304237,50
-"High Risk",14,"> NA",584.421428571429,814.187914720718,25

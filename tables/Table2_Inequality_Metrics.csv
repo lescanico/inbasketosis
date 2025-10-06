@@ -1,0 +1,6 @@
+"Metric","Value","Interpretation"
+"Gini Coefficient","0.345","0 = perfect equality, 1 = perfect inequality"
+"Coefficient of Variation","0.685","Standard deviation / mean"
+"Max/Min Ratio","27.2 x","Highest to lowest workload ratio"
+"Top 10% Workload Share","25.9 %","Concentration of workload among high-burden providers"
+"Bottom 50% Workload Share","26.2 %","Workload share of lower-burden providers"
