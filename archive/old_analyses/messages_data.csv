@@ -1,0 +1,1473 @@
+DE_ID,Grouper,Metric,24-Jul,24-Aug,24-Sep,24-Oct,24-Nov,24-Dec,25-Jan,25-Feb,25-Mar,25-Apr,25-May,25-Jun
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,,11.0,6.0,9.0,21.0,5.0,24.0,8.0,22.0,15.0,28.0,10.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,,2.1,0.8,1.2,1.4,1.2,1.8,0.8,1.6,1.5,4.7,1.1
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+6454804,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.1
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,,0.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.1,0.0,0.2,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+65945320,RESIDENT + FELLOW,Count Of In Basket Minutes,20.0,182.0,9.0,76.0,103.0,23.0,12.0,46.0,83.0,132.0,102.0,93.0
+65945320,RESIDENT + FELLOW,Minutes In In Basket Per Day,2.0,6.5,3.1,3.8,5.4,2.6,2.4,3.5,4.1,6.3,5.1,7.2
+65945320,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.1,2.9,5.5,3.7,4.5
+65945320,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,1.0,4.0,2.0,8.0,6.0,6.0,2.0,3.0,12.0,12.0,8.0,6.0
+65945320,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,2.0,0.0,1.0
+65945320,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,1.0,4.0,2.0,8.0,7.0,4.0,2.0,2.0,11.0,10.0,9.0,5.0
+65945320,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.7,1.0,2.1,1.3,3.1,0.7,1.7,0.6,0.6,0.7,7.1,1.9
+65945320,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,0.0,4.0,1.0,6.0,6.0,5.0,3.0,6.0,6.0,4.0,3.0,2.0
+65945320,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,0.0,4.0,0.0,7.0,6.0,5.0,4.0,6.0,6.0,4.0,3.0,2.0
+65945320,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.0,0.1,0.0,0.4,0.3,0.6,0.8,0.5,0.3,0.2,0.1,0.2
+65945320,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,0.4,9.2,1.1,1.0,0.7,0.3,0.6,1.3,0.9,0.3,1.2
+65945320,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,4.0,17.0,4.0,5.0,9.0,3.0,2.0,2.0,7.0,2.0,1.0,3.0
+65945320,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,4.0,17.0,4.0,5.0,9.0,3.0,2.0,2.0,7.0,2.0,1.0,3.0
+65945320,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,0.6,1.2,0.3,0.5,0.3,0.4,0.2,0.4,0.1,0.1,0.2
+65945320,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.3,2.6,0.0
+65945324,RESIDENT + FELLOW,Count Of In Basket Minutes,18.0,101.0,20.0,65.0,117.0,16.0,,38.0,61.0,23.0,21.0,25.0
+65945324,RESIDENT + FELLOW,Minutes In In Basket Per Day,1.4,4.0,3.3,3.4,5.9,5.5,,1.9,2.4,2.3,3.0,3.6
+65945324,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.3,0.0,2.0,2.9,0.0,,1.9,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,24.0,7.0,16.0,11.0,2.0,,7.0,3.0,8.0,8.0,9.0
+65945324,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,5.0,0.0,1.0,1.0,0.0,,3.0,0.0,7.0,5.0,6.0
+65945324,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,2.0,19.0,7.0,15.0,10.0,2.0,,4.0,3.0,1.0,3.0,3.0
+65945324,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,1.0,1.0,1.0,1.0,1.0,,0.0,0.0,1.0,1.0,1.0
+65945324,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,8.9,1.3,2.2,0.7,0.6,3.5,,2.2,3.1,0.2,3.1,1.1
+65945324,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,4.0,18.0,5.0,13.0,14.0,4.0,,4.0,4.0,6.0,2.0,2.0
+65945324,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,2.0,0.0,1.0,,1.0,3.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,4.0,17.0,5.0,15.0,12.0,5.0,,5.0,7.0,2.0,0.0,2.0
+65945324,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.3,0.7,0.8,0.8,0.6,1.7,,0.3,0.3,0.2,0.0,0.3
+65945324,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,6.2,1.2,1.1,1.8,1.9,0.0,,1.4,2.8,4.6,10.4,0.6
+65945324,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,3.0,2.0,4.0,0.0,0.0,,1.0,2.0,1.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,3.0,2.0,4.0,0.0,0.0,,1.0,2.0,1.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.3,0.2,0.0,0.0,,0.1,0.1,0.1,0.0,0.0
+65945324,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.8,3.1,2.6,0.0,0.0,,2.6,4.0,18.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,1.0,5.0,4.0,7.0,12.0,0.0,,3.0,2.0,1.0,3.0,6.0
+65945324,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,1.0,5.0,4.0,7.0,12.0,0.0,,3.0,2.0,1.0,3.0,6.0
+65945324,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.1,0.2,0.6,0.4,0.6,0.0,,0.2,0.1,0.1,0.4,0.9
+65945324,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.1,0.1,0.4,0.4
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,3.0,7.0,6.0,,14.0,6.0,,9.0,17.0,0.0,5.0,16.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,0.9,0.6,0.6,,1.2,2.1,,1.3,2.2,0.0,0.8,1.5
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,0.0,0.0,,3.0,0.0,,1.0,1.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,,2.0,0.0,,1.0,1.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,0.0,0.0,,1.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,0.0,0.0,,2.2,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,0.0,0.0,1.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,,0.0,0.0,,1.0,2.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,0.0,0.0,1.0,,0.0,0.0,,1.0,2.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.0,0.0,0.1,,0.0,0.0,,0.1,0.3,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,0.0,0.0,,2.0,0.0,,0.0,0.0,0.0,0.0,2.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,0.0,0.0,,2.0,0.0,,0.0,0.0,0.0,0.0,2.0
+66311796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,0.0,0.0,,0.2,0.0,,0.0,0.0,0.0,0.0,0.2
+66311796,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,1.2
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,143.0,179.0,171.0,101.0,121.0,145.0,177.0,127.0,130.0,163.0,127.0,109.0
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,6.2,6.6,7.8,4.0,5.1,8.5,8.4,5.8,4.2,6.0,5.5,4.2
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,1.8,1.8,2.8,1.8,1.4,2.5,2.6,2.4,1.6,2.4,1.6,1.4
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,44.0,46.0,37.0,34.0,23.0,18.0,40.0,55.0,39.0,33.0,46.0,45.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,18.0,0.0,32.0,0.0,7.0,0.0,24.0,38.0,0.0,45.0,41.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,50.0,28.0,44.0,2.0,47.0,11.0,44.0,31.0,1.0,76.0,1.0,4.0
+66316664,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,2.0,2.0,2.0,1.0,1.0,1.0,2.0,3.0,1.0,1.0,2.0,2.0
+66316664,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,15.7,5.6,5.1,5.7,29.1,2.5,9.3,6.4,1.6,23.7,0.5,4.3
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,0.0,11.0,17.0,0.0,11.0,16.0,26.0,28.0,5.0,10.0,2.0,1.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,3.0,0.0,0.0,6.0,0.0,7.0,2.0,10.0,2.0,0.0,2.0,1.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,3.0,7.0,15.0,6.0,8.0,23.0,28.0,38.0,7.0,3.0,4.0,2.0
+66316664,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.1,0.3,0.6,0.2,0.3,1.4,1.3,1.7,0.2,0.1,0.2,0.1
+66316664,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,32.5,8.3,0.0,32.2,1.7,5.6,4.5,10.8,25.6,0.7,35.1
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,48.0,21.0,39.0,45.0,61.0,24.0,39.0,27.0,0.0,32.0,0.0,0.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,24.0,1.0,0.0,0.0,0.0,0.0,7.0,54.0,23.0,33.0,23.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,46.0,45.0,40.0,39.0,34.0,18.0,31.0,34.0,54.0,55.0,33.0,23.0
+66316664,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,1.9,1.7,1.7,1.6,1.4,1.1,1.4,1.6,1.7,2.0,1.4,0.9
+66316664,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,23.5,28.8,24.3,25.5,22.2,5.3,12.6,6.7,0.0,7.5,0.0,0.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,29.0,46.0,40.0,36.0,32.0,25.0,49.0,45.0,52.0,38.0,40.0,46.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,29.0,46.0,40.0,36.0,32.0,25.0,49.0,45.0,52.0,38.0,40.0,46.0
+66316664,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.2,1.7,1.7,1.4,1.3,1.5,2.3,2.1,1.7,1.4,1.6,1.8
+66316664,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.9,2.2,1.6,2.7
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,23.0,71.0,50.0,80.0,33.0,28.0,56.0,79.0,132.0,91.0,130.0,117.0
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,1.7,3.1,3.1,4.2,1.6,1.7,3.0,5.0,4.7,4.5,4.8,6.1
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.8,1.7,1.7,1.9,0.9,0.8,1.6,2.9,3.4,3.6,3.0,2.7
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,5.0,5.0,13.0,4.0,0.0,7.0,1.0,5.0,7.0,11.0,6.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,4.0,3.0,1.0,1.0,0.0,2.0,0.0,3.0,4.0,10.0,4.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,1.0,2.0,12.0,3.0,0.0,5.0,2.0,2.0,3.0,1.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,0.1,1.5,13.7,6.1,0.0,13.1,11.0,2.6,1.2,0.2,0.6
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,0.0,2.0,4.0,0.0,0.0,0.0,2.0,2.0,0.0,2.0,0.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,0.0,0.0,6.0,1.0,1.0,0.0,2.0,2.0,0.0,1.0,1.0,1.0
+66316880,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.0,0.0,0.4,0.1,0.1,0.0,0.1,0.1,0.0,0.1,0.0,0.1
+66316880,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,100.7,0.5,0.0,0.0,0.0,0.6,1.1,0.0,73.0,0.0,14.2
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,2.0,1.0,0.0,1.0,2.0,2.0,3.0,0.0,1.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,2.0,2.0,3.0,1.0,0.0,1.0,0.0,2.0,1.0,0.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,2.0,3.0,2.0,4.0,3.0,2.0,4.0,0.0,3.0,1.0,0.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.1,0.1,0.1,0.2,0.1,0.1,0.2,0.0,0.1,0.1,0.0,0.1
+66316880,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,1.5,2.0,0.0,0.9,2.9,44.3,9.0,0.0,42.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,15.0,37.0,17.0,31.0,33.0,14.0,18.0,18.0,19.0,26.0,21.0,38.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,15.0,37.0,17.0,31.0,33.0,14.0,18.0,18.0,19.0,26.0,21.0,38.0
+66316880,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.0,1.6,1.0,1.6,1.6,0.8,0.9,1.1,0.7,1.3,0.7,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.4,15.8,3.3,6.4
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,63.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,3.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.9,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,1.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,16.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,2.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,1.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.1,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,6.9,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,25.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,25.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,1.2,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,4.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,4.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.2,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,,,,,,,,,,,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,,2.0,1.0,,1.0,,11.0,,2.0,1.0,2.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,,0.9,1.1,,0.2,,2.2,,0.4,0.2,1.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,139.0,333.0,186.0,283.0,302.0,150.0,338.0,261.0,258.0,154.0,244.0,221.0
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,5.2,9.5,7.4,10.5,8.9,7.9,13.5,9.3,7.4,5.7,7.4,8.2
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,1.7,3.5,2.3,3.9,3.4,2.4,4.2,3.3,2.8,1.8,2.7,2.9
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,24.0,51.0,20.0,25.0,27.0,25.0,48.0,27.0,43.0,22.0,41.0,42.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,2.0,5.0,6.0,3.0,8.0,0.0,12.0,0.0,9.0,5.0,8.0,11.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,22.0,46.0,14.0,22.0,19.0,29.0,36.0,29.0,34.0,17.0,33.0,31.0
+67512900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0
+67512900,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,1.9,1.9,3.6,8.0,4.4,4.9,1.0,2.1,4.1,8.4,4.7,2.6
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,11.0,25.0,17.0,18.0,30.0,10.0,18.0,18.0,5.0,0.0,7.0,4.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,3.0,0.0,0.0,4.0,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,14.0,23.0,16.0,22.0,30.0,8.0,18.0,19.0,7.0,0.0,7.0,4.0
+67512900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.5,0.7,0.6,0.8,0.9,0.4,0.7,0.7,0.2,0.0,0.2,0.2
+67512900,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,1.8,1.3,1.1,0.7,1.9,3.9,2.0,1.4,3.8,0.0,0.2,1.8
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,31.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,9.0,16.0,0.0,6.0,14.0,4.0,1.0,8.0,8.0,13.0,18.0,15.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,9.0,16.0,8.0,6.0,14.0,4.0,6.0,8.0,8.0,13.0,18.0,15.0
+67512900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.3,0.5,0.3,0.2,0.4,0.2,0.2,0.3,0.2,0.5,0.5,0.6
+67512900,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,38.8,0.0,0.0,0.0,14.2,0.0,0.0,0.0,0.0,0.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,15.0,20.0,18.0,13.0,18.0,15.0,18.0,23.0,14.0,13.0,14.0,10.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,15.0,20.0,18.0,13.0,18.0,15.0,18.0,23.0,14.0,13.0,14.0,10.0
+67512900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.5,0.6,0.7,0.5,0.5,0.8,0.7,0.8,0.4,0.5,0.4,0.4
+67512900,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.4,1.8,1.1,1.2
+67533560,NURSE PRACTITIONER,Count Of In Basket Minutes,,,,,,,,,,,,87.0
+67533560,NURSE PRACTITIONER,Minutes In In Basket Per Day,,,,,,,,,,,,5.4
+67533560,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,,,,,,,,,,,,3.6
+67533560,NURSE PRACTITIONER,Count Of Patient Call Messages Recieved,,,,,,,,,,,,4.0
+67533560,NURSE PRACTITIONER,Count Of Patient Call Messages Incomplete,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Patient Call Messages Completed,,,,,,,,,,,,4.0
+67533560,NURSE PRACTITIONER,Messages Received per Day - Patient Calls,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Average Days Until Patient Call Messages Marked Done,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Completed,,,,,,,,,,,,2.0
+67533560,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Incomplete,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Recieved,,,,,,,,,,,,1.0
+67533560,NURSE PRACTITIONER,Messages Received per Day - Patient Medical Advice Request,,,,,,,,,,,,0.1
+67533560,NURSE PRACTITIONER,Average Days Until Patient Medical Advice Request Message Marked Done,,,,,,,,,,,,1.4
+67533560,NURSE PRACTITIONER,Count Of Result Messages Completed,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Result Messages Incomplete,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Result Messages Recieved,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Messages Received per Day - Results,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Average Days Until Result Message Marked Done,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of RX Auth Messages Completed,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of RX Auth Messages Incomplete,,,,,,,,,,,,5.0
+67533560,NURSE PRACTITIONER,Count Of RX Auth Messages Recieved,,,,,,,,,,,,5.0
+67533560,NURSE PRACTITIONER,Messages Received per Day - Rx Auth,,,,,,,,,,,,0.3
+67533560,NURSE PRACTITIONER,Average Days Until RX Auth Message Marked Done,,,,,,,,,,,,0.9
+67545740,NURSE PRACTITIONER,Count Of In Basket Minutes,,717.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In In Basket Per Day,,27.6,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,,4.4,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Call Messages Recieved,,31.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Call Messages Incomplete,,30.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Call Messages Completed,,1.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Messages Received per Day - Patient Calls,,1.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Average Days Until Patient Call Messages Marked Done,,1.6,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Completed,,41.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Incomplete,,17.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Recieved,,58.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Messages Received per Day - Patient Medical Advice Request,,2.2,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Average Days Until Patient Medical Advice Request Message Marked Done,,2.5,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Result Messages Completed,,0.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Result Messages Incomplete,,2.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Result Messages Recieved,,2.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Messages Received per Day - Results,,0.1,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Average Days Until Result Message Marked Done,,0.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of RX Auth Messages Completed,,0.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of RX Auth Messages Incomplete,,4.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of RX Auth Messages Recieved,,4.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Messages Received per Day - Rx Auth,,0.2,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Average Days Until RX Auth Message Marked Done,,0.0,,,,,,,,,,
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,163.0,210.0,175.0,196.0,101.0,,49.0,67.0,165.0,115.0,83.0,65.0
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,10.2,10.0,10.9,14.0,10.1,,7.0,5.1,8.2,6.4,3.8,6.5
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.4,3.7,3.7,4.0,3.5,,0.0,0.0,5.5,2.8,1.9,2.6
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,22.0,34.0,18.0,4.0,17.0,,9.0,7.0,12.0,26.0,6.0,5.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,5.0,0.0,1.0,0.0,3.0,,1.0,0.0,2.0,3.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,17.0,35.0,17.0,4.0,14.0,,8.0,8.0,10.0,23.0,7.0,6.0
+67549264,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,2.0,1.0,0.0,2.0,,1.0,1.0,1.0,1.0,0.0,1.0
+67549264,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.5,1.2,0.6,1.0,1.3,,2.7,1.0,0.8,0.9,2.2,0.9
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,54.0,55.0,62.0,78.0,40.0,,9.0,33.0,10.0,5.0,1.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,8.0,0.0,4.0,4.0,3.0,,3.0,0.0,1.0,1.0,0.0,1.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,62.0,54.0,66.0,82.0,43.0,,12.0,30.0,11.0,6.0,1.0,1.0
+67549264,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,3.7,2.6,3.8,5.9,4.3,,1.7,2.3,0.6,0.3,0.0,0.1
+67549264,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.9,0.5,0.5,1.0,1.3,,1.0,1.8,0.8,0.1,0.1,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,3.0,1.0,4.0,3.0,0.0,,2.0,0.0,0.0,3.0,1.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,2.0,1.0,2.0,3.0,0.0,,1.0,0.0,0.0,3.0,1.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.1,0.1,0.1,0.2,0.0,,0.1,0.0,0.0,0.2,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,2.6,3.0,2.4,4.8,0.0,,14.4,0.0,0.0,1.3,0.4,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,6.0,7.0,11.0,9.0,12.0,,12.0,6.0,11.0,10.0,7.0,2.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,6.0,7.0,11.0,9.0,12.0,,12.0,6.0,11.0,10.0,7.0,2.0
+67549264,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.4,0.3,0.6,0.6,1.2,,1.7,0.5,0.6,0.6,0.3,0.2
+67549264,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.6,0.7,0.8,0.0
+67550600,RESIDENT + FELLOW,Count Of In Basket Minutes,107.0,214.0,151.0,126.0,98.0,84.0,100.0,59.0,169.0,109.0,191.0,116.0
+67550600,RESIDENT + FELLOW,Minutes In In Basket Per Day,7.1,8.9,9.4,6.3,7.0,5.6,5.9,3.3,6.8,9.1,9.1,12.9
+67550600,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.6,3.5,3.1,2.1,2.4,1.6,1.8,1.2,2.2,2.8,4.0,5.8
+67550600,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,11.0,9.0,12.0,7.0,5.0,5.0,4.0,3.0,9.0,4.0,15.0,3.0
+67550600,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,12.0,9.0,8.0,9.0,5.0,5.0,4.0,3.0,8.0,5.0,15.0,4.0
+67550600,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+67550600,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,4.0,1.2,0.5,1.0,1.2,0.2,1.3,0.3,1.1,3.2,0.4,2.1
+67550600,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,26.0,43.0,27.0,28.0,27.0,26.0,17.0,24.0,6.0,2.0,7.0,1.0
+67550600,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,4.0,1.0,2.0,5.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,26.0,47.0,28.0,30.0,32.0,23.0,15.0,26.0,4.0,2.0,7.0,0.0
+67550600,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.7,2.0,1.6,1.5,2.3,1.5,0.9,1.4,0.2,0.2,0.3,0.0
+67550600,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.2,1.0,1.1,0.8,0.7,0.7,1.3,0.6,0.9,1.0,1.1,13.3
+67550600,RESIDENT + FELLOW,Count Of Result Messages Completed,6.0,5.0,1.0,5.0,4.0,2.0,3.0,6.0,7.0,2.0,2.0,7.0
+67550600,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Result Messages Recieved,5.0,5.0,1.0,6.0,2.0,2.0,3.0,6.0,7.0,2.0,1.0,2.0
+67550600,RESIDENT + FELLOW,Messages Received per Day - Results,0.3,0.2,0.1,0.3,0.1,0.1,0.2,0.3,0.3,0.2,0.0,0.2
+67550600,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,1.1,0.8,2.0,3.5,2.6,0.1,3.7,4.6,1.0,1.0,13.4,4.3
+67550600,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,3.0,7.0,2.0,4.0,6.0,4.0,2.0,2.0,2.0,3.0,1.0,0.0
+67550600,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,3.0,7.0,2.0,4.0,6.0,4.0,2.0,2.0,2.0,3.0,1.0,0.0
+67550600,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.3,0.1,0.2,0.4,0.3,0.1,0.1,0.1,0.3,0.0,0.0
+67550600,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.6,0.9,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,290.0,387.0,250.0,277.0,328.0,348.0,230.0,263.0,440.0,289.0,464.0,381.0
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,12.6,12.9,13.2,12.0,12.1,13.9,12.8,14.6,18.3,11.5,17.9,17.3
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.5,2.3,2.4,2.1,2.3,2.9,2.3,2.6,2.9,2.4,3.2,3.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,23.0,26.0,23.0,24.0,10.0,19.0,11.0,9.0,13.0,12.0,16.0,15.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,2.0,5.0,1.0,0.0,3.0,0.0,0.0,0.0,1.0,0.0,3.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,22.0,24.0,18.0,23.0,10.0,16.0,11.0,9.0,14.0,11.0,16.0,12.0
+67558552,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0
+67558552,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.1,0.1,0.7,0.4,0.3,0.1,0.3,0.1,0.8,0.3,0.1,0.1
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,99.0,146.0,88.0,99.0,102.0,80.0,102.0,82.0,10.0,3.0,8.0,8.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,1.0,1.0,5.0,0.0,5.0,3.0,2.0,6.0,0.0,0.0,1.0,1.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,100.0,147.0,93.0,98.0,107.0,83.0,104.0,88.0,9.0,3.0,9.0,9.0
+67558552,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,4.2,4.9,4.6,4.3,4.0,3.3,5.6,4.9,0.4,0.1,0.3,0.4
+67558552,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.2,0.2,0.3,0.2,0.3,0.1,0.1,0.1,0.9,0.2,0.2,0.5
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,86.0,131.0,97.0,85.0,115.0,122.0,59.0,48.0,118.0,71.0,78.0,69.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,73.0,105.0,77.0,75.0,101.0,109.0,50.0,39.0,73.0,63.0,73.0,57.0
+67558552,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,3.1,3.5,3.8,3.3,3.7,4.4,2.7,2.2,3.0,2.5,2.7,2.6
+67558552,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,2.8,2.9,2.0,1.6,0.9,1.3,0.9,1.7,2.8,2.5,0.9,1.1
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,3.0,2.0,4.0,5.0,6.0,6.0,2.0,2.0,5.0,10.0,2.0,5.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,3.0,2.0,4.0,5.0,6.0,6.0,2.0,2.0,5.0,10.0,2.0,5.0
+67558552,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.1,0.1,0.2,0.2,0.2,0.2,0.1,0.1,0.2,0.4,0.1,0.2
+67558552,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5
+67560192,RESIDENT + FELLOW,Count Of In Basket Minutes,,,,,,,,,,0.0,8.0,
+67560192,RESIDENT + FELLOW,Minutes In In Basket Per Day,,,,,,,,,,0.0,1.6,
+67560192,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Result Messages Completed,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Result Messages Incomplete,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Result Messages Recieved,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Messages Received per Day - Results,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,,,,,,,,,,0.0,0.0,
+67566516,RESIDENT + FELLOW,Count Of In Basket Minutes,64.0,121.0,109.0,82.0,145.0,63.0,139.0,115.0,166.0,102.0,116.0,123.0
+67566516,RESIDENT + FELLOW,Minutes In In Basket Per Day,4.0,6.0,6.4,4.3,6.9,7.0,8.2,6.8,7.2,5.1,5.5,6.9
+67566516,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.4,2.9,2.6,2.2,3.2,2.3,3.4,3.5,3.4,2.6,2.1,3.3
+67566516,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,3.0,7.0,2.0,1.0,8.0,1.0,7.0,1.0,2.0,2.0,5.0,6.0
+67566516,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,2.0,2.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,2.0
+67566516,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,3.0,5.0,0.0,0.0,11.0,0.0,8.0,1.0,2.0,2.0,5.0,4.0
+67566516,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,7.9,4.4,0.0,0.0,25.7,0.0,22.3,8.5,17.4,4.8,7.7,4.2
+67566516,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,18.0,18.0,40.0,27.0,34.0,12.0,36.0,27.0,13.0,3.0,1.0,4.0
+67566516,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,4.0,10.0,1.0,2.0,1.0,5.0,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,15.0,22.0,50.0,28.0,36.0,13.0,41.0,27.0,13.0,3.0,1.0,4.0
+67566516,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.9,1.1,2.7,1.5,1.7,1.4,2.3,1.6,0.6,0.2,0.0,0.2
+67566516,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,6.4,0.9,2.4,2.2,2.1,1.3,2.6,2.2,1.4,1.6,0.1,2.0
+67566516,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,3.0,3.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,1.0,2.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.1,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,4.3,5.1,0.0,23.6,0.0,2.3,0.0,7.9,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,5.0,4.0,4.0,3.0,1.0,1.0,2.0,3.0,2.0,1.0,3.0,0.0
+67566516,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,5.0,4.0,4.0,3.0,1.0,1.0,2.0,3.0,2.0,1.0,3.0,0.0
+67566516,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.3,0.2,0.2,0.2,0.1,0.1,0.1,0.2,0.1,0.1,0.1,0.0
+67566516,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.6,2.7,4.9,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,35.0,76.0,72.0,85.0,150.0,104.0,128.0,98.0,80.0,67.0,91.0,44.0
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,3.2,2.4,3.4,4.7,4.4,4.2,5.6,3.9,2.6,2.7,3.0,2.6
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,1.0,1.4,1.7,1.6,1.4,2.0,1.2,0.8,0.9,1.0,0.9
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,0.0,0.0,0.0,3.0,0.0,1.0,2.0,0.0,1.0,0.0,7.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,2.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,1.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,1.0,0.0,0.0,5.0
+67580608,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,31.8,0.0,0.0,0.0,3.1,0.0,3.8,0.1,5.8,0.0,0.0,1.9
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,4.0,8.0,9.0,6.0,11.0,3.0,9.0,7.0,0.0,1.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,2.0,7.0,9.0,6.0,14.0,3.0,9.0,6.0,0.0,1.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.2,0.2,0.4,0.3,0.4,0.1,0.4,0.2,0.0,0.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,11.7,25.6,20.0,6.7,4.7,11.5,3.4,6.1,0.0,1.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,1.0,5.0,13.0,9.0,7.0,6.0,5.0,3.0,4.0,4.0,11.0,7.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,3.0,3.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,2.0,6.0,13.0,5.0,7.0,5.0,5.0,3.0,5.0,4.0,14.0,10.0
+67580608,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.2,0.2,0.6,0.3,0.2,0.2,0.2,0.1,0.2,0.2,0.4,0.6
+67580608,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.1,14.7,13.9,5.2,1.6,1.8,4.2,1.8,9.8,2.8,4.8,9.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,5.0,7.0,3.0,8.0,3.0,3.0,7.0,7.0,5.0,9.0,5.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,5.0,7.0,3.0,8.0,3.0,3.0,7.0,7.0,5.0,9.0,5.0
+67580608,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,0.2,0.3,0.2,0.2,0.1,0.1,0.3,0.2,0.2,0.3,0.3
+67580608,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.4,0.3,1.4
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,276.0,409.0,223.0,256.0,259.0,203.0,262.0,358.0,268.0,346.0,304.0,223.0
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,15.4,18.6,13.9,17.1,11.8,14.5,14.6,18.8,13.4,16.5,16.0,11.1
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.6,8.0,6.2,7.8,7.0,3.8,5.7,7.3,5.4,6.1,4.8,4.1
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,17.0,32.0,22.0,13.0,31.0,16.0,20.0,18.0,27.0,13.0,14.0,16.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,5.0,0.0,0.0,3.0,1.0,1.0,0.0,4.0,3.0,0.0,2.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,16.0,27.0,24.0,16.0,28.0,15.0,19.0,19.0,23.0,10.0,16.0,14.0
+67609044,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+67609044,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,1.0,1.1,1.9,1.6,1.3,2.9,2.5,0.9,1.0,2.9,4.0,5.5
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,70.0,79.0,54.0,69.0,41.0,53.0,68.0,100.0,18.0,7.0,12.0,10.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,10.0,3.0,0.0,6.0,0.0,8.0,10.0,4.0,0.0,0.0,2.0,0.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,80.0,82.0,52.0,75.0,41.0,61.0,78.0,104.0,18.0,7.0,14.0,10.0
+67609044,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,4.3,3.7,3.0,5.0,1.9,4.4,4.2,5.5,0.9,0.3,0.7,0.5
+67609044,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.9,1.2,0.8,0.7,1.2,0.9,0.9,0.8,0.3,0.7,0.7,1.5
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,5.0,4.0,2.0,10.0,4.0,6.0,5.0,2.0,10.0,7.0,9.0,8.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,1.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,5.0,3.0,2.0,10.0,4.0,6.0,4.0,2.0,10.0,12.0,5.0,9.0
+67609044,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.3,0.1,0.1,0.7,0.2,0.4,0.2,0.1,0.5,0.6,0.3,0.5
+67609044,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,1.2,7.0,1.9,1.2,0.6,0.5,1.7,0.7,1.3,0.4,10.2,3.7
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,24.0,29.0,27.0,22.0,25.0,19.0,25.0,26.0,29.0,25.0,32.0,35.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,24.0,29.0,27.0,22.0,25.0,19.0,25.0,26.0,29.0,25.0,32.0,35.0
+67609044,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.3,1.3,1.6,1.5,1.1,1.4,1.3,1.4,1.5,1.2,1.6,1.8
+67609044,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8,0.8,1.9,1.5
+67647868,RESIDENT + FELLOW,Count Of In Basket Minutes,283.0,405.0,326.0,402.0,511.0,240.0,253.0,307.0,300.0,159.0,442.0,357.0
+67647868,RESIDENT + FELLOW,Minutes In In Basket Per Day,23.6,18.4,18.1,23.7,23.2,34.3,25.3,19.2,18.8,13.3,22.1,21.0
+67647868,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,16.2,16.3,11.2,9.8,0.0,11.5,7.3,7.9,5.7,11.6,9.4
+67647868,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,9.0,5.0,9.0,13.0,1.0,7.0,1.0,9.0,1.0,1.0,5.0
+67647868,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,5.0,2.0,0.0,3.0,0.0,4.0,0.0,0.0,5.0
+67647868,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,3.0,9.0,5.0,4.0,11.0,3.0,4.0,6.0,5.0,2.0,1.0,0.0
+67647868,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,5.6,3.1,1.5,1.8,1.1,5.6,1.9,20.4,0.4,7.0,1.5,0.0
+67647868,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,27.0,45.0,37.0,33.0,38.0,23.0,25.0,24.0,12.0,3.0,1.0,2.0
+67647868,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,3.0,0.0,5.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,1.0
+67647868,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,27.0,48.0,36.0,38.0,36.0,23.0,29.0,24.0,11.0,3.0,1.0,3.0
+67647868,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,2.2,2.2,1.9,2.2,1.6,3.3,2.8,1.5,0.7,0.3,0.1,0.2
+67647868,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.8,0.9,1.6,1.5,3.7,1.2,3.5,2.0,2.1,0.3,0.2,6.6
+67647868,RESIDENT + FELLOW,Count Of Result Messages Completed,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,35.9,2.7,0.0,0.0,0.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,8.0,15.0,13.0,4.0,6.0,2.0,2.0,5.0,1.0,1.0,6.0,0.0
+67647868,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,8.0,15.0,13.0,4.0,6.0,2.0,2.0,5.0,1.0,1.0,6.0,0.0
+67647868,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.6,0.7,0.7,0.2,0.3,0.3,0.2,0.3,0.1,0.1,0.3,0.0
+67647868,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,2.2,2.9,5.9
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,85.0,198.0,166.0,169.0,223.0,162.0,172.0,186.0,206.0,102.0,175.0,137.0
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,4.5,7.6,10.4,8.0,8.3,9.5,8.6,8.9,8.6,5.4,7.0,7.2
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.7,6.6,4.2,2.3,2.8,3.5,3.3,3.1,2.5,1.7,2.4,2.5
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,1.0,2.0,5.0,1.0,1.0,0.0,2.0,4.0,4.0,0.0,5.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,0.0,4.0,0.0,0.0,0.0,1.0,2.0,4.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,3.0,1.0,1.0,7.0,0.0,1.0,2.0,0.0,0.0,7.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,44.4,0.2,1.0,81.4,0.0,0.0,7.0,0.0,0.0,34.4,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,0.0,4.0,3.0,3.0,10.0,5.0,4.0,5.0,8.0,0.0,2.0,3.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,0.0,4.0,0.0,0.0,1.0,1.0,1.0,4.0,2.0,5.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,2.0,3.0,3.0,7.0,7.0,5.0,5.0,6.0,9.0,4.0,4.0,8.0
+67668012,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.1,0.1,0.2,0.3,0.3,0.3,0.2,0.3,0.4,0.2,0.2,0.4
+67668012,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,12.3,15.4,0.9,7.0,28.8,0.9,6.8,0.5,0.0,70.6,1.5
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+67668012,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1
+67668012,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,2.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,0.3,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,2.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,2.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.3,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.1,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,,,,,,,,,,,
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,199.0,245.0,162.0,166.0,329.0,277.0,236.0,198.0,327.0,180.0,192.0,106.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,13.3,11.2,13.5,9.8,14.9,12.0,12.4,10.4,14.8,15.0,10.1,7.1
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.2,6.5,6.5,5.5,9.7,8.7,7.6,7.1,6.2,7.8,5.2,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,19.0,26.0,24.0,9.0,21.0,18.0,22.0,23.0,40.0,16.0,38.0,18.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,5.0,0.0,0.0,5.0,3.0,0.0,2.0,5.0,0.0,0.0,5.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,14.0,27.0,26.0,4.0,18.0,18.0,20.0,18.0,41.0,16.0,33.0,22.0
+67671796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,1.0
+67671796,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,8.6,8.1,4.8,2.1,3.6,2.3,1.4,2.5,1.8,3.7,5.1,2.3
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,5.0,14.0,13.0,12.0,18.0,18.0,13.0,9.0,7.0,3.0,5.0,2.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,7.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,12.0,13.0,13.0,13.0,19.0,19.0,12.0,9.0,7.0,3.0,5.0,2.0
+67671796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.8,0.6,1.0,0.8,0.9,0.8,0.6,0.5,0.3,0.3,0.3,0.1
+67671796,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,5.4,3.0,1.3,2.7,1.8,1.3,1.2,0.9,2.2,1.9,3.0,3.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,1.0,3.0,2.0,2.0,5.0,1.0,3.0,1.0,10.0,0.0,3.0,2.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,1.0,4.0,2.0,3.0,4.0,1.0,2.0,1.0,9.0,0.0,2.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.1,0.2,0.2,0.2,0.2,0.0,0.1,0.1,0.4,0.0,0.1,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,1.1,5.5,2.7,1.0,3.8,2.3,3.7,1.5,2.1,0.0,1.8,4.7
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,35.0,82.0,78.0,66.0,94.0,54.0,53.0,57.0,80.0,39.0,65.0,30.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,35.0,82.0,78.0,66.0,94.0,54.0,53.0,57.0,80.0,39.0,65.0,30.0
+67671796,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,2.3,3.7,6.0,3.9,4.3,2.4,2.7,3.0,3.6,3.3,3.2,2.0
+67671796,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.1,1.1,0.7,1.4
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,,284.0,307.0,336.0,296.0,187.0,488.0,399.0,456.0,270.0,480.0,457.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,,13.5,17.1,14.6,14.8,12.4,25.7,18.1,16.9,16.9,17.8,24.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,7.5,7.3,5.0,4.8,3.3,9.0,5.5,4.2,4.6,5.7,7.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,,17.0,12.0,18.0,7.0,5.0,9.0,22.0,19.0,5.0,28.0,25.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,,1.0,0.0,0.0,0.0,0.0,0.0,3.0,1.0,0.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,,16.0,12.0,18.0,7.0,6.0,9.0,19.0,18.0,6.0,28.0,27.0
+67692900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,1.0,1.0
+67692900,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,,0.6,0.4,0.3,0.2,1.0,0.4,0.5,0.6,0.9,1.9,1.3
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,,51.0,70.0,100.0,75.0,53.0,130.0,97.0,25.0,9.0,14.0,4.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,,5.0,6.0,8.0,0.0,7.0,0.0,3.0,2.0,0.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,,56.0,76.0,108.0,75.0,60.0,128.0,100.0,27.0,9.0,13.0,4.0
+67692900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,,2.7,3.9,4.7,3.8,4.0,6.5,4.6,1.0,0.6,0.5,0.2
+67692900,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,,1.1,0.5,0.4,0.5,0.4,0.5,0.5,0.6,0.8,1.0,0.2
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,,42.0,29.0,41.0,72.0,28.0,34.0,44.0,66.0,40.0,79.0,68.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,,27.0,28.0,37.0,66.0,25.0,32.0,44.0,62.0,34.0,76.0,58.0
+67692900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,,1.3,1.4,1.6,3.3,1.7,1.6,2.0,2.3,2.1,2.7,3.1
+67692900,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,,9.8,1.2,1.6,1.9,2.0,0.9,1.3,1.5,1.7,1.9,3.2
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,,4.0,4.0,1.0,1.0,0.0,5.0,2.0,5.0,3.0,5.0,5.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,,4.0,4.0,1.0,1.0,0.0,5.0,2.0,5.0,3.0,5.0,5.0
+67692900,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,,0.2,0.2,0.0,0.1,0.0,0.3,0.1,0.2,0.2,0.2,0.3
+67692900,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7,1.1,1.6,0.8
+67725036,RESIDENT + FELLOW,Count Of In Basket Minutes,84.0,157.0,175.0,273.0,187.0,135.0,110.0,165.0,226.0,138.0,225.0,157.0
+67725036,RESIDENT + FELLOW,Minutes In In Basket Per Day,6.4,10.5,10.3,15.2,8.9,11.3,10.0,10.3,10.3,8.6,9.0,8.7
+67725036,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.8,6.5,6.7,5.1,3.6,3.1,4.0,3.6,4.3,5.2,4.0
+67725036,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,7.0,4.0,11.0,12.0,7.0,4.0,5.0,8.0,9.0,2.0,10.0,4.0
+67725036,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,1.0,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,2.0,0.0
+67725036,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,6.0,6.0,11.0,13.0,7.0,4.0,1.0,9.0,10.0,5.0,8.0,6.0
+67725036,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,1.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+67725036,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.3,1.4,1.5,1.0,0.4,1.0,0.2,1.7,0.8,2.9,1.6,4.1
+67725036,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,19.0,30.0,34.0,37.0,47.0,46.0,19.0,40.0,8.0,1.0,2.0,1.0
+67725036,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,0.0,5.0,0.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0
+67725036,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,21.0,24.0,32.0,42.0,46.0,46.0,21.0,39.0,9.0,1.0,2.0,2.0
+67725036,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.6,1.6,1.8,2.3,2.2,3.8,1.8,2.4,0.4,0.1,0.1,0.1
+67725036,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.4,1.3,0.7,0.7,0.8,0.7,0.5,0.7,0.2,0.6,0.6,0.9
+67725036,RESIDENT + FELLOW,Count Of Result Messages Completed,3.0,2.0,2.0,0.0,0.0,1.0,1.0,1.0,5.0,0.0,4.0,1.0
+67725036,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+67725036,RESIDENT + FELLOW,Count Of Result Messages Recieved,3.0,2.0,2.0,0.0,0.0,1.0,1.0,2.0,4.0,0.0,4.0,0.0
+67725036,RESIDENT + FELLOW,Messages Received per Day - Results,0.2,0.1,0.1,0.0,0.0,0.1,0.1,0.1,0.2,0.0,0.2,0.0
+67725036,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.4,2.4,0.0,0.0,0.8,1.2,6.0,1.2,0.0,1.8,5.1
+67725036,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67725036,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,7.0,9.0,8.0,5.0,2.0,5.0,3.0,6.0,3.0,1.0,7.0,2.0
+67725036,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,7.0,9.0,8.0,5.0,2.0,5.0,3.0,6.0,3.0,1.0,7.0,2.0
+67725036,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.5,0.6,0.4,0.3,0.1,0.4,0.3,0.4,0.1,0.1,0.3,0.1
+67725036,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.3,2.0,0.4,0.2
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,229.0,410.0,383.0,346.0,442.0,265.0,291.0,304.0,368.0,288.0,430.0,340.0
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,12.1,13.2,20.1,14.4,14.3,15.6,12.1,13.2,14.1,12.5,19.5,15.4
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.1,3.8,5.0,3.4,4.0,2.7,3.0,3.1,3.5,2.5,3.4,3.6
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,8.0,7.0,25.0,6.0,7.0,7.0,7.0,10.0,13.0,5.0,11.0,11.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,0.0,2.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,7.0,7.0,23.0,6.0,7.0,7.0,6.0,9.0,12.0,5.0,11.0,10.0
+67751308,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.8,0.3,0.8,0.1,1.0,0.7,0.1,0.1,0.4,1.4,0.4,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,35.0,90.0,101.0,83.0,111.0,63.0,68.0,57.0,12.0,1.0,0.0,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,11.0,10.0,0.0,5.0,4.0,2.0,2.0,0.0,0.0,0.0,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,34.0,101.0,111.0,82.0,116.0,67.0,70.0,59.0,11.0,1.0,0.0,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,1.7,3.3,5.4,3.4,3.7,3.9,2.8,2.6,0.4,0.0,0.0,0.1
+67751308,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.6,0.5,0.4,0.4,0.5,0.4,0.4,0.4,1.5,0.1,0.0,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,107.0,157.0,83.0,98.0,110.0,77.0,95.0,102.0,126.0,76.0,76.0,27.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,81.0,127.0,69.0,84.0,100.0,78.0,89.0,91.0,107.0,72.0,68.0,28.0
+67751308,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,4.1,4.1,3.4,3.5,3.2,4.6,3.6,4.0,4.1,3.1,2.9,1.3
+67751308,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,3.1,1.1,1.6,1.1,1.3,3.6,1.0,1.3,1.4,2.5,1.0,0.5
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,1.0,3.0,4.0,3.0,3.0,3.0,4.0,4.0,1.0,2.0,4.0,6.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,1.0,3.0,4.0,3.0,3.0,3.0,4.0,4.0,1.0,2.0,4.0,6.0
+67751308,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.1,0.1,0.2,0.1,0.1,0.2,0.2,0.2,0.0,0.1,0.2,0.3
+67751308,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,76.0,105.0,49.0,103.0,197.0,77.0,96.0,73.0,100.0,112.0,160.0,132.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,8.5,7.0,6.1,7.9,13.1,8.6,8.7,6.1,6.7,9.3,10.0,11.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.3,1.3,1.5,1.6,2.6,1.7,1.8,1.3,1.5,1.7,1.8,2.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,10.0,14.0,1.0,17.0,15.0,18.0,13.0,13.0,18.0,15.0,19.0,18.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,2.0,0.0,3.0,0.0,5.0,2.0,6.0,2.0,0.0,2.0,1.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,12.0,12.0,5.0,14.0,15.0,13.0,11.0,7.0,16.0,16.0,17.0,17.0
+67751676,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,0.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,2.0
+67751676,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,1.9,1.2,40.6,4.9,2.7,0.7,1.6,2.3,2.3,7.4,1.7,1.8
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,28.0,26.0,13.0,22.0,56.0,15.0,28.0,11.0,5.0,0.0,3.0,5.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,4.0,0.0,1.0,3.0,5.0,1.0,0.0,0.0,0.0,1.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,26.0,30.0,7.0,23.0,59.0,20.0,29.0,11.0,4.0,0.0,4.0,4.0
+67751676,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,2.8,2.0,0.8,1.8,3.9,2.2,2.5,0.9,0.3,0.0,0.2,0.3
+67751676,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,2.7,3.6,29.1,1.4,1.5,1.9,1.1,2.5,1.5,0.0,1.1,1.6
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,14.0,3.0,6.0,9.0,7.0,3.0,3.0,4.0,5.0,8.0,8.0,7.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,12.0,2.0,7.0,7.0,8.0,1.0,2.0,3.0,4.0,7.0,9.0,5.0
+67751676,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,1.3,0.1,0.8,0.5,0.5,0.1,0.2,0.3,0.3,0.6,0.5,0.4
+67751676,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,29.4,139.9,75.3,54.2,1.2,12.4,2.8,22.6,2.3,2.7,2.8,2.8
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,1.0,5.0,5.0,4.0,0.0,4.0,5.0,5.0,7.0,1.0,4.0,4.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,1.0,5.0,5.0,4.0,0.0,4.0,5.0,5.0,7.0,1.0,4.0,4.0
+67751676,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.1,0.3,0.6,0.3,0.0,0.4,0.4,0.4,0.5,0.1,0.2,0.3
+67751676,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6,2.9,1.5,0.8
+67752116,RESIDENT + FELLOW,Count Of In Basket Minutes,130.0,202.0,182.0,169.0,289.0,136.0,165.0,180.0,162.0,176.0,148.0,199.0
+67752116,RESIDENT + FELLOW,Minutes In In Basket Per Day,6.8,7.2,9.6,9.4,16.1,9.1,9.7,9.0,8.1,11.7,7.4,9.5
+67752116,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.5,7.0,4.1,7.8,4.2,4.9,3.8,4.8,4.5,3.5,4.3
+67752116,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,8.0,4.0,7.0,5.0,7.0,2.0,8.0,13.0,4.0,2.0,1.0,7.0
+67752116,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,0.0,1.0,1.0,3.0
+67752116,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,9.0,4.0,7.0,6.0,7.0,2.0,6.0,11.0,5.0,1.0,0.0,4.0
+67752116,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+67752116,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.9,0.5,0.7,3.1,1.3,1.8,0.2,1.6,1.5,0.0,0.0,1.3
+67752116,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,7.0,4.0,5.0,12.0,30.0,10.0,15.0,14.0,2.0,0.0,3.0,0.0
+67752116,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,6.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+67752116,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,9.0,4.0,11.0,10.0,31.0,11.0,15.0,13.0,2.0,0.0,2.0,1.0
+67752116,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.5,0.1,0.5,0.6,1.7,0.7,0.9,0.7,0.1,0.0,0.1,0.1
+67752116,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,4.3,2.5,1.6,1.1,0.9,0.5,1.3,1.9,14.2,0.0,3.4,0.0
+67752116,RESIDENT + FELLOW,Count Of Result Messages Completed,8.0,12.0,7.0,9.0,4.0,5.0,3.0,9.0,3.0,6.0,7.0,5.0
+67752116,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0
+67752116,RESIDENT + FELLOW,Count Of Result Messages Recieved,6.0,9.0,5.0,4.0,4.0,8.0,4.0,6.0,3.0,5.0,4.0,5.0
+67752116,RESIDENT + FELLOW,Messages Received per Day - Results,0.3,0.3,0.2,0.2,0.2,0.5,0.2,0.3,0.2,0.3,0.2,0.2
+67752116,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,34.1,4.6,6.4,6.9,1.1,0.2,0.9,7.8,3.0,3.5,3.1,2.0
+67752116,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67752116,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,3.0,2.0,2.0,3.0,7.0,2.0,9.0,0.0,2.0,1.0,2.0,5.0
+67752116,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,3.0,2.0,2.0,3.0,7.0,2.0,9.0,0.0,2.0,1.0,2.0,5.0
+67752116,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.1,0.1,0.2,0.4,0.1,0.5,0.0,0.1,0.1,0.1,0.2
+67752116,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,0.0,1.5,0.4
+67756268,RESIDENT + FELLOW,Count Of In Basket Minutes,252.0,295.0,148.0,224.0,360.0,259.0,288.0,123.0,334.0,298.0,254.0,272.0
+67756268,RESIDENT + FELLOW,Minutes In In Basket Per Day,13.3,10.5,7.8,15.0,14.4,16.2,14.4,11.2,11.1,13.6,12.7,12.9
+67756268,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,11.5,8.4,3.9,8.0,7.7,8.1,12.0,5.6,5.1,7.5,6.7,5.9
+67756268,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,5.0,6.0,4.0,5.0,12.0,10.0,4.0,2.0,7.0,12.0,26.0,14.0
+67756268,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,1.0,0.0,3.0,1.0
+67756268,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,5.0,6.0,4.0,5.0,12.0,9.0,3.0,4.0,6.0,12.0,23.0,13.0
+67756268,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+67756268,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.7,1.2,0.4,0.5,1.4,0.3,0.0,2.3,0.2,1.1,0.8,0.8
+67756268,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,6.0,5.0,2.0,9.0,24.0,9.0,16.0,3.0,2.0,0.0,0.0,2.0
+67756268,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,1.0,1.0,1.0,3.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,6.0,6.0,3.0,10.0,27.0,8.0,17.0,2.0,2.0,0.0,0.0,2.0
+67756268,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.3,0.2,0.2,0.7,1.1,0.5,0.8,0.2,0.1,0.0,0.0,0.1
+67756268,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,1.0,0.7,0.0,0.2,0.7,1.1,0.9,0.7,0.2,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of Result Messages Completed,5.0,32.0,11.0,18.0,31.0,8.0,20.0,22.0,36.0,33.0,24.0,21.0
+67756268,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of Result Messages Recieved,4.0,28.0,7.0,18.0,29.0,7.0,18.0,9.0,35.0,33.0,24.0,18.0
+67756268,RESIDENT + FELLOW,Messages Received per Day - Results,0.2,1.0,0.3,1.2,1.2,0.4,0.9,0.8,1.2,1.5,1.1,0.9
+67756268,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,2.0,1.0,1.0,1.0,1.2,0.5,1.2,17.4,0.8,1.2,0.5,0.7
+67756268,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,5.0,6.0,3.0,0.0,4.0,1.0,1.0,1.0,5.0,6.0,2.0,7.0
+67756268,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,5.0,6.0,3.0,0.0,4.0,1.0,1.0,1.0,5.0,6.0,2.0,7.0
+67756268,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.3,0.2,0.2,0.0,0.2,0.1,0.1,0.1,0.2,0.3,0.1,0.3
+67756268,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3,0.4,0.1,0.5
+67756352,RESIDENT + FELLOW,Count Of In Basket Minutes,105.0,125.0,79.0,82.0,87.0,85.0,163.0,117.0,94.0,43.0,155.0,72.0
+67756352,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.3,5.7,3.9,3.7,3.4,5.7,7.4,4.7,3.6,2.5,5.5,4.5
+67756352,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,3.9,5.0,0.0,2.9,3.2,0.0,7.7,4.9,2.9,2.1,6.2,0.0
+67756352,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,7.0,6.0,6.0,2.0,7.0,1.0,0.0,6.0,6.0,2.0,8.0,4.0
+67756352,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,5.0,0.0,4.0,1.0,2.0,0.0,0.0,4.0,2.0,1.0,7.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,2.0,8.0,2.0,1.0,5.0,8.0,0.0,2.0,4.0,1.0,1.0,10.0
+67756352,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756352,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,16.2,0.1,0.0,7.7,91.0,0.0,0.1,24.2,23.1,0.0,41.4
+67756352,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,13.0,21.0,10.0,17.0,9.0,11.0,26.0,15.0,3.0,3.0,9.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,4.0,4.0,7.0,5.0,4.0,7.0,0.0,8.0,1.0,0.0,0.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,17.0,25.0,17.0,22.0,13.0,18.0,26.0,23.0,4.0,3.0,7.0,0.0
+67756352,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.8,1.1,0.8,1.0,0.5,1.2,1.1,0.9,0.2,0.2,0.2,0.0
+67756352,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,5.9,5.0,0.8,8.1,0.3,0.5,20.3,2.4,0.1,124.8,31.3,0.0
+67756352,RESIDENT + FELLOW,Count Of Result Messages Completed,18.0,20.0,31.0,10.0,26.0,8.0,10.0,3.0,20.0,13.0,9.0,11.0
+67756352,RESIDENT + FELLOW,Count Of Result Messages Incomplete,1.0,0.0,0.0,2.0,0.0,5.0,0.0,7.0,0.0,0.0,1.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Result Messages Recieved,19.0,10.0,17.0,12.0,21.0,13.0,10.0,10.0,9.0,7.0,10.0,11.0
+67756352,RESIDENT + FELLOW,Messages Received per Day - Results,0.9,0.5,0.8,0.6,0.8,0.9,0.4,0.4,0.4,0.4,0.3,0.7
+67756352,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.6,13.8,8.7,5.5,7.1,1.9,7.2,0.0,40.3,21.6,21.0,7.1
+67756352,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756352,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,6.0,3.0,4.0,4.0,1.0,0.0,8.0,1.0,3.0,0.0,2.0,0.0
+67756352,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,6.0,3.0,4.0,4.0,1.0,0.0,8.0,1.0,3.0,0.0,2.0,0.0
+67756352,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.3,0.1,0.2,0.2,0.0,0.0,0.4,0.0,0.1,0.0,0.1,0.0
+67756352,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.4,0.0,0.1,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,41.0,28.0,25.0,40.0,25.0,33.0,18.0,38.0,30.0,26.0,40.0,33.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,3.1,1.9,2.1,4.0,1.8,2.5,1.4,3.5,2.7,2.2,2.4,2.5
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,1.0,0.0,1.0,1.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,1.0,1.0,2.0,2.0,2.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.1,0.1,0.2,0.2,0.1,0.1,0.0,0.2,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.8,0.0,3.3,1.0,0.7,0.0,0.0,0.1,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,5.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,5.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,,,101.0,309.0,409.0,295.0,394.0,434.0,685.0,437.0,694.0,380.0
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,,,25.1,15.4,16.3,17.3,23.2,20.7,25.4,21.9,31.5,31.6
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,,0.0,6.1,6.6,6.3,7.7,6.7,7.3,6.2,6.9,8.3
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,,,3.0,19.0,27.0,12.0,9.0,13.0,22.0,7.0,20.0,12.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,,,0.0,10.0,0.0,0.0,4.0,4.0,12.0,6.0,0.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,,,4.0,9.0,27.0,22.0,5.0,9.0,10.0,1.0,31.0,11.0
+67778836,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,,,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,,,9.6,1.3,18.5,47.5,3.6,6.8,19.1,0.3,29.7,3.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,,,30.0,119.0,122.0,105.0,121.0,119.0,35.0,3.0,3.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,,,3.0,8.0,13.0,13.0,16.0,35.0,0.0,0.0,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,,,33.0,127.0,135.0,118.0,137.0,154.0,31.0,3.0,3.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,,,7.7,6.4,5.4,6.9,7.8,7.3,1.2,0.2,0.1,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,,,0.8,2.0,1.3,1.3,1.1,1.4,1.7,1.3,0.5,2.9
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,,,0.0,5.0,5.0,0.0,9.0,11.0,13.0,9.0,19.0,8.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,,,0.0,0.0,2.0,2.0,0.0,0.0,0.0,2.0,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,,,0.0,1.0,7.0,2.0,6.0,11.0,12.0,11.0,13.0,7.0
+67778836,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,,,0.0,0.1,0.3,0.1,0.3,0.5,0.4,0.6,0.6,0.6
+67778836,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,,,0.0,130.0,7.0,0.0,20.4,6.5,7.2,4.3,9.7,9.4
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,,,4.0,3.0,3.0,6.0,4.0,7.0,9.0,3.0,3.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,,,4.0,3.0,3.0,6.0,4.0,7.0,9.0,3.0,3.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,,,0.9,0.2,0.1,0.4,0.2,0.3,0.3,0.2,0.1,0.1
+67778836,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,,,0.0,0.0,0.0,0.0,0.0,0.0,8.1,0.5,1.8,0.7
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,448.0,653.0,450.0,556.0,430.0,425.0,480.0,421.0,604.0,609.0,413.0,490.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,24.9,23.3,32.2,32.7,18.7,21.2,26.7,26.3,23.2,27.7,18.0,25.8
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,13.9,0.0,0.0,0.0,23.2,27.7,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,24.0,35.0,29.0,25.0,19.0,26.0,34.0,16.0,22.0,27.0,23.0,28.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,0.0,0.0,0.0,5.0,1.0,0.0,0.0,0.0,2.0,5.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,23.0,35.0,32.0,31.0,14.0,25.0,34.0,16.0,23.0,25.0,18.0,29.0
+67803336,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,1.0,1.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,4.7,4.5,3.5,1.8,0.8,3.2,5.3,1.7,1.6,3.0,0.2,4.8
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,47.0,61.0,89.0,85.0,53.0,54.0,56.0,63.0,55.0,50.0,35.0,41.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,11.0,12.0,0.0,0.0,6.0,14.0,8.0,0.0,16.0,0.0,3.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,58.0,73.0,76.0,71.0,59.0,68.0,64.0,56.0,71.0,49.0,38.0,42.0
+67803336,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,3.1,2.6,5.0,4.2,2.6,3.4,3.4,3.5,2.7,2.2,1.6,2.2
+67803336,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,9.1,9.5,9.0,4.1,0.7,1.7,5.8,4.7,1.9,6.7,2.5,5.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,2.0,0.0,1.0,1.0,0.0,4.0,2.0,0.0,1.0,0.0,0.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,2.0,1.0,1.0,0.0,0.0,4.0,2.0,0.0,1.0,0.0,0.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.1,0.0,0.1,0.0,0.0,0.2,0.1,0.0,0.0,0.0,0.0,0.1
+67803336,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.1,0.0,26.1,6.3,0.0,0.6,4.3,0.0,0.7,0.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,29.0,64.0,39.0,24.0,46.0,35.0,29.0,31.0,41.0,33.0,34.0,45.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,29.0,64.0,39.0,24.0,46.0,35.0,29.0,31.0,41.0,33.0,34.0,45.0
+67803336,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.6,2.3,2.6,1.4,2.0,1.8,1.6,1.9,1.6,1.5,1.4,2.4
+67803336,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.8,0.6,0.8
+67818448,RESIDENT + FELLOW,Count Of In Basket Minutes,54.0,200.0,104.0,234.0,181.0,167.0,129.0,135.0,131.0,88.0,64.0,74.0
+67818448,RESIDENT + FELLOW,Minutes In In Basket Per Day,2.8,6.7,8.6,10.6,6.7,9.8,7.2,5.9,5.3,4.9,4.0,3.7
+67818448,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.6,4.2,0.0,6.7,4.8,7.9,5.6,3.9,3.2,3.4,2.0,2.4
+67818448,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,8.0,7.0,3.0,13.0,6.0,16.0,16.0,7.0,8.0,9.0,10.0,13.0
+67818448,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,1.0,3.0,1.0,5.0,5.0,0.0,2.0,3.0,3.0,1.0
+67818448,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,8.0,7.0,2.0,10.0,5.0,11.0,11.0,8.0,6.0,6.0,7.0,12.0
+67818448,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0
+67818448,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,12.9,0.2,0.0,1.6,1.7,1.2,2.9,1.5,4.2,2.9,2.0,7.3
+67818448,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,2.0,21.0,17.0,33.0,24.0,15.0,18.0,20.0,18.0,5.0,3.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,1.0,1.0,1.0,0.0,1.0,5.0,3.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,2.0,22.0,18.0,34.0,23.0,16.0,23.0,23.0,17.0,5.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.1,0.7,1.4,1.6,0.9,0.9,1.2,1.0,0.7,0.3,0.0,0.0
+67818448,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.1,0.3,0.3,0.5,0.7,1.1,1.4,1.3,2.6,0.3,6.1,0.0
+67818448,RESIDENT + FELLOW,Count Of Result Messages Completed,3.0,2.0,1.0,2.0,4.0,1.0,0.0,3.0,5.0,2.0,6.0,5.0
+67818448,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Result Messages Recieved,2.0,2.0,1.0,2.0,5.0,0.0,1.0,3.0,5.0,1.0,5.0,2.0
+67818448,RESIDENT + FELLOW,Messages Received per Day - Results,0.1,0.1,0.1,0.1,0.2,0.0,0.1,0.1,0.2,0.1,0.3,0.1
+67818448,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,2.6,0.4,0.0,1.5,0.9,2.8,0.0,2.1,3.4,22.6,8.7,15.8
+67818448,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,4.0,9.0,0.0,3.0,3.0,2.0,3.0,1.0,4.0,7.0,3.0,3.0
+67818448,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,4.0,9.0,0.0,3.0,3.0,2.0,3.0,1.0,4.0,7.0,3.0,3.0
+67818448,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.3,0.0,0.1,0.1,0.1,0.2,0.0,0.2,0.4,0.2,0.2
+67818448,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.2,3.6,3.6,0.0
+67837876,RESIDENT + FELLOW,Count Of In Basket Minutes,10.0,16.0,11.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In In Basket Per Day,2.0,1.0,2.3,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,3.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,2.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.4,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,11.1,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,2.0,1.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,2.0,1.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.2,,,,,,,,,
+67837876,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,2.5,0.8,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,,,,,,,,,
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,249.0,252.0,56.0,237.0,260.0,154.0,183.0,177.0,290.0,234.0,271.0,223.0
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,12.5,10.1,5.6,11.9,11.3,10.3,10.8,8.5,12.6,10.6,12.3,11.2
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.0,4.5,2.7,3.8,5.9,3.3,3.7,2.9,4.6,4.4,4.2,3.7
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,60.0,74.0,30.0,25.0,62.0,38.0,53.0,48.0,41.0,50.0,69.0,69.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,13.0,59.0,22.0,14.0,46.0,35.0,44.0,43.0,0.0,38.0,57.0,55.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,47.0,15.0,8.0,11.0,16.0,3.0,9.0,5.0,72.0,12.0,12.0,14.0
+67839304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,3.0,3.0,3.0,1.0,3.0,3.0,3.0,2.0,2.0,2.0,3.0,3.0
+67839304,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,7.5,1.1,7.2,1.3,1.8,0.3,0.9,1.6,27.4,1.9,1.1,15.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,88.0,95.0,21.0,71.0,103.0,39.0,46.0,41.0,24.0,11.0,17.0,7.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,18.0,0.0,10.0,0.0,3.0,8.0,1.0,5.0,0.0,0.0,3.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,106.0,94.0,31.0,67.0,106.0,47.0,47.0,46.0,21.0,9.0,20.0,7.0
+67839304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,5.1,3.8,2.9,3.4,4.6,3.1,2.7,2.2,0.9,0.4,0.9,0.4
+67839304,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,1.7,2.6,3.1,1.8,1.0,2.9,2.8,3.4,2.6,3.3,2.8,3.1
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,16.0,0.0,0.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,1.0,1.0,2.0,3.0,4.0,2.0,2.0,2.0,0.0,1.0,2.0,2.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,1.0,1.0,2.0,4.0,4.0,2.0,2.0,2.0,3.0,1.0,2.0,2.0
+67839304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.1,0.0,0.2,0.2,0.2,0.1,0.1,0.1,0.1,0.1,0.1,0.1
+67839304,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.8,0.0,0.0,0.0,0.0,98.0,0.0,0.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,24.0,29.0,16.0,15.0,39.0,19.0,22.0,19.0,20.0,17.0,18.0,21.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,24.0,29.0,16.0,15.0,39.0,19.0,22.0,19.0,20.0,17.0,18.0,21.0
+67839304,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.2,1.2,1.5,0.8,1.7,1.3,1.3,0.9,0.9,0.8,0.8,1.1
+67839304,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.5,1.0,1.0,0.8
+622264432,NURSE PRACTITIONER,Count Of In Basket Minutes,233.0,232.0,161.0,216.0,259.0,138.0,290.0,261.0,280.0,,,
+622264432,NURSE PRACTITIONER,Minutes In In Basket Per Day,10.6,11.1,9.0,10.3,8.9,12.5,14.5,13.1,14.0,,,
+622264432,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,4.2,3.9,4.4,4.0,2.9,4.4,4.5,4.3,3.5,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Call Messages Recieved,19.0,9.0,18.0,3.0,5.0,3.0,13.0,16.0,13.0,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Call Messages Incomplete,0.0,1.0,7.0,0.0,2.0,0.0,3.0,3.0,2.0,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Call Messages Completed,29.0,8.0,11.0,6.0,3.0,6.0,10.0,13.0,11.0,,,
+622264432,NURSE PRACTITIONER,Messages Received per Day - Patient Calls,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,,,
+622264432,NURSE PRACTITIONER,Average Days Until Patient Call Messages Marked Done,25.8,3.7,1.4,13.2,1.1,3.0,3.1,2.7,3.1,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Completed,32.0,46.0,28.0,35.0,29.0,18.0,35.0,34.0,3.0,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,4.0,1.0,0.0,6.0,1.0,3.0,6.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Recieved,25.0,50.0,29.0,33.0,35.0,19.0,38.0,40.0,1.0,,,
+622264432,NURSE PRACTITIONER,Messages Received per Day - Patient Medical Advice Request,1.1,2.4,1.5,1.6,1.2,1.7,1.8,2.0,0.1,,,
+622264432,NURSE PRACTITIONER,Average Days Until Patient Medical Advice Request Message Marked Done,38.9,1.9,1.7,2.1,1.3,2.2,1.3,2.0,5.4,,,
+622264432,NURSE PRACTITIONER,Count Of Result Messages Completed,20.0,10.0,7.0,11.0,3.0,5.0,3.0,9.0,9.0,,,
+622264432,NURSE PRACTITIONER,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,4.0,0.0,7.0,0.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of Result Messages Recieved,5.0,8.0,7.0,10.0,7.0,2.0,10.0,5.0,7.0,,,
+622264432,NURSE PRACTITIONER,Messages Received per Day - Results,0.2,0.4,0.4,0.5,0.2,0.2,0.5,0.3,0.4,,,
+622264432,NURSE PRACTITIONER,Average Days Until Result Message Marked Done,71.3,2.6,2.6,5.1,0.0,14.2,6.7,17.4,19.9,,,
+622264432,NURSE PRACTITIONER,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of RX Auth Messages Incomplete,15.0,14.0,8.0,16.0,9.0,5.0,9.0,12.0,13.0,,,
+622264432,NURSE PRACTITIONER,Count Of RX Auth Messages Recieved,15.0,14.0,8.0,16.0,9.0,5.0,9.0,12.0,13.0,,,
+622264432,NURSE PRACTITIONER,Messages Received per Day - Rx Auth,0.7,0.7,0.4,0.8,0.3,0.5,0.4,0.6,0.7,,,
+622264432,NURSE PRACTITIONER,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,,,
+622288744,RESIDENT + FELLOW,Count Of In Basket Minutes,80.0,98.0,42.0,115.0,83.0,97.0,37.0,71.0,112.0,81.0,97.0,11.0
+622288744,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.0,3.8,3.5,6.8,4.4,5.7,2.9,3.7,4.2,5.8,5.7,2.3
+622288744,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.4,0.0,5.2,2.4,2.9,1.8,3.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,0.0,0.0,0.0,10.0,0.0,1.0,0.0,1.0,2.0,2.0,1.0,1.0
+622288744,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,1.0
+622288744,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,0.0,0.0,0.0,5.0,0.0,1.0,0.0,1.0,1.0,1.0,2.0,0.0
+622288744,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,0.0,0.0,0.7,0.0,0.9,0.0,0.1,0.9,0.9,17.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,8.0,7.0,7.0,17.0,13.0,5.0,6.0,6.0,3.0,3.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,5.0,2.0,2.0,5.0,7.0,5.0,1.0,3.0,0.0,0.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,13.0,9.0,9.0,22.0,20.0,10.0,7.0,9.0,3.0,2.0,2.0,0.0
+622288744,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.8,0.4,0.7,1.3,1.1,0.6,0.5,0.5,0.1,0.1,0.1,0.0
+622288744,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.7,0.8,1.5,3.1,1.1,0.8,0.8,0.0,2.5,22.9,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,1.0,0.0,3.0,0.0,0.0,0.0,3.0,0.0,0.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,1.0,1.0,3.0,0.0,0.0,0.0,3.0,0.0,0.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.0,0.1,0.2,0.0,0.0,0.0,0.2,0.0,0.0,0.1,0.0
+622288744,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.7,0.0,1.2,0.0,0.0,0.0,0.5,0.0,0.0,2.2,0.0
+622288744,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,2.0,0.0,1.0,3.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,2.0,0.0,1.0,3.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.1,0.0,0.1,0.2,0.1,0.0,0.0,0.0,0.0,0.1,0.0,0.0
+622288744,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of In Basket Minutes,132.0,183.0,104.0,156.0,166.0,145.0,118.0,132.0,143.0,106.0,114.0,112.0
+622288752,RESIDENT + FELLOW,Minutes In In Basket Per Day,8.8,6.6,8.0,6.5,6.4,9.1,6.5,8.8,5.9,7.1,5.2,6.6
+622288752,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,4.7,0.0,4.5,3.7,4.3,3.3,5.5,4.1,4.4,3.6,0.0
+622288752,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,3.0,4.0,7.0,0.0,2.0,2.0,8.0,3.0,8.0,3.0,7.0,3.0
+622288752,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,2.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,3.0,4.0,5.0,0.0,2.0,2.0,7.0,3.0,8.0,2.0,7.0,3.0
+622288752,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.4,0.1,0.7,0.0,0.4,0.1,0.1,0.0,0.5,0.4,0.9,0.3
+622288752,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,21.0,39.0,18.0,25.0,34.0,19.0,20.0,19.0,4.0,0.0,7.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,7.0,1.0,1.0,0.0,6.0,0.0,1.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,23.0,39.0,25.0,26.0,35.0,18.0,26.0,18.0,5.0,0.0,7.0,0.0
+622288752,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.5,1.4,1.8,1.1,1.4,1.1,1.4,1.2,0.2,0.0,0.3,0.0
+622288752,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.3,0.6,0.2,0.2,0.6,0.3,0.3,0.3,0.2,0.0,1.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,0.0,0.0,2.0,5.0,5.0,3.0,0.0,2.0,1.0,1.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,0.0,0.0,2.0,6.0,4.0,3.0,0.0,2.0,1.0,1.0,0.0
+622288752,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.0,0.0,0.1,0.2,0.3,0.2,0.0,0.1,0.1,0.0,0.0
+622288752,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.4,0.7,1.7,2.0,0.0,1.5,0.4,0.1,0.0
+622288752,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,3.0,6.0,0.0,0.0,4.0,3.0,1.0,0.0,2.0,1.0,1.0,3.0
+622288752,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,3.0,6.0,0.0,0.0,4.0,3.0,1.0,0.0,2.0,1.0,1.0,3.0
+622288752,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.2,0.0,0.0,0.2,0.2,0.1,0.0,0.1,0.1,0.0,0.2
+622288752,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.8,1.9,1.3
+622288756,RESIDENT + FELLOW,Count Of In Basket Minutes,24.0,81.0,41.0,89.0,70.0,55.0,25.0,33.0,66.0,79.0,30.0,21.0
+622288756,RESIDENT + FELLOW,Minutes In In Basket Per Day,2.0,4.0,4.6,6.8,4.4,6.8,3.1,3.0,5.1,4.4,5.0,4.3
+622288756,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,1.0,10.0,6.0,2.0,7.0,1.0,5.0,0.0,2.0,10.0,1.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,2.0,3.0,0.0,0.0,0.0,1.0,0.0,0.0,4.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,1.0,8.0,3.0,3.0,7.0,4.0,4.0,0.0,2.0,6.0,4.0,0.0
+622288756,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.9,0.8,2.1,1.6,2.4,20.4,1.5,0.0,0.0,0.9,12.3,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,2.0,17.0,5.0,28.0,16.0,24.0,10.0,7.0,3.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,4.0,0.0,1.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,6.0,15.0,6.0,31.0,14.0,24.0,9.0,7.0,3.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.5,0.8,0.6,2.4,0.9,3.0,1.1,0.6,0.2,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,2.0,2.3,0.8,1.2,2.5,1.4,2.2,1.1,0.7,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Result Messages Completed,8.0,6.0,2.0,2.0,6.0,6.0,8.0,3.0,7.0,9.0,7.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0
+622288756,RESIDENT + FELLOW,Count Of Result Messages Recieved,8.0,4.0,2.0,2.0,7.0,2.0,5.0,3.0,5.0,10.0,4.0,1.0
+622288756,RESIDENT + FELLOW,Messages Received per Day - Results,0.6,0.2,0.2,0.2,0.4,0.3,0.6,0.3,0.4,0.6,0.6,0.2
+622288756,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,1.4,5.9,3.6,1.6,2.6,5.6,4.1,0.7,17.8,10.2,2.3,0.0
+622288756,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,3.0,7.0,2.0,4.0,1.0,0.0,2.0,3.0,1.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,3.0,7.0,2.0,4.0,1.0,0.0,2.0,3.0,1.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.4,0.2,0.3,0.1,0.0,0.2,0.3,0.1,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.1,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of In Basket Minutes,102.0,122.0,121.0,48.0,161.0,35.0,69.0,63.0,91.0,118.0,133.0,155.0
+622288760,RESIDENT + FELLOW,Minutes In In Basket Per Day,6.0,5.1,7.6,3.4,6.2,1.9,3.6,2.7,3.5,7.9,5.1,10.3
+622288760,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,5.8,0.0,6.4,0.0,0.0,0.0,3.2,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,4.0,7.0,9.0,5.0,0.0,3.0,5.0,2.0,4.0,8.0,4.0
+622288760,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,1.0,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,2.0,4.0,6.0,7.0,5.0,0.0,3.0,4.0,2.0,4.0,8.0,4.0
+622288760,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.2,0.8,0.5,1.2,0.8,0.0,0.3,1.0,3.3,0.8,0.5,0.1
+622288760,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,19.0,7.0,14.0,4.0,18.0,8.0,14.0,11.0,1.0,0.0,1.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,3.0,0.0,0.0,0.0,0.0,2.0,1.0,0.0,1.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,12.0,10.0,14.0,4.0,18.0,8.0,16.0,12.0,0.0,1.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.7,0.4,0.8,0.3,0.7,0.4,0.8,0.5,0.0,0.1,0.0,0.0
+622288760,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,2.0,1.1,1.0,0.2,0.4,0.8,0.8,7.1,3.5,0.0,5.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,10.0,7.0,6.0,17.0,8.0,7.0,7.0,7.0,4.0,11.0,4.0
+622288760,RESIDENT + FELLOW,Count Of Result Messages Incomplete,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Result Messages Recieved,1.0,5.0,6.0,4.0,16.0,5.0,7.0,7.0,7.0,4.0,8.0,4.0
+622288760,RESIDENT + FELLOW,Messages Received per Day - Results,0.1,0.2,0.4,0.3,0.6,0.3,0.4,0.3,0.3,0.3,0.3,0.3
+622288760,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,4.2,0.5,5.6,1.9,9.4,1.6,2.3,12.9,43.3,7.4,4.7
+622288760,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,2.0,5.0,1.0,1.0,3.0,1.0,0.0,3.0,0.0,0.0,0.0,3.0
+622288760,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,2.0,5.0,1.0,1.0,3.0,1.0,0.0,3.0,0.0,0.0,0.0,3.0
+622288760,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.1,0.2,0.1,0.1,0.1,0.1,0.0,0.1,0.0,0.0,0.0,0.2
+622288760,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2
+622288764,RESIDENT + FELLOW,Count Of In Basket Minutes,274.0,309.0,348.0,438.0,535.0,351.0,417.0,500.0,417.0,599.0,435.0,392.0
+622288764,RESIDENT + FELLOW,Minutes In In Basket Per Day,14.4,18.2,15.8,18.3,21.4,17.5,16.7,21.7,17.4,23.0,15.5,17.8
+622288764,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,8.1,10.7,8.1,9.3,9.2,9.0,9.5,10.6,9.9,13.3,7.6,9.3
+622288764,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,8.0,5.0,10.0,9.0,11.0,4.0,5.0,19.0,6.0,2.0,8.0,7.0
+622288764,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,8.0,4.0,10.0,8.0,11.0,3.0,5.0,18.0,5.0,2.0,8.0,7.0
+622288764,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,8.1,0.0,0.8,0.0,0.0,0.0,0.8,0.3,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,24.0,24.0,37.0,27.0,37.0,27.0,30.0,32.0,2.0,1.0,3.0,2.0
+622288764,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,12.0,12.0,20.0,14.0,21.0,11.0,12.0,15.0,0.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,36.0,36.0,57.0,41.0,58.0,38.0,42.0,47.0,2.0,1.0,3.0,2.0
+622288764,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.8,2.1,2.4,1.7,2.3,1.9,1.6,2.0,0.1,0.0,0.1,0.1
+622288764,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.5,1.7,0.5,0.9,0.5,0.4,0.5,0.6,0.1,0.8,0.1,0.5
+622288764,RESIDENT + FELLOW,Count Of Result Messages Completed,1.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,2.0,0.0
+622288764,RESIDENT + FELLOW,Count Of Result Messages Incomplete,10.0,14.0,15.0,13.0,19.0,11.0,9.0,7.0,14.0,15.0,13.0,13.0
+622288764,RESIDENT + FELLOW,Count Of Result Messages Recieved,11.0,15.0,16.0,13.0,20.0,12.0,9.0,7.0,14.0,15.0,15.0,13.0
+622288764,RESIDENT + FELLOW,Messages Received per Day - Results,0.6,0.9,0.7,0.5,0.8,0.6,0.4,0.3,0.6,0.6,0.5,0.6
+622288764,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.6,0.3,2.1,0.0,0.5,0.6,0.0,0.0,0.0,0.0,0.3,0.0
+622288764,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,4.0,3.0,8.0,5.0,9.0,6.0,4.0,3.0,0.0,3.0,1.0,2.0
+622288764,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,4.0,3.0,8.0,5.0,9.0,6.0,4.0,3.0,0.0,3.0,1.0,2.0
+622288764,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.2,0.3,0.2,0.4,0.3,0.2,0.1,0.0,0.1,0.0,0.1
+622288764,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.3,1.1
+622288768,RESIDENT + FELLOW,Count Of In Basket Minutes,96.0,292.0,132.0,163.0,122.0,68.0,92.0,53.0,123.0,128.0,100.0,102.0
+622288768,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.3,11.2,8.3,7.1,7.6,4.5,4.4,3.1,4.5,5.3,7.2,4.8
+622288768,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.9,5.1,3.8,3.7,3.8,1.7,2.3,1.6,2.0,3.1,3.0,4.4
+622288768,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,10.0,11.0,8.0,9.0,11.0,6.0,1.0,5.0,7.0,2.0,3.0,8.0
+622288768,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,1.0,0.0,1.0,3.0,2.0,0.0,4.0,1.0,1.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,10.0,10.0,8.0,8.0,8.0,4.0,1.0,1.0,6.0,1.0,3.0,8.0
+622288768,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.2,1.2,1.0,0.5,0.0,0.0,0.2,0.0,0.2,0.6,0.0,0.6
+622288768,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,12.0,50.0,23.0,39.0,29.0,18.0,27.0,20.0,2.0,7.0,1.0,1.0
+622288768,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,3.0,2.0,2.0,1.0,0.0,3.0,1.0,0.0,1.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,10.0,53.0,25.0,41.0,30.0,18.0,30.0,21.0,2.0,8.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.5,2.0,1.5,1.8,1.9,1.2,1.4,1.2,0.1,0.3,0.0,0.0
+622288768,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,1.5,0.4,0.8,0.5,0.4,0.4,0.5,0.7,0.1,0.2,2.0,2.8
+622288768,RESIDENT + FELLOW,Count Of Result Messages Completed,4.0,10.0,8.0,4.0,6.0,2.0,2.0,2.0,3.0,3.0,1.0,4.0
+622288768,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Count Of Result Messages Recieved,3.0,8.0,7.0,6.0,3.0,1.0,3.0,1.0,3.0,3.0,1.0,3.0
+622288768,RESIDENT + FELLOW,Messages Received per Day - Results,0.2,0.3,0.4,0.3,0.2,0.1,0.1,0.1,0.1,0.1,0.1,0.1
+622288768,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.9,0.8,1.2,1.1,18.6,3.0,0.5,3.7,1.5,1.5,0.3,1.6
+622288768,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,7.0,11.0,5.0,3.0,0.0,3.0,4.0,0.0,6.0,5.0,0.0,6.0
+622288768,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,7.0,11.0,5.0,3.0,0.0,3.0,4.0,0.0,6.0,5.0,0.0,6.0
+622288768,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,0.4,0.3,0.1,0.0,0.2,0.2,0.0,0.2,0.2,0.0,0.3
+622288768,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,1.0,15.8,0.8
+622288772,RESIDENT + FELLOW,Count Of In Basket Minutes,64.0,82.0,69.0,82.0,169.0,118.0,100.0,225.0,205.0,,,
+622288772,RESIDENT + FELLOW,Minutes In In Basket Per Day,4.9,4.1,4.6,3.9,8.9,8.4,6.2,11.9,8.5,,,
+622288772,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.0,3.3,2.2,4.1,3.9,3.2,6.1,3.7,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,1.0,0.0,0.0,1.0,3.0,2.0,1.0,4.0,8.0,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,1.0,0.0,0.0,1.0,3.0,2.0,0.0,0.0,3.0,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,4.0,4.0,5.0,,,
+622288772,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+622288772,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,35.1,23.3,2.5,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,16.0,22.0,5.0,13.0,51.0,9.0,34.0,56.0,10.0,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,5.0,1.0,6.0,15.0,0.0,13.0,8.0,6.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,21.0,23.0,11.0,28.0,45.0,22.0,42.0,62.0,8.0,,,
+622288772,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.6,1.2,0.7,1.3,2.4,1.6,2.5,3.3,0.3,,,
+622288772,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,6.5,7.4,0.4,25.7,26.1,2.7,2.1,2.8,1.3,,,
+622288772,RESIDENT + FELLOW,Count Of Result Messages Completed,4.0,0.0,42.0,0.0,1.0,0.0,5.0,37.0,16.0,,,
+622288772,RESIDENT + FELLOW,Count Of Result Messages Incomplete,12.0,17.0,0.0,5.0,8.0,6.0,0.0,0.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of Result Messages Recieved,16.0,17.0,16.0,5.0,9.0,6.0,5.0,8.0,13.0,,,
+622288772,RESIDENT + FELLOW,Messages Received per Day - Results,1.2,0.9,1.0,0.2,0.5,0.4,0.3,0.4,0.5,,,
+622288772,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,42.0,0.0,52.8,0.0,3.3,0.0,9.1,85.5,5.5,,,
+622288772,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,2.0,5.0,1.0,4.0,0.0,1.0,1.0,4.0,1.0,,,
+622288772,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,2.0,5.0,1.0,4.0,0.0,1.0,1.0,4.0,1.0,,,
+622288772,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.3,0.1,0.2,0.0,0.1,0.1,0.2,0.0,,,
+622288772,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,48.5,,,
+622288780,RESIDENT + FELLOW,Count Of In Basket Minutes,114.0,171.0,139.0,157.0,223.0,126.0,156.0,201.0,286.0,302.0,284.0,242.0
+622288780,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.2,6.9,8.7,7.5,10.2,8.4,7.4,9.6,9.9,13.1,13.5,11.5
+622288780,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,5.7,5.0,5.6,7.5,8.6,5.3,6.8,6.1,6.5,8.9,9.8,12.1
+622288780,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,10.0,5.0,1.0,2.0,2.0,4.0,9.0,0.0,0.0,1.0,6.0,8.0
+622288780,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,9.0,4.0,1.0,2.0,2.0,3.0,7.0,0.0,0.0,1.0,6.0,7.0
+622288780,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,1.0,1.0,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0
+622288780,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.0,16.9,0.0,0.0,0.0,0.0,9.0,0.0,0.0,0.0,0.0,1.8
+622288780,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,3.0,3.0,6.0,6.0,4.0,2.0,7.0,8.0,1.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,1.0,4.0,8.0,7.0,7.0,3.0,2.0,6.0,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,4.0,7.0,14.0,13.0,11.0,5.0,9.0,14.0,1.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.2,0.3,0.8,0.6,0.5,0.3,0.4,0.7,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,1.9,1.0,0.5,0.9,0.7,0.5,1.7,1.2,21.8,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Result Messages Incomplete,3.0,2.0,12.0,13.0,28.0,38.0,17.0,20.0,42.0,19.0,17.0,5.0
+622288780,RESIDENT + FELLOW,Count Of Result Messages Recieved,3.0,2.0,12.0,13.0,28.0,38.0,17.0,20.0,42.0,20.0,17.0,5.0
+622288780,RESIDENT + FELLOW,Messages Received per Day - Results,0.1,0.1,0.7,0.6,1.3,2.5,0.8,1.0,1.5,0.9,0.8,0.2
+622288780,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,4.0,11.0,0.0,4.0,3.0,0.0,3.0,3.0,3.0,2.0,1.0,0.0
+622288780,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,4.0,11.0,0.0,4.0,3.0,0.0,3.0,3.0,3.0,2.0,1.0,0.0
+622288780,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.4,0.0,0.2,0.1,0.0,0.1,0.1,0.1,0.1,0.0,0.0
+622288780,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8,1.5,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,277.0,457.0,270.0,348.0,267.0,210.0,288.0,247.0,218.0,278.0,389.0,282.0
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,17.3,17.6,15.9,15.8,14.0,14.0,18.0,13.7,10.9,13.9,16.9,17.6
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.8,3.7,3.1,3.5,2.6,2.0,2.6,2.4,2.2,2.4,2.8,2.6
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,8.0,11.0,13.0,11.0,11.0,17.0,15.0,9.0,15.0,11.0,38.0,34.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,4.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,11.0,7.0,12.0,11.0,11.0,16.0,15.0,8.0,15.0,12.0,41.0,34.0
+622293284,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0
+622293284,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,1.9,0.2,0.2,0.0,0.1,0.2,0.1,0.0,0.1,1.0,0.5,1.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,18.0,35.0,14.0,30.0,27.0,11.0,37.0,18.0,4.0,11.0,6.0,4.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,1.0,2.0,0.0,2.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,19.0,37.0,14.0,32.0,28.0,10.0,38.0,18.0,4.0,12.0,5.0,4.0
+622293284,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,1.2,1.4,0.8,1.5,1.5,0.7,2.3,1.0,0.2,0.6,0.2,0.3
+622293284,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.3,0.4,0.4,0.4,0.3,1.5,0.3,0.7,0.0,0.3,1.3,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,6.0,16.0,12.0,13.0,9.0,0.0,4.0,4.0,7.0,9.0,10.0,5.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,5.0,13.0,11.0,9.0,8.0,0.0,4.0,5.0,6.0,6.0,10.0,5.0
+622293284,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.3,0.5,0.6,0.4,0.4,0.0,0.2,0.3,0.3,0.3,0.4,0.3
+622293284,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,2.1,0.8,1.6,2.2,0.7,0.0,0.9,0.1,2.1,2.4,0.9,1.7
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,31.0,43.0,29.0,31.0,39.0,30.0,37.0,34.0,33.0,31.0,40.0,39.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,31.0,43.0,29.0,31.0,39.0,30.0,37.0,34.0,33.0,31.0,40.0,39.0
+622293284,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.9,1.7,1.6,1.4,2.1,2.0,2.2,1.9,1.7,1.6,1.6,2.4
+622293284,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.9,0.4,0.4
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,13.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,1.1,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,,,,,,,,,,,
+622351160,RESIDENT + FELLOW,Count Of In Basket Minutes,108.0,287.0,114.0,209.0,352.0,194.0,196.0,188.0,159.0,301.0,234.0,160.0
+622351160,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.4,10.3,8.1,12.3,12.6,10.8,8.2,9.0,10.0,13.1,9.7,6.7
+622351160,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,4.1,6.2,3.8,4.8,5.3,5.3,4.6,3.4,3.2,6.1,4.7,4.0
+622351160,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,7.0,20.0,7.0,11.0,16.0,5.0,8.0,2.0,3.0,8.0,4.0,5.0
+622351160,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,1.0,2.0,0.0,3.0,2.0,1.0,0.0,0.0,0.0,2.0,0.0,0.0
+622351160,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,6.0,18.0,7.0,8.0,14.0,4.0,8.0,2.0,3.0,6.0,4.0,5.0
+622351160,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351160,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.4,0.6,0.3,0.2,0.4,0.0,0.6,0.0,0.1,0.2,1.4,2.6
+622351160,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,9.0,23.0,15.0,13.0,34.0,24.0,7.0,22.0,2.0,1.0,0.0,4.0
+622351160,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,2.0
+622351160,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,10.0,24.0,15.0,14.0,35.0,25.0,8.0,21.0,2.0,1.0,0.0,6.0
+622351160,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.5,0.9,1.0,0.8,1.3,1.4,0.3,1.0,0.1,0.0,0.0,0.3
+622351160,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,2.3,0.4,0.3,0.6,0.5,0.6,0.6,1.2,0.7,0.3,0.0,0.4
+622351160,RESIDENT + FELLOW,Count Of Result Messages Completed,2.0,3.0,4.0,1.0,6.0,2.0,1.0,2.0,1.0,3.0,2.0,4.0
+622351160,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0
+622351160,RESIDENT + FELLOW,Count Of Result Messages Recieved,2.0,4.0,3.0,0.0,4.0,3.0,0.0,3.0,1.0,4.0,1.0,4.0
+622351160,RESIDENT + FELLOW,Messages Received per Day - Results,0.1,0.1,0.2,0.0,0.1,0.2,0.0,0.1,0.1,0.2,0.0,0.2
+622351160,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,3.4,1.3,9.7,3.3,1.6,0.6,44.6,1.9,5.2,0.7,4.2,4.5
+622351160,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351160,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,2.0,12.0,2.0,4.0,7.0,2.0,4.0,3.0,1.0,2.0,6.0,2.0
+622351160,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,2.0,12.0,2.0,4.0,7.0,2.0,4.0,3.0,1.0,2.0,6.0,2.0
+622351160,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.1,0.4,0.1,0.2,0.3,0.1,0.2,0.1,0.1,0.1,0.2,0.1
+622351160,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.8
+622351168,RESIDENT + FELLOW,Count Of In Basket Minutes,180.0,277.0,85.0,163.0,220.0,90.0,144.0,243.0,175.0,115.0,208.0,93.0
+622351168,RESIDENT + FELLOW,Minutes In In Basket Per Day,11.2,10.3,5.3,10.9,7.8,6.9,8.0,10.6,9.2,7.7,8.3,6.7
+622351168,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,8.6,8.2,0.0,6.5,5.5,4.5,5.4,7.2,3.8,0.0,4.2,3.3
+622351168,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,5.0,8.0,5.0,2.0,10.0,1.0,2.0,1.0,5.0,3.0,13.0,6.0
+622351168,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,7.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0
+622351168,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,5.0,1.0,8.0,4.0,9.0,1.0,2.0,2.0,5.0,3.0,11.0,8.0
+622351168,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351168,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.5,0.0,14.9,26.3,5.0,0.8,1.5,14.6,4.6,12.2,1.6,3.3
+622351168,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,18.0,55.0,30.0,33.0,36.0,15.0,30.0,54.0,5.0,4.0,7.0,2.0
+622351168,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,5.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351168,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,20.0,60.0,32.0,31.0,38.0,15.0,30.0,54.0,4.0,4.0,7.0,2.0
+622351168,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.2,2.2,1.9,2.1,1.4,1.2,1.6,2.4,0.2,0.3,0.3,0.1
+622351168,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.8,1.0,0.9,1.7,0.5,1.1,0.7,0.5,2.3,0.4,0.9,0.2
+622351168,RESIDENT + FELLOW,Count Of Result Messages Completed,8.0,9.0,10.0,7.0,11.0,10.0,6.0,12.0,14.0,10.0,13.0,7.0
+622351168,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0
+622351168,RESIDENT + FELLOW,Count Of Result Messages Recieved,6.0,11.0,8.0,5.0,9.0,3.0,5.0,12.0,17.0,5.0,10.0,7.0
+622351168,RESIDENT + FELLOW,Messages Received per Day - Results,0.4,0.4,0.5,0.3,0.3,0.2,0.3,0.5,0.9,0.3,0.4,0.5
+622351168,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,1.6,3.4,9.0,7.5,2.2,9.6,6.6,1.6,2.9,4.8,1.2,0.9
+622351168,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351168,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,9.0,17.0,5.0,6.0,10.0,4.0,14.0,9.0,11.0,7.0,12.0,3.0
+622351168,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,9.0,17.0,5.0,6.0,10.0,4.0,14.0,9.0,11.0,7.0,12.0,3.0
+622351168,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.5,0.6,0.3,0.4,0.4,0.3,0.8,0.4,0.6,0.5,0.5,0.2
+622351168,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,2.8,2.7,3.0
+622351172,RESIDENT + FELLOW,Count Of In Basket Minutes,31.0,130.0,9.0,73.0,74.0,42.0,57.0,59.0,80.0,18.0,130.0,105.0
+622351172,RESIDENT + FELLOW,Minutes In In Basket Per Day,3.1,4.3,1.4,4.0,3.9,3.0,3.4,2.9,2.6,1.6,4.8,4.6
+622351172,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,2.9,0.0,0.0,0.0,2.8,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,1.0,4.0,1.0,0.0,2.0,3.0,0.0,1.0,3.0,1.0,3.0,8.0
+622351172,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,1.0,1.0,0.0,0.0,2.0,2.0,0.0,1.0,1.0,1.0,3.0,7.0
+622351172,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,0.0,3.0,1.0,0.0,0.0,1.0,4.0,0.0,2.0,0.0,0.0,1.0
+622351172,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.0,11.5,0.0,0.0,0.0,5.6,77.4,0.0,2.3,0.0,0.0,0.8
+622351172,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,0.0,5.0,0.0,6.0,4.0,5.0,14.0,4.0,4.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,0.0,1.0,4.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,2.0,3.0,0.0,7.0,8.0,4.0,11.0,4.0,6.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.2,0.1,0.0,0.4,0.4,0.3,0.6,0.2,0.2,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,20.3,0.0,0.6,0.1,14.5,5.2,1.2,0.3,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Result Messages Completed,1.0,0.0,0.0,1.0,0.0,2.0,1.0,0.0,1.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+622351172,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,0.0,0.0,2.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0
+622351172,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.0,0.0,0.1,0.1,0.1,0.0,0.1,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,16.8,0.0,0.0,0.4,0.0,46.1,38.4,0.0,26.1,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,3.0,2.0,1.0,1.0
+622351172,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,3.0,2.0,1.0,1.0
+622351172,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.0,0.1,0.0,0.1,0.1,0.0,0.1,0.0,0.1,0.2,0.0,0.0
+622351172,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of In Basket Minutes,66.0,69.0,101.0,158.0,80.0,38.0,52.0,83.0,53.0,92.0,131.0,90.0
+622351176,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.1,5.8,6.3,9.9,5.0,3.1,5.8,5.9,3.1,6.2,5.7,6.0
+622351176,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,6.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,3.0,5.0,10.0,4.0,0.0,5.0,2.0,1.0,5.0,0.0,1.0
+622351176,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,2.0,3.0,5.0,8.0,4.0,0.0,3.0,2.0,1.0,4.0,0.0,1.0
+622351176,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.9,0.6,0.3,1.1,0.3,0.0,1.0,0.1,0.1,0.4,0.0,0.2
+622351176,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,11.0,8.0,16.0,33.0,27.0,20.0,11.0,16.0,1.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,2.0,2.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,11.0,8.0,18.0,35.0,26.0,21.0,13.0,16.0,1.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.8,0.7,1.0,2.2,1.6,1.8,1.4,1.1,0.1,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,1.2,0.5,0.5,0.8,0.5,0.6,1.2,1.2,1.1,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Result Messages Completed,11.0,18.0,19.0,13.0,32.0,11.0,6.0,5.0,11.0,10.0,11.0,7.0
+622351176,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,2.0,0.0,1.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Result Messages Recieved,11.0,16.0,16.0,13.0,32.0,10.0,7.0,4.0,13.0,7.0,12.0,6.0
+622351176,RESIDENT + FELLOW,Messages Received per Day - Results,0.8,1.3,0.9,0.8,2.0,0.8,0.8,0.3,0.8,0.5,0.5,0.4
+622351176,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.3,1.0,1.9,1.3,1.2,1.3,1.5,1.2,1.2,1.9,0.6,1.5
+622351176,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,5.0,6.0,6.0,10.0,5.0,1.0,0.0,2.0,1.0,0.0,1.0,1.0
+622351176,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,5.0,6.0,6.0,10.0,5.0,1.0,0.0,2.0,1.0,0.0,1.0,1.0
+622351176,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,0.5,0.4,0.6,0.3,0.1,0.0,0.1,0.1,0.0,0.0,0.1
+622351176,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.8,0.0,2.0,0.1
+622351180,RESIDENT + FELLOW,Count Of In Basket Minutes,58.0,86.0,66.0,49.0,45.0,22.0,28.0,35.0,34.0,25.0,13.0,
+622351180,RESIDENT + FELLOW,Minutes In In Basket Per Day,7.2,7.2,4.4,5.0,3.4,2.7,4.0,3.5,3.8,3.6,2.2,
+622351180,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,1.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,1.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,2.2,0.0,0.0,0.0,147.1,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,8.0,10.0,9.0,17.0,6.0,5.0,4.0,5.0,2.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,0.0,3.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,10.0,9.0,12.0,7.0,6.0,5.0,5.0,4.0,2.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.2,0.8,0.7,0.7,0.5,0.6,0.7,0.4,0.2,0.0,0.0,
+622351180,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,1.1,8.6,0.5,72.7,28.0,2.0,2.2,2.0,0.8,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Result Messages Completed,1.0,3.0,3.0,1.0,0.0,0.0,11.0,3.0,0.0,4.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Result Messages Incomplete,1.0,2.0,0.0,1.0,3.0,2.0,0.0,0.0,4.0,0.0,1.0,
+622351180,RESIDENT + FELLOW,Count Of Result Messages Recieved,2.0,5.0,2.0,2.0,3.0,2.0,3.0,1.0,4.0,1.0,1.0,
+622351180,RESIDENT + FELLOW,Messages Received per Day - Results,0.2,0.4,0.1,0.2,0.2,0.3,0.4,0.1,0.4,0.1,0.2,
+622351180,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,4.2,43.3,18.2,18.3,0.0,0.0,72.1,23.1,0.0,22.3,0.0,
+622351180,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of In Basket Minutes,61.0,62.0,3.0,,18.0,35.0,26.0,80.0,70.0,8.0,12.0,
+622351196,RESIDENT + FELLOW,Minutes In In Basket Per Day,6.1,5.2,3.1,,4.4,7.0,3.3,6.7,5.4,1.6,2.4,
+622351196,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,2.4,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,7.0,6.0,2.0,,2.0,0.0,0.0,1.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,6.0,5.0,2.0,,1.0,0.0,0.0,1.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.6,0.4,1.9,,0.3,0.0,0.0,0.1,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.9,1.2,2.4,,6.7,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Result Messages Completed,3.0,4.0,0.0,,1.0,2.0,2.0,1.0,2.0,0.0,1.0,
+622351196,RESIDENT + FELLOW,Count Of Result Messages Incomplete,1.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Result Messages Recieved,4.0,2.0,0.0,,1.0,1.0,2.0,1.0,2.0,0.0,1.0,
+622351196,RESIDENT + FELLOW,Messages Received per Day - Results,0.4,0.2,0.0,,0.3,0.2,0.2,0.1,0.2,0.0,0.2,
+622351196,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,3.2,18.7,0.0,,9.3,2.9,2.7,0.9,7.3,0.0,7.1,
+622351196,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,0.0,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,0.0,1.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.0,0.1,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351200,RESIDENT + FELLOW,Count Of In Basket Minutes,139.0,184.0,147.0,99.0,205.0,135.0,117.0,169.0,168.0,114.0,200.0,105.0
+622351200,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.8,7.7,7.0,8.3,7.9,9.0,6.9,7.1,7.0,4.9,8.3,8.8
+622351200,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,6.6,5.3,0.0,3.9,3.9,3.9,4.1,4.3,4.4,4.4,3.8
+622351200,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,3.0,5.0,8.0,9.0,8.0,13.0,5.0,10.0,7.0,2.0,10.0,7.0
+622351200,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,1.0,1.0,0.0,2.0,6.0,0.0,3.0,0.0,0.0,0.0,1.0
+622351200,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,3.0,4.0,7.0,12.0,6.0,7.0,8.0,7.0,10.0,2.0,10.0,6.0
+622351200,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+622351200,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.4,3.2,4.9,6.5,12.6,8.6,25.5,3.3,14.8,11.0,6.3,4.3
+622351200,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,21.0,37.0,33.0,18.0,31.0,22.0,18.0,33.0,17.0,18.0,39.0,15.0
+622351200,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,7.0,3.0,1.0,3.0,2.0,5.0,15.0,0.0,0.0,0.0,0.0,1.0
+622351200,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,28.0,40.0,34.0,21.0,33.0,27.0,33.0,33.0,17.0,15.0,38.0,16.0
+622351200,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,1.1,1.7,1.5,1.8,1.3,1.8,1.9,1.4,0.7,0.7,1.5,1.3
+622351200,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.4,0.6,1.4,1.5,3.4,1.5,1.8,7.8,5.7,3.0,12.3,3.7
+622351200,RESIDENT + FELLOW,Count Of Result Messages Completed,3.0,0.0,2.0,0.0,6.0,0.0,2.0,0.0,3.0,14.0,2.0,19.0
+622351200,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,2.0,0.0,0.0,3.0,3.0,1.0,0.0,13.0,0.0
+622351200,RESIDENT + FELLOW,Count Of Result Messages Recieved,2.0,0.0,2.0,2.0,4.0,0.0,5.0,3.0,4.0,14.0,15.0,10.0
+622351200,RESIDENT + FELLOW,Messages Received per Day - Results,0.1,0.0,0.1,0.2,0.2,0.0,0.3,0.1,0.2,0.6,0.6,0.8
+622351200,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,6.5,0.0,2.1,0.0,24.7,0.0,15.5,0.0,24.8,25.8,1.5,23.8
+622351200,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351200,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,9.0,18.0,18.0,27.0,37.0,14.0,19.0,12.0,16.0,13.0,25.0,6.0
+622351200,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,9.0,18.0,18.0,27.0,37.0,14.0,19.0,12.0,16.0,13.0,25.0,6.0
+622351200,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,0.8,0.8,2.3,1.4,0.9,1.1,0.5,0.7,0.6,1.0,0.5
+622351200,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.8,7.1,3.5,4.7
+622351204,RESIDENT + FELLOW,Count Of In Basket Minutes,60.0,173.0,176.0,197.0,130.0,104.0,41.0,161.0,123.0,96.0,62.0,325.0
+622351204,RESIDENT + FELLOW,Minutes In In Basket Per Day,4.0,7.8,8.8,9.9,7.6,5.8,3.8,7.0,5.8,5.6,4.1,19.1
+622351204,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.1,8.0,4.6,3.2,2.3,1.4,3.0,3.2,2.3,1.6,6.6
+622351204,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,4.0,7.0,15.0,3.0,2.0,3.0,0.0,2.0,8.0,5.0,7.0,14.0
+622351204,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,1.0,2.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,2.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,5.0,6.0,13.0,4.0,2.0,2.0,0.0,1.0,7.0,4.0,5.0,14.0
+622351204,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+622351204,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,3.2,1.8,3.1,1.5,0.7,0.0,0.0,0.3,0.1,2.7,0.6,2.3
+622351204,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,7.0,24.0,52.0,53.0,48.0,16.0,7.0,27.0,1.0,0.0,3.0,1.0
+622351204,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,3.0,14.0,1.0,5.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,6.0,27.0,66.0,54.0,53.0,14.0,8.0,28.0,1.0,1.0,2.0,1.0
+622351204,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.4,1.2,3.1,2.7,3.1,0.8,0.7,1.2,0.1,0.1,0.1,0.1
+622351204,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,3.8,1.0,1.0,0.8,0.4,0.7,0.9,0.1,1.1,0.0,1.4,0.1
+622351204,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,1.0,0.0,0.0,0.0,0.0,3.0,1.0,1.0,3.0,1.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,1.0,0.0,0.0,0.0,0.0,2.0,1.0,1.0,3.0,1.0,0.0
+622351204,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.0,0.0,0.0,0.0,0.2,0.0,0.1,0.2,0.1,0.0
+622351204,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.5,0.0,0.0,0.0,0.0,2.1,0.6,0.6,2.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,6.0,21.0,4.0,9.0,6.0,4.0,1.0,5.0,2.0,3.0,2.0,3.0
+622351204,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,6.0,21.0,4.0,9.0,6.0,4.0,1.0,5.0,2.0,3.0,2.0,3.0
+622351204,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,1.0,0.2,0.5,0.4,0.2,0.1,0.2,0.1,0.2,0.1,0.2
+622351204,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.3,0.2,0.0
+622351208,RESIDENT + FELLOW,Count Of In Basket Minutes,96.0,67.0,75.0,84.0,68.0,18.0,58.0,74.0,49.0,39.0,68.0,67.0
+622351208,RESIDENT + FELLOW,Minutes In In Basket Per Day,6.4,3.4,5.0,5.6,4.2,2.6,3.9,3.5,2.5,2.1,4.9,3.7
+622351208,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,3.0,2.0,2.0,3.0,4.0,0.0,1.0,3.0,4.0,1.0,1.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,4.0,2.0,2.0,3.0,4.0,0.0,1.0,3.0,4.0,2.0,1.0,0.0
+622351208,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,0.7,0.4,1.0,0.3,0.1,0.0,0.3,0.1,0.1,0.4,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,7.0,2.0,2.0,19.0,19.0,2.0,4.0,10.0,2.0,4.0,1.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,6.0,2.0,2.0,19.0,20.0,2.0,4.0,11.0,1.0,4.0,1.0,0.0
+622351208,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.4,0.1,0.1,1.3,1.3,0.3,0.3,0.5,0.1,0.2,0.1,0.0
+622351208,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.2,0.4,0.1,0.4,0.5,0.1,0.2,0.1,1.5,0.5,0.1,0.0
+622351208,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,2.0,0.0,0.0,3.0,0.0,0.0,5.0,2.0,0.0,4.0,1.0
+622351208,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,2.0,0.0,0.0,2.0,0.0,0.0,5.0,2.0,0.0,4.0,0.0
+622351208,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.0,0.0,0.1,0.0,0.0,0.2,0.1,0.0,0.3,0.0
+622351208,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,1.0,0.0,0.0,1.5,0.0,0.0,0.0,0.6,0.0,0.3,0.1
+622351208,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,5.0,9.0,10.0,3.0,1.0,1.0,8.0,1.0,1.0,2.0,1.0,2.0
+622351208,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,5.0,9.0,10.0,3.0,1.0,1.0,8.0,1.0,1.0,2.0,1.0,2.0
+622351208,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.3,0.5,0.6,0.2,0.1,0.1,0.5,0.1,0.1,0.1,0.1,0.1
+622351208,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.0,0.9
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,290.0,454.0,339.0,299.0,634.0,415.0,252.0,257.0,413.0,498.0,777.0,496.0
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,16.1,14.6,16.9,12.5,20.5,17.3,11.0,9.5,12.5,29.3,26.8,19.8
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.3,2.8,3.3,2.3,4.3,3.3,2.2,2.2,3.0,5.2,5.2,4.4
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,45.0,70.0,37.0,21.0,54.0,34.0,38.0,33.0,42.0,34.0,88.0,55.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,9.0,10.0,0.0,0.0,17.0,11.0,2.0,4.0,8.0,1.0,12.0,9.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,36.0,60.0,39.0,21.0,37.0,23.0,36.0,29.0,34.0,33.0,76.0,46.0
+622368596,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,2.0,2.0,2.0,1.0,2.0,1.0,2.0,1.0,1.0,2.0,3.0,2.0
+622368596,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,2.3,3.2,3.3,5.6,1.6,1.1,1.5,1.0,1.2,2.4,1.2,1.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,39.0,88.0,60.0,42.0,83.0,86.0,75.0,108.0,14.0,10.0,4.0,8.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,6.0,0.0,0.0,4.0,6.0,3.0,4.0,0.0,0.0,4.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,41.0,94.0,60.0,41.0,87.0,92.0,78.0,112.0,14.0,10.0,8.0,8.0
+622368596,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,2.2,3.0,2.8,1.7,2.8,3.8,3.3,4.2,0.4,0.6,0.3,0.3
+622368596,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.3,0.5,0.8,2.3,0.4,0.6,0.7,0.8,0.8,1.6,0.3,0.6
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,3.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,3.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,3.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,38.0,54.0,34.0,37.0,59.0,35.0,52.0,48.0,42.0,27.0,45.0,33.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,38.0,54.0,34.0,37.0,59.0,35.0,52.0,48.0,42.0,27.0,45.0,33.0
+622368596,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,2.0,1.7,1.6,1.5,1.9,1.5,2.2,1.8,1.3,1.6,1.5,1.3
+622368596,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,1.0,0.4,0.5
+622401548,NURSE PRACTITIONER,Count Of In Basket Minutes,795.0,1017.0,637.0,853.0,950.0,540.0,616.0,804.0,1163.0,872.0,1055.0,786.0
+622401548,NURSE PRACTITIONER,Minutes In In Basket Per Day,30.6,29.1,24.5,30.5,27.9,20.0,22.8,28.7,33.2,31.1,33.0,28.1
+622401548,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,6.7,5.5,6.3,6.1,7.0,4.2,5.3,6.2,6.8,6.2,7.2,5.4
+622401548,NURSE PRACTITIONER,Count Of Patient Call Messages Recieved,20.0,37.0,16.0,19.0,10.0,16.0,20.0,12.0,29.0,25.0,41.0,21.0
+622401548,NURSE PRACTITIONER,Count Of Patient Call Messages Incomplete,18.0,35.0,16.0,19.0,9.0,13.0,20.0,11.0,25.0,24.0,35.0,18.0
+622401548,NURSE PRACTITIONER,Count Of Patient Call Messages Completed,2.0,2.0,0.0,0.0,1.0,3.0,0.0,1.0,4.0,1.0,6.0,3.0
+622401548,NURSE PRACTITIONER,Messages Received per Day - Patient Calls,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0
+622401548,NURSE PRACTITIONER,Average Days Until Patient Call Messages Marked Done,0.1,0.5,0.0,0.0,3.2,2.6,0.0,0.1,5.0,0.3,1.3,4.5
+622401548,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Completed,56.0,49.0,45.0,49.0,45.0,32.0,36.0,48.0,12.0,9.0,11.0,7.0
+622401548,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Incomplete,32.0,55.0,32.0,31.0,40.0,27.0,24.0,10.0,2.0,6.0,3.0,2.0
+622401548,NURSE PRACTITIONER,Count Of Patient Medical Advice Requests Messages Recieved,88.0,104.0,77.0,80.0,85.0,59.0,60.0,58.0,14.0,15.0,14.0,9.0
+622401548,NURSE PRACTITIONER,Messages Received per Day - Patient Medical Advice Request,3.3,3.0,2.8,2.9,2.5,2.2,2.1,2.1,0.4,0.5,0.4,0.3
+622401548,NURSE PRACTITIONER,Average Days Until Patient Medical Advice Request Message Marked Done,3.9,1.0,0.6,3.7,2.1,0.4,3.0,2.0,2.8,2.0,3.6,0.8
+622401548,NURSE PRACTITIONER,Count Of Result Messages Completed,0.0,0.0,1.0,2.0,1.0,1.0,0.0,0.0,0.0,3.0,3.0,1.0
+622401548,NURSE PRACTITIONER,Count Of Result Messages Incomplete,1.0,3.0,6.0,5.0,3.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0
+622401548,NURSE PRACTITIONER,Count Of Result Messages Recieved,1.0,3.0,7.0,7.0,4.0,1.0,0.0,0.0,2.0,2.0,3.0,3.0
+622401548,NURSE PRACTITIONER,Messages Received per Day - Results,0.0,0.1,0.3,0.3,0.1,0.0,0.0,0.0,0.1,0.1,0.1,0.1
+622401548,NURSE PRACTITIONER,Average Days Until Result Message Marked Done,0.0,0.0,31.0,0.7,0.0,3.7,0.0,0.0,0.0,10.7,101.8,0.0
+622401548,NURSE PRACTITIONER,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622401548,NURSE PRACTITIONER,Count Of RX Auth Messages Incomplete,19.0,18.0,10.0,13.0,8.0,14.0,12.0,17.0,11.0,11.0,16.0,11.0
+622401548,NURSE PRACTITIONER,Count Of RX Auth Messages Recieved,19.0,18.0,10.0,13.0,8.0,14.0,12.0,17.0,11.0,11.0,16.0,11.0
+622401548,NURSE PRACTITIONER,Messages Received per Day - Rx Auth,0.7,0.5,0.4,0.5,0.2,0.5,0.4,0.6,0.3,0.4,0.5,0.4
+622401548,NURSE PRACTITIONER,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.3,1.0,1.7
+622409368,RESIDENT + FELLOW,Count Of In Basket Minutes,,,,,,,,,,,67.0,29.0
+622409368,RESIDENT + FELLOW,Minutes In In Basket Per Day,,,,,,,,,,,3.9,1.3
+622409368,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,,,,,,,,,,,0.0,1.0
+622409368,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,,,,,,,,,,,0.0,1.0
+622409368,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,,,,,,,,,,,3.0,1.0
+622409368,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,,,,,,,,,,,5.0,3.0
+622409368,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,,,,,,,,,,,8.0,4.0
+622409368,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,,,,,,,,,,,0.4,0.2
+622409368,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,,,,,,,,,,,1.0,0.6
+622409368,RESIDENT + FELLOW,Count Of Result Messages Completed,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of Result Messages Incomplete,,,,,,,,,,,1.0,0.0
+622409368,RESIDENT + FELLOW,Count Of Result Messages Recieved,,,,,,,,,,,1.0,0.0
+622409368,RESIDENT + FELLOW,Messages Received per Day - Results,,,,,,,,,,,0.1,0.0
+622409368,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,,,,,,,,,,,0.0,1.0
+622409368,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,,,,,,,,,,,0.0,1.0
+622409368,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,,,,,,,,,,,0.0,0.1
+622409368,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,,,,,,,,,,,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of In Basket Minutes,,,,,,,,,,33.0,13.0,4.0
+622409372,RESIDENT + FELLOW,Minutes In In Basket Per Day,,,,,,,,,,4.7,0.6,0.9
+622409372,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,,,,,,,,,,1.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,,,,,,,,,,1.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,,,,,,,,,,0.1,0.0,0.0
+622409372,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,,,,,,,,,,1.5,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Result Messages Completed,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Result Messages Incomplete,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Result Messages Recieved,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Messages Received per Day - Results,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,,,,,,,,,,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of In Basket Minutes,,,,,,,,,39.0,32.0,30.0,63.0
+622409420,RESIDENT + FELLOW,Minutes In In Basket Per Day,,,,,,,,,1.7,1.5,1.6,3.1
+622409420,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,,,,,,,,,0.0,8.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,,,,,,,,,0.0,2.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,,,,,,,,,0.0,6.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,,,,,,,,,0.0,0.6,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Result Messages Completed,,,,,,,,,3.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Result Messages Incomplete,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Result Messages Recieved,,,,,,,,,2.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Messages Received per Day - Results,,,,,,,,,0.1,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,,,,,,,,,0.7,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,,,,,,,,,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of In Basket Minutes,85.0,224.0,96.0,130.0,92.0,84.0,147.0,152.0,212.0,153.0,272.0,119.0
+622413292,RESIDENT + FELLOW,Minutes In In Basket Per Day,7.1,9.7,6.4,10.0,9.2,7.0,10.5,13.8,10.6,9.0,11.4,8.0
+622413292,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,8.3,0.0,4.2,0.0,4.0,5.7,4.5,5.4,4.4,5.8,4.1
+622413292,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,9.0,11.0,7.0,9.0,7.0,4.0,3.0,2.0,7.0,2.0,3.0,4.0
+622413292,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,5.0,2.0,0.0,1.0,1.0,3.0,0.0,0.0,1.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,4.0,9.0,7.0,8.0,6.0,1.0,5.0,2.0,6.0,2.0,3.0,4.0
+622413292,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.4,3.7,8.4,2.9,3.0,0.0,6.8,4.1,2.0,8.0,0.0,0.5
+622413292,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,9.0,32.0,22.0,20.0,25.0,30.0,59.0,41.0,18.0,4.0,4.0,1.0
+622413292,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,2.0,5.0,2.0,1.0,0.0,0.0,5.0,6.0,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,11.0,37.0,24.0,21.0,23.0,28.0,64.0,47.0,18.0,4.0,4.0,1.0
+622413292,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.9,1.6,1.5,1.6,2.3,2.3,4.4,4.3,0.9,0.2,0.2,0.1
+622413292,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,3.1,1.6,3.4,3.6,2.8,0.9,0.8,0.5,1.4,1.1,1.1,1.3
+622413292,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,1.0,2.0,1.0,1.0,0.0,2.0,2.0,1.0,0.0,2.0,1.0
+622413292,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,2.0,0.0,1.0,0.0,1.0,2.0,1.0,1.0,0.0,2.0,1.0
+622413292,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.1,0.0,0.1,0.0,0.1,0.1,0.1,0.1,0.0,0.1,0.1
+622413292,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.3,15.5,4.1,8.2,0.0,1.4,1.3,7.3,0.0,5.7,6.4
+622413292,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,5.0,14.0,11.0,6.0,10.0,3.0,9.0,6.0,10.0,5.0,4.0,4.0
+622413292,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,5.0,14.0,11.0,6.0,10.0,3.0,9.0,6.0,10.0,5.0,4.0,4.0
+622413292,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.4,0.6,0.7,0.5,1.0,0.3,0.6,0.6,0.5,0.3,0.2,0.3
+622413292,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.4,2.1,4.1,1.4
+622413296,RESIDENT + FELLOW,Count Of In Basket Minutes,81.0,372.0,157.0,152.0,283.0,85.0,157.0,178.0,248.0,151.0,147.0,151.0
+622413296,RESIDENT + FELLOW,Minutes In In Basket Per Day,5.4,13.8,8.7,8.9,10.5,7.7,9.8,8.1,9.9,7.9,10.5,10.1
+622413296,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,11.3,7.8,5.8,6.9,3.9,0.0,4.3,5.8,6.0,3.6,5.6
+622413296,RESIDENT + FELLOW,Count Of Patient Call Messages Recieved,2.0,2.0,2.0,2.0,5.0,4.0,3.0,0.0,3.0,5.0,1.0,6.0
+622413296,RESIDENT + FELLOW,Count Of Patient Call Messages Incomplete,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of Patient Call Messages Completed,2.0,2.0,2.0,2.0,6.0,2.0,4.0,0.0,2.0,5.0,1.0,6.0
+622413296,RESIDENT + FELLOW,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Average Days Until Patient Call Messages Marked Done,1.1,0.2,0.0,0.4,1.2,4.7,8.0,0.0,0.0,7.0,1.2,2.8
+622413296,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Completed,4.0,32.0,21.0,20.0,39.0,8.0,27.0,20.0,5.0,5.0,1.0,1.0
+622413296,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Incomplete,0.0,6.0,3.0,9.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of Patient Medical Advice Requests Messages Recieved,4.0,38.0,24.0,29.0,39.0,8.0,26.0,21.0,4.0,5.0,1.0,1.0
+622413296,RESIDENT + FELLOW,Messages Received per Day - Patient Medical Advice Request,0.3,1.4,1.2,1.7,1.4,0.7,1.6,1.0,0.2,0.3,0.1,0.1
+622413296,RESIDENT + FELLOW,Average Days Until Patient Medical Advice Request Message Marked Done,0.7,0.3,1.0,0.6,0.9,1.2,0.6,2.1,1.3,0.6,0.7,5.3
+622413296,RESIDENT + FELLOW,Count Of Result Messages Completed,0.0,0.0,1.0,3.0,2.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0
+622413296,RESIDENT + FELLOW,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of Result Messages Recieved,0.0,0.0,1.0,2.0,1.0,1.0,1.0,3.0,0.0,1.0,1.0,1.0
+622413296,RESIDENT + FELLOW,Messages Received per Day - Results,0.0,0.0,0.1,0.1,0.0,0.1,0.1,0.1,0.0,0.1,0.1,0.1
+622413296,RESIDENT + FELLOW,Average Days Until Result Message Marked Done,0.0,0.0,0.0,4.3,1.4,0.8,1.5,9.8,44.6,0.3,0.1,2.3
+622413296,RESIDENT + FELLOW,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of RX Auth Messages Incomplete,3.0,13.0,6.0,2.0,6.0,3.0,5.0,5.0,4.0,5.0,3.0,1.0
+622413296,RESIDENT + FELLOW,Count Of RX Auth Messages Recieved,3.0,13.0,6.0,2.0,6.0,3.0,5.0,5.0,4.0,5.0,3.0,1.0
+622413296,RESIDENT + FELLOW,Messages Received per Day - Rx Auth,0.2,0.5,0.3,0.1,0.2,0.3,0.3,0.2,0.2,0.3,0.2,0.1
+622413296,RESIDENT + FELLOW,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,1.0,1.7,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,496.0,396.0,294.0,280.0,392.0,230.0,111.0,270.0,317.0,257.0,279.0,180.0
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,29.2,16.5,18.4,14.0,15.7,11.0,13.9,12.3,12.7,12.2,11.6,11.3
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,6.1,3.9,4.1,3.1,3.8,2.8,3.2,2.5,2.6,2.6,2.1,3.3
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,28.0,46.0,32.0,40.0,43.0,44.0,22.0,41.0,55.0,43.0,55.0,50.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,0.0,5.0,0.0,2.0,7.0,0.0,0.0,2.0,4.0,0.0,3.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,29.0,41.0,35.0,38.0,36.0,44.0,24.0,39.0,51.0,43.0,52.0,50.0
+622413432,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,2.0,2.0,2.0,2.0,2.0,2.0,3.0,2.0,2.0,2.0,2.0,3.0
+622413432,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,3.1,0.7,1.4,1.0,0.9,1.4,4.2,1.3,0.7,1.6,1.9,2.8
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,117.0,107.0,78.0,73.0,98.0,63.0,33.0,63.0,23.0,6.0,3.0,9.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,18.0,22.0,6.0,10.0,7.0,8.0,2.0,5.0,11.0,1.0,4.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,135.0,129.0,84.0,83.0,105.0,71.0,35.0,68.0,34.0,7.0,7.0,5.0
+622413432,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,7.7,5.4,4.9,4.2,4.2,3.4,4.2,3.1,1.4,0.3,0.3,0.3
+622413432,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.8,1.1,1.4,2.4,2.4,4.5,3.8,2.6,2.0,2.8,4.9,3.7
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,21.0,33.0,12.0,15.0,25.0,31.0,23.0,24.0,44.0,22.0,17.0,23.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,21.0,33.0,12.0,15.0,25.0,31.0,23.0,24.0,44.0,22.0,17.0,23.0
+622413432,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,1.2,1.4,0.7,0.8,1.0,1.5,2.8,1.1,1.8,1.1,0.7,1.4
+622413432,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,1.0,1.7,1.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of In Basket Minutes,22.0,100.0,35.0,40.0,51.0,35.0,54.0,51.0,52.0,23.0,29.0,21.0
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Day,2.5,3.7,2.1,1.8,1.9,1.6,2.7,2.2,1.8,1.0,1.1,0.9
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.6,1.0,0.5,0.4,0.5,0.5,0.7,0.5,0.4,0.2,0.3,0.2
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Recieved,2.0,2.0,1.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,3.0,5.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Incomplete,1.0,2.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,3.0,5.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Call Messages Completed,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Calls,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Call Messages Marked Done,0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Completed,1.0,10.0,7.0,8.0,17.0,5.0,3.0,6.0,0.0,1.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Incomplete,1.0,4.0,5.0,6.0,7.0,2.0,5.0,7.0,1.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Patient Medical Advice Requests Messages Recieved,2.0,14.0,12.0,14.0,24.0,7.0,8.0,13.0,1.0,1.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Patient Medical Advice Request,0.2,0.5,0.7,0.6,0.9,0.3,0.4,0.6,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Average Days Until Patient Medical Advice Request Message Marked Done,0.0,0.9,0.9,0.6,1.2,0.3,0.3,0.3,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Result Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Results,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Average Days Until Result Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Completed,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Incomplete,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of RX Auth Messages Recieved,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Messages Received per Day - Rx Auth,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Average Days Until RX Auth Message Marked Done,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,496 @@
+---
+title: "Epic In-Basket Workload Analysis"
+subtitle: "Comprehensive Analysis of Invisible Work in Healthcare"
+author: "Healthcare Analytics Team"
+date: "`r Sys.Date()`"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "Table of Contents"
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+    fig-width: 10
+    fig-height: 6
+    df-print: paged
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: true
+---
+
+```{r setup, include=FALSE}
+# Load required libraries (minimal set)
+library(readxl)
+library(knitr)
+
+# Set global options
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 10,
+  fig.height = 6,
+  cache = TRUE
+)
+
+# Color palette
+colors <- c("#2E86AB", "#A23B72", "#F18F01", "#C73E1D", "#6A994E", "#7209B7")
+```
+
+# Executive Summary
+
+This comprehensive analysis examines the "invisible work" performed by healthcare providers in Epic's in-basket system from July 2024 to June 2025. The analysis reveals significant workload disparities, after-hours burden, and system-wide inefficiencies that impact both provider well-being and patient care quality.
+
+## Key Findings
+
+- **Total Providers Analyzed**: 64 providers
+- **Total Invisible Work**: 3,366 hours (140.3 days)
+- **After-Hours Burden**: 23.6% of total work
+- **Weekend Burden**: 18.8% of total work
+- **Extreme Disparities**: 1297.5x difference between providers
+- **High-Risk Providers**: 10.9% need immediate attention
+
+## Most Critical Finding
+
+The highest workload provider has **1297.5x more work** than the lowest workload provider, representing one of the most extreme disparities ever documented in healthcare workload analysis.
+
+# Data Loading and Preparation
+
+```{r data-loading}
+# Load data from Excel files
+time_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
+messages_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
+
+# Get date columns
+date_columns <- names(time_data)[grepl("24-|25-", names(time_data))]
+
+# Convert date columns to numeric
+for (col in date_columns) {
+  time_data[[col]] <- as.numeric(time_data[[col]])
+  messages_data[[col]] <- as.numeric(messages_data[[col]])
+}
+
+# Display data structure
+cat("Time data dimensions:", dim(time_data), "\n")
+cat("Messages data dimensions:", dim(messages_data), "\n")
+cat("Date columns:", length(date_columns), "\n")
+cat("Date range:", min(date_columns), "to", max(date_columns), "\n")
+```
+
+```{r data-overview}
+# Display first few rows of each dataset
+kable(head(time_data, 3), caption = "Time Data Sample")
+
+kable(head(messages_data, 3), caption = "Messages Data Sample")
+```
+
+# System-Wide Analysis
+
+## Workload Distribution
+
+```{r system-wide-analysis}
+# Calculate total system metrics
+inbasket_total <- messages_data[
+  messages_data$Metric == "Count Of In Basket Minutes", 
+  c("DE_ID", date_columns)
+]
+
+# Calculate totals
+total_inbasket_minutes <- sum(inbasket_total[date_columns], na.rm = TRUE)
+total_inbasket_hours <- total_inbasket_minutes / 60
+
+# Calculate after-hours and weekend totals
+afterhours_data <- time_data[
+  time_data$Metric == "Count Of Minutes Active Outside 7AM to 7PM", 
+  date_columns
+]
+weekend_data <- time_data[
+  time_data$Metric == "Count Of Sunday Minutes", 
+  date_columns
+]
+
+total_afterhours_minutes <- sum(afterhours_data, na.rm = TRUE)
+total_weekend_minutes <- sum(weekend_data, na.rm = TRUE)
+
+# Calculate percentages
+total_work_minutes <- total_inbasket_minutes + total_afterhours_minutes + total_weekend_minutes
+total_work_hours <- total_work_minutes / 60
+afterhours_pct <- (total_afterhours_minutes / total_work_minutes) * 100
+weekend_pct <- (total_weekend_minutes / total_work_minutes) * 100
+regular_pct <- 100 - afterhours_pct - weekend_pct
+
+# Create summary table
+workload_summary <- data.frame(
+  Category = c("Regular Hours (7AM-7PM)", "After Hours (7PM-7AM)", "Weekend (Sundays)", "Total"),
+  Minutes = c(total_inbasket_minutes, total_afterhours_minutes, total_weekend_minutes, total_work_minutes),
+  Hours = c(total_inbasket_minutes/60, total_afterhours_minutes/60, total_weekend_minutes/60, total_work_hours),
+  Percentage = c(regular_pct, afterhours_pct, weekend_pct, 100)
+)
+
+kable(workload_summary, 
+      digits = c(0, 0, 0, 1),
+      caption = "System-Wide Workload Distribution")
+```
+
+## Message Analysis
+
+```{r message-analysis}
+# Calculate message totals
+message_metrics <- c(
+  "Count Of Patient Call Messages Recieved",
+  "Count Of Patient Medical Advice Requests Messages Recieved", 
+  "Count Of Result Messages Recieved",
+  "Count Of RX Auth Messages Recieved"
+)
+
+message_totals <- data.frame(
+  Message_Type = c("Patient Calls", "Medical Advice", "Results", "RX Auth"),
+  Total_Messages = c(
+    sum(messages_data[messages_data$Metric == message_metrics[1], date_columns], na.rm = TRUE),
+    sum(messages_data[messages_data$Metric == message_metrics[2], date_columns], na.rm = TRUE),
+    sum(messages_data[messages_data$Metric == message_metrics[3], date_columns], na.rm = TRUE),
+    sum(messages_data[messages_data$Metric == message_metrics[4], date_columns], na.rm = TRUE)
+  )
+)
+
+message_totals$Percentage <- (message_totals$Total_Messages / sum(message_totals$Total_Messages)) * 100
+total_messages <- sum(message_totals$Total_Messages)
+
+kable(message_totals,
+      col.names = c("Message Type", "Total Messages", "Percentage"),
+      digits = c(0, 0, 1),
+      caption = "Message Type Distribution")
+```
+
+# Provider Disparity Analysis
+
+## Individual Provider Metrics
+
+```{r provider-metrics}
+# Calculate individual provider metrics
+provider_summary <- inbasket_total
+provider_summary$total_minutes <- rowSums(provider_summary[date_columns], na.rm = TRUE)
+provider_summary <- provider_summary[order(provider_summary$total_minutes, decreasing = TRUE), ]
+
+# Calculate statistics
+total_providers <- nrow(provider_summary)
+mean_workload <- mean(provider_summary$total_minutes)
+median_workload <- median(provider_summary$total_minutes)
+sd_workload <- sd(provider_summary$total_minutes)
+cv_workload <- (sd_workload / mean_workload) * 100
+
+# Calculate percentiles
+percentiles <- quantile(provider_summary$total_minutes, probs = c(0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99))
+
+# Calculate extreme ratios
+extreme_ratio <- max(provider_summary$total_minutes) / min(provider_summary$total_minutes)
+p99_p1_ratio <- percentiles["99%"] / percentiles["10%"]
+
+# Create statistics table
+stats_table <- data.frame(
+  Statistic = c("Mean", "Median", "Standard Deviation", "Coefficient of Variation", 
+                "Minimum", "Maximum", "Range", "Extreme Ratio"),
+  Value = c(mean_workload, median_workload, sd_workload, cv_workload,
+            min(provider_summary$total_minutes), max(provider_summary$total_minutes),
+            max(provider_summary$total_minutes) - min(provider_summary$total_minutes),
+            extreme_ratio),
+  Unit = c("minutes", "minutes", "minutes", "%", "minutes", "minutes", "minutes", "x")
+)
+
+kable(stats_table,
+      digits = c(0, 0, 0),
+      caption = "Provider Workload Statistics")
+```
+
+```{r percentile-analysis}
+# Create percentile table
+percentile_table <- data.frame(
+  Percentile = names(percentiles),
+  Value = as.numeric(percentiles),
+  Description = c("10th percentile", "25th percentile (Q1)", "50th percentile (median)", 
+                  "75th percentile (Q3)", "90th percentile", "95th percentile", "99th percentile")
+)
+
+kable(percentile_table,
+      digits = 0,
+      caption = "Provider Workload Percentiles")
+```
+
+## Top and Bottom Performers
+
+```{r top-bottom-performers}
+# Top 10 highest workload providers
+top_10 <- head(provider_summary[, c("DE_ID", "total_minutes")], 10)
+top_10$rank <- 1:10
+
+# Bottom 10 lowest workload providers
+bottom_10 <- tail(provider_summary[, c("DE_ID", "total_minutes")], 10)
+bottom_10$rank <- (nrow(provider_summary) - 9):nrow(provider_summary)
+
+# Create tables
+kable(top_10,
+      col.names = c("Provider ID", "Total Minutes", "Rank"),
+      digits = 0,
+      caption = "Top 10 Highest Workload Providers")
+
+kable(bottom_10,
+      col.names = c("Provider ID", "Total Minutes", "Rank"),
+      digits = 0,
+      caption = "Bottom 10 Lowest Workload Providers")
+```
+
+```{r extreme-ratios}
+# Calculate extreme ratios
+extreme_ratios <- data.frame(
+  Comparison = c("Highest vs Lowest", "P99 vs P10", "P95 vs P5", "P90 vs P10"),
+  Ratio = c(
+    max(provider_summary$total_minutes) / min(provider_summary$total_minutes),
+    percentiles["99%"] / percentiles["10%"],
+    quantile(provider_summary$total_minutes, 0.95) / quantile(provider_summary$total_minutes, 0.05),
+    percentiles["90%"] / percentiles["10%"]
+  ),
+  Interpretation = c(
+    "Most extreme disparity",
+    "99th vs 10th percentile",
+    "95th vs 5th percentile", 
+    "90th vs 10th percentile"
+  )
+)
+
+kable(extreme_ratios,
+      digits = 1,
+      caption = "Extreme Disparity Ratios")
+```
+
+# Provider Type Analysis
+
+```{r provider-type-analysis}
+# Get provider type information
+provider_types <- messages_data[
+  messages_data$Metric == "Minutes In In Basket Per Day", 
+  c("DE_ID", "Grouper")
+]
+provider_types <- provider_types[!duplicated(provider_types$DE_ID), ]
+
+# Join with workload data
+provider_type_summary <- merge(provider_summary[, c("DE_ID", "total_minutes")], 
+                               provider_types, by = "DE_ID", all.x = TRUE)
+
+# Calculate summary by type
+type_summary <- aggregate(total_minutes ~ Grouper, data = provider_type_summary, 
+                         FUN = function(x) c(count = length(x), mean = mean(x), 
+                                           median = median(x), total = sum(x)))
+
+# Flatten the result
+type_summary <- data.frame(
+  Grouper = type_summary$Grouper,
+  count = type_summary$total_minutes[, "count"],
+  mean_workload = type_summary$total_minutes[, "mean"],
+  median_workload = type_summary$total_minutes[, "median"],
+  total_workload = type_summary$total_minutes[, "total"]
+)
+
+type_summary$percentage <- (type_summary$count / sum(type_summary$count)) * 100
+type_summary$avg_workload_per_provider <- type_summary$total_workload / type_summary$count
+
+kable(type_summary,
+      digits = c(0, 0, 0, 0, 0, 1, 0),
+      caption = "Provider Type Performance Summary")
+```
+
+# Temporal Analysis
+
+## Monthly Trends
+
+```{r monthly-analysis}
+# Calculate monthly totals
+monthly_totals <- data.frame(
+  month = date_columns,
+  total_minutes = colSums(inbasket_total[date_columns], na.rm = TRUE)
+)
+
+monthly_totals$month_num <- 1:nrow(monthly_totals)
+monthly_totals$season <- ifelse(monthly_totals$month_num <= 3, "Summer (Jul-Sep)",
+                               ifelse(monthly_totals$month_num <= 6, "Fall (Oct-Dec)",
+                                     ifelse(monthly_totals$month_num <= 9, "Winter (Jan-Mar)", "Spring (Apr-Jun)")))
+
+# Calculate seasonal averages
+seasonal_summary <- aggregate(total_minutes ~ season, data = monthly_totals, 
+                             FUN = function(x) c(avg = mean(x), total = sum(x)))
+
+seasonal_summary <- data.frame(
+  season = seasonal_summary$season,
+  avg_minutes = seasonal_summary$total_minutes[, "avg"],
+  total_minutes = seasonal_summary$total_minutes[, "total"]
+)
+
+seasonal_summary$percentage_of_peak <- (seasonal_summary$avg_minutes / max(seasonal_summary$avg_minutes)) * 100
+
+kable(seasonal_summary,
+      digits = c(0, 0, 0, 1),
+      caption = "Seasonal Workload Patterns")
+```
+
+## Trend Analysis
+
+```{r trend-analysis}
+# Perform linear regression
+trend_model <- lm(total_minutes ~ month_num, data = monthly_totals)
+trend_summary <- summary(trend_model)
+
+# Create trend analysis table
+trend_table <- data.frame(
+  Metric = c("Slope", "Intercept", "R-squared", "P-value", "Significance"),
+  Value = c(
+    coef(trend_model)[2],
+    coef(trend_model)[1],
+    trend_summary$r.squared,
+    summary(trend_model)$coefficients[2, 4],
+    ifelse(summary(trend_model)$coefficients[2, 4] < 0.05, "Significant", "Not Significant")
+  ),
+  Interpretation = c(
+    "Change per month (minutes)",
+    "Starting value (minutes)",
+    "Proportion of variance explained",
+    "Statistical significance",
+    "Trend significance"
+  )
+)
+
+kable(trend_table,
+      digits = c(0, 3, 0),
+      caption = "Trend Analysis Results")
+```
+
+# Risk Assessment
+
+## High-Risk Providers
+
+```{r risk-assessment}
+# Calculate high-risk threshold (90th percentile)
+high_risk_threshold <- quantile(provider_summary$total_minutes, 0.9)
+high_risk_providers <- provider_summary[provider_summary$total_minutes > high_risk_threshold, ]
+
+high_risk_count <- nrow(high_risk_providers)
+high_risk_pct <- (high_risk_count / total_providers) * 100
+
+# Create risk categories
+risk_categories <- data.frame(
+  risk_level = c("Low Risk", "Medium Risk", "High Risk"),
+  count = c(
+    sum(provider_summary$total_minutes < quantile(provider_summary$total_minutes, 0.5)),
+    sum(provider_summary$total_minutes >= quantile(provider_summary$total_minutes, 0.5) & 
+        provider_summary$total_minutes < quantile(provider_summary$total_minutes, 0.9)),
+    sum(provider_summary$total_minutes >= quantile(provider_summary$total_minutes, 0.9))
+  )
+)
+
+risk_categories$percentage <- (risk_categories$count / sum(risk_categories$count)) * 100
+
+kable(risk_categories,
+      col.names = c("Risk Level", "Count", "Percentage"),
+      digits = c(0, 0, 1),
+      caption = "Provider Risk Categories")
+```
+
+# Recommendations
+
+## Immediate Actions (0-3 months)
+
+1. **Address Extreme Disparities**
+   - `r round(extreme_ratio, 1)`x difference between highest and lowest providers
+   - Implement workload redistribution mechanisms
+   - Target `r round(high_risk_pct, 1)`% of providers with high workload
+
+2. **Reduce After-Hours Burden**
+   - `r round(afterhours_pct, 1)`% of work happens after hours
+   - Implement shared after-hours coverage
+   - Optimize scheduling to reduce after-hours work
+
+3. **Address Weekend Workload**
+   - `r round(weekend_pct, 1)`% of work happens on weekends
+   - Implement weekend coverage rotation
+   - Optimize weekend scheduling
+
+## System-Wide Interventions (3-6 months)
+
+1. **Implement Workload Monitoring**
+   - Real-time workload tracking
+   - Automated alerts for high-risk providers
+   - Regular workload assessments
+
+2. **Optimize Workflow Processes**
+   - Streamline message processing
+   - Implement automation where possible
+   - Reduce administrative burden
+
+3. **Provider Support Programs**
+   - Burnout prevention programs
+   - Workload management training
+   - Peer support networks
+
+## Long-Term Strategies (6-12 months)
+
+1. **Capacity Planning**
+   - Analyze capacity utilization
+   - Plan for seasonal variations
+   - Optimize provider scheduling
+
+2. **Technology Solutions**
+   - Implement AI-assisted message processing
+   - Automated triage systems
+   - Smart scheduling algorithms
+
+3. **Organizational Changes**
+   - Redesign workflow processes
+   - Implement team-based care models
+   - Create specialized support roles
+
+# Conclusion
+
+## Key Insights
+
+- The Epic in-basket system reveals significant invisible workload disparities
+- After-hours and weekend work creates substantial burden on providers
+- Individual provider variations are extreme and require attention
+- System-wide trends are relatively stable but individual trends vary
+- Risk factors are concentrated in specific providers and time periods
+
+## Critical Findings
+
+- **Total invisible work**: `r format(total_work_hours, big.mark = ",")` hours
+- **After-hours burden**: `r round(afterhours_pct, 1)`% of total work
+- **Weekend burden**: `r round(weekend_pct, 1)`% of total work
+- **Extreme disparities**: `r round(extreme_ratio, 1)`x difference between providers
+- **High-risk providers**: `r round(high_risk_pct, 1)`% need immediate attention
+
+## Impact Assessment
+
+- **Patient safety**: HIGH RISK due to workload disparities
+- **Provider burnout**: HIGH RISK due to after-hours and weekend work
+- **System efficiency**: MODERATE RISK due to capacity underutilization
+- **Quality of care**: HIGH RISK due to invisible work burden
+
+## Next Steps
+
+1. Implement immediate interventions for high-risk providers
+2. Develop comprehensive workload monitoring system
+3. Create provider support and training programs
+4. Optimize workflow and scheduling processes
+5. Implement long-term capacity planning strategies
+
+---
+
+*Report generated on `r Sys.Date()` using R `r R.version.string`*
+
+*Data period: July 2024 - June 2025*
+
+*Total providers analyzed: `r total_providers`*
+
+*Total invisible work: `r format(total_work_hours, big.mark = ",")` hours*
+
+*Most shocking finding: `r round(extreme_ratio, 1)`x disparity between providers*

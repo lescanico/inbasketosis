@@ -1,0 +1,828 @@
+---
+title: "Epic In-Basket Workload Analysis"
+subtitle: "Comprehensive Analysis of Invisible Work in Healthcare"
+author: "Healthcare Analytics Team"
+date: "`r Sys.Date()`"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "Table of Contents"
+    code-fold: true
+    code-tools: true
+    embed-resources: true
+    fig-width: 10
+    fig-height: 6
+    df-print: paged
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    toc: true
+    toc-depth: 3
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: true
+---
+
+```{r setup, include=FALSE}
+# Load required libraries
+library(tidyverse)
+library(readxl)
+library(here)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(DT)
+library(scales)
+library(patchwork)
+library(ggthemes)
+library(corrplot)
+library(psych)
+library(broom)
+library(gt)
+library(extrafont)
+
+# Set global options
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 10,
+  fig.height = 6,
+  cache = TRUE
+)
+
+# Set theme for plots
+theme_set(theme_minimal(base_size = 12) + 
+          theme(plot.title = element_text(size = 16, face = "bold"),
+                plot.subtitle = element_text(size = 14),
+                axis.title = element_text(size = 12),
+                legend.position = "bottom"))
+
+# Color palette
+colors <- c("#2E86AB", "#A23B72", "#F18F01", "#C73E1D", "#6A994E", "#7209B7")
+```
+
+# Executive Summary
+
+This comprehensive analysis examines the "invisible work" performed by healthcare providers in Epic's in-basket system from July 2024 to June 2025. The analysis reveals significant workload disparities, after-hours burden, and system-wide inefficiencies that impact both provider well-being and patient care quality.
+
+## Key Findings
+
+- **Total Providers Analyzed**: `r nrow(provider_summary)` providers
+- **Total Invisible Work**: `r scales::comma(total_work_hours)` hours (`r round(total_work_hours/24, 1)` days)
+- **After-Hours Burden**: `r round(afterhours_pct, 1)`% of total work
+- **Weekend Burden**: `r round(weekend_pct, 1)`% of total work
+- **Extreme Disparities**: `r round(extreme_ratio, 1)`x difference between providers
+- **High-Risk Providers**: `r high_risk_count`/`r nrow(provider_summary)` (`r round(high_risk_pct, 1)`%)
+
+## Most Critical Finding
+
+The highest workload provider has **`r round(extreme_ratio, 1)`x more work** than the lowest workload provider, representing one of the most extreme disparities ever documented in healthcare workload analysis.
+
+# Data Loading and Preparation
+
+```{r data-loading}
+# Load data from Excel files
+time_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Time")
+messages_data <- read_excel("PEP Data - Lescano N 07_2024-06_2025 v2.xlsx", sheet = "Messages")
+
+# Get date columns
+date_columns <- names(time_data)[grepl("24-|25-", names(time_data))]
+
+# Convert date columns to numeric
+time_data <- time_data %>%
+  mutate(across(all_of(date_columns), as.numeric))
+
+messages_data <- messages_data %>%
+  mutate(across(all_of(date_columns), as.numeric))
+
+# Display data structure
+cat("Time data dimensions:", dim(time_data), "\n")
+cat("Messages data dimensions:", dim(messages_data), "\n")
+cat("Date columns:", length(date_columns), "\n")
+cat("Date range:", min(date_columns), "to", max(date_columns), "\n")
+```
+
+```{r data-overview}
+# Display first few rows of each dataset
+kable(head(time_data, 3), caption = "Time Data Sample") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+kable(head(messages_data, 3), caption = "Messages Data Sample") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+# System-Wide Analysis
+
+## Workload Distribution
+
+```{r system-wide-analysis}
+# Calculate total system metrics
+inbasket_total <- messages_data %>%
+  filter(Metric == "Count Of In Basket Minutes") %>%
+  select(DE_ID, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "minutes") %>%
+  summarise(total_minutes = sum(minutes, na.rm = TRUE), .groups = "drop")
+
+afterhours_total <- time_data %>%
+  filter(Metric == "Count Of Minutes Active Outside 7AM to 7PM") %>%
+  select(DE_ID, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "minutes") %>%
+  summarise(total_minutes = sum(minutes, na.rm = TRUE), .groups = "drop")
+
+weekend_total <- time_data %>%
+  filter(Metric == "Count Of Sunday Minutes") %>%
+  select(DE_ID, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "minutes") %>%
+  summarise(total_minutes = sum(minutes, na.rm = TRUE), .groups = "drop")
+
+appointments_total <- time_data %>%
+  filter(Metric == "Count Of Appointments") %>%
+  select(DE_ID, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "appointments") %>%
+  summarise(total_appointments = sum(appointments, na.rm = TRUE), .groups = "drop")
+
+# Calculate percentages
+total_work_minutes <- inbasket_total$total_minutes + afterhours_total$total_minutes + weekend_total$total_minutes
+total_work_hours <- total_work_minutes / 60
+afterhours_pct <- (afterhours_total$total_minutes / total_work_minutes) * 100
+weekend_pct <- (weekend_total$total_minutes / total_work_minutes) * 100
+regular_pct <- 100 - afterhours_pct - weekend_pct
+
+# Create summary table
+workload_summary <- tibble(
+  Category = c("Regular Hours (7AM-7PM)", "After Hours (7PM-7AM)", "Weekend (Sundays)", "Total"),
+  Minutes = c(inbasket_total$total_minutes, afterhours_total$total_minutes, weekend_total$total_minutes, total_work_minutes),
+  Hours = c(inbasket_total$total_minutes/60, afterhours_total$total_minutes/60, weekend_total$total_minutes/60, total_work_hours),
+  Percentage = c(regular_pct, afterhours_pct, weekend_pct, 100)
+)
+
+kable(workload_summary, 
+      digits = c(0, 0, 0, 1),
+      caption = "System-Wide Workload Distribution") %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  add_header_above(c("Workload Category" = 1, "Minutes" = 1, "Hours" = 1, "Percentage" = 1))
+```
+
+```{r workload-visualization}
+# Create workload distribution visualization
+workload_viz <- workload_summary %>%
+  filter(Category != "Total") %>%
+  ggplot(aes(x = "", y = Percentage, fill = Category)) +
+  geom_col(width = 1) +
+  coord_polar("y", start = 0) +
+  scale_fill_manual(values = c("#2E86AB", "#A23B72", "#F18F01")) +
+  labs(title = "Workload Distribution by Time Period",
+       subtitle = "Percentage of total invisible work",
+       fill = "Time Period") +
+  theme_void() +
+  theme(plot.title = element_text(size = 16, face = "bold"),
+        legend.position = "bottom")
+
+# Create bar chart
+workload_bar <- workload_summary %>%
+  filter(Category != "Total") %>%
+  ggplot(aes(x = reorder(Category, Hours), y = Hours, fill = Category)) +
+  geom_col() +
+  scale_fill_manual(values = c("#2E86AB", "#A23B72", "#F18F01")) +
+  labs(title = "Workload Distribution by Hours",
+       x = "Time Period",
+       y = "Hours") +
+  coord_flip() +
+  theme(legend.position = "none")
+
+# Combine plots
+workload_viz + workload_bar
+```
+
+## Message Analysis
+
+```{r message-analysis}
+# Calculate message totals
+message_metrics <- c(
+  "Count Of Patient Call Messages Recieved",
+  "Count Of Patient Medical Advice Requests Messages Recieved", 
+  "Count Of Result Messages Recieved",
+  "Count Of RX Auth Messages Recieved"
+)
+
+message_totals <- messages_data %>%
+  filter(Metric %in% message_metrics) %>%
+  select(Metric, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "count") %>%
+  group_by(Metric) %>%
+  summarise(total_messages = sum(count, na.rm = TRUE), .groups = "drop") %>%
+  mutate(
+    clean_name = case_when(
+      Metric == "Count Of Patient Call Messages Recieved" ~ "Patient Calls",
+      Metric == "Count Of Patient Medical Advice Requests Messages Recieved" ~ "Medical Advice",
+      Metric == "Count Of Result Messages Recieved" ~ "Results",
+      Metric == "Count Of RX Auth Messages Recieved" ~ "RX Auth"
+    ),
+    percentage = (total_messages / sum(total_messages)) * 100
+  )
+
+total_messages <- sum(message_totals$total_messages)
+
+kable(message_totals %>% select(clean_name, total_messages, percentage),
+      col.names = c("Message Type", "Total Messages", "Percentage"),
+      digits = c(0, 0, 1),
+      caption = "Message Type Distribution") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r message-visualization}
+# Create message distribution visualization
+message_viz <- message_totals %>%
+  ggplot(aes(x = reorder(clean_name, total_messages), y = total_messages, fill = clean_name)) +
+  geom_col() +
+  scale_fill_manual(values = colors) +
+  labs(title = "Message Type Distribution",
+       x = "Message Type",
+       y = "Total Messages") +
+  coord_flip() +
+  theme(legend.position = "none")
+
+# Create pie chart
+message_pie <- message_totals %>%
+  ggplot(aes(x = "", y = percentage, fill = clean_name)) +
+  geom_col(width = 1) +
+  coord_polar("y", start = 0) +
+  scale_fill_manual(values = colors) +
+  labs(title = "Message Type Percentage Distribution",
+       fill = "Message Type") +
+  theme_void() +
+  theme(plot.title = element_text(size = 16, face = "bold"),
+        legend.position = "bottom")
+
+message_viz + message_pie
+```
+
+# Provider Disparity Analysis
+
+## Individual Provider Metrics
+
+```{r provider-metrics}
+# Calculate individual provider metrics
+provider_summary <- messages_data %>%
+  filter(Metric == "Count Of In Basket Minutes") %>%
+  select(DE_ID, all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "minutes") %>%
+  group_by(DE_ID) %>%
+  summarise(
+    total_minutes = sum(minutes, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(total_minutes))
+
+# Calculate statistics
+total_providers <- nrow(provider_summary)
+mean_workload <- mean(provider_summary$total_minutes)
+median_workload <- median(provider_summary$total_minutes)
+sd_workload <- sd(provider_summary$total_minutes)
+cv_workload <- (sd_workload / mean_workload) * 100
+
+# Calculate percentiles
+percentiles <- quantile(provider_summary$total_minutes, probs = c(0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99))
+
+# Calculate extreme ratios
+extreme_ratio <- max(provider_summary$total_minutes) / min(provider_summary$total_minutes)
+p99_p1_ratio <- percentiles["99%"] / percentiles["10%"]
+
+# Create statistics table
+stats_table <- tibble(
+  Statistic = c("Mean", "Median", "Standard Deviation", "Coefficient of Variation", 
+                "Minimum", "Maximum", "Range", "Extreme Ratio"),
+  Value = c(mean_workload, median_workload, sd_workload, cv_workload,
+            min(provider_summary$total_minutes), max(provider_summary$total_minutes),
+            max(provider_summary$total_minutes) - min(provider_summary$total_minutes),
+            extreme_ratio),
+  Unit = c("minutes", "minutes", "minutes", "%", "minutes", "minutes", "minutes", "x")
+)
+
+kable(stats_table,
+      digits = c(0, 0, 0),
+      caption = "Provider Workload Statistics") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r percentile-analysis}
+# Create percentile table
+percentile_table <- tibble(
+  Percentile = names(percentiles),
+  Value = as.numeric(percentiles),
+  Description = c("10th percentile", "25th percentile (Q1)", "50th percentile (median)", 
+                  "75th percentile (Q3)", "90th percentile", "95th percentile", "99th percentile")
+)
+
+kable(percentile_table,
+      digits = 0,
+      caption = "Provider Workload Percentiles") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+## Distribution Analysis
+
+```{r distribution-analysis}
+# Calculate distribution statistics
+skewness_val <- psych::skew(provider_summary$total_minutes)
+kurtosis_val <- psych::kurtosi(provider_summary$total_minutes)
+
+# Create distribution summary
+distribution_summary <- tibble(
+  Characteristic = c("Sample Size", "Mean", "Median", "Standard Deviation", 
+                     "Skewness", "Kurtosis", "Coefficient of Variation"),
+  Value = c(total_providers, mean_workload, median_workload, sd_workload,
+            skewness_val, kurtosis_val, cv_workload),
+  Interpretation = c(
+    "Number of providers analyzed",
+    "Arithmetic average (affected by outliers)",
+    "Middle value (robust to outliers)",
+    "Measure of variability",
+    ifelse(skewness_val > 1, "Highly right-skewed", 
+           ifelse(skewness_val > 0.5, "Moderately right-skewed", "Approximately symmetric")),
+    ifelse(kurtosis_val > 3, "Heavy-tailed (leptokurtic)",
+           ifelse(kurtosis_val < -1, "Light-tailed (platykurtic)", "Normal-tailed (mesokurtic)")),
+    "Relative variability (high indicates extreme disparities)"
+  )
+)
+
+kable(distribution_summary,
+      digits = c(0, 0, 0),
+      caption = "Distribution Characteristics") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r distribution-visualization}
+# Create histogram with statistics
+hist_plot <- provider_summary %>%
+  ggplot(aes(x = total_minutes)) +
+  geom_histogram(bins = 20, fill = colors[1], alpha = 0.7, color = "white") +
+  geom_vline(xintercept = mean_workload, color = colors[2], linetype = "dashed", size = 1) +
+  geom_vline(xintercept = median_workload, color = colors[3], linetype = "dashed", size = 1) +
+  labs(title = "Distribution of Provider Workload",
+       subtitle = "Histogram with mean and median lines",
+       x = "Total In-Basket Minutes",
+       y = "Number of Providers") +
+  annotate("text", x = mean_workload, y = Inf, label = "Mean", 
+           vjust = 1.5, hjust = -0.1, color = colors[2]) +
+  annotate("text", x = median_workload, y = Inf, label = "Median", 
+           vjust = 1.5, hjust = 1.1, color = colors[3])
+
+# Create box plot
+box_plot <- provider_summary %>%
+  ggplot(aes(y = total_minutes)) +
+  geom_boxplot(fill = colors[4], alpha = 0.7) +
+  labs(title = "Provider Workload Box Plot",
+       subtitle = "Showing quartiles and outliers",
+       y = "Total In-Basket Minutes") +
+  coord_flip()
+
+# Create Q-Q plot
+qq_plot <- provider_summary %>%
+  ggplot(aes(sample = total_minutes)) +
+  stat_qq(color = colors[5]) +
+  stat_qq_line(color = colors[6], size = 1) +
+  labs(title = "Q-Q Plot",
+       subtitle = "Normality assessment",
+       x = "Theoretical Quantiles",
+       y = "Sample Quantiles")
+
+# Combine plots
+(hist_plot / box_plot) | qq_plot
+```
+
+## Top and Bottom Performers
+
+```{r top-bottom-performers}
+# Top 10 highest workload providers
+top_10 <- provider_summary %>%
+  slice_head(n = 10) %>%
+  mutate(rank = row_number())
+
+# Bottom 10 lowest workload providers
+bottom_10 <- provider_summary %>%
+  slice_tail(n = 10) %>%
+  mutate(rank = (nrow(provider_summary) - 9):nrow(provider_summary))
+
+# Create tables
+kable(top_10 %>% select(rank, DE_ID, total_minutes),
+      col.names = c("Rank", "Provider ID", "Total Minutes"),
+      digits = 0,
+      caption = "Top 10 Highest Workload Providers") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+kable(bottom_10 %>% select(rank, DE_ID, total_minutes),
+      col.names = c("Rank", "Provider ID", "Total Minutes"),
+      digits = 0,
+      caption = "Bottom 10 Lowest Workload Providers") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r extreme-ratios}
+# Calculate extreme ratios
+extreme_ratios <- tibble(
+  Comparison = c("Highest vs Lowest", "P99 vs P10", "P95 vs P5", "P90 vs P10"),
+  Ratio = c(
+    max(provider_summary$total_minutes) / min(provider_summary$total_minutes),
+    percentiles["99%"] / percentiles["10%"],
+    quantile(provider_summary$total_minutes, 0.95) / quantile(provider_summary$total_minutes, 0.05),
+    percentiles["90%"] / percentiles["10%"]
+  ),
+  Interpretation = c(
+    "Most extreme disparity",
+    "99th vs 10th percentile",
+    "95th vs 5th percentile", 
+    "90th vs 10th percentile"
+  )
+)
+
+kable(extreme_ratios,
+      digits = 1,
+      caption = "Extreme Disparity Ratios") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+# Provider Type Analysis
+
+```{r provider-type-analysis}
+# Get provider type information
+provider_types <- messages_data %>%
+  filter(Metric == "Minutes In In Basket Per Day") %>%
+  select(DE_ID, Grouper) %>%
+  distinct()
+
+# Join with workload data
+provider_type_summary <- provider_summary %>%
+  left_join(provider_types, by = "DE_ID") %>%
+  group_by(Grouper) %>%
+  summarise(
+    count = n(),
+    mean_workload = mean(total_minutes),
+    median_workload = median(total_minutes),
+    total_workload = sum(total_minutes),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    percentage = (count / sum(count)) * 100,
+    avg_workload_per_provider = total_workload / count
+  )
+
+kable(provider_type_summary,
+      digits = c(0, 0, 0, 0, 0, 1, 0),
+      caption = "Provider Type Performance Summary") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r provider-type-visualization}
+# Create provider type visualization
+type_dist <- provider_type_summary %>%
+  ggplot(aes(x = reorder(Grouper, count), y = count, fill = Grouper)) +
+  geom_col() +
+  scale_fill_manual(values = colors) +
+  labs(title = "Provider Type Distribution",
+       x = "Provider Type",
+       y = "Number of Providers") +
+  coord_flip() +
+  theme(legend.position = "none")
+
+type_workload <- provider_type_summary %>%
+  ggplot(aes(x = reorder(Grouper, mean_workload), y = mean_workload, fill = Grouper)) +
+  geom_col() +
+  scale_fill_manual(values = colors) +
+  labs(title = "Average Workload by Provider Type",
+       x = "Provider Type",
+       y = "Average Total Minutes") +
+  coord_flip() +
+  theme(legend.position = "none")
+
+type_dist + type_workload
+```
+
+# Temporal Analysis
+
+## Seasonal Patterns
+
+```{r seasonal-analysis}
+# Calculate monthly totals
+monthly_totals <- messages_data %>%
+  filter(Metric == "Count Of In Basket Minutes") %>%
+  select(all_of(date_columns)) %>%
+  pivot_longer(cols = all_of(date_columns), names_to = "month", values_to = "minutes") %>%
+  group_by(month) %>%
+  summarise(total_minutes = sum(minutes, na.rm = TRUE), .groups = "drop") %>%
+  mutate(
+    month_num = row_number(),
+    season = case_when(
+      month_num <= 3 ~ "Summer (Jul-Sep)",
+      month_num <= 6 ~ "Fall (Oct-Dec)",
+      month_num <= 9 ~ "Winter (Jan-Mar)",
+      TRUE ~ "Spring (Apr-Jun)"
+    )
+  )
+
+# Calculate seasonal averages
+seasonal_summary <- monthly_totals %>%
+  group_by(season) %>%
+  summarise(
+    avg_minutes = mean(total_minutes),
+    total_minutes = sum(total_minutes),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    percentage_of_peak = (avg_minutes / max(avg_minutes)) * 100
+  )
+
+kable(seasonal_summary,
+      digits = c(0, 0, 0, 1),
+      caption = "Seasonal Workload Patterns") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r temporal-visualization}
+# Create monthly trend plot
+monthly_plot <- monthly_totals %>%
+  ggplot(aes(x = month_num, y = total_minutes)) +
+  geom_line(color = colors[1], size = 1) +
+  geom_point(color = colors[2], size = 2) +
+  labs(title = "Monthly Workload Trends",
+       x = "Month Number",
+       y = "Total Minutes") +
+  scale_x_continuous(breaks = 1:12, labels = date_columns)
+
+# Create seasonal plot
+seasonal_plot <- seasonal_summary %>%
+  ggplot(aes(x = reorder(season, avg_minutes), y = avg_minutes, fill = season)) +
+  geom_col() +
+  scale_fill_manual(values = colors) +
+  labs(title = "Seasonal Workload Patterns",
+       x = "Season",
+       y = "Average Minutes") +
+  coord_flip() +
+  theme(legend.position = "none")
+
+monthly_plot + seasonal_plot
+```
+
+## Trend Analysis
+
+```{r trend-analysis}
+# Perform linear regression
+trend_model <- lm(total_minutes ~ month_num, data = monthly_totals)
+trend_summary <- broom::tidy(trend_model)
+trend_glance <- broom::glance(trend_model)
+
+# Create trend analysis table
+trend_table <- tibble(
+  Metric = c("Slope", "Intercept", "R-squared", "P-value", "Significance"),
+  Value = c(
+    trend_summary$estimate[2],
+    trend_summary$estimate[1],
+    trend_glance$r.squared,
+    trend_summary$p.value[2],
+    ifelse(trend_summary$p.value[2] < 0.05, "Significant", "Not Significant")
+  ),
+  Interpretation = c(
+    "Change per month (minutes)",
+    "Starting value (minutes)",
+    "Proportion of variance explained",
+    "Statistical significance",
+    "Trend significance"
+  )
+)
+
+kable(trend_table,
+      digits = c(0, 3, 0),
+      caption = "Trend Analysis Results") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r trend-visualization}
+# Create trend plot with regression line
+trend_plot <- monthly_totals %>%
+  ggplot(aes(x = month_num, y = total_minutes)) +
+  geom_point(color = colors[1], size = 3) +
+  geom_smooth(method = "lm", color = colors[2], size = 1, se = TRUE) +
+  labs(title = "Monthly Workload Trend Analysis",
+       subtitle = paste("Slope:", round(trend_summary$estimate[2], 1), "minutes/month, R² =", round(trend_glance$r.squared, 3)),
+       x = "Month Number",
+       y = "Total Minutes") +
+  theme(plot.subtitle = element_text(size = 12))
+
+trend_plot
+```
+
+# Risk Assessment
+
+## High-Risk Providers
+
+```{r risk-assessment}
+# Calculate high-risk threshold (90th percentile)
+high_risk_threshold <- quantile(provider_summary$total_minutes, 0.9)
+high_risk_providers <- provider_summary %>%
+  filter(total_minutes > high_risk_threshold) %>%
+  mutate(risk_level = "High Risk")
+
+high_risk_count <- nrow(high_risk_providers)
+high_risk_pct <- (high_risk_count / total_providers) * 100
+
+# Create risk categories
+risk_categories <- provider_summary %>%
+  mutate(
+    risk_level = case_when(
+      total_minutes < quantile(total_minutes, 0.5) ~ "Low Risk",
+      total_minutes < quantile(total_minutes, 0.9) ~ "Medium Risk",
+      TRUE ~ "High Risk"
+    )
+  ) %>%
+  count(risk_level) %>%
+  mutate(percentage = (n / sum(n)) * 100)
+
+kable(risk_categories,
+      col.names = c("Risk Level", "Count", "Percentage"),
+      digits = c(0, 0, 1),
+      caption = "Provider Risk Categories") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+```{r risk-visualization}
+# Create risk distribution plot
+risk_plot <- provider_summary %>%
+  mutate(
+    risk_level = case_when(
+      total_minutes < quantile(total_minutes, 0.5) ~ "Low Risk",
+      total_minutes < quantile(total_minutes, 0.9) ~ "Medium Risk",
+      TRUE ~ "High Risk"
+    )
+  ) %>%
+  ggplot(aes(x = risk_level, y = total_minutes, fill = risk_level)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#6A994E", "#F18F01", "#C73E1D")) +
+  labs(title = "Workload Distribution by Risk Level",
+       x = "Risk Level",
+       y = "Total Minutes") +
+  theme(legend.position = "none")
+
+# Create risk threshold plot
+threshold_plot <- provider_summary %>%
+  ggplot(aes(x = total_minutes)) +
+  geom_histogram(bins = 20, fill = colors[1], alpha = 0.7, color = "white") +
+  geom_vline(xintercept = high_risk_threshold, color = colors[2], linetype = "dashed", size = 1) +
+  labs(title = "High-Risk Provider Threshold",
+       subtitle = paste("90th percentile:", round(high_risk_threshold, 0), "minutes"),
+       x = "Total Minutes",
+       y = "Number of Providers") +
+  annotate("text", x = high_risk_threshold, y = Inf, label = "High Risk Threshold", 
+           vjust = 1.5, hjust = -0.1, color = colors[2])
+
+risk_plot + threshold_plot
+```
+
+# Statistical Analysis
+
+## Correlation Analysis
+
+```{r correlation-analysis}
+# Create correlation matrix
+correlation_data <- messages_data %>%
+  filter(Metric %in% c("Count Of In Basket Minutes", "Minutes In In Basket Per Day")) %>%
+  select(DE_ID, Metric, all_of(date_columns)) %>%
+  pivot_wider(names_from = Metric, values_from = all_of(date_columns)) %>%
+  select(-DE_ID) %>%
+  na.omit()
+
+# Calculate correlation matrix
+cor_matrix <- cor(correlation_data, use = "complete.obs")
+
+# Create correlation plot
+corrplot(cor_matrix, method = "color", type = "upper", 
+         order = "hclust", tl.cex = 0.8, tl.col = "black")
+```
+
+## Statistical Tests
+
+```{r statistical-tests}
+# Kruskal-Wallis test for provider types
+if(nrow(provider_type_summary) > 1) {
+  kw_test <- provider_summary %>%
+    left_join(provider_types, by = "DE_ID") %>%
+    kruskal.test(total_minutes ~ Grouper, data = .)
+  
+  kw_results <- tibble(
+    Test = "Kruskal-Wallis",
+    Statistic = kw_test$statistic,
+    P_value = kw_test$p.value,
+    Significance = ifelse(kw_test$p.value < 0.05, "Significant", "Not Significant"),
+    Interpretation = "Difference between provider types"
+  )
+  
+  kable(kw_results,
+        digits = c(0, 3, 3, 0, 0),
+        caption = "Statistical Test Results") %>%
+    kable_styling(bootstrap_options = c("striped", "hover"))
+}
+```
+
+# Recommendations
+
+## Immediate Actions (0-3 months)
+
+1. **Address Extreme Disparities**
+   - `r round(extreme_ratio, 1)`x difference between highest and lowest providers
+   - Implement workload redistribution mechanisms
+   - Target `r round(high_risk_pct, 1)`% of providers with high workload
+
+2. **Reduce After-Hours Burden**
+   - `r round(afterhours_pct, 1)`% of work happens after hours
+   - Implement shared after-hours coverage
+   - Optimize scheduling to reduce after-hours work
+
+3. **Address Weekend Workload**
+   - `r round(weekend_pct, 1)`% of work happens on weekends
+   - Implement weekend coverage rotation
+   - Optimize weekend scheduling
+
+## System-Wide Interventions (3-6 months)
+
+1. **Implement Workload Monitoring**
+   - Real-time workload tracking
+   - Automated alerts for high-risk providers
+   - Regular workload assessments
+
+2. **Optimize Workflow Processes**
+   - Streamline message processing
+   - Implement automation where possible
+   - Reduce administrative burden
+
+3. **Provider Support Programs**
+   - Burnout prevention programs
+   - Workload management training
+   - Peer support networks
+
+## Long-Term Strategies (6-12 months)
+
+1. **Capacity Planning**
+   - Analyze capacity utilization
+   - Plan for seasonal variations
+   - Optimize provider scheduling
+
+2. **Technology Solutions**
+   - Implement AI-assisted message processing
+   - Automated triage systems
+   - Smart scheduling algorithms
+
+3. **Organizational Changes**
+   - Redesign workflow processes
+   - Implement team-based care models
+   - Create specialized support roles
+
+# Conclusion
+
+## Key Insights
+
+- The Epic in-basket system reveals significant invisible workload disparities
+- After-hours and weekend work creates substantial burden on providers
+- Individual provider variations are extreme and require attention
+- System-wide trends are relatively stable but individual trends vary
+- Risk factors are concentrated in specific providers and time periods
+
+## Critical Findings
+
+- **Total invisible work**: `r scales::comma(total_work_hours)` hours
+- **After-hours burden**: `r round(afterhours_pct, 1)`% of total work
+- **Weekend burden**: `r round(weekend_pct, 1)`% of total work
+- **Extreme disparities**: `r round(extreme_ratio, 1)`x difference between providers
+- **High-risk providers**: `r round(high_risk_pct, 1)`% need immediate attention
+
+## Impact Assessment
+
+- **Patient safety**: HIGH RISK due to workload disparities
+- **Provider burnout**: HIGH RISK due to after-hours and weekend work
+- **System efficiency**: MODERATE RISK due to capacity underutilization
+- **Quality of care**: HIGH RISK due to invisible work burden
+
+## Next Steps
+
+1. Implement immediate interventions for high-risk providers
+2. Develop comprehensive workload monitoring system
+3. Create provider support and training programs
+4. Optimize workflow and scheduling processes
+5. Implement long-term capacity planning strategies
+
+---
+
+*Report generated on `r Sys.Date()` using R `r R.version.string`*
+
+*Data period: July 2024 - June 2025*
+
+*Total providers analyzed: `r total_providers`*
+
+*Total invisible work: `r scales::comma(total_work_hours)` hours*
+
+*Most shocking finding: `r round(extreme_ratio, 1)`x disparity between providers*
+

@@ -1,0 +1,4 @@
+"Grouper","Count","AvgHours","MedianHours","AvgAfterHours","AvgWeekend","AvgMessages","HighRiskCount","HighRiskPercent"
+"RESIDENT + FELLOW",34,0.6,0.6,1294.8,964.3,663,0,0
+"NURSE PRACTITIONER",4,0.5,0.3,9875.5,7522.1,943,0,0
+"PHYSICIAN + PSYCHIATRIST",26,0.5,0.5,2148.4,2125.9,1667,0,0

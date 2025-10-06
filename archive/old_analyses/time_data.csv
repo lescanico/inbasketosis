@@ -1,0 +1,1409 @@
+DE_ID,Grouper,Metric,24-Jul,24-Aug,24-Sep,24-Oct,24-Nov,24-Dec,25-Jan,25-Feb,25-Mar,25-Apr,25-May,25-Jun
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,,5.0,7.0,8.0,15.0,4.0,13.0,10.0,14.0,10.0,6.0,9.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,,3.0,2.0,2.0,3.0,2.0,3.0,2.0,5.0,3.0,2.0,4.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,,3.0,2.0,2.0,3.0,2.0,3.0,2.0,5.0,3.0,2.0,4.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,,161.0,83.0,164.0,455.0,68.0,224.0,247.0,355.0,181.0,162.0,206.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,,8.0,4.2,4.1,9.0,4.8,2.7,2.6,3.9,3.5,5.3,4.9
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,,4.0,2.0,5.0,4.0,2.0,7.0,5.0,9.0,3.0,4.0,6.0
+6454804,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,,1.0,1.0,2.0,1.0,1.0,2.0,2.0,1.0,1.0,2.0,1.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,,1.3,0.9,1.8,1.9,1.2,1.2,2.0,1.3,1.2,1.0,1.4
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,,2.9,0.0,0.0,0.0,0.0,1.2,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,,0.0,0.0,0.0,0.1,0.0,0.2,0.0,0.0,0.0,0.0,0.0
+6454804,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,,0.0,0.0,0.0,25.2,0.0,34.3,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+65945320,RESIDENT + FELLOW,Count Of Days In System,10.0,28.0,3.0,20.0,19.0,9.0,5.0,13.0,20.0,21.0,20.0,13.0
+65945320,RESIDENT + FELLOW,Count Of Scheduled Days,2.0,5.0,1.0,4.0,5.0,2.0,2.0,5.0,11.0,9.0,8.0,7.0
+65945320,RESIDENT + FELLOW,Count Of Days With Appointments,2.0,5.0,1.0,4.0,5.0,2.0,2.0,5.0,11.0,9.0,8.0,7.0
+65945320,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,0.0,0.0,0.0,248.0,731.0,599.0,797.0,306.0
+65945320,RESIDENT + FELLOW,Count Of Minutes In The System,566.0,1865.0,115.0,1249.0,1014.0,230.0,138.0,746.0,1773.0,1494.0,1535.0,836.0
+65945320,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,11.0,7.9,10.2,6.4
+65945320,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.1,2.9,5.5,3.7,4.5
+65945320,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.7,32.6,31.3,27.6,18.9
+65945320,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.4,3.8,3.8,4.2,3.7
+65945320,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.4,6.8,1.5,4.6,7.9,3.9,4.7,10.2,15.9,9.1,14.3,10.3
+65945320,RESIDENT + FELLOW,Count Of Appointments,7.0,14.0,2.0,14.0,19.0,6.0,6.0,22.0,29.0,24.0,28.0,21.0
+65945320,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,1.0,2.0,2.0,2.0,2.0,3.0,2.0,2.0,2.0,2.0
+65945320,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,5.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,0.0,0.0,0.0,123.0,278.0,314.0,272.0,246.0
+65945320,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,0.0,0.0,0.0,31.0,81.2,49.9,66.4,51.0
+65945320,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Minutes In Other Per Day,18.5,20.9,13.1,22.0,12.6,2.3,1.9,4.0,5.8,7.3,4.6,3.5
+65945320,RESIDENT + FELLOW,Count Of Sunday Minutes,23.0,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3
+65945320,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65945320,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,5.2,0.0,0.0,13.1,0.0,0.0,18.1,0.0,3.7,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,,28.0,35.0,28.0,35.0,28.0
+65945324,RESIDENT + FELLOW,Count Of Days In System,13.0,25.0,6.0,19.0,20.0,3.0,,20.0,26.0,10.0,7.0,7.0
+65945324,RESIDENT + FELLOW,Count Of Scheduled Days,5.0,14.0,4.0,12.0,9.0,1.0,,4.0,5.0,2.0,2.0,3.0
+65945324,RESIDENT + FELLOW,Count Of Days With Appointments,5.0,14.0,4.0,12.0,9.0,1.0,,4.0,5.0,2.0,2.0,3.0
+65945324,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,2.0,2.0,0.0,1.0,3.0,1.0,,0.0,0.0,1.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,1075.0,0.0,703.0,577.0,0.0,,684.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Minutes In The System,1069.0,2738.0,768.0,2203.0,2248.0,261.0,,1301.0,1620.0,666.0,404.0,572.0
+65945324,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,16.0,0.0,12.0,8.0,0.0,,5.6,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.3,0.0,2.0,2.9,0.0,,1.9,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,52.8,0.0,41.6,30.4,0.0,,20.8,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,6.5,0.0,5.3,3.9,0.0,,4.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,20.3,19.8,17.3,20.8,16.4,5.0,,5.6,6.7,8.5,7.7,13.1
+65945324,RESIDENT + FELLOW,Count Of Appointments,9.0,31.0,15.0,34.0,41.0,4.0,,20.0,16.0,7.0,7.0,15.0
+65945324,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,3.0,2.0,3.0,2.0,,3.0,2.0,2.0,2.0,3.0
+65945324,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,228.0,24.0,0.0,3.0,40.0,11.0,,0.0,0.0,19.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,559.0,0.0,420.0,577.0,0.0,,128.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,97.8,0.0,87.9,52.4,0.0,,42.7,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Minutes In Other Per Day,4.9,4.5,3.5,3.3,9.0,23.8,,22.8,23.3,23.6,17.2,3.2
+65945324,RESIDENT + FELLOW,Count Of Sunday Minutes,29.0,58.2,0.0,76.8,1.6,0.0,,0.0,61.3,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,% Of Minutes On Saturday,0.1,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+65945324,RESIDENT + FELLOW,Count Of Saturday Minutes,61.7,27.9,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,,35.0,28.0,,28.0,35.0,28.0,35.0,28.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,4.0,13.0,10.0,,12.0,3.0,,7.0,8.0,5.0,7.0,11.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,1.0,4.0,2.0,,4.0,1.0,,2.0,3.0,1.0,2.0,3.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,1.0,4.0,2.0,,4.0,1.0,,2.0,3.0,1.0,2.0,3.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,0.0,0.0,,0.0,0.0,,0.0,1.0,0.0,0.0,1.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,32.0,106.0,92.0,,113.0,48.0,,73.0,115.0,25.0,93.0,146.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,4.0,2.2,1.9,,1.6,2.4,,2.2,2.4,1.1,2.9,3.5
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,1.0,4.0,2.0,,4.0,1.0,,2.0,3.0,1.0,2.0,3.0
+66311796,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,1.0,1.0,1.0,,1.0,1.0,,1.0,1.0,1.0,1.0,1.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,,0.0,0.0,,0.0,20.0,0.0,0.0,5.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.0,0.1,,0.0,0.2,,0.1,0.0,0.0,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,0.5,0.6,0.7,,0.7,1.4,,0.7,0.9,0.4,0.9,1.1
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,2.4,1.4,8.3,,0.0,8.5,,5.7,0.0,0.8,0.0,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,0.0,0.1,0.0
+66311796,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,4.6,,0.0,0.0,,0.0,0.0,0.0,6.1,1.6
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,23.0,27.0,22.0,25.0,24.0,17.0,21.0,22.0,31.0,27.0,23.0,26.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,16.0,19.0,14.0,11.0,15.0,12.0,13.0,10.0,15.0,13.0,14.0,12.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,16.0,19.0,14.0,11.0,15.0,12.0,13.0,10.0,15.0,13.0,14.0,12.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,9.0,5.0,2.0,2.0,2.0,2.0,7.0,4.0,6.0,5.0,5.0,7.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,149.0,168.0,339.0,193.0,88.0,64.0,175.0,213.0,273.0,196.0,159.0,168.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1498.0,1797.0,1234.0,1000.0,1294.0,923.0,1136.0,1045.0,1488.0,1344.0,1233.0,1527.0
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,3.0,2.9,3.1,2.7,2.2,2.2,2.7,3.0,3.2,2.3,1.9,1.8
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,1.8,1.8,2.8,1.8,1.4,2.5,2.6,2.4,1.6,2.4,1.6,1.4
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,6.4,6.6,5.9,5.4,4.9,5.1,4.5,5.5,5.6,6.5,5.9,9.2
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,3.1,2.1,2.5,2.2,2.0,2.0,2.2,2.8,2.7,2.5,2.3,2.7
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,10.3,10.6,8.8,6.2,8.3,7.5,8.9,7.3,8.6,5.9,6.5,5.5
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,84.0,100.0,82.0,57.0,89.0,59.0,69.0,54.0,82.0,69.0,78.0,78.0
+66316664,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,3.0,3.0,4.0,4.0,4.0,3.0,3.0,4.0,3.0,4.0,4.0,4.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,125.0,48.0,23.0,10.0,67.0,39.0,74.0,94.0,34.0,91.0,20.0,118.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),266.0,222.0,124.0,101.0,184.0,154.0,182.0,230.0,236.0,241.0,163.0,269.0
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,18.7,21.0,30.8,13.8,9.8,12.8,21.9,17.7,17.1,14.0,17.7,12.0
+66316664,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316664,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,5.1,4.6,6.2,3.9,4.8,4.4,4.7,4.7,4.3,4.3,3.4,4.1
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,44.9,63.1,92.7,17.6,24.2,5.2,35.5,2.5,21.5,57.6,22.2,62.9
+66316664,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.1,0.1,0.0,0.0,0.0,0.1,0.0,0.1,0.0,0.0
+66316664,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,49.5,60.0,61.7,87.1,20.7,34.8,45.3,78.8,60.3,69.2,36.7,22.7
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,14.0,23.0,16.0,19.0,21.0,17.0,19.0,16.0,28.0,20.0,27.0,19.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,8.0,14.0,11.0,14.0,14.0,11.0,10.0,8.0,12.0,11.0,13.0,11.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,8.0,14.0,11.0,14.0,14.0,11.0,10.0,8.0,12.0,11.0,13.0,11.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,3.0,1.0,2.0,2.0,2.0,1.0,1.0,4.0,4.0,3.0,5.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,191.0,281.0,275.0,64.0,222.0,170.0,151.0,193.0,303.0,270.0,509.0,211.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,485.0,956.0,772.0,736.0,929.0,850.0,690.0,643.0,921.0,840.0,1297.0,959.0
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,1.8,3.3,3.8,2.2,2.7,2.8,2.3,3.1,3.6,4.3,3.6,2.9
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.8,1.7,1.7,1.9,0.9,0.8,1.6,2.9,3.4,3.6,3.0,2.7
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,8.3,10.0,11.1,6.1,13.7,11.2,8.2,8.5,7.2,11.8,10.8,8.5
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,3.4,4.2,4.7,4.1,4.0,4.1,3.4,4.1,4.4,6.5,5.4,3.5
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,3.5,5.9,7.0,4.8,4.5,6.2,4.3,5.2,5.0,5.4,5.8,6.6
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,29.0,41.0,34.0,42.0,35.0,37.0,36.0,27.0,39.0,25.0,44.0,43.0
+66316880,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,2.0,2.0,2.0,1.0,2.0,2.0,2.0,2.0,1.0,3.0,2.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,47.0,8.0,20.0,89.0,33.0,16.0,6.0,124.0,14.0,56.0,114.0,26.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),168.0,264.0,357.0,377.0,419.0,425.0,253.0,302.0,206.0,310.0,325.0,303.0
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,27.3,31.2,45.8,10.7,31.7,28.3,16.8,24.1,19.0,30.0,36.3,26.3
+66316880,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,2.6,2.8,3.6,3.1,3.7,3.3,2.7,3.9,3.0,3.7,5.1,4.9
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,35.9,34.5,9.9,7.1,0.0,10.6,0.0,0.0,21.3,3.6,23.6,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66316880,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,12.1,0.0,22.1,0.0,0.9,20.4,5.0,6.1,17.7,0.0,0.0,0.0
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,21.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,8.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,8.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,2.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,417.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,793.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,4.7,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.9,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,16.3,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,3.1,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,5.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,25.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,2.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),104.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,29.8,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,4.3,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,22.5,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,,,,,,,,,,,
+66317304,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,14.7,,,,,,,,,,,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,,35.0,28.0,,35.0,,28.0,,35.0,28.0,35.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,,2.0,1.0,,4.0,,5.0,,5.0,4.0,2.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,,1.0,1.0,,1.0,,1.0,,1.0,1.0,1.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,,1.0,1.0,,1.0,,1.0,,1.0,1.0,1.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,,73.0,28.0,,50.0,,178.0,,46.0,49.0,30.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,,11.7,0.9,,1.4,,7.3,,1.9,1.0,0.5,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,,1.0,1.0,,1.0,,1.0,,1.0,1.0,1.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,,1.0,1.0,,1.0,,1.0,,1.0,1.0,1.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,,9.2,1.0,,2.6,,18.6,,2.0,2.6,0.8,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+66326944,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,,0.0,0.0,,0.0,,0.0,,0.0,0.0,0.0,
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,27.0,35.0,25.0,27.0,34.0,19.0,25.0,28.0,35.0,27.0,33.0,27.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,16.0,15.0,13.0,14.0,19.0,7.0,12.0,16.0,18.0,16.0,18.0,14.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,16.0,15.0,13.0,14.0,19.0,7.0,12.0,16.0,18.0,16.0,18.0,14.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,14.0,15.0,10.0,13.0,19.0,6.0,12.0,15.0,16.0,14.0,17.0,12.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,1079.0,2076.0,1331.0,1123.0,1275.0,986.0,1131.0,1138.0,1931.0,632.0,1544.0,1514.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,3781.0,4887.0,3548.0,3808.0,4863.0,2427.0,3480.0,3957.0,5277.0,3779.0,4784.0,4085.0
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,6.1,5.1,4.9,5.9,5.9,3.4,3.7,4.8,4.1,3.6,5.5,5.7
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,1.7,3.5,2.3,3.9,3.4,2.4,4.2,3.3,2.8,1.8,2.7,2.9
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,26.1,30.3,24.2,27.9,29.2,21.2,22.2,28.0,36.3,25.6,30.0,31.0
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,7.3,7.8,8.3,9.2,10.0,7.5,8.0,7.9,8.2,7.2,7.9,8.9
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,18.5,13.7,15.5,16.0,15.5,11.1,11.9,13.5,10.7,11.7,15.1,15.8
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,91.0,94.0,84.0,73.0,90.0,62.0,81.0,79.0,92.0,87.0,91.0,75.0
+67512900,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,4.0,3.0,3.0,5.0,4.0,3.0,3.0,3.0,3.0,3.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,967.0,925.0,579.0,1117.0,1248.0,400.0,657.0,802.0,1025.0,815.0,1166.0,925.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),1715.0,1562.0,922.0,1500.0,2127.0,678.0,1111.0,1575.0,1774.0,1716.0,1673.0,1459.0
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,90.0,103.8,95.1,86.4,85.0,82.2,87.0,94.8,113.6,57.5,102.9,116.5
+67512900,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.1,0.1,0.1,0.1,0.0,0.1,0.1,0.2,0.1,0.1,0.1
+67512900,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,4.6,4.2,4.7,4.8,5.0,4.1,5.4,6.3,4.8,5.5,7.7,7.8
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,351.0,437.8,512.0,272.5,499.4,14.9,198.9,577.3,859.4,454.2,607.1,415.0
+67512900,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.0,0.1,0.0
+67512900,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,280.3,461.9,212.5,244.4,321.3,167.9,248.5,268.5,417.7,87.7,264.8,128.4
+67533560,NURSE PRACTITIONER,Count Of Days In Reporting Period,,,,,,,,,,,,28.0
+67533560,NURSE PRACTITIONER,Count Of Days In System,,,,,,,,,,,,16.0
+67533560,NURSE PRACTITIONER,Count Of Scheduled Days,,,,,,,,,,,,12.0
+67533560,NURSE PRACTITIONER,Count Of Days With Appointments,,,,,,,,,,,,12.0
+67533560,NURSE PRACTITIONER,Count Of Days of Afterhours Activity,,,,,,,,,,,,6.0
+67533560,NURSE PRACTITIONER,Count Of Minutes Active On Unscheduled Days,,,,,,,,,,,,121.0
+67533560,NURSE PRACTITIONER,Count Of Minutes In The System,,,,,,,,,,,,3484.0
+67533560,NURSE PRACTITIONER,Minutes In Clinical Review Per Appointment,,,,,,,,,,,,22.5
+67533560,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,,,,,,,,,,,,3.6
+67533560,NURSE PRACTITIONER,Minutes In Notes/Letters Per Appointment,,,,,,,,,,,,98.0
+67533560,NURSE PRACTITIONER,Minutes In Orders Per Appointment,,,,,,,,,,,,5.6
+67533560,NURSE PRACTITIONER,Minutes In Clinical Review Per Day,,,,,,,,,,,,33.7
+67533560,NURSE PRACTITIONER,Count Of Appointments,,,,,,,,,,,,24.0
+67533560,NURSE PRACTITIONER,Scheduled Hours per Day,,,,,,,,,,,,2.0
+67533560,NURSE PRACTITIONER,Count Of Minutes Active Outside 7AM to 7PM,,,,,,,,,,,,121.0
+67533560,NURSE PRACTITIONER,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,,,,,,,,,,1235.0
+67533560,NURSE PRACTITIONER,Minutes Active On Unscheduled Days Per Day,,,,,,,,,,,,30.3
+67533560,NURSE PRACTITIONER,% Of Minutes On Sunday,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Minutes In Other Per Day,,,,,,,,,,,,7.8
+67533560,NURSE PRACTITIONER,Count Of Sunday Minutes,,,,,,,,,,,,34.0
+67533560,NURSE PRACTITIONER,% Of Minutes On Saturday,,,,,,,,,,,,0.0
+67533560,NURSE PRACTITIONER,Count Of Saturday Minutes,,,,,,,,,,,,0.0
+67545740,NURSE PRACTITIONER,Count Of Days In Reporting Period,,35.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Days In System,,26.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Scheduled Days,,20.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Days With Appointments,,20.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Days of Afterhours Activity,,12.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Minutes Active On Unscheduled Days,,663.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Minutes In The System,,8739.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In Clinical Review Per Appointment,,3.5,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,,4.4,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In Notes/Letters Per Appointment,,38.1,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In Orders Per Appointment,,3.4,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In Clinical Review Per Day,,22.2,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Appointments,,165.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Scheduled Hours per Day,,5.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Minutes Active Outside 7AM to 7PM,,1052.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,2021.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes Active On Unscheduled Days Per Day,,110.6,,,,,,,,,,
+67545740,NURSE PRACTITIONER,% Of Minutes On Sunday,,0.1,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Minutes In Other Per Day,,7.7,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Sunday Minutes,,537.8,,,,,,,,,,
+67545740,NURSE PRACTITIONER,% Of Minutes On Saturday,,0.0,,,,,,,,,,
+67545740,NURSE PRACTITIONER,Count Of Saturday Minutes,,125.6,,,,,,,,,,
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,,28.0,28.0,35.0,28.0,35.0,28.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,16.0,21.0,16.0,14.0,10.0,,7.0,13.0,20.0,18.0,22.0,10.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,15.0,20.0,19.0,12.0,8.0,,3.0,9.0,17.0,16.0,18.0,10.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,15.0,20.0,19.0,12.0,8.0,,3.0,9.0,17.0,16.0,18.0,10.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,1.0,0.0,0.0,0.0,,0.0,1.0,0.0,1.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,119.0,3.0,0.0,17.0,38.0,,0.0,0.0,50.0,14.0,24.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,960.0,976.0,734.0,874.0,416.0,,128.0,254.0,539.0,617.0,628.0,381.0
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,2.3,1.9,1.1,1.5,1.0,,0.0,0.0,1.4,2.3,2.8,2.0
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.4,3.7,3.7,4.0,3.5,,0.0,0.0,5.5,2.8,1.9,2.6
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,7.9,6.3,5.7,7.4,5.2,,0.0,0.0,5.7,5.2,5.2,5.5
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,2.2,1.8,1.7,1.8,1.7,,0.0,0.0,1.7,1.7,1.8,2.1
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,6.9,5.0,3.2,5.3,3.0,,2.5,1.2,2.1,5.4,5.7,5.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,48.0,56.0,57.0,49.0,29.0,,5.0,17.0,30.0,42.0,44.0,25.0
+67549264,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,3.0,2.0,2.0,3.0,3.0,,1.0,1.0,1.0,2.0,2.0,2.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,2.0,0.0,0.0,0.0,,0.0,3.0,0.0,5.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),146.0,133.0,49.0,61.0,2.0,,0.0,0.0,72.0,50.0,39.0,55.0
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,119.4,3.3,0.0,8.6,19.2,,0.0,0.0,16.6,6.9,5.9,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,4.9,3.4,3.7,5.4,3.8,,1.3,1.9,2.2,2.4,2.0,3.7
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67549264,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,3.3,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67550600,RESIDENT + FELLOW,Count Of Days In System,15.0,24.0,16.0,20.0,14.0,15.0,17.0,18.0,25.0,12.0,21.0,9.0
+67550600,RESIDENT + FELLOW,Count Of Scheduled Days,16.0,21.0,19.0,19.0,12.0,13.0,15.0,15.0,19.0,12.0,15.0,6.0
+67550600,RESIDENT + FELLOW,Count Of Days With Appointments,16.0,21.0,19.0,19.0,12.0,13.0,15.0,15.0,19.0,12.0,15.0,6.0
+67550600,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,6.0,63.0,0.0,4.0,75.0,22.0,11.0,16.0,105.0,0.0,48.0,34.0
+67550600,RESIDENT + FELLOW,Count Of Minutes In The System,969.0,1518.0,1092.0,1072.0,805.0,924.0,973.0,792.0,1392.0,636.0,979.0,507.0
+67550600,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,2.0,2.2,2.4,1.7,2.0,1.2,1.6,2.0,1.1,1.0,1.7,1.6
+67550600,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.6,3.5,3.1,2.1,2.4,1.6,1.8,1.2,2.2,2.8,4.0,5.8
+67550600,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,12.3,12.0,9.6,8.6,9.0,8.9,8.4,8.1,9.1,8.0,8.7,10.8
+67550600,RESIDENT + FELLOW,Minutes In Orders Per Appointment,1.7,2.0,2.1,1.7,2.2,2.4,1.8,1.3,1.9,1.7,2.1,2.4
+67550600,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.6,5.6,7.3,5.2,5.9,4.0,5.0,5.3,3.6,3.1,4.0,3.5
+67550600,RESIDENT + FELLOW,Count Of Appointments,46.0,62.0,60.0,60.0,41.0,51.0,55.0,48.0,78.0,39.0,48.0,20.0
+67550600,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,2.0,3.0,2.0,3.0,2.0,3.0,2.0,2.0,2.0
+67550600,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),294.0,356.0,229.0,122.0,84.0,8.0,59.0,133.0,120.0,53.0,218.0,153.0
+67550600,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,6.0,21.1,0.0,4.3,37.3,11.1,5.3,5.2,17.5,0.0,8.1,11.2
+67550600,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Minutes In Other Per Day,3.7,3.2,4.8,2.6,2.6,4.5,4.1,4.1,3.7,2.6,2.1,1.9
+67550600,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67550600,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,23.0,30.0,19.0,23.0,27.0,25.0,18.0,18.0,24.0,25.0,26.0,22.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,19.0,21.0,17.0,18.0,20.0,18.0,14.0,14.0,20.0,18.0,21.0,17.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,19.0,21.0,17.0,18.0,20.0,18.0,14.0,14.0,20.0,18.0,21.0,17.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,3.0,1.0,0.0,2.0,3.0,2.0,0.0,2.0,4.0,6.0,7.0,6.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,187.0,248.0,67.0,50.0,94.0,198.0,94.0,47.0,172.0,86.0,60.0,79.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,2848.0,3554.0,2040.0,2639.0,3142.0,2914.0,2310.0,2280.0,3324.0,2390.0,2868.0,2604.0
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,3.9,3.2,2.9,2.8,2.9,3.4,3.6,3.4,3.5,3.1,2.8,2.7
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.5,2.3,2.4,2.1,2.3,2.9,2.3,2.6,2.9,2.4,3.2,3.0
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,13.0,11.4,10.3,11.3,12.7,12.2,12.1,11.6,10.7,10.6,9.7,10.7
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,1.7,1.7,1.5,1.5,1.4,1.6,1.4,1.6,1.4,1.2,1.5,1.6
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,20.1,17.8,15.7,15.9,15.5,16.6,20.2,19.2,22.2,15.2,15.8,15.7
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,135.0,167.0,118.0,130.0,144.0,122.0,100.0,103.0,153.0,121.0,146.0,129.0
+67558552,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,5.0,5.0,4.0,5.0,5.0,4.0,5.0,4.0,5.0,4.0,4.0,5.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,3.0,13.0,0.0,5.0,5.0,6.0,0.0,9.0,9.0,12.0,16.0,40.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),133.0,169.0,235.0,182.0,206.0,312.0,168.0,169.0,155.0,175.0,179.0,148.0
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,31.2,27.6,16.7,9.9,13.4,28.3,23.5,11.7,43.1,12.2,12.0,15.8
+67558552,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,7.5,6.0,5.1,4.7,4.5,8.7,9.2,6.5,7.9,3.6,4.5,4.4
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,161.4,119.5,11.7,45.3,38.6,42.8,36.1,41.3,172.4,64.5,10.6,43.7
+67558552,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67558552,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,26.1,9.0,17.9,0.0,0.0,75.1,27.9,5.7,0.0,8.1,0.0,8.3
+67560192,RESIDENT + FELLOW,Count Of Days In Reporting Period,,,,,,,,,,28.0,35.0,
+67560192,RESIDENT + FELLOW,Count Of Days In System,,,,,,,,,,1.0,5.0,
+67560192,RESIDENT + FELLOW,Count Of Scheduled Days,,,,,,,,,,1.0,4.0,
+67560192,RESIDENT + FELLOW,Count Of Days With Appointments,,,,,,,,,,1.0,4.0,
+67560192,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Minutes In The System,,,,,,,,,,15.0,41.0,
+67560192,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes In Orders Per Appointment,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,,,,,,,,,,1.3,0.8,
+67560192,RESIDENT + FELLOW,Count Of Appointments,,,,,,,,,,1.0,4.0,
+67560192,RESIDENT + FELLOW,Scheduled Hours per Day,,,,,,,,,,1.0,1.0,
+67560192,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,% Of Minutes On Sunday,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Minutes In Other Per Day,,,,,,,,,,0.8,0.9,
+67560192,RESIDENT + FELLOW,Count Of Sunday Minutes,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,% Of Minutes On Saturday,,,,,,,,,,0.0,0.0,
+67560192,RESIDENT + FELLOW,Count Of Saturday Minutes,,,,,,,,,,0.0,0.0,
+67566516,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67566516,RESIDENT + FELLOW,Count Of Days In System,16.0,20.0,17.0,19.0,21.0,9.0,17.0,17.0,23.0,20.0,21.0,18.0
+67566516,RESIDENT + FELLOW,Count Of Scheduled Days,12.0,15.0,16.0,15.0,14.0,7.0,14.0,10.0,16.0,13.0,18.0,12.0
+67566516,RESIDENT + FELLOW,Count Of Days With Appointments,12.0,15.0,16.0,15.0,14.0,7.0,14.0,10.0,16.0,13.0,18.0,12.0
+67566516,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,0.0,1.0,1.0,2.0,2.0,5.0,6.0,3.0,4.0,1.0,2.0
+67566516,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,94.0,207.0,12.0,73.0,252.0,22.0,87.0,213.0,121.0,161.0,119.0,112.0
+67566516,RESIDENT + FELLOW,Count Of Minutes In The System,634.0,795.0,514.0,550.0,907.0,293.0,616.0,623.0,724.0,589.0,515.0,593.0
+67566516,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,4.4,3.4,1.5,1.4,1.7,1.0,2.2,2.9,2.6,1.6,0.9,1.2
+67566516,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.4,2.9,2.6,2.2,3.2,2.3,3.4,3.5,3.4,2.6,2.1,3.3
+67566516,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,11.4,9.0,5.4,7.5,10.6,4.4,6.0,8.6,5.2,7.4,3.7,6.1
+67566516,RESIDENT + FELLOW,Minutes In Orders Per Appointment,1.5,1.2,0.9,1.3,1.7,1.2,0.9,0.9,0.9,0.8,0.8,1.2
+67566516,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,7.5,7.0,3.6,2.8,3.7,3.1,5.4,5.6,5.6,3.2,2.4,2.5
+67566516,RESIDENT + FELLOW,Count Of Appointments,28.0,41.0,46.0,38.0,47.0,27.0,41.0,33.0,49.0,40.0,55.0,38.0
+67566516,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,3.0,2.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0
+67566516,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,38.0,0.0,3.0,23.0,60.0,4.0,42.0,86.0,114.0,57.0,6.0,24.0
+67566516,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),236.0,211.0,113.0,180.0,223.0,39.0,214.0,149.0,192.0,99.0,93.0,96.0
+67566516,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,18.7,41.4,6.2,18.3,31.6,11.2,29.2,30.4,17.2,20.2,29.7,18.7
+67566516,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Minutes In Other Per Day,1.8,1.9,1.7,1.4,2.2,1.5,2.6,2.1,2.0,1.4,1.4,1.8
+67566516,RESIDENT + FELLOW,Count Of Sunday Minutes,10.3,0.0,0.0,2.3,0.0,0.0,0.0,0.0,0.0,26.4,0.0,0.0
+67566516,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0
+67566516,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.2,66.1,32.2,0.0,0.0,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,11.0,32.0,21.0,18.0,34.0,25.0,23.0,25.0,31.0,25.0,30.0,17.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,4.0,14.0,12.0,9.0,17.0,14.0,14.0,16.0,19.0,15.0,20.0,9.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,4.0,14.0,12.0,9.0,17.0,14.0,14.0,16.0,19.0,15.0,20.0,9.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,2.0,11.0,5.0,8.0,10.0,12.0,10.0,9.0,6.0,11.0,6.0,4.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,1285.0,729.0,640.0,1097.0,624.0,736.0,738.0,640.0,727.0,668.0,375.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,999.0,2631.0,1477.0,1564.0,2792.0,1754.0,2194.0,2074.0,2245.0,1803.0,1936.0,713.0
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,6.4,5.2,7.4,6.9,6.1,9.0,4.6,4.1,4.9,4.1,3.4
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,1.0,1.4,1.7,1.6,1.4,2.0,1.2,0.8,0.9,1.0,0.9
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,9.0,8.3,10.1,8.6,6.4,5.8,7.8,8.0,5.9,5.5,2.3
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,1.6,1.4,1.3,1.1,0.9,1.3,0.8,1.1,0.8,0.9,0.5
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,17.6,15.3,12.3,20.5,19.6,17.9,25.1,15.5,12.7,14.6,13.0,9.8
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,19.0,76.0,50.0,50.0,96.0,74.0,64.0,84.0,96.0,75.0,95.0,49.0
+67580608,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,6.0,4.0,7.0,6.0,5.0,5.0,6.0,5.0,5.0,5.0,7.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,38.0,155.0,43.0,134.0,111.0,188.0,131.0,55.0,149.0,119.0,61.0,20.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,510.0,213.0,298.0,382.0,359.0,657.0,238.0,411.0,300.0,277.0,57.0
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,71.4,81.1,71.1,64.5,56.8,81.8,82.0,53.4,72.7,66.8,46.8
+67580608,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.1,0.1,0.1,0.0,0.1,0.1,0.1,0.0,0.1,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,28.5,27.0,19.0,14.4,16.4,14.2,27.8,19.0,14.8,20.5,16.3,13.8
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,32.0,66.7,94.3,167.5,178.6,64.6,133.5,158.8,112.4,85.0,102.6,31.2
+67580608,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.1,0.0
+67580608,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,22.7,81.7,103.1,30.8,147.6,63.5,84.5,44.0,42.3,20.2,139.2,27.5
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,18.0,22.0,16.0,15.0,22.0,14.0,18.0,19.0,20.0,21.0,19.0,20.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,10.0,12.0,12.0,9.0,10.0,9.0,9.0,11.0,10.0,11.0,12.0,10.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,10.0,12.0,12.0,9.0,10.0,9.0,9.0,11.0,10.0,11.0,12.0,10.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,1.0,1.0,0.0,0.0,1.0,2.0,2.0,0.0,1.0,1.0,2.0,0.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,358.0,330.0,105.0,259.0,250.0,223.0,292.0,406.0,337.0,511.0,261.0,235.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1681.0,1750.0,1160.0,1282.0,1434.0,1335.0,1474.0,1926.0,1448.0,1886.0,1662.0,1270.0
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,3.0,2.5,2.7,2.9,3.1,2.0,2.0,3.7,1.9,2.6,1.6,1.5
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.6,8.0,6.2,7.8,7.0,3.8,5.7,7.3,5.4,6.1,4.8,4.1
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,16.8,14.7,14.5,15.1,15.6,11.6,15.1,17.1,12.7,15.4,12.5,8.7
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,2.5,2.9,3.0,3.3,3.6,2.4,2.9,2.9,2.8,2.8,2.7,3.0
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,8.2,5.8,6.0,6.5,5.2,7.4,5.2,9.6,4.6,7.0,5.3,4.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,55.0,51.0,45.0,33.0,37.0,53.0,46.0,49.0,50.0,57.0,64.0,55.0
+67609044,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,3.0,3.0,3.0,3.0,4.0,4.0,4.0,4.0,4.0,4.0,5.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,52.0,29.0,0.0,0.0,28.0,13.0,59.0,0.0,69.0,38.0,1.0,0.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),243.0,221.0,262.0,275.0,297.0,94.0,224.0,369.0,178.0,148.0,226.0,215.0
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,39.8,33.0,17.5,43.2,20.8,44.5,32.4,50.8,33.7,51.1,37.3,23.6
+67609044,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1
+67609044,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,9.9,9.6,8.7,16.8,10.5,10.3,10.8,12.2,10.6,11.3,8.4,12.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,73.8,66.1,0.0,88.9,10.5,0.0,16.3,0.0,46.5,33.2,0.0,63.8
+67609044,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67609044,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,38.4,0.0,11.3,0.0,22.6,41.5,0.0,0.0,0.0,0.0,21.3,0.0
+67647868,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67647868,RESIDENT + FELLOW,Count Of Days In System,12.0,22.0,18.0,17.0,22.0,7.0,10.0,16.0,16.0,12.0,20.0,17.0
+67647868,RESIDENT + FELLOW,Count Of Scheduled Days,5.0,11.0,11.0,13.0,16.0,6.0,6.0,9.0,13.0,11.0,12.0,12.0
+67647868,RESIDENT + FELLOW,Count Of Days With Appointments,5.0,11.0,11.0,13.0,16.0,6.0,6.0,9.0,13.0,11.0,12.0,12.0
+67647868,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,3.0,6.0,7.0,8.0,5.0,2.0,3.0,5.0,4.0,3.0,5.0,2.0
+67647868,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,728.0,292.0,537.0,126.0,0.0,138.0,519.0,330.0,35.0,523.0,415.0
+67647868,RESIDENT + FELLOW,Count Of Minutes In The System,1279.0,2596.0,1645.0,2179.0,2725.0,981.0,1184.0,1632.0,1961.0,1110.0,1913.0,1860.0
+67647868,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,11.4,6.7,7.2,6.5,0.0,4.7,3.1,5.5,3.7,4.8,3.8
+67647868,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,16.2,16.3,11.2,9.8,0.0,11.5,7.3,7.9,5.7,11.6,9.4
+67647868,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,57.4,41.3,29.7,24.6,0.0,25.4,19.3,28.3,22.0,21.9,24.5
+67647868,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,8.3,8.7,4.6,4.9,0.0,6.5,3.5,3.8,3.4,3.4,4.2
+67647868,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,12.9,12.9,7.4,15.2,15.3,12.0,10.2,8.1,13.0,8.6,9.1,8.4
+67647868,RESIDENT + FELLOW,Count Of Appointments,13.0,25.0,28.0,36.0,52.0,18.0,22.0,42.0,38.0,28.0,38.0,38.0
+67647868,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,3.0,3.0,2.0,3.0,4.0,3.0,2.0,3.0,3.0
+67647868,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,67.0,491.0,269.0,349.0,172.0,50.0,116.0,100.0,170.0,54.0,365.0,56.0
+67647868,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,1114.0,841.0,885.0,1284.0,0.0,408.0,384.0,743.0,509.0,631.0,635.0
+67647868,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,66.1,32.5,134.3,21.0,0.0,34.5,74.2,110.1,35.0,65.3,83.1
+67647868,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.1
+67647868,RESIDENT + FELLOW,Minutes In Other Per Day,4.4,5.3,3.4,7.2,6.1,5.5,3.7,5.8,4.9,4.0,7.0,6.9
+67647868,RESIDENT + FELLOW,Count Of Sunday Minutes,2.9,109.9,0.0,0.0,26.7,0.0,0.0,187.6,0.0,0.0,70.6,110.6
+67647868,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.2,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0
+67647868,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,113.9,4.2,342.8,0.0,0.0,0.0,201.2,93.1,0.0,69.3,47.8
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,19.0,26.0,16.0,21.0,27.0,17.0,20.0,21.0,24.0,19.0,25.0,19.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,13.0,15.0,13.0,20.0,24.0,13.0,17.0,20.0,23.0,17.0,23.0,18.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,13.0,15.0,13.0,20.0,24.0,13.0,17.0,20.0,23.0,17.0,23.0,18.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,1.0,0.0,1.0,0.0,2.0,1.0,0.0,2.0,2.0,1.0,1.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,60.0,178.0,53.0,1.0,5.0,31.0,7.0,0.0,8.0,29.0,2.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,743.0,1026.0,1330.0,1112.0,1216.0,671.0,741.0,871.0,1045.0,725.0,1024.0,829.0
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,3.7,4.1,2.1,1.4,1.2,0.9,1.3,1.1,0.8,0.8,0.6,1.1
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.7,6.6,4.2,2.3,2.8,3.5,3.3,3.1,2.5,1.7,2.4,2.5
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,19.5,16.7,22.8,8.2,7.7,6.9,6.1,6.9,6.7,6.4,7.8,7.9
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.7,0.9,0.9,0.5,0.7,0.6,0.6,0.6,0.5,0.7,0.8,0.7
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,4.5,4.7,5.1,5.0,3.5,2.4,3.5,3.2,2.7,2.6,1.8,3.1
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,25.0,30.0,43.0,73.0,80.0,46.0,53.0,60.0,81.0,60.0,74.0,55.0
+67668012,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,2.0,3.0,4.0,3.0,4.0,3.0,3.0,4.0,4.0,3.0,3.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,2.0,0.0,0.0,0.0,4.0,1.0,0.0,6.0,3.0,3.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),201.0,365.0,392.0,227.0,295.0,139.0,132.0,264.0,178.0,177.0,226.0,244.0
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,8.6,16.2,13.2,0.6,1.7,7.6,2.3,0.3,8.3,14.4,0.9,0.3
+67668012,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,1.9,2.5,1.7,1.6,1.7,1.5,1.6,1.4,1.4,2.5,1.3,2.4
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,3.3,3.3,0.8,0.6,4.0,0.0,6.3,0.3,0.0,0.0,1.3,0.3
+67668012,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67668012,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.4,0.0,0.0,0.0,1.1,0.7,0.4,0.0,0.0,0.0,0.0,0.0
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,7.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,3.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,3.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,181.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,2.1,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,12.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,0.9,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,,,,,,,,,,,
+67671272,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,,,,,,,,,,,
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,15.0,22.0,12.0,17.0,22.0,23.0,19.0,19.0,22.0,12.0,19.0,15.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,9.0,12.0,10.0,11.0,12.0,9.0,11.0,10.0,14.0,6.0,10.0,6.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,9.0,12.0,10.0,11.0,12.0,9.0,11.0,10.0,14.0,6.0,10.0,6.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,2.0,3.0,2.0,4.0,10.0,3.0,3.0,5.0,7.0,3.0,4.0,3.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,135.0,344.0,241.0,135.0,321.0,368.0,345.0,195.0,363.0,273.0,332.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1302.0,1516.0,1004.0,1071.0,1505.0,1558.0,1505.0,1449.0,1929.0,992.0,1525.0,1061.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,2.1,2.9,2.8,2.5,4.1,3.3,3.7,3.1,2.7,3.4,1.6,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.2,6.5,6.5,5.5,9.7,8.7,7.6,7.1,6.2,7.8,5.2,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,18.9,20.8,20.8,18.4,18.1,25.7,26.8,30.4,19.3,22.7,26.1,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,4.4,5.2,5.1,4.9,6.6,5.1,4.6,5.7,3.8,3.7,4.4,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,5.2,5.0,5.9,4.5,6.4,4.6,6.1,4.6,6.5,6.4,3.1,2.9
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,38.0,38.0,29.0,30.0,34.0,32.0,31.0,28.0,53.0,23.0,37.0,16.0
+67671796,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,3.0,2.0,1.0,2.0,1.0,2.0,2.0,2.0,2.0,2.0,3.0,2.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,49.0,18.0,91.0,84.0,257.0,131.0,10.0,185.0,174.0,76.0,46.0,74.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),307.0,357.0,283.0,356.0,551.0,461.0,291.0,427.0,432.0,159.0,68.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,22.5,34.4,60.2,22.4,32.2,26.3,43.1,21.7,45.4,45.5,36.9,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.1,0.0,0.1,0.0,0.0,0.1,0.0,0.1,0.0,0.1,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,4.2,4.1,6.5,4.6,5.1,4.3,4.9,4.7,6.0,5.8,4.6,3.2
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,2.6,170.6,0.0,78.5,62.2,5.8,142.5,21.8,103.1,0.0,100.7,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+67671796,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,60.9,0.0,51.2,42.3,43.0,9.5,173.7,2.3,0.0,53.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,,21.0,18.0,23.0,20.0,15.0,19.0,22.0,27.0,16.0,27.0,19.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,,11.0,9.0,12.0,10.0,10.0,8.0,12.0,16.0,10.0,13.0,10.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,,11.0,9.0,12.0,10.0,10.0,8.0,12.0,16.0,10.0,13.0,10.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,,2.0,0.0,6.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,,631.0,859.0,876.0,492.0,297.0,569.0,599.0,418.0,340.0,560.0,565.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,,1799.0,1804.0,2578.0,1714.0,1521.0,1933.0,2137.0,2822.0,1352.0,2450.0,1935.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,,3.7,3.4,3.3,2.0,1.7,2.9,2.7,1.9,1.5,1.9,2.1
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,7.5,7.3,5.0,4.8,3.3,9.0,5.5,4.2,4.6,5.7,7.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,,26.6,24.3,22.8,15.5,16.1,17.1,15.8,15.0,11.6,15.6,15.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,,3.3,3.0,3.1,2.3,2.1,2.9,2.0,1.9,1.9,1.9,2.3
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,,6.8,7.8,9.5,6.0,6.3,8.3,8.9,7.7,5.6,5.9,7.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,,38.0,47.0,67.0,61.0,57.0,54.0,72.0,109.0,59.0,84.0,65.0
+67692900,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,,3.0,4.0,5.0,4.0,4.0,5.0,5.0,5.0,4.0,4.0,4.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,,64.0,0.0,95.0,11.0,0.0,0.0,0.0,31.0,3.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,183.0,50.0,223.0,114.0,112.0,189.0,58.0,270.0,123.0,189.0,114.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,,63.1,85.9,79.7,49.2,59.4,51.7,59.9,38.0,56.6,40.0,62.8
+67692900,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,,4.8,4.0,5.7,4.1,4.9,3.5,3.9,3.7,3.3,5.8,3.5
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,,36.2,0.0,77.5,2.9,0.0,24.6,28.7,65.3,13.4,126.4,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,,0.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0
+67692900,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,,0.0,129.1,113.3,0.0,91.5,0.0,27.3,65.4,0.0,48.6,5.6
+67725036,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67725036,RESIDENT + FELLOW,Count Of Days In System,13.0,15.0,17.0,18.0,21.0,12.0,11.0,16.0,22.0,16.0,25.0,18.0
+67725036,RESIDENT + FELLOW,Count Of Scheduled Days,5.0,6.0,9.0,12.0,11.0,9.0,9.0,10.0,13.0,9.0,8.0,10.0
+67725036,RESIDENT + FELLOW,Count Of Days With Appointments,5.0,6.0,9.0,12.0,11.0,9.0,9.0,10.0,13.0,9.0,8.0,10.0
+67725036,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+67725036,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,306.0,132.0,90.0,144.0,39.0,21.0,107.0,239.0,87.0,471.0,109.0
+67725036,RESIDENT + FELLOW,Count Of Minutes In The System,1027.0,1170.0,1168.0,1412.0,1057.0,836.0,687.0,935.0,1415.0,743.0,1176.0,911.0
+67725036,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,4.9,3.9,3.2,2.6,1.8,1.2,1.7,1.6,1.8,1.7,1.4
+67725036,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.8,6.5,6.7,5.1,3.6,3.1,4.0,3.6,4.3,5.2,4.0
+67725036,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,21.1,20.5,15.6,11.6,9.4,9.6,9.7,10.5,10.3,9.6,10.6
+67725036,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,3.5,3.4,2.7,3.1,2.4,1.7,1.9,2.1,1.9,2.2,2.2
+67725036,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,10.9,8.8,6.2,7.4,4.6,5.5,3.9,4.4,4.5,3.6,2.9,3.1
+67725036,RESIDENT + FELLOW,Count Of Appointments,18.0,27.0,33.0,41.0,37.0,38.0,35.0,41.0,62.0,32.0,43.0,39.0
+67725036,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,4.0,3.0,3.0,3.0,4.0,3.0,4.0,5.0,4.0,4.0,3.0
+67725036,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,57.0,23.0,15.0,0.0,0.0,0.0,62.0,0.0,7.0,0.0
+67725036,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,142.0,324.0,385.0,90.0,45.0,8.0,7.0,147.0,128.0,8.0,136.0
+67725036,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,34.0,14.6,15.0,14.4,13.0,10.6,17.8,26.6,12.4,27.7,13.7
+67725036,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67725036,RESIDENT + FELLOW,Minutes In Other Per Day,8.6,5.8,7.4,6.1,5.2,7.0,5.7,7.3,7.1,4.2,9.3,4.8
+67725036,RESIDENT + FELLOW,Count Of Sunday Minutes,91.4,0.0,19.3,16.6,35.6,0.0,0.0,0.0,2.6,0.0,26.7,36.1
+67725036,RESIDENT + FELLOW,% Of Minutes On Saturday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67725036,RESIDENT + FELLOW,Count Of Saturday Minutes,73.4,24.5,3.3,0.0,12.9,0.0,0.0,30.6,57.8,15.5,15.1,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,19.0,31.0,19.0,24.0,31.0,17.0,24.0,23.0,26.0,23.0,22.0,22.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,14.0,20.0,15.0,15.0,19.0,12.0,12.0,15.0,15.0,14.0,15.0,15.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,14.0,20.0,15.0,15.0,19.0,12.0,12.0,15.0,15.0,14.0,15.0,15.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,3.0,8.0,6.0,9.0,6.0,4.0,5.0,5.0,4.0,7.0,7.0,5.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,295.0,614.0,399.0,548.0,547.0,290.0,492.0,388.0,468.0,429.0,544.0,398.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,3218.0,4858.0,3410.0,4408.0,4855.0,3366.0,3520.0,3796.0,4115.0,4094.0,4348.0,4032.0
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,6.0,5.8,4.8,4.4,5.7,4.0,5.1,5.4,5.7,4.5,5.0,6.6
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.1,3.8,5.0,3.4,4.0,2.7,3.0,3.1,3.5,2.5,3.4,3.6
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,26.7,28.1,27.7,28.9,26.8,21.5,21.5,22.9,22.3,21.3,19.3,25.1
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,1.9,1.9,1.9,1.7,1.9,1.8,2.0,2.1,2.0,2.1,1.9,2.3
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,23.5,20.1,19.3,18.8,20.4,23.2,20.5,23.2,23.2,22.5,28.9,28.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,78.0,107.0,93.0,102.0,111.0,99.0,96.0,99.0,106.0,115.0,126.0,94.0
+67751308,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,4.0,5.0,4.0,5.0,5.0,4.0,4.0,5.0,5.0,4.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,21.0,224.0,79.0,200.0,52.0,105.0,111.0,60.0,58.0,173.0,184.0,145.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),334.0,725.0,510.0,640.0,608.0,323.0,326.0,332.0,397.0,475.0,516.0,540.0
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,49.1,55.8,66.5,60.9,45.6,57.9,41.0,48.5,42.5,47.7,77.7,56.8
+67751308,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,8.1,8.2,6.7,6.8,6.5,7.4,6.4,7.3,7.3,7.8,9.5,8.4
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,81.7,176.1,39.5,174.9,150.5,149.5,125.3,84.8,77.9,163.2,92.3,75.6
+67751308,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751308,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,42.4,0.0,0.0,91.6,0.0,0.0,0.0,18.4,66.2,0.0,0.6
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,9.0,15.0,8.0,13.0,15.0,9.0,11.0,12.0,15.0,12.0,16.0,12.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,7.0,15.0,6.0,11.0,14.0,9.0,10.0,10.0,12.0,12.0,13.0,11.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,7.0,15.0,6.0,11.0,14.0,9.0,10.0,10.0,12.0,12.0,13.0,11.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,29.0,0.0,11.0,66.0,14.0,0.0,4.0,71.0,37.0,0.0,76.0,26.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,464.0,1048.0,382.0,851.0,1006.0,544.0,611.0,668.0,761.0,701.0,1114.0,676.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,1.0,1.1,0.9,1.2,0.9,0.8,0.7,0.9,0.8,0.7,0.8,0.7
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.3,1.3,1.5,1.6,2.6,1.7,1.8,1.3,1.5,1.7,1.8,2.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,6.6,7.3,5.6,6.3,6.0,5.8,5.6,5.6,5.4,5.2,6.5,4.4
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,1.9,1.9,1.8,2.0,1.9,1.7,1.7,1.9,1.8,1.5,1.8,1.4
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,3.7,5.6,3.8,6.2,4.6,4.1,3.2,4.5,3.6,3.9,4.4,3.7
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,33.0,78.0,33.0,65.0,76.0,45.0,53.0,58.0,68.0,65.0,89.0,66.0
+67751676,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,4.0,5.0,5.0,4.0,4.0,5.0,4.0,4.0,5.0,5.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,4.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),24.0,8.0,13.0,7.0,10.0,8.0,2.0,1.0,13.0,24.0,22.0,9.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,14.3,0.0,5.6,33.2,13.9,0.0,4.1,35.7,12.2,0.0,25.5,25.8
+67751676,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,2.2,2.7,2.4,2.9,2.6,2.6,2.4,2.8,2.3,2.4,2.9,2.9
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,10.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67751676,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,8.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67752116,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67752116,RESIDENT + FELLOW,Count Of Days In System,19.0,28.0,19.0,18.0,18.0,15.0,17.0,20.0,20.0,15.0,20.0,21.0
+67752116,RESIDENT + FELLOW,Count Of Scheduled Days,9.0,15.0,15.0,12.0,15.0,13.0,13.0,16.0,14.0,11.0,15.0,14.0
+67752116,RESIDENT + FELLOW,Count Of Days With Appointments,9.0,15.0,15.0,12.0,15.0,13.0,13.0,16.0,14.0,11.0,15.0,14.0
+67752116,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,2.0,3.0,1.0,0.0,2.0,1.0,0.0,0.0,1.0,3.0,5.0
+67752116,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,664.0,259.0,407.0,269.0,128.0,196.0,30.0,180.0,215.0,99.0,545.0
+67752116,RESIDENT + FELLOW,Count Of Minutes In The System,1664.0,2562.0,1399.0,1648.0,1542.0,1404.0,1376.0,1685.0,1331.0,1157.0,1091.0,1614.0
+67752116,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,12.0,7.3,5.6,6.0,8.8,6.9,6.2,6.7,4.2,4.6,6.0
+67752116,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.5,7.0,4.1,7.8,4.2,4.9,3.8,4.8,4.5,3.5,4.3
+67752116,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,37.2,26.5,22.1,17.9,21.6,17.4,17.4,18.6,13.1,10.3,15.9
+67752116,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,3.0,2.7,1.9,1.9,2.1,2.4,2.0,1.8,1.4,1.5,1.4
+67752116,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,13.5,15.9,10.0,12.8,12.2,18.8,13.9,14.8,11.4,10.9,9.9,13.1
+67752116,RESIDENT + FELLOW,Count Of Appointments,19.0,37.0,30.0,41.0,37.0,32.0,34.0,48.0,34.0,39.0,43.0,46.0
+67752116,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,3.0,2.0,2.0,2.0,2.0,2.0,3.0,2.0,3.0
+67752116,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,125.0,241.0,49.0,0.0,12.0,37.0,0.0,0.0,89.0,140.0,264.0
+67752116,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,719.0,641.0,340.0,616.0,603.0,416.0,643.0,630.0,336.0,466.0,542.0
+67752116,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,51.1,43.3,67.9,89.6,63.8,49.0,7.4,30.0,53.7,19.7,77.9
+67752116,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.1
+67752116,RESIDENT + FELLOW,Minutes In Other Per Day,7.7,6.0,6.4,4.1,6.1,5.3,7.1,4.3,2.9,6.6,2.8,5.9
+67752116,RESIDENT + FELLOW,Count Of Sunday Minutes,73.3,111.5,74.8,108.0,0.0,0.0,0.0,0.0,20.9,93.8,15.3,223.6
+67752116,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67752116,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,15.9,0.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67756268,RESIDENT + FELLOW,Count Of Days In System,19.0,28.0,19.0,15.0,25.0,16.0,20.0,11.0,30.0,22.0,20.0,21.0
+67756268,RESIDENT + FELLOW,Count Of Scheduled Days,8.0,8.0,11.0,9.0,16.0,9.0,7.0,5.0,17.0,13.0,12.0,11.0
+67756268,RESIDENT + FELLOW,Count Of Days With Appointments,8.0,8.0,11.0,9.0,16.0,9.0,7.0,5.0,17.0,13.0,12.0,11.0
+67756268,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,5.0,3.0,2.0,7.0,1.0,6.0,1.0,8.0,7.0,5.0,7.0
+67756268,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,882.0,1220.0,286.0,196.0,317.0,394.0,638.0,258.0,657.0,290.0,220.0,352.0
+67756268,RESIDENT + FELLOW,Count Of Minutes In The System,2298.0,3003.0,1978.0,1740.0,2658.0,1763.0,1839.0,1053.0,3239.0,2123.0,1850.0,1968.0
+67756268,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,13.8,10.5,6.3,9.0,7.0,7.6,7.9,4.6,5.1,5.4,4.7,3.6
+67756268,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,11.5,8.4,3.9,8.0,7.7,8.1,12.0,5.6,5.1,7.5,6.7,5.9
+67756268,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,54.2,47.5,32.0,31.9,28.7,27.0,37.0,27.1,28.0,28.9,26.6,21.8
+67756268,RESIDENT + FELLOW,Minutes In Orders Per Appointment,5.2,4.0,3.3,3.5,4.0,4.7,3.8,3.3,2.8,3.9,3.0,3.2
+67756268,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,15.9,13.1,12.6,16.7,13.1,15.2,9.4,9.3,11.1,9.9,8.9,8.0
+67756268,RESIDENT + FELLOW,Count Of Appointments,27.0,35.0,44.0,28.0,47.0,32.0,24.0,22.0,66.0,40.0,38.0,46.0
+67756268,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,4.0,4.0,3.0,3.0,3.0,3.0,4.0,3.0,3.0,3.0,3.0
+67756268,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,2.0,120.0,199.0,79.0,222.0,35.0,211.0,49.0,251.0,124.0,147.0,138.0
+67756268,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),416.0,455.0,628.0,449.0,655.0,267.0,393.0,197.0,753.0,442.0,615.0,398.0
+67756268,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,73.5,61.0,31.8,32.6,35.2,56.3,49.1,43.1,50.5,32.2,27.6,35.2
+67756268,RESIDENT + FELLOW,% Of Minutes On Sunday,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Minutes In Other Per Day,10.4,12.0,6.1,8.6,9.5,6.3,11.0,6.8,9.2,7.1,7.8,9.2
+67756268,RESIDENT + FELLOW,Count Of Sunday Minutes,392.7,58.5,10.6,0.0,72.3,0.0,10.2,0.0,179.7,2.5,63.9,37.9
+67756268,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67756268,RESIDENT + FELLOW,Count Of Saturday Minutes,28.0,9.3,0.0,0.0,27.9,26.6,7.4,12.1,104.6,7.9,0.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67756352,RESIDENT + FELLOW,Count Of Days In System,20.0,22.0,20.0,22.0,26.0,15.0,22.0,25.0,26.0,17.0,28.0,16.0
+67756352,RESIDENT + FELLOW,Count Of Scheduled Days,13.0,12.0,9.0,14.0,11.0,8.0,8.0,9.0,10.0,7.0,10.0,6.0
+67756352,RESIDENT + FELLOW,Count Of Days With Appointments,13.0,12.0,9.0,14.0,11.0,8.0,8.0,9.0,10.0,7.0,10.0,6.0
+67756352,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,6.0,3.0,2.0,4.0,4.0,6.0,4.0,2.0,2.0,0.0,4.0,2.0
+67756352,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,178.0,280.0,0.0,137.0,358.0,0.0,378.0,417.0,416.0,351.0,801.0,0.0
+67756352,RESIDENT + FELLOW,Count Of Minutes In The System,965.0,1175.0,678.0,936.0,1061.0,857.0,1295.0,1268.0,1212.0,966.0,1606.0,581.0
+67756352,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,3.9,7.2,0.0,4.4,5.3,0.0,7.7,7.6,5.4,8.1,12.5,0.0
+67756352,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,3.9,5.0,0.0,2.9,3.2,0.0,7.7,4.9,2.9,2.1,6.2,0.0
+67756352,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,12.8,17.7,0.0,14.1,15.9,0.0,23.1,19.8,16.0,22.0,20.8,0.0
+67756352,RESIDENT + FELLOW,Minutes In Orders Per Appointment,1.3,1.9,0.0,1.8,2.2,0.0,2.1,2.2,1.9,1.7,2.6,0.0
+67756352,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.2,8.2,5.2,5.6,5.5,7.0,7.4,7.3,6.6,10.0,11.1,6.6
+67756352,RESIDENT + FELLOW,Count Of Appointments,30.0,25.0,15.0,28.0,27.0,18.0,21.0,24.0,32.0,21.0,25.0,14.0
+67756352,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,2.0,2.0,3.0,2.0,2.0,2.0,3.0,2.0,2.0,2.0
+67756352,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,105.0,125.0,43.0,28.0,9.0,27.0,135.0,63.0,23.0,0.0,50.0,6.0
+67756352,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),370.0,397.0,0.0,343.0,241.0,0.0,433.0,361.0,269.0,200.0,341.0,0.0
+67756352,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,22.3,28.0,0.0,17.2,23.9,0.0,27.0,26.1,26.0,35.1,44.5,0.0
+67756352,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.1,0.0,0.1,0.0,0.0
+67756352,RESIDENT + FELLOW,Minutes In Other Per Day,10.0,9.1,1.8,5.6,5.5,5.8,12.1,9.5,6.9,6.2,10.0,5.2
+67756352,RESIDENT + FELLOW,Count Of Sunday Minutes,1.7,2.2,2.2,60.8,5.0,3.1,14.1,105.5,49.9,59.7,53.5,1.9
+67756352,RESIDENT + FELLOW,% Of Minutes On Saturday,0.1,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.1,0.0
+67756352,RESIDENT + FELLOW,Count Of Saturday Minutes,113.9,34.8,1.7,0.0,47.6,0.0,85.6,3.1,26.9,3.7,138.3,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,13.0,15.0,12.0,10.0,14.0,13.0,13.0,11.0,11.0,12.0,17.0,13.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,4.0,5.0,5.0,4.0,4.0,4.0,5.0,5.0,6.0,6.0,6.0,6.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,4.0,5.0,5.0,4.0,4.0,4.0,5.0,5.0,6.0,6.0,6.0,6.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,207.0,190.0,166.0,204.0,266.0,228.0,209.0,204.0,215.0,204.0,254.0,216.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,1.5,2.0,2.3,2.5,2.9,3.3,1.9,2.1,2.3,1.3,1.3,1.9
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,11.0,14.0,15.0,13.0,16.0,11.0,13.0,12.0,13.0,18.0,20.0,17.0
+67778340,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,3.0,3.0,3.0,3.0,4.0,3.0,3.0,2.0,2.0,3.0,3.0,3.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,24.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,0.8,0.6,0.7,2.1,0.9,1.4,0.9,1.1,1.5,1.3,1.0,1.1
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,4.0,0.0,0.0,0.0,0.0,4.5,0.0,3.7,0.0,0.0,0.2,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67778340,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,,,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,,,4.0,20.0,25.0,17.0,17.0,21.0,27.0,20.0,22.0,12.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,,,3.0,10.0,13.0,8.0,9.0,10.0,14.0,12.0,14.0,6.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,,,3.0,10.0,13.0,8.0,9.0,10.0,14.0,12.0,14.0,6.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,,,1.0,0.0,2.0,0.0,4.0,4.0,2.0,1.0,0.0,1.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,,,0.0,650.0,603.0,479.0,355.0,752.0,1127.0,617.0,833.0,259.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,,,579.0,2522.0,3121.0,1970.0,2183.0,2447.0,4517.0,2913.0,4296.0,2033.0
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,,,0.0,3.0,3.5,2.4,2.6,2.4,3.1,2.6,2.3,2.5
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,,,0.0,6.1,6.6,6.3,7.7,6.7,7.3,6.2,6.9,8.3
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,,,0.0,29.8,27.7,23.7,22.2,19.9,27.3,23.7,22.4,21.9
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,,,0.0,4.9,4.8,4.1,4.9,4.1,4.9,4.0,5.2,5.2
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,,,5.9,7.6,8.6,6.5,7.7,7.5,10.9,9.2,10.4,9.5
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,,,14.0,51.0,62.0,47.0,51.0,65.0,94.0,70.0,101.0,46.0
+67778836,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,,,4.0,4.0,4.0,4.0,4.0,5.0,5.0,4.0,5.0,5.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,,,9.0,0.0,117.0,0.0,160.0,74.0,75.0,10.0,0.0,6.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,0.0,177.0,456.0,198.0,268.0,125.0,339.0,266.0,228.0,157.0
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,,,0.0,65.0,50.3,53.2,44.4,68.3,86.7,77.1,104.2,43.2
+67778836,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,,,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.1,0.1,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,,,5.7,5.5,11.7,8.2,8.3,7.5,9.5,9.3,14.6,9.6
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,,,0.0,27.7,48.0,68.3,13.4,154.0,19.7,264.9,255.7,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,,,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+67778836,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,,,0.0,0.0,34.2,8.4,1.4,109.8,255.8,0.8,201.9,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,18.0,28.0,14.0,17.0,23.0,20.0,18.0,16.0,26.0,22.0,23.0,19.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,5.0,10.0,5.0,7.0,9.0,6.0,6.0,6.0,8.0,7.0,6.0,4.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,5.0,10.0,5.0,7.0,9.0,6.0,6.0,6.0,8.0,7.0,6.0,4.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,1.0,1.0,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,491.0,0.0,0.0,0.0,813.0,1136.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1899.0,2760.0,1401.0,1869.0,1831.0,1392.0,1421.0,1469.0,2259.0,2243.0,1822.0,1681.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,12.9,0.0,0.0,0.0,23.8,27.9,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,13.9,0.0,0.0,0.0,23.2,27.7,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,18.4,0.0,0.0,0.0,20.8,23.8,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,4.4,0.0,0.0,0.0,4.7,6.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,32.4,28.2,20.9,22.0,17.3,20.2,15.2,20.0,23.8,27.9,30.7,19.6
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,19.0,19.0,17.0,19.0,31.0,10.0,18.0,16.0,26.0,22.0,20.0,7.0
+67803336,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,36.0,26.0,0.0,0.0,16.0,0.0,11.0,0.0,0.0,0.0,0.0,18.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,750.0,0.0,0.0,0.0,408.0,427.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,35.1,0.0,0.0,0.0,45.1,75.7,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.1,0.0,0.0,0.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,7.3,9.7,8.6,8.6,6.8,5.7,6.6,8.9,7.3,9.1,6.9,10.4
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,258.8,254.9,50.2,91.6,47.7,84.9,0.0,0.0,145.7,85.1,44.8,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+67803336,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,47.1,0.0,109.2,0.0,111.0,27.3,0.0,0.0,1.5,0.0
+67818448,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67818448,RESIDENT + FELLOW,Count Of Days In System,19.0,30.0,12.0,22.0,27.0,17.0,18.0,23.0,25.0,18.0,16.0,20.0
+67818448,RESIDENT + FELLOW,Count Of Scheduled Days,8.0,15.0,5.0,13.0,16.0,10.0,9.0,15.0,15.0,11.0,11.0,9.0
+67818448,RESIDENT + FELLOW,Count Of Days With Appointments,8.0,15.0,5.0,13.0,16.0,10.0,9.0,15.0,15.0,11.0,11.0,9.0
+67818448,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,225.0,264.0,0.0,145.0,159.0,121.0,180.0,73.0,151.0,218.0,93.0,126.0
+67818448,RESIDENT + FELLOW,Count Of Minutes In The System,676.0,1308.0,395.0,1067.0,1115.0,672.0,597.0,745.0,833.0,662.0,479.0,622.0
+67818448,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,4.6,3.8,0.0,4.5,4.2,4.7,3.1,2.5,3.0,3.1,1.5,2.2
+67818448,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.6,4.2,0.0,6.7,4.8,7.9,5.6,3.9,3.2,3.4,2.0,2.4
+67818448,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,14.9,11.3,0.0,11.6,13.0,9.5,8.6,9.9,8.3,12.8,7.6,9.1
+67818448,RESIDENT + FELLOW,Minutes In Orders Per Appointment,3.0,2.5,0.0,2.9,2.6,2.6,2.4,1.9,1.7,2.0,1.7,2.2
+67818448,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.1,6.0,4.7,7.1,6.0,5.8,4.0,3.9,4.9,4.4,3.0,3.4
+67818448,RESIDENT + FELLOW,Count Of Appointments,24.0,48.0,12.0,35.0,38.0,21.0,23.0,35.0,41.0,26.0,33.0,31.0
+67818448,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,3.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,3.0,3.0
+67818448,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,24.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),70.0,151.0,0.0,179.0,160.0,165.0,60.0,100.0,121.0,81.0,33.0,57.0
+67818448,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,18.7,17.6,0.0,16.1,14.5,17.3,20.0,9.2,15.2,31.2,15.5,11.4
+67818448,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.1,0.3,0.0,0.0
+67818448,RESIDENT + FELLOW,Minutes In Other Per Day,4.1,4.9,3.9,4.1,3.3,4.1,4.4,2.0,3.2,2.6,1.7,2.3
+67818448,RESIDENT + FELLOW,Count Of Sunday Minutes,2.2,13.9,17.7,5.8,9.1,36.0,6.1,3.0,42.0,177.1,0.0,12.5
+67818448,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.1,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+67818448,RESIDENT + FELLOW,Count Of Saturday Minutes,10.8,87.9,0.0,25.8,41.5,0.0,82.0,2.1,0.0,1.1,1.4,0.0
+67837876,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Days In System,5.0,16.0,5.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Scheduled Days,2.0,11.0,5.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Days With Appointments,2.0,11.0,5.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Minutes In The System,22.0,48.0,21.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,0.1,0.2,0.1,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Appointments,2.0,11.0,5.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Scheduled Hours per Day,1.0,1.0,1.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,3.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.2,,,,,,,,,
+67837876,RESIDENT + FELLOW,Minutes In Other Per Day,0.4,0.3,0.3,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,0.8,4.9,,,,,,,,,
+67837876,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,,,,,,,,,
+67837876,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,,,,,,,,,
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,20.0,25.0,10.0,20.0,23.0,15.0,17.0,21.0,23.0,22.0,22.0,20.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,12.0,12.0,6.0,16.0,14.0,12.0,13.0,16.0,13.0,15.0,16.0,16.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,12.0,12.0,6.0,16.0,14.0,12.0,13.0,16.0,13.0,15.0,16.0,16.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,107.0,298.0,88.0,225.0,277.0,97.0,117.0,128.0,421.0,351.0,156.0,94.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1200.0,1391.0,442.0,1453.0,1367.0,991.0,1274.0,1328.0,1514.0,1608.0,1587.0,1500.0
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,1.6,1.5,1.3,0.7,2.5,0.8,1.3,1.0,1.5,4.6,1.8,2.3
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,5.0,4.5,2.7,3.8,5.9,3.3,3.7,2.9,4.6,4.4,4.2,3.7
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,11.4,11.7,11.0,11.3,12.6,11.4,12.5,10.6,10.1,11.5,12.0,11.4
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,1.9,1.9,1.8,1.8,2.3,1.8,2.0,1.8,1.5,1.7,1.6,1.5
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,4.0,3.5,2.7,2.2,4.7,2.5,3.7,2.8,4.1,11.2,5.4,7.1
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,54.0,56.0,28.0,62.0,44.0,46.0,50.0,61.0,63.0,53.0,65.0,61.0
+67839304,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,3.0,3.0,3.0,2.0,2.0,3.0,3.0,3.0,3.0,2.0,3.0,2.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),243.0,147.0,26.0,125.0,256.0,154.0,137.0,133.0,128.0,328.0,251.0,363.0
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,11.9,22.9,17.6,56.3,30.8,32.5,29.4,25.5,42.1,50.1,26.0,23.5
+67839304,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,5.2,6.2,4.8,9.6,7.7,5.5,8.5,8.3,9.1,8.4,6.4,7.7
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,0.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,74.2,7.7,4.1
+67839304,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67839304,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,12.4,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.0,5.4,0.0,0.0
+622264432,NURSE PRACTITIONER,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,,,
+622264432,NURSE PRACTITIONER,Count Of Days In System,22.0,21.0,18.0,21.0,29.0,11.0,20.0,20.0,20.0,,,
+622264432,NURSE PRACTITIONER,Count Of Scheduled Days,9.0,8.0,6.0,7.0,10.0,4.0,7.0,8.0,8.0,,,
+622264432,NURSE PRACTITIONER,Count Of Days With Appointments,9.0,8.0,6.0,7.0,10.0,4.0,7.0,8.0,8.0,,,
+622264432,NURSE PRACTITIONER,Count Of Days of Afterhours Activity,0.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of Minutes Active On Unscheduled Days,725.0,897.0,932.0,1176.0,1300.0,530.0,974.0,1009.0,1180.0,,,
+622264432,NURSE PRACTITIONER,Count Of Minutes In The System,2192.0,2263.0,1977.0,2620.0,3741.0,1240.0,2356.0,2645.0,2972.0,,,
+622264432,NURSE PRACTITIONER,Minutes In Clinical Review Per Appointment,4.8,5.6,7.1,5.4,3.5,3.7,3.3,3.8,3.4,,,
+622264432,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,4.2,3.9,4.4,4.0,2.9,4.4,4.5,4.3,3.5,,,
+622264432,NURSE PRACTITIONER,Minutes In Notes/Letters Per Appointment,21.1,19.3,29.8,27.3,25.0,21.9,19.0,23.5,18.5,,,
+622264432,NURSE PRACTITIONER,Minutes In Orders Per Appointment,3.5,3.7,3.9,3.8,3.4,3.3,3.8,4.1,3.8,,,
+622264432,NURSE PRACTITIONER,Minutes In Clinical Review Per Day,12.1,15.9,14.7,14.0,10.8,10.3,10.7,11.4,14.0,,,
+622264432,NURSE PRACTITIONER,Count Of Appointments,55.0,60.0,43.0,54.0,89.0,31.0,65.0,61.0,81.0,,,
+622264432,NURSE PRACTITIONER,Scheduled Hours per Day,4.0,5.0,5.0,5.0,6.0,5.0,5.0,5.0,5.0,,,
+622264432,NURSE PRACTITIONER,Count Of Minutes Active Outside 7AM to 7PM,0.0,1.0,2.0,0.0,0.0,0.0,2.0,1.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),170.0,141.0,109.0,44.0,157.0,33.0,70.0,73.0,104.0,,,
+622264432,NURSE PRACTITIONER,Minutes Active On Unscheduled Days Per Day,55.8,69.0,71.7,84.0,68.4,75.7,74.9,84.1,98.3,,,
+622264432,NURSE PRACTITIONER,% Of Minutes On Sunday,0.1,0.1,0.1,0.1,0.0,0.1,0.1,0.0,0.1,,,
+622264432,NURSE PRACTITIONER,Minutes In Other Per Day,7.6,7.5,10.9,12.2,13.8,12.4,11.4,13.7,17.7,,,
+622264432,NURSE PRACTITIONER,Count Of Sunday Minutes,114.5,301.9,207.4,313.2,184.9,110.9,223.5,69.6,191.0,,,
+622264432,NURSE PRACTITIONER,% Of Minutes On Saturday,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,,,
+622264432,NURSE PRACTITIONER,Count Of Saturday Minutes,0.0,83.8,126.7,0.0,77.3,20.5,0.0,73.9,89.2,,,
+622288744,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288744,RESIDENT + FELLOW,Count Of Days In System,16.0,26.0,12.0,17.0,19.0,17.0,13.0,19.0,27.0,14.0,17.0,5.0
+622288744,RESIDENT + FELLOW,Count Of Scheduled Days,6.0,10.0,4.0,9.0,9.0,9.0,6.0,11.0,12.0,8.0,8.0,2.0
+622288744,RESIDENT + FELLOW,Count Of Days With Appointments,6.0,10.0,4.0,9.0,9.0,9.0,6.0,11.0,12.0,8.0,8.0,2.0
+622288744,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,229.0,0.0,72.0,25.0,62.0,39.0,96.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Minutes In The System,585.0,727.0,347.0,603.0,633.0,513.0,334.0,547.0,650.0,394.0,491.0,171.0
+622288744,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,1.6,0.0,1.8,1.1,1.3,1.7,2.6,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.4,0.0,5.2,2.4,2.9,1.8,3.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,12.3,0.0,14.1,9.9,6.4,7.1,10.7,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,1.4,0.0,1.7,1.3,0.8,1.0,1.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,1.9,1.8,2.5,2.3,2.0,2.5,2.7,3.3,4.2,6.6,2.1,2.6
+622288744,RESIDENT + FELLOW,Count Of Appointments,17.0,29.0,14.0,22.0,35.0,33.0,21.0,24.0,21.0,17.0,17.0,5.0
+622288744,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,3.0,3.0,2.0,4.0,5.0,4.0,2.0,2.0,2.0,2.0,1.0
+622288744,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,18.0,0.0,45.0,51.0,99.0,19.0,43.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,14.3,0.0,9.0,2.5,7.8,5.6,12.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Minutes In Other Per Day,1.4,3.8,4.5,1.3,2.0,2.1,3.4,3.3,1.4,0.9,1.1,0.9
+622288744,RESIDENT + FELLOW,Count Of Sunday Minutes,4.7,106.3,69.9,8.9,3.9,7.2,3.4,2.1,3.3,2.4,1.1,0.0
+622288744,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288744,RESIDENT + FELLOW,Count Of Saturday Minutes,12.4,89.0,50.3,0.0,2.0,20.0,0.0,0.0,3.1,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288752,RESIDENT + FELLOW,Count Of Days In System,15.0,28.0,13.0,24.0,26.0,16.0,18.0,15.0,24.0,15.0,22.0,17.0
+622288752,RESIDENT + FELLOW,Count Of Scheduled Days,5.0,11.0,8.0,13.0,18.0,13.0,14.0,11.0,19.0,8.0,14.0,6.0
+622288752,RESIDENT + FELLOW,Count Of Days With Appointments,5.0,11.0,8.0,13.0,18.0,13.0,14.0,11.0,19.0,8.0,14.0,6.0
+622288752,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,0.0,0.0,2.0,4.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,388.0,0.0,189.0,206.0,74.0,53.0,32.0,167.0,140.0,96.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Minutes In The System,1044.0,1321.0,602.0,1238.0,1217.0,847.0,956.0,544.0,772.0,583.0,647.0,516.0
+622288752,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,4.5,0.0,3.8,2.7,1.7,2.1,1.1,1.9,2.3,1.6,0.0
+622288752,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,4.7,0.0,4.5,3.7,4.3,3.3,5.5,4.1,4.4,3.6,0.0
+622288752,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,16.9,0.0,18.7,14.3,13.3,13.9,10.7,11.2,11.4,9.9,0.0
+622288752,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,2.0,0.0,1.9,1.8,1.6,2.0,1.6,1.4,1.8,1.8,0.0
+622288752,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,9.9,6.3,7.5,5.5,4.7,3.7,4.2,1.8,2.8,3.6,2.3,8.4
+622288752,RESIDENT + FELLOW,Count Of Appointments,19.0,39.0,21.0,35.0,45.0,34.0,36.0,24.0,35.0,24.0,32.0,11.0
+622288752,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,3.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,2.0,1.0
+622288752,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,31.0,0.0,0.0,26.0,99.0,26.0,16.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,303.0,0.0,341.0,259.0,158.0,388.0,113.0,139.0,88.0,179.0,0.0
+622288752,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,22.8,0.0,17.2,25.7,24.8,13.1,8.0,33.4,20.0,12.0,0.0
+622288752,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Minutes In Other Per Day,10.6,3.0,2.5,4.9,3.2,2.8,5.1,1.9,1.7,1.9,1.1,1.3
+622288752,RESIDENT + FELLOW,Count Of Sunday Minutes,17.0,24.8,2.0,18.6,3.0,0.0,11.8,0.7,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288752,RESIDENT + FELLOW,Count Of Saturday Minutes,26.3,33.1,0.0,42.8,8.5,3.6,22.4,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288756,RESIDENT + FELLOW,Count Of Days In System,12.0,20.0,9.0,13.0,16.0,8.0,8.0,11.0,13.0,18.0,6.0,5.0
+622288756,RESIDENT + FELLOW,Count Of Scheduled Days,3.0,4.0,2.0,3.0,4.0,2.0,3.0,3.0,3.0,4.0,2.0,1.0
+622288756,RESIDENT + FELLOW,Count Of Days With Appointments,3.0,4.0,2.0,3.0,4.0,2.0,3.0,3.0,3.0,4.0,2.0,1.0
+622288756,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Minutes In The System,402.0,635.0,268.0,427.0,437.0,218.0,283.0,397.0,380.0,473.0,125.0,218.0
+622288756,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,6.1,5.0,4.1,4.6,4.1,3.4,5.5,6.9,4.2,3.6,3.0,7.2
+622288756,RESIDENT + FELLOW,Count Of Appointments,9.0,19.0,12.0,13.0,13.0,4.0,13.0,10.0,13.0,14.0,5.0,4.0
+622288756,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,4.0,4.0,3.0,2.0,1.0,3.0,3.0,3.0,3.0,2.0,3.0
+622288756,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Minutes In Other Per Day,1.1,1.4,1.5,1.7,1.1,1.6,2.9,2.4,2.0,1.4,0.9,1.5
+622288756,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288756,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288760,RESIDENT + FELLOW,Count Of Days In System,17.0,24.0,16.0,14.0,26.0,18.0,19.0,23.0,26.0,15.0,26.0,15.0
+622288760,RESIDENT + FELLOW,Count Of Scheduled Days,8.0,15.0,13.0,9.0,13.0,8.0,9.0,11.0,15.0,7.0,11.0,6.0
+622288760,RESIDENT + FELLOW,Count Of Days With Appointments,8.0,15.0,13.0,9.0,13.0,8.0,9.0,11.0,15.0,7.0,11.0,6.0
+622288760,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,4.0,4.0,4.0,1.0,2.0,3.0,0.0,2.0,1.0,2.0,1.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,169.0,0.0,318.0,0.0,0.0,0.0,99.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Minutes In The System,559.0,732.0,737.0,420.0,991.0,539.0,635.0,610.0,773.0,472.0,874.0,498.0
+622288760,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,3.1,0.0,4.6,0.0,0.0,0.0,2.6,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,5.8,0.0,6.4,0.0,0.0,0.0,3.2,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,15.2,0.0,18.8,0.0,0.0,0.0,13.9,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,2.8,0.0,2.4,0.0,0.0,0.0,1.9,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,2.5,3.2,4.1,4.3,4.4,3.1,3.5,3.4,2.8,2.0,3.4,3.2
+622288760,RESIDENT + FELLOW,Count Of Appointments,12.0,23.0,23.0,17.0,25.0,15.0,18.0,18.0,28.0,15.0,24.0,11.0
+622288760,RESIDENT + FELLOW,Scheduled Hours per Day,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
+622288760,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,153.0,37.0,33.0,0.0,54.0,31.0,0.0,18.0,10.0,49.0,14.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,256.0,0.0,230.0,0.0,0.0,0.0,224.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,33.8,0.0,24.4,0.0,0.0,0.0,9.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.1
+622288760,RESIDENT + FELLOW,Minutes In Other Per Day,6.0,3.0,5.6,2.3,2.5,6.1,3.8,3.6,2.6,1.8,2.7,2.9
+622288760,RESIDENT + FELLOW,Count Of Sunday Minutes,45.5,18.6,73.3,29.5,32.1,20.2,8.7,22.4,27.9,0.0,58.1,57.4
+622288760,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288760,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,6.6,0.0,15.7,0.0,0.0,11.8,0.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288764,RESIDENT + FELLOW,Count Of Days In System,19.0,17.0,22.0,24.0,25.0,20.0,25.0,23.0,24.0,26.0,28.0,22.0
+622288764,RESIDENT + FELLOW,Count Of Scheduled Days,10.0,11.0,17.0,18.0,23.0,12.0,13.0,13.0,15.0,15.0,16.0,11.0
+622288764,RESIDENT + FELLOW,Count Of Days With Appointments,10.0,11.0,17.0,18.0,23.0,12.0,13.0,13.0,15.0,15.0,16.0,11.0
+622288764,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,7.0,5.0,11.0,14.0,14.0,6.0,10.0,7.0,5.0,6.0,6.0,4.0
+622288764,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,1013.0,473.0,572.0,331.0,57.0,378.0,674.0,651.0,474.0,687.0,518.0,973.0
+622288764,RESIDENT + FELLOW,Count Of Minutes In The System,2588.0,2188.0,3001.0,3349.0,4011.0,2717.0,3200.0,2720.0,2803.0,3332.0,3102.0,2721.0
+622288764,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,12.2,12.1,9.5,11.0,10.6,11.6,11.9,10.0,9.6,11.2,8.0,8.4
+622288764,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,8.1,10.7,8.1,9.3,9.2,9.0,9.5,10.6,9.9,13.3,7.6,9.3
+622288764,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,39.7,35.1,36.7,37.4,37.9,38.0,36.4,25.1,32.4,32.4,29.0,31.1
+622288764,RESIDENT + FELLOW,Minutes In Orders Per Appointment,4.0,4.4,3.3,2.5,2.8,3.4,2.8,2.3,3.2,2.8,2.4,2.6
+622288764,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,21.9,20.7,18.6,21.5,24.7,22.7,20.9,20.4,16.8,19.4,16.3,16.1
+622288764,RESIDENT + FELLOW,Count Of Appointments,37.0,29.0,51.0,47.0,58.0,39.0,44.0,47.0,42.0,45.0,57.0,42.0
+622288764,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,3.0,2.0,2.0,3.0,3.0,3.0,2.0,2.0,3.0,3.0
+622288764,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,414.0,172.0,515.0,870.0,608.0,366.0,523.0,329.0,275.0,145.0,294.0,135.0
+622288764,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),747.0,1040.0,1355.0,1777.0,2405.0,1348.0,1437.0,1039.0,1272.0,1414.0,1318.0,833.0
+622288764,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,101.3,78.8,81.7,55.2,28.5,47.2,56.2,65.1,52.7,62.4,43.1,88.4
+622288764,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.1,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+622288764,RESIDENT + FELLOW,Minutes In Other Per Day,8.3,9.6,12.1,9.8,6.8,4.1,8.6,7.2,8.8,10.5,3.6,11.2
+622288764,RESIDENT + FELLOW,Count Of Sunday Minutes,34.9,51.0,218.0,208.9,1.9,0.0,225.3,0.0,61.5,155.2,0.0,101.9
+622288764,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.1,0.1,0.0,0.1
+622288764,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,38.9,76.7,72.1,55.1,123.9,60.4,207.1,236.6,200.6,82.2,166.1
+622288768,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288768,RESIDENT + FELLOW,Count Of Days In System,18.0,26.0,16.0,23.0,16.0,15.0,21.0,17.0,27.0,24.0,14.0,21.0
+622288768,RESIDENT + FELLOW,Count Of Scheduled Days,12.0,23.0,15.0,16.0,12.0,14.0,15.0,13.0,23.0,18.0,11.0,10.0
+622288768,RESIDENT + FELLOW,Count Of Days With Appointments,12.0,23.0,15.0,16.0,12.0,14.0,15.0,13.0,23.0,18.0,11.0,10.0
+622288768,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,2.0,3.0,2.0,0.0,2.0,1.0,0.0,4.0,3.0,1.0,1.0
+622288768,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,274.0,74.0,165.0,147.0,162.0,20.0,97.0,95.0,131.0,153.0,127.0,162.0
+622288768,RESIDENT + FELLOW,Count Of Minutes In The System,1432.0,2470.0,1316.0,1510.0,962.0,1166.0,1218.0,966.0,1563.0,1249.0,746.0,841.0
+622288768,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,6.3,6.0,4.5,3.6,3.6,3.3,3.4,3.1,2.9,2.7,2.1,4.6
+622288768,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,2.9,5.1,3.8,3.7,3.8,1.7,2.3,1.6,2.0,3.1,3.0,4.4
+622288768,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,23.6,21.5,18.9,18.3,15.2,14.8,13.2,15.0,13.0,14.5,10.1,17.5
+622288768,RESIDENT + FELLOW,Minutes In Orders Per Appointment,2.3,2.7,2.4,1.8,1.6,2.0,1.3,1.8,1.7,1.9,1.1,2.3
+622288768,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,11.6,13.2,9.9,7.0,7.3,8.7,6.6,6.1,6.4,4.7,4.9,5.0
+622288768,RESIDENT + FELLOW,Count Of Appointments,37.0,57.0,43.0,44.0,32.0,40.0,41.0,33.0,60.0,42.0,33.0,23.0
+622288768,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
+622288768,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,35.0,24.0,67.0,0.0,28.0,29.0,0.0,54.0,73.0,25.0,10.0
+622288768,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),310.0,846.0,385.0,393.0,181.0,365.0,340.0,241.0,365.0,274.0,184.0,225.0
+622288768,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,39.1,24.5,41.2,21.0,40.4,20.0,16.2,23.6,32.7,25.4,42.3,14.8
+622288768,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.1,0.0,0.0
+622288768,RESIDENT + FELLOW,Minutes In Other Per Day,4.2,4.7,6.8,3.6,2.7,8.4,6.4,4.5,4.4,6.5,5.2,2.1
+622288768,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,0.0,0.0,40.4,20.4,0.0,0.0,12.4,116.2,103.6,0.0,16.8
+622288768,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288768,RESIDENT + FELLOW,Count Of Saturday Minutes,55.1,28.4,0.0,0.0,0.0,0.0,6.1,4.4,0.0,2.1,0.0,21.2
+622288772,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,,,
+622288772,RESIDENT + FELLOW,Count Of Days In System,13.0,20.0,15.0,21.0,19.0,14.0,16.0,19.0,24.0,,,
+622288772,RESIDENT + FELLOW,Count Of Scheduled Days,8.0,13.0,12.0,12.0,13.0,11.0,11.0,12.0,15.0,,,
+622288772,RESIDENT + FELLOW,Count Of Days With Appointments,8.0,13.0,12.0,12.0,13.0,11.0,11.0,12.0,15.0,,,
+622288772,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,0.0,0.0,1.0,2.0,1.0,1.0,1.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,105.0,117.0,331.0,242.0,142.0,70.0,269.0,360.0,,,
+622288772,RESIDENT + FELLOW,Count Of Minutes In The System,724.0,845.0,813.0,1282.0,1364.0,925.0,883.0,1243.0,1584.0,,,
+622288772,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,3.1,2.6,4.3,3.6,4.1,1.9,2.9,3.3,,,
+622288772,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,3.0,3.3,2.2,4.1,3.9,3.2,6.1,3.7,,,
+622288772,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,16.9,24.0,19.2,16.0,10.6,13.3,14.1,10.6,,,
+622288772,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,2.6,3.0,2.7,3.6,4.1,3.8,3.4,4.5,,,
+622288772,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,6.4,4.2,3.7,7.7,7.9,8.9,3.6,5.5,7.5,,,
+622288772,RESIDENT + FELLOW,Count Of Appointments,18.0,27.0,25.0,37.0,41.0,30.0,32.0,37.0,55.0,,,
+622288772,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,,,
+622288772,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,40.0,92.0,17.0,44.0,5.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,269.0,311.0,359.0,552.0,368.0,444.0,352.0,447.0,,,
+622288772,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,15.0,23.3,36.7,40.4,47.5,11.7,38.4,40.1,,,
+622288772,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,
+622288772,RESIDENT + FELLOW,Minutes In Other Per Day,5.6,2.0,2.6,4.0,5.3,7.5,3.3,3.7,4.8,,,
+622288772,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,0.0,0.0,0.0,0.0,0.0,12.8,11.1,0.0,,,
+622288772,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,,,
+622288772,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,74.0,0.0,0.0,0.0,0.0,0.0,,,
+622288780,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622288780,RESIDENT + FELLOW,Count Of Days In System,22.0,25.0,16.0,21.0,22.0,15.0,21.0,21.0,29.0,23.0,21.0,21.0
+622288780,RESIDENT + FELLOW,Count Of Scheduled Days,14.0,13.0,12.0,12.0,13.0,11.0,12.0,18.0,19.0,16.0,14.0,9.0
+622288780,RESIDENT + FELLOW,Count Of Days With Appointments,14.0,13.0,12.0,12.0,13.0,11.0,12.0,18.0,19.0,16.0,14.0,9.0
+622288780,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,6.0,3.0,3.0,1.0,0.0,2.0,2.0,1.0,2.0,2.0,1.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,382.0,337.0,214.0,380.0,369.0,67.0,180.0,55.0,388.0,194.0,114.0,349.0
+622288780,RESIDENT + FELLOW,Count Of Minutes In The System,1258.0,1275.0,1011.0,1282.0,1505.0,1251.0,1277.0,1504.0,2262.0,1651.0,1336.0,1167.0
+622288780,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,11.4,5.7,6.0,9.1,10.9,8.1,8.9,6.9,8.9,8.8,6.5,8.0
+622288780,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,5.7,5.0,5.6,7.5,8.6,5.3,6.8,6.1,6.5,8.9,9.8,12.1
+622288780,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,29.5,19.2,21.0,31.9,27.0,29.2,27.4,24.8,26.9,19.4,19.6,23.5
+622288780,RESIDENT + FELLOW,Minutes In Orders Per Appointment,4.2,2.5,3.4,5.4,3.4,3.2,3.5,3.5,2.7,2.7,2.6,5.1
+622288780,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,10.4,7.8,9.3,9.1,12.9,12.9,9.7,10.8,13.5,13.0,9.0,7.7
+622288780,RESIDENT + FELLOW,Count Of Appointments,22.0,34.0,28.0,21.0,26.0,24.0,23.0,33.0,44.0,34.0,29.0,20.0
+622288780,RESIDENT + FELLOW,Scheduled Hours per Day,1.0,3.0,3.0,2.0,2.0,2.0,2.0,2.0,2.0,3.0,2.0,2.0
+622288780,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,71.0,176.0,40.0,8.0,0.0,106.0,44.0,24.0,62.0,17.0,4.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),461.0,519.0,478.0,456.0,551.0,494.0,482.0,754.0,757.0,858.0,677.0,375.0
+622288780,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,38.2,28.0,35.6,42.2,41.0,16.7,20.0,18.5,38.8,27.7,16.3,29.0
+622288780,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Minutes In Other Per Day,7.1,2.9,3.1,2.7,3.2,4.0,4.9,2.2,4.9,7.2,3.7,5.0
+622288780,RESIDENT + FELLOW,Count Of Sunday Minutes,65.3,0.3,19.6,0.0,2.7,0.0,38.9,20.6,46.2,36.7,0.0,11.6
+622288780,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622288780,RESIDENT + FELLOW,Count Of Saturday Minutes,14.7,4.1,9.9,7.7,9.3,14.3,18.3,16.2,27.8,51.4,19.7,50.5
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,16.0,26.0,17.0,22.0,19.0,15.0,16.0,18.0,20.0,20.0,23.0,16.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,14.0,16.0,15.0,13.0,14.0,12.0,14.0,14.0,14.0,15.0,18.0,13.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,14.0,16.0,15.0,13.0,14.0,12.0,14.0,14.0,14.0,15.0,18.0,13.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,4.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,0.0,2.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,213.0,760.0,191.0,615.0,267.0,26.0,90.0,240.0,207.0,249.0,260.0,172.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,2202.0,3877.0,2700.0,3056.0,2713.0,2313.0,2529.0,2467.0,2342.0,2496.0,3604.0,2518.0
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,6.2,8.3,8.5,9.0,7.2,5.6,5.8,6.2,6.1,5.4,7.2,6.9
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,2.8,3.7,3.1,3.5,2.6,2.0,2.6,2.4,2.2,2.4,2.8,2.6
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,5.5,9.4,9.3,8.4,7.3,6.5,6.1,6.9,6.2,5.8,6.2,6.2
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,3.0,4.0,4.2,4.1,3.6,3.7,3.4,3.6,3.6,3.5,4.0,3.6
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,38.0,39.7,43.4,41.0,38.4,39.4,40.3,35.0,30.4,30.9,44.3,46.5
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,117.0,124.0,97.0,100.0,102.0,106.0,111.0,102.0,100.0,114.0,141.0,108.0
+622293284,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,5.0,5.0,4.0,5.0,5.0,5.0,5.0,5.0,4.0,5.0,5.0,5.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,103.0,0.0,0.0,19.0,0.0,5.0,11.0,0.0,0.0,3.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),299.0,376.0,361.0,167.0,403.0,243.0,224.0,333.0,408.0,231.0,461.0,371.0
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,53.3,76.0,47.8,68.4,53.5,8.8,45.0,60.0,34.6,49.9,52.1,57.2
+622293284,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.1,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,10.5,10.2,10.2,8.8,11.2,9.3,9.6,9.2,10.0,7.5,9.4,10.1
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,118.8,0.0,0.0,13.2,141.4,0.0,0.0,0.0,120.3,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622293284,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,132.0,12.0,22.9,0.0,0.0,0.0,0.0,21.8,0.0,0.0,0.0
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,12.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,4.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,4.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,292.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,3.4,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,16.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,2.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,1.7,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,,,,,,,,,,,
+622314356,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,,,,,,,,,,,
+622351160,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351160,RESIDENT + FELLOW,Count Of Days In System,20.0,28.0,14.0,17.0,28.0,18.0,24.0,21.0,16.0,23.0,24.0,24.0
+622351160,RESIDENT + FELLOW,Count Of Scheduled Days,9.0,17.0,8.0,10.0,16.0,9.0,12.0,14.0,11.0,15.0,13.0,11.0
+622351160,RESIDENT + FELLOW,Count Of Days With Appointments,9.0,17.0,8.0,10.0,16.0,9.0,12.0,14.0,11.0,15.0,13.0,11.0
+622351160,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,6.0,2.0,3.0,2.0,5.0,2.0,2.0,5.0,7.0,5.0,3.0
+622351160,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,477.0,219.0,197.0,188.0,581.0,288.0,447.0,132.0,145.0,298.0,275.0,374.0
+622351160,RESIDENT + FELLOW,Count Of Minutes In The System,1434.0,2559.0,1092.0,1477.0,2773.0,1646.0,1982.0,1705.0,1492.0,1736.0,1612.0,1291.0
+622351160,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,11.0,9.5,7.3,5.4,7.0,6.5,7.7,4.2,3.9,4.6,4.0,3.9
+622351160,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,4.1,6.2,3.8,4.8,5.3,5.3,4.6,3.4,3.2,6.1,4.7,4.0
+622351160,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,23.1,28.0,17.5,14.5,17.6,22.2,22.1,15.3,15.8,14.8,15.0,15.1
+622351160,RESIDENT + FELLOW,Minutes In Orders Per Appointment,3.2,2.8,2.0,2.0,2.6,2.5,2.1,1.7,1.7,1.8,1.7,1.6
+622351160,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,14.3,15.6,15.5,14.0,16.8,13.4,13.7,11.1,12.1,9.8,8.3,6.5
+622351160,RESIDENT + FELLOW,Count Of Appointments,35.0,46.0,35.0,44.0,67.0,37.0,43.0,56.0,50.0,49.0,50.0,40.0
+622351160,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,3.0,3.0,3.0,3.0,3.0,3.0,4.0,2.0,3.0,2.0
+622351160,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,8.0,230.0,41.0,93.0,22.0,177.0,45.0,47.0,127.0,149.0,106.0,19.0
+622351160,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),277.0,1031.0,266.0,370.0,629.0,425.0,575.0,371.0,395.0,453.0,529.0,244.0
+622351160,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,39.7,19.9,24.6,26.9,48.4,32.0,37.3,18.9,28.9,37.2,25.0,28.8
+622351160,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.0,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0
+622351160,RESIDENT + FELLOW,Minutes In Other Per Day,7.3,4.3,6.0,7.7,8.5,5.4,6.8,5.5,4.5,7.6,5.7,4.7
+622351160,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,8.3,18.9,107.9,134.0,12.5,118.6,77.8,7.0,12.4,24.6,13.7
+622351160,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.1
+622351160,RESIDENT + FELLOW,Count Of Saturday Minutes,49.6,27.0,6.3,4.0,133.3,44.9,4.4,12.9,0.0,119.0,73.1,92.8
+622351168,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351168,RESIDENT + FELLOW,Count Of Days In System,16.0,27.0,16.0,15.0,28.0,13.0,18.0,23.0,19.0,15.0,25.0,14.0
+622351168,RESIDENT + FELLOW,Count Of Scheduled Days,6.0,11.0,7.0,6.0,12.0,5.0,9.0,12.0,11.0,4.0,15.0,6.0
+622351168,RESIDENT + FELLOW,Count Of Days With Appointments,6.0,11.0,7.0,6.0,12.0,5.0,9.0,12.0,11.0,4.0,15.0,6.0
+622351168,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,2.0,7.0,1.0,3.0,3.0,0.0,1.0,2.0,3.0,1.0,6.0,1.0
+622351168,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,398.0,603.0,0.0,234.0,415.0,181.0,280.0,569.0,321.0,0.0,231.0,194.0
+622351168,RESIDENT + FELLOW,Count Of Minutes In The System,1365.0,2302.0,932.0,1185.0,1841.0,828.0,962.0,1527.0,1466.0,778.0,1486.0,801.0
+622351168,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,5.8,7.3,0.0,5.3,4.9,4.6,3.3,4.1,2.3,0.0,2.8,5.1
+622351168,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,8.6,8.2,0.0,6.5,5.5,4.5,5.4,7.2,3.8,0.0,4.2,3.3
+622351168,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,29.6,34.4,0.0,21.7,21.6,22.4,14.1,20.6,17.6,0.0,11.9,10.3
+622351168,RESIDENT + FELLOW,Minutes In Orders Per Appointment,6.0,7.0,0.0,4.4,3.7,2.9,2.6,3.6,2.3,0.0,2.7,2.3
+622351168,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,7.6,9.2,4.8,8.8,6.9,7.1,4.9,6.0,5.5,3.7,5.7,10.2
+622351168,RESIDENT + FELLOW,Count Of Appointments,21.0,34.0,25.0,25.0,40.0,20.0,27.0,40.0,46.0,17.0,50.0,28.0
+622351168,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,2.0,3.0,3.0,3.0,4.0,3.0,3.0,4.0,3.0,3.0,4.0
+622351168,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,59.0,153.0,3.0,27.0,49.0,0.0,14.0,8.0,46.0,16.0,112.0,15.0
+622351168,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),253.0,557.0,0.0,256.0,396.0,133.0,199.0,194.0,253.0,0.0,419.0,180.0
+622351168,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,39.8,37.7,0.0,26.0,25.9,22.6,31.1,47.4,40.1,0.0,23.1,24.3
+622351168,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.1,0.0,0.1,0.0,0.1,0.1,0.0,0.0,0.0,0.1
+622351168,RESIDENT + FELLOW,Minutes In Other Per Day,8.6,5.7,6.0,7.5,8.2,5.0,10.4,6.7,6.1,6.5,7.9,5.7
+622351168,RESIDENT + FELLOW,Count Of Sunday Minutes,63.1,172.3,80.9,45.8,184.8,2.8,118.2,205.1,49.0,29.7,69.7,92.0
+622351168,RESIDENT + FELLOW,% Of Minutes On Saturday,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+622351168,RESIDENT + FELLOW,Count Of Saturday Minutes,126.7,0.0,8.5,44.2,28.1,15.5,38.3,36.3,80.5,0.0,26.9,0.0
+622351172,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351172,RESIDENT + FELLOW,Count Of Days In System,10.0,30.0,6.0,18.0,19.0,14.0,17.0,20.0,31.0,11.0,27.0,23.0
+622351172,RESIDENT + FELLOW,Count Of Scheduled Days,2.0,8.0,3.0,8.0,10.0,8.0,7.0,8.0,10.0,4.0,8.0,9.0
+622351172,RESIDENT + FELLOW,Count Of Days With Appointments,2.0,8.0,3.0,8.0,10.0,8.0,7.0,8.0,10.0,4.0,8.0,9.0
+622351172,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,3.0,1.0,3.0,4.0,1.0,0.0,2.0,4.0,0.0,3.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,163.0,0.0,0.0,0.0,154.0,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Minutes In The System,315.0,917.0,191.0,929.0,775.0,617.0,624.0,889.0,955.0,475.0,1222.0,748.0
+622351172,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,3.3,0.0,0.0,0.0,3.5,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,2.9,0.0,0.0,0.0,2.8,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,17.4,0.0,0.0,0.0,21.3,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,2.7,0.0,0.0,0.0,2.8,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,2.6,2.2,3.5,4.6,3.7,3.7,3.0,3.7,2.7,3.3,4.3,3.4
+622351172,RESIDENT + FELLOW,Count Of Appointments,4.0,21.0,12.0,25.0,18.0,18.0,15.0,21.0,21.0,13.0,18.0,17.0
+622351172,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,3.0,3.0,2.0,2.0,2.0,2.0,2.0,3.0,2.0,2.0
+622351172,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,17.0,17.0,168.0,102.0,3.0,0.0,46.0,115.0,0.0,75.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,343.0,0.0,0.0,0.0,157.0,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,16.3,0.0,0.0,0.0,12.8,0.0,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0
+622351172,RESIDENT + FELLOW,Minutes In Other Per Day,4.4,5.0,4.3,8.4,7.5,7.0,5.7,7.5,6.4,4.4,8.8,5.4
+622351172,RESIDENT + FELLOW,Count Of Sunday Minutes,5.5,50.2,11.2,23.3,21.1,0.0,13.2,35.5,30.0,5.5,161.3,22.6
+622351172,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0
+622351172,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,16.3,0.0,93.0,0.0,0.0,22.6,11.3,53.8,0.0,11.7,19.5
+622351176,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351176,RESIDENT + FELLOW,Count Of Days In System,13.0,12.0,16.0,16.0,16.0,12.0,9.0,14.0,17.0,15.0,23.0,15.0
+622351176,RESIDENT + FELLOW,Count Of Scheduled Days,4.0,3.0,7.0,4.0,5.0,3.0,5.0,5.0,9.0,8.0,8.0,6.0
+622351176,RESIDENT + FELLOW,Count Of Days With Appointments,4.0,3.0,7.0,4.0,5.0,3.0,5.0,5.0,9.0,8.0,8.0,6.0
+622351176,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,1.0,0.0,0.0,1.0,0.0,1.0,2.0,1.0,3.0,1.0
+622351176,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,195.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Minutes In The System,658.0,716.0,526.0,743.0,570.0,313.0,307.0,563.0,439.0,489.0,727.0,343.0
+622351176,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,1.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,6.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,7.9,5.8,4.6,3.0,3.4,2.0,2.5,2.8,1.7,1.9,2.6,1.4
+622351176,RESIDENT + FELLOW,Count Of Appointments,8.0,19.0,17.0,26.0,16.0,6.0,13.0,17.0,16.0,18.0,21.0,11.0
+622351176,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,8.0,2.0,6.0,3.0,2.0,2.0,3.0,2.0,2.0,3.0,1.0
+622351176,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,5.0,3.0,0.0,0.0,37.0,0.0,22.0,58.0,10.0,50.0,7.0
+622351176,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,16.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.0,0.2,0.0,0.1,0.1,0.0,0.0,0.1,0.0,0.0,0.1
+622351176,RESIDENT + FELLOW,Minutes In Other Per Day,5.7,6.2,5.4,4.2,4.4,8.8,1.4,6.7,4.3,2.7,5.6,3.4
+622351176,RESIDENT + FELLOW,Count Of Sunday Minutes,26.3,8.5,80.1,0.0,48.7,19.1,0.0,3.5,28.5,12.1,0.9,26.4
+622351176,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.1,0.0,0.1,0.0,0.1,0.0,0.0,0.0,0.0
+622351176,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,11.4,48.7,3.7,30.5,0.0,39.3,13.8,2.5,1.4,2.3
+622351180,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,
+622351180,RESIDENT + FELLOW,Count Of Days In System,8.0,12.0,15.0,10.0,13.0,8.0,7.0,10.0,9.0,7.0,6.0,
+622351180,RESIDENT + FELLOW,Count Of Scheduled Days,4.0,4.0,5.0,5.0,5.0,3.0,3.0,4.0,4.0,3.0,3.0,
+622351180,RESIDENT + FELLOW,Count Of Days With Appointments,4.0,4.0,5.0,5.0,5.0,3.0,3.0,4.0,4.0,3.0,3.0,
+622351180,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Minutes In The System,217.0,274.0,254.0,202.0,247.0,112.0,142.0,147.0,106.0,81.0,99.0,
+622351180,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,1.9,2.0,1.2,0.8,1.5,0.5,2.0,0.8,0.9,0.1,1.8,
+622351180,RESIDENT + FELLOW,Count Of Appointments,8.0,11.0,9.0,14.0,15.0,8.0,7.0,9.0,6.0,5.0,3.0,
+622351180,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,3.0,2.0,3.0,3.0,3.0,2.0,2.0,2.0,2.0,1.0,
+622351180,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,19.0,35.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.1,0.1,0.1,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Minutes In Other Per Day,3.7,1.8,1.2,1.1,1.2,0.9,2.3,1.4,0.9,0.7,2.8,
+622351180,RESIDENT + FELLOW,Count Of Sunday Minutes,0.0,20.3,29.0,12.8,20.3,0.0,0.0,0.0,0.0,0.8,0.0,
+622351180,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.1,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,
+622351180,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,28.2,0.0,26.9,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,,35.0,28.0,28.0,28.0,35.0,28.0,35.0,
+622351196,RESIDENT + FELLOW,Count Of Days In System,10.0,12.0,1.0,,4.0,5.0,8.0,12.0,13.0,5.0,5.0,
+622351196,RESIDENT + FELLOW,Count Of Scheduled Days,3.0,5.0,2.0,,1.0,2.0,4.0,4.0,6.0,2.0,3.0,
+622351196,RESIDENT + FELLOW,Count Of Days With Appointments,3.0,5.0,2.0,,1.0,2.0,4.0,4.0,6.0,2.0,3.0,
+622351196,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,0.0,,0.0,0.0,2.0,1.0,3.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Minutes In The System,153.0,109.0,13.0,,38.0,56.0,236.0,196.0,249.0,53.0,20.0,
+622351196,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,0.8,0.3,0.4,,1.0,1.0,0.8,0.4,0.7,0.0,0.3,
+622351196,RESIDENT + FELLOW,Count Of Appointments,5.0,8.0,2.0,,1.0,2.0,5.0,6.0,7.0,2.0,3.0,
+622351196,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,1.0,,1.0,1.0,1.0,2.0,1.0,1.0,1.0,
+622351196,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,0.0,0.0,,0.0,0.0,31.0,1.0,33.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,% Of Minutes On Sunday,0.4,0.1,0.0,,0.4,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Minutes In Other Per Day,2.8,0.6,0.8,,3.5,0.3,3.2,5.8,6.2,7.1,0.2,
+622351196,RESIDENT + FELLOW,Count Of Sunday Minutes,63.0,8.7,0.0,,16.4,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+622351196,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,2.1,0.0,
+622351200,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351200,RESIDENT + FELLOW,Count Of Days In System,24.0,24.0,21.0,12.0,26.0,15.0,17.0,24.0,24.0,23.0,24.0,12.0
+622351200,RESIDENT + FELLOW,Count Of Scheduled Days,6.0,10.0,9.0,6.0,16.0,12.0,11.0,14.0,11.0,10.0,16.0,7.0
+622351200,RESIDENT + FELLOW,Count Of Days With Appointments,6.0,10.0,9.0,6.0,16.0,12.0,11.0,14.0,11.0,10.0,16.0,7.0
+622351200,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,2.0,1.0,1.0,2.0,1.0,2.0,5.0,1.0,1.0,1.0,3.0,3.0
+622351200,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,407.0,293.0,0.0,317.0,79.0,86.0,228.0,208.0,371.0,121.0,242.0
+622351200,RESIDENT + FELLOW,Count Of Minutes In The System,1293.0,1754.0,1313.0,1048.0,2131.0,1208.0,1094.0,1386.0,1568.0,1326.0,1935.0,1345.0
+622351200,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,6.1,5.0,0.0,3.9,3.6,3.8,3.4,2.8,4.0,4.1,4.9
+622351200,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,6.6,5.3,0.0,3.9,3.9,3.9,4.1,4.3,4.4,4.4,3.8
+622351200,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,31.5,25.1,0.0,21.7,16.5,18.6,17.8,24.1,25.4,24.7,27.0
+622351200,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,4.5,3.4,0.0,3.7,3.9,3.1,3.0,3.3,3.7,2.6,3.2
+622351200,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.4,7.2,6.7,10.3,8.0,8.3,6.7,5.9,4.5,4.5,7.9,11.5
+622351200,RESIDENT + FELLOW,Count Of Appointments,18.0,28.0,32.0,22.0,53.0,35.0,30.0,41.0,39.0,29.0,46.0,28.0
+622351200,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,3.0,3.0,3.0,2.0,2.0,2.0,3.0,2.0,2.0,3.0
+622351200,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,62.0,23.0,4.0,49.0,12.0,24.0,63.0,18.0,1.0,25.0,47.0,25.0
+622351200,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,286.0,204.0,0.0,425.0,259.0,216.0,287.0,261.0,227.0,442.0,317.0
+622351200,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,29.0,22.5,0.0,31.7,26.3,14.3,22.8,16.0,26.5,15.1,48.4
+622351200,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.1,0.0,0.0,0.0,0.1,0.0,0.1,0.0,0.1,0.0,0.0
+622351200,RESIDENT + FELLOW,Minutes In Other Per Day,9.4,9.9,6.2,5.0,8.2,8.0,8.0,4.3,4.8,10.6,5.5,10.0
+622351200,RESIDENT + FELLOW,Count Of Sunday Minutes,167.1,103.2,0.8,0.0,51.8,67.0,0.0,101.8,62.5,173.3,38.1,0.0
+622351200,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351200,RESIDENT + FELLOW,Count Of Saturday Minutes,21.0,90.2,50.1,0.0,55.7,0.0,0.0,16.6,16.1,51.4,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351204,RESIDENT + FELLOW,Count Of Days In System,15.0,22.0,20.0,20.0,17.0,18.0,11.0,23.0,21.0,17.0,15.0,17.0
+622351204,RESIDENT + FELLOW,Count Of Scheduled Days,4.0,9.0,9.0,11.0,13.0,12.0,8.0,15.0,14.0,13.0,9.0,11.0
+622351204,RESIDENT + FELLOW,Count Of Days With Appointments,4.0,9.0,9.0,11.0,13.0,12.0,8.0,15.0,14.0,13.0,9.0,11.0
+622351204,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,2.0,6.0,4.0,6.0,3.0,5.0,2.0,6.0,2.0,2.0,3.0,4.0
+622351204,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,437.0,453.0,319.0,115.0,78.0,36.0,351.0,118.0,106.0,163.0,463.0
+622351204,RESIDENT + FELLOW,Count Of Minutes In The System,1063.0,1841.0,1100.0,1553.0,909.0,937.0,573.0,1427.0,928.0,865.0,828.0,1898.0
+622351204,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,5.8,6.8,3.1,1.6,1.5,0.9,2.3,2.3,1.6,1.3,3.0
+622351204,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,5.1,8.0,4.6,3.2,2.3,1.4,3.0,3.2,2.3,1.6,6.6
+622351204,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,30.1,20.0,17.7,10.4,10.5,10.4,13.2,12.4,8.8,11.0,17.2
+622351204,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,4.5,2.4,3.0,2.2,2.0,1.6,2.4,2.0,2.6,2.1,4.2
+622351204,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,8.4,9.0,7.5,6.7,3.8,3.6,2.4,5.2,4.1,4.0,3.4,8.7
+622351204,RESIDENT + FELLOW,Count Of Appointments,18.0,34.0,29.0,43.0,44.0,46.0,30.0,53.0,38.0,42.0,39.0,50.0
+622351204,RESIDENT + FELLOW,Scheduled Hours per Day,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,2.0,3.0,4.0,4.0
+622351204,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,45.0,215.0,114.0,171.0,99.0,118.0,38.0,85.0,30.0,26.0,45.0,196.0
+622351204,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,504.0,229.0,330.0,211.0,226.0,97.0,216.0,165.0,111.0,78.0,477.0
+622351204,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,33.7,34.9,35.5,22.9,11.1,11.9,43.9,16.8,26.4,27.1,66.1
+622351204,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.0,0.0,0.1,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Minutes In Other Per Day,7.4,7.4,9.9,9.5,6.3,6.1,7.2,8.5,4.3,7.4,7.5,10.6
+622351204,RESIDENT + FELLOW,Count Of Sunday Minutes,64.8,29.6,25.5,99.0,53.3,14.9,10.2,90.9,27.6,0.0,0.0,19.1
+622351204,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351204,RESIDENT + FELLOW,Count Of Saturday Minutes,0.6,0.9,0.0,0.0,0.0,18.6,0.0,9.3,6.1,6.8,2.2,67.8
+622351208,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622351208,RESIDENT + FELLOW,Count Of Days In System,15.0,20.0,15.0,15.0,16.0,7.0,15.0,21.0,20.0,19.0,14.0,18.0
+622351208,RESIDENT + FELLOW,Count Of Scheduled Days,4.0,5.0,7.0,5.0,7.0,2.0,5.0,7.0,7.0,7.0,4.0,4.0
+622351208,RESIDENT + FELLOW,Count Of Days With Appointments,4.0,5.0,7.0,5.0,7.0,2.0,5.0,7.0,7.0,7.0,4.0,4.0
+622351208,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Minutes In The System,539.0,581.0,635.0,493.0,622.0,195.0,579.0,726.0,535.0,724.0,531.0,645.0
+622351208,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,4.7,4.0,4.2,3.7,2.7,1.7,3.4,2.6,2.6,2.1,3.0,3.2
+622351208,RESIDENT + FELLOW,Count Of Appointments,8.0,11.0,18.0,11.0,18.0,5.0,18.0,17.0,12.0,17.0,7.0,14.0
+622351208,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,2.0,1.0,2.0
+622351208,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,0.0,5.0,0.0,4.0,0.0,0.0,0.0,6.0,0.0,0.0,6.0,0.0
+622351208,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.0,0.0,0.0,0.3,0.0,0.2,0.1,0.0,0.0,0.0
+622351208,RESIDENT + FELLOW,Minutes In Other Per Day,2.6,3.6,4.4,6.2,4.2,9.3,3.1,9.0,3.7,6.8,11.5,3.6
+622351208,RESIDENT + FELLOW,Count Of Sunday Minutes,6.5,85.3,3.0,0.0,4.7,65.7,0.0,124.6,40.6,11.4,3.4,15.6
+622351208,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.2,0.1,0.0,0.0,0.1,0.1,0.2,0.1,0.2
+622351208,RESIDENT + FELLOW,Count Of Saturday Minutes,6.7,3.1,0.0,87.7,37.1,4.6,0.0,56.9,34.3,112.7,75.3,99.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,18.0,31.0,20.0,24.0,31.0,24.0,23.0,27.0,33.0,17.0,29.0,25.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,14.0,24.0,17.0,20.0,23.0,18.0,18.0,20.0,25.0,15.0,24.0,19.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,14.0,24.0,17.0,20.0,23.0,18.0,18.0,20.0,25.0,15.0,24.0,19.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,3.0,6.0,7.0,3.0,7.0,11.0,6.0,6.0,7.0,5.0,11.0,8.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,99.0,100.0,57.0,116.0,409.0,493.0,419.0,460.0,384.0,16.0,243.0,353.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,1914.0,3804.0,2491.0,2978.0,4043.0,3467.0,2827.0,3098.0,3444.0,2613.0,4311.0,3281.0
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,2.9,2.3,3.1,3.0,3.3,3.8,2.6,3.4,3.1,3.9,3.4,3.7
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,3.3,2.8,3.3,2.3,4.3,3.3,2.2,2.2,3.0,5.2,5.2,4.4
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,8.9,11.2,10.9,10.8,11.5,11.5,10.8,11.6,10.9,11.5,12.9,13.7
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,2.4,2.5,2.5,2.7,2.8,3.0,2.7,2.7,2.5,2.8,2.7,2.6
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,13.9,12.2,15.5,15.8,15.5,19.8,13.1,14.6,13.0,21.8,17.8,17.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,95.0,163.0,107.0,128.0,147.0,125.0,114.0,116.0,140.0,96.0,150.0,114.0
+622368596,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,3.0,4.0,4.0,4.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,63.0,36.0,115.0,47.0,128.0,181.0,70.0,47.0,39.0,133.0,215.0,96.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),386.0,472.0,406.0,628.0,1066.0,767.0,515.0,442.0,494.0,701.0,984.0,690.0
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,19.8,14.3,14.4,29.1,51.1,82.2,83.8,65.8,48.0,8.1,48.6,58.8
+622368596,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.1,0.1,0.0,0.0,0.1
+622368596,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,5.6,5.6,6.3,6.3,6.8,13.1,13.8,13.0,8.6,5.8,7.2,5.9
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,50.6,18.1,1.7,27.2,120.0,78.4,185.3,254.6,189.4,3.8,196.1,288.2
+622368596,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.1,0.1,0.0,0.0,0.0
+622368596,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,48.5,37.2,41.0,89.0,78.5,211.2,0.0,206.0,194.2,12.3,42.6,4.1
+622401548,NURSE PRACTITIONER,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622401548,NURSE PRACTITIONER,Count Of Days In System,26.0,35.0,26.0,28.0,34.0,27.0,27.0,28.0,35.0,28.0,32.0,28.0
+622401548,NURSE PRACTITIONER,Count Of Scheduled Days,16.0,25.0,16.0,20.0,20.0,16.0,17.0,18.0,25.0,19.0,19.0,18.0
+622401548,NURSE PRACTITIONER,Count Of Days With Appointments,16.0,25.0,16.0,20.0,20.0,16.0,17.0,18.0,25.0,19.0,19.0,18.0
+622401548,NURSE PRACTITIONER,Count Of Days of Afterhours Activity,13.0,18.0,11.0,14.0,16.0,9.0,13.0,13.0,19.0,16.0,13.0,13.0
+622401548,NURSE PRACTITIONER,Count Of Minutes Active On Unscheduled Days,1777.0,1881.0,1680.0,1249.0,1614.0,1241.0,1139.0,1534.0,1510.0,1772.0,1897.0,1601.0
+622401548,NURSE PRACTITIONER,Count Of Minutes In The System,6521.0,10971.0,6480.0,8974.0,9840.0,6534.0,6711.0,7932.0,11444.0,9154.0,8599.0,8219.0
+622401548,NURSE PRACTITIONER,Minutes In Clinical Review Per Appointment,5.4,5.3,5.3,5.1,6.3,4.0,5.6,6.7,6.1,6.2,5.3,4.8
+622401548,NURSE PRACTITIONER,Minutes In In Basket Per Appointment,6.7,5.5,6.3,6.1,7.0,4.2,5.3,6.2,6.8,6.2,7.2,5.4
+622401548,NURSE PRACTITIONER,Minutes In Notes/Letters Per Appointment,35.1,40.9,43.1,43.5,49.5,35.5,37.8,39.6,44.8,43.4,37.5,36.9
+622401548,NURSE PRACTITIONER,Minutes In Orders Per Appointment,3.8,4.0,4.5,4.4,4.8,3.8,4.2,3.9,4.0,4.3,4.2,4.3
+622401548,NURSE PRACTITIONER,Minutes In Clinical Review Per Day,24.9,27.7,20.6,25.5,25.0,19.1,24.2,31.0,29.8,31.0,24.2,25.3
+622401548,NURSE PRACTITIONER,Count Of Appointments,125.0,184.0,120.0,141.0,135.0,128.0,117.0,130.0,172.0,141.0,146.0,147.0
+622401548,NURSE PRACTITIONER,Scheduled Hours per Day,5.0,5.0,5.0,5.0,4.0,5.0,4.0,5.0,5.0,5.0,4.0,5.0
+622401548,NURSE PRACTITIONER,Count Of Minutes Active Outside 7AM to 7PM,571.0,1176.0,426.0,856.0,1049.0,541.0,333.0,536.0,1101.0,813.0,749.0,754.0
+622401548,NURSE PRACTITIONER,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),1087.0,2192.0,962.0,1508.0,2006.0,1067.0,1019.0,1266.0,2384.0,1937.0,1839.0,1473.0
+622401548,NURSE PRACTITIONER,Minutes Active On Unscheduled Days Per Day,161.6,188.1,140.0,156.2,115.3,112.8,113.9,153.4,151.0,196.9,145.9,160.1
+622401548,NURSE PRACTITIONER,% Of Minutes On Sunday,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1
+622401548,NURSE PRACTITIONER,Minutes In Other Per Day,5.9,5.9,5.7,6.8,6.2,4.7,5.2,5.6,6.4,6.2,5.9,7.1
+622401548,NURSE PRACTITIONER,Count Of Sunday Minutes,855.8,1125.1,589.2,626.3,648.3,497.1,451.8,874.5,892.3,904.6,551.6,851.8
+622401548,NURSE PRACTITIONER,% Of Minutes On Saturday,0.1,0.1,0.1,0.1,0.1,0.1,0.0,0.1,0.1,0.1,0.0,0.0
+622401548,NURSE PRACTITIONER,Count Of Saturday Minutes,506.1,755.8,653.3,623.2,534.5,561.9,174.6,414.9,617.7,597.1,310.3,329.9
+622409368,RESIDENT + FELLOW,Count Of Days In Reporting Period,,,,,,,,,,,35.0,28.0
+622409368,RESIDENT + FELLOW,Count Of Days In System,,,,,,,,,,,17.0,22.0
+622409368,RESIDENT + FELLOW,Count Of Scheduled Days,,,,,,,,,,,5.0,4.0
+622409368,RESIDENT + FELLOW,Count Of Days With Appointments,,,,,,,,,,,5.0,4.0
+622409368,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,,,,,,,,,,,1.0,3.0
+622409368,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Count Of Minutes In The System,,,,,,,,,,,371.0,673.0
+622409368,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Minutes In Orders Per Appointment,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,,,,,,,,,,,3.9,3.9
+622409368,RESIDENT + FELLOW,Count Of Appointments,,,,,,,,,,,5.0,4.0
+622409368,RESIDENT + FELLOW,Scheduled Hours per Day,,,,,,,,,,,1.0,1.0
+622409368,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,,,,,,,,,,,21.0,30.0
+622409368,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,,,,,,,,,,,0.0,0.0
+622409368,RESIDENT + FELLOW,% Of Minutes On Sunday,,,,,,,,,,,0.1,0.0
+622409368,RESIDENT + FELLOW,Minutes In Other Per Day,,,,,,,,,,,8.3,17.0
+622409368,RESIDENT + FELLOW,Count Of Sunday Minutes,,,,,,,,,,,34.9,19.0
+622409368,RESIDENT + FELLOW,% Of Minutes On Saturday,,,,,,,,,,,0.0,0.1
+622409368,RESIDENT + FELLOW,Count Of Saturday Minutes,,,,,,,,,,,1.5,68.6
+622409372,RESIDENT + FELLOW,Count Of Days In Reporting Period,,,,,,,,,,28.0,35.0,28.0
+622409372,RESIDENT + FELLOW,Count Of Days In System,,,,,,,,,,7.0,21.0,4.0
+622409372,RESIDENT + FELLOW,Count Of Scheduled Days,,,,,,,,,,2.0,4.0,2.0
+622409372,RESIDENT + FELLOW,Count Of Days With Appointments,,,,,,,,,,2.0,4.0,2.0
+622409372,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Minutes In The System,,,,,,,,,,118.0,670.0,100.0
+622409372,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes In Orders Per Appointment,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,,,,,,,,,,2.1,1.0,5.3
+622409372,RESIDENT + FELLOW,Count Of Appointments,,,,,,,,,,2.0,4.0,2.0
+622409372,RESIDENT + FELLOW,Scheduled Hours per Day,,,,,,,,,,1.0,1.0,1.0
+622409372,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,% Of Minutes On Sunday,,,,,,,,,,0.0,0.0,0.0
+622409372,RESIDENT + FELLOW,Minutes In Other Per Day,,,,,,,,,,5.0,18.9,1.5
+622409372,RESIDENT + FELLOW,Count Of Sunday Minutes,,,,,,,,,,0.0,8.1,0.0
+622409372,RESIDENT + FELLOW,% Of Minutes On Saturday,,,,,,,,,,0.3,0.0,0.0
+622409372,RESIDENT + FELLOW,Count Of Saturday Minutes,,,,,,,,,,37.3,11.6,0.0
+622409420,RESIDENT + FELLOW,Count Of Days In Reporting Period,,,,,,,,,35.0,28.0,35.0,28.0
+622409420,RESIDENT + FELLOW,Count Of Days In System,,,,,,,,,23.0,21.0,19.0,20.0
+622409420,RESIDENT + FELLOW,Count Of Scheduled Days,,,,,,,,,5.0,6.0,8.0,7.0
+622409420,RESIDENT + FELLOW,Count Of Days With Appointments,,,,,,,,,5.0,6.0,8.0,7.0
+622409420,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,,,,,,,,,0.0,0.0,4.0,3.0
+622409420,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Minutes In The System,,,,,,,,,591.0,514.0,577.0,1203.0
+622409420,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Minutes In Orders Per Appointment,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,,,,,,,,,1.5,0.9,2.7,2.1
+622409420,RESIDENT + FELLOW,Count Of Appointments,,,,,,,,,5.0,6.0,8.0,7.0
+622409420,RESIDENT + FELLOW,Scheduled Hours per Day,,,,,,,,,1.0,1.0,1.0,1.0
+622409420,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,,,,,,,,,0.0,0.0,75.0,26.0
+622409420,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,% Of Minutes On Sunday,,,,,,,,,0.0,0.0,0.1,0.0
+622409420,RESIDENT + FELLOW,Minutes In Other Per Day,,,,,,,,,12.6,12.4,20.4,38.2
+622409420,RESIDENT + FELLOW,Count Of Sunday Minutes,,,,,,,,,7.3,2.2,40.5,5.0
+622409420,RESIDENT + FELLOW,% Of Minutes On Saturday,,,,,,,,,0.0,0.0,0.0,0.0
+622409420,RESIDENT + FELLOW,Count Of Saturday Minutes,,,,,,,,,0.0,0.0,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622413292,RESIDENT + FELLOW,Count Of Days In System,12.0,23.0,15.0,13.0,10.0,12.0,14.0,11.0,20.0,17.0,24.0,15.0
+622413292,RESIDENT + FELLOW,Count Of Scheduled Days,6.0,10.0,9.0,11.0,6.0,8.0,10.0,9.0,10.0,11.0,13.0,8.0
+622413292,RESIDENT + FELLOW,Count Of Days With Appointments,6.0,10.0,9.0,11.0,6.0,8.0,10.0,9.0,10.0,11.0,13.0,8.0
+622413292,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,814.0,0.0,39.0,0.0,115.0,91.0,87.0,353.0,183.0,413.0,181.0
+622413292,RESIDENT + FELLOW,Count Of Minutes In The System,856.0,1820.0,658.0,815.0,454.0,533.0,651.0,813.0,1096.0,779.0,1244.0,704.0
+622413292,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,7.0,0.0,1.4,0.0,2.0,1.2,1.2,1.9,1.3,1.7,1.3
+622413292,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,8.3,0.0,4.2,0.0,4.0,5.7,4.5,5.4,4.4,5.8,4.1
+622413292,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,37.7,0.0,11.9,0.0,11.3,10.3,10.9,12.3,8.5,10.2,11.2
+622413292,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,6.7,0.0,3.1,0.0,2.7,3.0,3.3,3.3,2.1,2.5,3.6
+622413292,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,5.5,8.2,3.5,3.4,3.5,3.6,2.3,3.8,3.7,2.7,3.3,2.6
+622413292,RESIDENT + FELLOW,Count Of Appointments,14.0,27.0,25.0,31.0,14.0,21.0,26.0,34.0,39.0,35.0,47.0,29.0
+622413292,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,2.0,2.0,2.0,2.0,3.0,3.0,2.0,3.0,3.0
+622413292,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,45.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,12.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,268.0,0.0,97.0,0.0,41.0,122.0,115.0,130.0,152.0,117.0,67.0
+622413292,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,62.6,0.0,19.5,0.0,28.7,22.9,43.5,35.3,30.5,37.6,25.8
+622413292,RESIDENT + FELLOW,% Of Minutes On Sunday,0.0,0.1,0.0,0.0,0.3,0.1,0.0,0.0,0.0,0.0,0.0,0.1
+622413292,RESIDENT + FELLOW,Minutes In Other Per Day,4.1,4.6,2.9,6.3,4.5,5.1,4.0,5.5,5.2,6.1,7.5,2.9
+622413292,RESIDENT + FELLOW,Count Of Sunday Minutes,27.8,184.1,19.7,0.0,123.4,56.1,0.0,0.0,13.9,2.4,32.2,103.0
+622413292,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0
+622413292,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,67.4,0.0,25.8,0.0,0.0,0.0,0.0,13.5,52.6,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622413296,RESIDENT + FELLOW,Count Of Days In System,15.0,27.0,18.0,17.0,27.0,11.0,16.0,22.0,25.0,19.0,14.0,15.0
+622413296,RESIDENT + FELLOW,Count Of Scheduled Days,6.0,12.0,11.0,9.0,15.0,6.0,7.0,12.0,13.0,9.0,9.0,10.0
+622413296,RESIDENT + FELLOW,Count Of Days With Appointments,6.0,12.0,11.0,9.0,15.0,6.0,7.0,12.0,13.0,9.0,9.0,10.0
+622413296,RESIDENT + FELLOW,Count Of Days of Afterhours Activity,4.0,10.0,2.0,5.0,9.0,4.0,3.0,9.0,6.0,3.0,4.0,3.0
+622413296,RESIDENT + FELLOW,Count Of Minutes Active On Unscheduled Days,0.0,749.0,359.0,308.0,509.0,158.0,0.0,382.0,448.0,251.0,131.0,280.0
+622413296,RESIDENT + FELLOW,Count Of Minutes In The System,1395.0,2710.0,1122.0,1320.0,2486.0,850.0,917.0,1917.0,1889.0,1082.0,1254.0,1328.0
+622413296,RESIDENT + FELLOW,Minutes In Clinical Review Per Appointment,0.0,9.6,5.5,3.4,4.8,2.2,0.0,3.2,3.4,3.3,1.3,3.9
+622413296,RESIDENT + FELLOW,Minutes In In Basket Per Appointment,0.0,11.3,7.8,5.8,6.9,3.9,0.0,4.3,5.8,6.0,3.6,5.6
+622413296,RESIDENT + FELLOW,Minutes In Notes/Letters Per Appointment,0.0,44.0,32.5,32.3,37.7,25.2,0.0,30.5,26.4,24.4,19.1,27.1
+622413296,RESIDENT + FELLOW,Minutes In Orders Per Appointment,0.0,4.2,2.5,3.0,2.8,2.8,0.0,2.7,2.2,2.7,1.8,2.3
+622413296,RESIDENT + FELLOW,Minutes In Clinical Review Per Day,18.4,11.8,6.1,5.2,7.2,4.4,5.3,6.0,5.9,4.4,3.7,7.0
+622413296,RESIDENT + FELLOW,Count Of Appointments,13.0,33.0,30.0,26.0,41.0,22.0,16.0,41.0,43.0,25.0,41.0,27.0
+622413296,RESIDENT + FELLOW,Scheduled Hours per Day,2.0,2.0,2.0,2.0,3.0,3.0,2.0,3.0,3.0,3.0,4.0,2.0
+622413296,RESIDENT + FELLOW,Count Of Minutes Active Outside 7AM to 7PM,78.0,328.0,88.0,103.0,349.0,178.0,87.0,353.0,204.0,37.0,55.0,53.0
+622413296,RESIDENT + FELLOW,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),0.0,999.0,259.0,280.0,871.0,213.0,0.0,582.0,471.0,245.0,297.0,365.0
+622413296,RESIDENT + FELLOW,Minutes Active On Unscheduled Days Per Day,0.0,49.9,36.0,38.5,42.4,31.6,0.0,38.2,37.4,25.2,26.2,56.1
+622413296,RESIDENT + FELLOW,% Of Minutes On Sunday,0.1,0.1,0.0,0.1,0.1,0.0,0.0,0.1,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Minutes In Other Per Day,4.7,8.9,4.1,4.3,6.5,4.2,5.0,4.9,5.4,4.5,7.4,9.5
+622413296,RESIDENT + FELLOW,Count Of Sunday Minutes,98.5,279.9,43.7,93.0,159.7,42.4,27.6,211.6,41.7,0.0,27.8,0.0
+622413296,RESIDENT + FELLOW,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413296,RESIDENT + FELLOW,Count Of Saturday Minutes,0.0,52.3,31.7,0.0,58.0,0.0,40.3,0.0,0.0,0.0,0.0,41.5
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,17.0,24.0,16.0,20.0,25.0,21.0,8.0,22.0,25.0,21.0,24.0,16.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,17.0,22.0,18.0,18.0,20.0,15.0,8.0,20.0,24.0,19.0,24.0,9.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,17.0,22.0,18.0,18.0,20.0,15.0,8.0,20.0,24.0,19.0,24.0,9.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,3.0,2.0,2.0,6.0,1.0,2.0,1.0,1.0,1.0,0.0,0.0,2.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,448.0,74.0,0.0,58.0,198.0,160.0,0.0,5.0,26.0,49.0,0.0,91.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,3587.0,2712.0,1745.0,1742.0,1845.0,1301.0,609.0,1345.0,1640.0,1342.0,2082.0,762.0
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,4.1,4.1,5.4,2.5,2.0,2.2,2.6,1.7,1.7,1.8,3.2,2.0
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,6.1,3.9,4.1,3.1,3.8,2.8,3.2,2.5,2.6,2.6,2.1,3.3
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,21.7,9.8,6.5,5.5,5.9,5.1,4.4,3.5,4.0,4.2,4.0,3.6
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,3.3,3.0,3.0,2.4,2.7,2.6,2.7,2.4,2.4,2.5,2.3,2.3
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,19.9,17.1,23.9,11.6,8.2,8.6,11.4,8.4,8.2,8.6,18.1,6.9
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,89.0,101.0,83.0,91.0,104.0,83.0,35.0,110.0,123.0,100.0,136.0,54.0
+622413432,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,3.0,4.0,4.0,4.0,3.0,3.0,4.0,4.0,4.0,4.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,218.0,2.0,15.0,34.0,0.0,2.0,15.0,35.0,2.0,0.0,0.0,3.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),1045.0,568.0,578.0,422.0,240.0,189.0,139.0,260.0,338.0,281.0,460.0,57.0
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,224.2,37.0,0.0,28.9,39.6,26.7,0.0,2.3,26.0,24.4,0.0,13.0
+622413432,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,22.8,11.9,15.1,15.5,5.1,5.3,10.6,3.5,5.1,4.9,11.7,3.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,87.1,26.2,0.0,3.5,1.9,8.6,0.0,0.8,0.0,0.0,0.0,3.2
+622413432,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+622413432,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,0.0,0.0,0.0,0.0,2.9,0.0,3.8,0.0,26.1,0.0,0.3
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Days In Reporting Period,28.0,35.0,28.0,28.0,35.0,28.0,28.0,28.0,35.0,28.0,35.0,28.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Days In System,9.0,27.0,17.0,22.0,27.0,22.0,20.0,23.0,29.0,23.0,27.0,23.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Scheduled Days,10.0,24.0,16.0,18.0,23.0,19.0,18.0,19.0,25.0,19.0,24.0,18.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Days With Appointments,10.0,24.0,16.0,18.0,23.0,19.0,18.0,19.0,25.0,19.0,24.0,18.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Days of Afterhours Activity,0.0,1.0,0.0,0.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active On Unscheduled Days,2.0,88.0,135.0,140.0,135.0,113.0,72.0,185.0,183.0,53.0,102.0,176.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Minutes In The System,227.0,614.0,435.0,420.0,470.0,334.0,355.0,450.0,460.0,280.0,254.0,324.0
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Appointment,0.2,0.4,0.1,0.1,0.1,0.2,0.1,0.1,0.1,0.1,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In In Basket Per Appointment,0.6,1.0,0.5,0.4,0.5,0.5,0.7,0.5,0.4,0.2,0.3,0.2
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In Notes/Letters Per Appointment,3.1,1.9,2.4,2.0,1.8,1.7,1.8,1.6,1.2,1.2,0.7,1.5
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In Orders Per Appointment,0.4,0.3,0.3,0.3,0.3,0.2,0.2,0.2,0.2,0.2,0.2,0.3
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In Clinical Review Per Day,0.8,1.5,0.5,0.4,0.4,0.6,0.5,0.5,0.3,0.2,0.1,0.2
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Appointments,42.0,104.0,84.0,92.0,108.0,79.0,73.0,106.0,137.0,103.0,114.0,91.0
+622427852,PHYSICIAN + PSYCHIATRIST,Scheduled Hours per Day,4.0,4.0,5.0,5.0,5.0,4.0,4.0,6.0,5.0,5.0,5.0,5.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside 7AM to 7PM,0.0,1.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,7.0,0.0,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Minutes Active Outside Scheduled Time (30 Min Buffer),19.0,82.0,69.0,8.0,56.0,32.0,54.0,15.0,12.0,43.0,24.0,17.0
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes Active On Unscheduled Days Per Day,2.4,29.3,45.1,35.1,33.8,37.7,36.2,46.2,45.8,13.2,34.1,35.2
+622427852,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Sunday,0.0,0.0,0.1,0.1,0.1,0.1,0.0,0.4,0.4,0.1,0.0,0.4
+622427852,PHYSICIAN + PSYCHIATRIST,Minutes In Other Per Day,2.2,1.8,4.1,1.7,1.5,1.3,1.4,1.5,1.4,1.0,0.9,1.3
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Sunday Minutes,2.4,17.8,31.4,36.2,57.4,40.3,0.0,184.6,183.3,30.0,0.0,118.8
+622427852,PHYSICIAN + PSYCHIATRIST,% Of Minutes On Saturday,0.0,0.1,0.2,0.2,0.1,0.2,0.1,0.0,0.0,0.0,0.3,0.0
+622427852,PHYSICIAN + PSYCHIATRIST,Count Of Saturday Minutes,0.0,70.1,102.3,104.1,35.2,72.9,25.0,0.0,0.0,0.0,82.3,10.1
