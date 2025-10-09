@@ -1,0 +1,116 @@
+---
+title: "inbasketosis"
+format: html
+---
+
+```{r preprocess, message=FALSE, warning=FALSE}
+
+# Load necessary libraries
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(janitor)
+library(radiant)
+
+# Load raw data
+raw <- read_csv("pep.csv", show_col_types = FALSE, na = c("", "NA", "N/A"))
+
+# Inspect data structure
+str(raw)
+head(raw)
+
+# Aggregate month columns to get total per metric per id
+raw <- raw |>
+  rowwise() |>
+  mutate(value = sum(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE)) |>
+  ungroup()
+
+# Create unique identifier
+raw <- raw |>
+  mutate(
+    # Simplify Grouper values
+    Grouper = case_when(
+      Grouper == "PHYSICIAN + PSYCHIATRIST" ~ "MD",
+      Grouper == "NURSE PRACTITIONER" ~ "NP",
+      Grouper == "RESIDENT + FELLOW" ~ "RF",
+      TRUE ~ Grouper
+      ),
+    id = paste(Grouper, DE_ID, sep = "_"),
+    type = Grouper
+    ) |>
+  select(id, type, Metric, value)
+
+# Inspect metrics
+unique(raw$Metric)
+
+# Clean and reshape data
+clean <- raw |>
+  # correct typos in Metric column
+  mutate(Metric = str_replace_all(Metric, "Recieved", "Received")) |>
+  # remove duplicate rows
+  distinct(id, Metric, .keep_all = TRUE) |>
+  # reshape metric values from long to wide format
+  pivot_wider(
+    names_from = Metric,
+    values_from = value
+  ) |>
+  # clean column names
+  clean_names() |> 
+  # remove all zero or NA columns
+  select(where(~ !all(is.na(.x) | .x == 0)))
+
+# Inspect reshaped data
+summary(clean)
+
+# Expand metrics
+expanded <- clean |>
+  mutate(
+    # --- Messaging aggregates ---
+    total_messages_received = rowSums(pick(ends_with("_received")), na.rm = TRUE),
+    total_messages_completed = rowSums(pick(ends_with("_completed")), na.rm = TRUE),
+    total_messages_incomplete = rowSums(pick(ends_with("_incomplete")), na.rm = TRUE),
+    total_messages_marked_done = rowSums(pick(ends_with("_marked_done")), na.rm = TRUE),
+    avg_days_to_complete = rowMeans(pick(starts_with("average_days_until_")), na.rm = TRUE),
+
+    # --- Weekend and after-hours load ---
+    total_weekend_minutes = count_of_saturday_minutes + count_of_sunday_minutes,
+    percent_weekend_minutes = rowMeans(pick(starts_with("percent_of_minutes_on_")), na.rm = TRUE),
+    afterhours_days_ratio = count_of_days_of_afterhours_activity / count_of_days_in_system,
+    afterhours_minutes_ratio = count_of_minutes_active_outside_7am_to_7pm / count_of_minutes_in_the_system,
+
+    # --- Time efficiency and utilization ---
+    system_minutes_per_appointment = count_of_minutes_in_the_system / pmax(count_of_appointments, 1),
+    unscheduled_minutes_ratio = count_of_minutes_active_on_unscheduled_days / count_of_minutes_in_the_system,
+
+    # --- Inbox effort ---
+    inbox_minutes_per_day = count_of_in_basket_minutes / count_of_days_with_appointments,
+    inbox_minutes_per_received_message = count_of_in_basket_minutes / pmax(total_messages_received, 1),
+    inbox_minutes_per_appointment = count_of_in_basket_minutes / pmax(count_of_appointments, 1),
+
+    # --- Scheduling intensity ---
+    appointments_per_scheduled_day = count_of_appointments / count_of_scheduled_days,
+    appointments_per_day_in_system = count_of_appointments / count_of_days_in_system,
+    scheduled_days_ratio = count_of_scheduled_days / count_of_days_in_system
+    )
+
+# Filter out rows with no messages received
+filtered <- expanded |>
+  filter(total_messages_received > 0)
+
+# Save cleaned data
+filtered |> saveRDS("cleaned_data.rds")
+
+# Radiant setup
+radiant()
+
+```
+
+```{r eda, message=FALSE, warning=FALSE}
+
+# Load necessary libraries for EDA
+
+
+
+```
+
