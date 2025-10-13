@@ -1,0 +1,21 @@
+Variable,Correlation_with_InBasket_Hours,Correlation_Strength,Clinical_Interpretation
+System_Hours,0.899,Very Strong,Providers with high in-basket workload spend significantly more time in the system
+In_Basket_Hours_per_Month,0.862,Very Strong,Monthly in-basket hours are highly consistent with total hours
+Medical_Advice_Messages,0.787,Strong,Medical advice requests are a major driver of in-basket workload
+After_Hours_Work,0.748,Strong,High in-basket workload correlates with increased after-hours work
+Total_Messages,0.736,Strong,Total message volume is a strong predictor of in-basket time
+Medical_Advice_per_Month,0.725,Strong,Monthly medical advice volume drives in-basket workload
+Appointments,0.720,Strong,Higher appointment volumes correlate with increased in-basket work
+Messages_per_Month,0.705,Strong,Monthly message volume is a good predictor of workload
+Schedule_Hours_per_Month,0.645,Moderate,More scheduled hours correlate with higher in-basket workload
+Result_Messages,0.634,Moderate,Result messages contribute moderately to workload
+System_Hours_per_Month,0.623,Moderate,Monthly system usage correlates with workload
+Prescription_Messages,0.598,Moderate,Prescription messages have moderate correlation with workload
+Patient_Call_Messages,0.587,Moderate,Patient calls contribute moderately to workload
+Schedule_Hours,0.584,Moderate,Total scheduled hours show moderate correlation
+After_Hours_per_Month,0.571,Moderate,Monthly after-hours work correlates with workload
+Appointments_per_Month,0.567,Moderate,Monthly appointments correlate with workload
+Response_Time_Results,0.456,Weak,Longer result response times weakly correlate with workload
+Response_Time_Medical_Advice,0.423,Weak,Medical advice response times show weak correlation
+Response_Time_Patient_Calls,0.398,Weak,Patient call response times show weak correlation
+Response_Time_Prescriptions,0.234,Very Weak,Prescription response times have minimal correlation

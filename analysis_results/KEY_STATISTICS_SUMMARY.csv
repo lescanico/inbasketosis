@@ -1,0 +1,14 @@
+Metric,Overall_Mean,Overall_Median,Overall_StdDev,MD_Mean,NP_Mean,RF_Mean,Min_Value,Max_Value
+Total_Providers,64,64,0,26,4,34,1,64
+In_Basket_Hours,30.3,23.8,29.8,35.4,54.0,23.7,0.033,168.0
+Messages_Total,496,371,526,775,440,289,0,1998
+Messages_per_Month,44.4,31.2,44.2,66.9,64.4,24.8,0,166.0
+Patient_Call_Messages,105,62,140,119,110,95,0,619
+Medical_Advice_Messages,216,146,232,277,220,179,0,850
+Result_Messages,81.6,22,181,122,82,58,0,994
+Prescription_Messages,92.5,39.5,148,142,83,71,0,733
+Response_Time_Days,3.24,1.53,4.21,3.89,2.95,2.88,0,17.0
+System_Hours,245,191,263,320,267,188,0.933,1690.0
+After_Hours_Work,61.9,38.2,95.2,89.4,67.3,42.1,0,561.0
+Appointments,444,370,408,587,412,358,5,1686
+Schedule_Hours,3942,3297,3474,5212,3677,3186,6,13281
