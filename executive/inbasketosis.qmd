@@ -1,6 +1,7 @@
 ---
 title: "inbasketosis"
 format: html
+code-fold: true
 ---
 
 ```{r preprocess, message=FALSE, warning=FALSE}
@@ -12,7 +13,6 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(janitor)
-library(radiant)
 
 # Load the raw dataset
 messages <- read_excel("pep.xlsx", sheet = "Messages")
@@ -63,14 +63,13 @@ clean <- filtered |>
     type = 
       as.factor(
         case_when(
-          Grouper == "PHYSICIAN + PSYCHIATRIST" ~ "MD",
-          Grouper == "NURSE PRACTITIONER"       ~ "NP",
-          Grouper == "RESIDENT + FELLOW"        ~ "RF",
-          TRUE                                  ~ Grouper
+          Grouper %in% c("PHYSICIAN + PSYCHIATRIST", "NURSE PRACTITIONER") ~ "Attending",
+          Grouper == "RESIDENT + FELLOW" ~ "Trainee",
+          TRUE ~ Grouper
           )
         ),
     
-    # fix recieved typo
+    # fix typo
     metric = str_replace(Metric, "Recieved", "Received"),
 
     ) |>
@@ -84,7 +83,6 @@ clean <- filtered |>
     
     n_months = sum(!is.na(c_across(starts_with(c("24-", "25-"))))),
     
-    # mean for average_ metrics, sum for the rest
     value = ifelse(
       str_starts(metric, "Average"),
       mean(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE),
@@ -95,7 +93,6 @@ clean <- filtered |>
   
   select(id, type, metric, value, n_months) |>
   
-  # remove rows with all NA or 0 values
   select(where(~ !all(is.na(.x) | .x == 0))) |>
   
   pivot_wider(
@@ -105,133 +102,124 @@ clean <- filtered |>
   
   clean_names()
 
-# Aggregate metrics
-aggregated <- clean |>
+# Final calculations and aggregations
+final <- clean |>
   rowwise() |>
   mutate(
-    
+    # Aggregate message counts and averages
     count_of_messages_received = sum(
       count_of_patient_call_messages_received,
       count_of_patient_medical_advice_requests_messages_received,
       count_of_result_messages_received,
       count_of_rx_auth_messages_received,
       na.rm = TRUE
-      ),
-    
+    ),
     average_days_until_message_marked_done = mean(
       average_days_until_patient_call_messages_marked_done,
       average_days_until_patient_medical_advice_request_message_marked_done,
       average_days_until_result_message_marked_done,
       average_days_until_rx_auth_message_marked_done,
       na.rm = TRUE
-      ),
+    ),
     
-    count_of_weekend_minutes = sum(
-      count_of_saturday_minutes,
-      count_of_sunday_minutes,
-      na.rm = TRUE
-      ),
-    
+    # Time aggregations
+    count_of_weekend_minutes = sum(count_of_saturday_minutes, count_of_sunday_minutes, na.rm = TRUE),
     count_of_afterhour_minutes = sum(
       count_of_minutes_active_outside_scheduled_time_30_min_buffer,
       count_of_weekend_minutes,
       na.rm = TRUE
     ),
     
+    # Convert to hours
     system_hours = count_of_minutes_in_the_system / 60,
     inbasket_hours = count_of_in_basket_minutes / 60,
     schedule_hours = scheduled_hours_per_day * count_of_scheduled_days,
     afterhours = count_of_afterhour_minutes / 60,
     
-    # ratios
+    # Ratios
     inbasket_ratio = count_of_in_basket_minutes / count_of_minutes_in_the_system,
-    afterhours_ratio = count_of_afterhour_minutes / count_of_minutes_in_the_system
-    
-  ) |> ungroup() |>
+    afterhours_ratio = count_of_afterhour_minutes / count_of_minutes_in_the_system,
+  ) |>
+  ungroup() |>
   
   mutate(
     across(c(!starts_with("average") & !c(id, type, n_months)),
       ~ .x / n_months,
       .names = "{.col}_per_month")
-    )
-
-# Define total shares
-appointments_total <- sum(aggregated$count_of_appointments, na.rm = TRUE)
-inbasket_total <- sum(aggregated$inbasket_hours, na.rm = TRUE)
-schedule_total <- sum(aggregated$schedule_hours, na.rm = TRUE)
-system_total <- sum(aggregated$system_hours, na.rm = TRUE)
-afterhours_total <- sum(aggregated$afterhours, na.rm = TRUE)
-
-# Final selection of columns
-final <- aggregated |>
+  ) |>
+  
+  mutate(
+    across(c(count_of_appointments,
+             count_of_messages_received,
+             inbasket_hours, schedule_hours, system_hours, afterhours),
+      ~ sum(.x, na.rm = TRUE),
+      .names = "{.col}_total"),
+    .by = 1  # Create totals across all rows
+  ) |>
+  
+  # Final selection and calculations
   transmute(
-    id,
-    type,
+    id, type, n_months,
     
-    # general load
+    # General load
     appointments = count_of_appointments,
-    schedule_hours,
-    system_hours,
-    afterhours,
+    schedule_hours, system_hours, afterhours,
     
-    # general load per month
+    # General load per month
     appointments_per_month = count_of_appointments_per_month,
-    schedule_hours_per_month,
-    system_hours_per_month,
-    afterhours_per_month,
+    schedule_hours_per_month, system_hours_per_month, afterhours_per_month,
     
-    # inbasket load
+    # Inbasket load
     inbasket_hours,
-    messages = count_of_messages_received,
-    messages_pc = count_of_patient_call_messages_received,
-    messages_mar = count_of_patient_medical_advice_requests_messages_received,
-    messages_res = count_of_result_messages_received,
-    messages_rxa = count_of_rx_auth_messages_received,
+    msg = count_of_messages_received,
+    msg_pc = count_of_patient_call_messages_received,
+    msg_mar = count_of_patient_medical_advice_requests_messages_received,
+    msg_res = count_of_result_messages_received,
+    msg_rxa = count_of_rx_auth_messages_received,
     
-    # inbasket load per month
+    # Inbasket load per month
     inbasket_hours_per_month,
-    messages_per_month = count_of_messages_received_per_month,
-    messages_pc_per_month = count_of_patient_call_messages_received_per_month,
-    messages_mar_per_month = count_of_patient_medical_advice_requests_messages_received_per_month,
-    messages_res_per_month = count_of_result_messages_received_per_month,
-    messages_rxa_per_month = count_of_rx_auth_messages_received_per_month,
+    msg_per_month = count_of_messages_received_per_month,
+    msg_pc_per_month = count_of_patient_call_messages_received_per_month,
+    msg_mar_per_month = count_of_patient_medical_advice_requests_messages_received_per_month,
+    msg_res_per_month = count_of_result_messages_received_per_month,
+    msg_rxa_per_month = count_of_rx_auth_messages_received_per_month,
     
-    # inbasket load per appointment
+    # Inbasket load per appointment
     inbasket_hours_per_appointment = inbasket_hours / appointments,
-    messages_per_appointment = count_of_messages_received / appointments,
-    messages_pc_per_appointment = count_of_patient_call_messages_received / appointments,
-    messages_mar_per_appointment = count_of_patient_medical_advice_requests_messages_received / appointments,
-    messages_res_per_appointment = count_of_result_messages_received / appointments,
-    messages_rxa_per_appointment = count_of_rx_auth_messages_received / appointments,
+    msg_per_appointment = count_of_messages_received / appointments,
+    msg_pc_per_appointment = count_of_patient_call_messages_received / appointments,
+    msg_mar_per_appointment = count_of_patient_medical_advice_requests_messages_received / appointments,
+    msg_res_per_appointment = count_of_result_messages_received / appointments,
+    msg_rxa_per_appointment = count_of_rx_auth_messages_received / appointments,
     
-    # inbasket load per scheduled hour
-    inbasket_hours_per_scheduled_hour = inbasket_hours / schedule_hours,
-    messages_per_scheduled_hour = count_of_messages_received / schedule_hours,
-    messages_pc_per_scheduled_hour = count_of_patient_call_messages_received / schedule_hours,
-    messages_mar_per_scheduled_hour = count_of_patient_medical_advice_requests_messages_received / schedule_hours,
-    messages_res_per_scheduled_hour = count_of_result_messages_received / schedule_hours,
-    messages_rxa_per_scheduled_hour = count_of_rx_auth_messages_received / schedule_hours,
+    # Inbasket load per scheduled hour
+    inbasket_hours_per_schedule_hour = inbasket_hours / schedule_hours,
+    msg_per_schedule_hour = count_of_messages_received / schedule_hours,
+    msg_pc_per_schedule_hour = count_of_patient_call_messages_received / schedule_hours,
+    msg_mar_per_schedule_hour = count_of_patient_medical_advice_requests_messages_received / schedule_hours,
+    msg_res_per_schedule_hour = count_of_result_messages_received / schedule_hours,
+    msg_rxa_per_schedule_hour = count_of_rx_auth_messages_received / schedule_hours,
     
-    # responsiveness
-    avg_dummd = average_days_until_message_marked_done,
-    avg_dummd_pc = average_days_until_patient_call_messages_marked_done,
-    avg_dummd_mar = average_days_until_patient_medical_advice_request_message_marked_done,
-    avg_dummd_res = average_days_until_result_message_marked_done,
-    avg_dummd_rxa = average_days_until_rx_auth_message_marked_done,
+    # Responsiveness
+    avg_dtc = average_days_until_message_marked_done,
+    avg_dtc_pc = average_days_until_patient_call_messages_marked_done,
+    avg_dtc_mar = average_days_until_patient_medical_advice_request_message_marked_done,
+    avg_dtc_res = average_days_until_result_message_marked_done,
+    avg_dtc_rxa = average_days_until_rx_auth_message_marked_done,
     
-    # shares
-    appointments_share = appointments / appointments_total,
-    inbasket_hours_share = inbasket_hours / inbasket_total,
-    schedule_hours_share = schedule_hours / schedule_total,
-    system_hours_share = system_hours / system_total,
+    # Shares
+    appointments_share = appointments / count_of_appointments_total,
+    msg_share = msg / count_of_messages_received_total,
+    inbasket_hours_share = inbasket_hours / inbasket_hours_total,
+    schedule_hours_share = schedule_hours / schedule_hours_total,
+    system_hours_share = system_hours / system_hours_total,
     afterhours_share = afterhours / afterhours_total
-
   )
 
 # Save datasets
 raw |> saveRDS("raw.rds")
 clean |> saveRDS("clean.rds")
-aggregated |> saveRDS("aggregated.rds")
 final |> saveRDS("final.rds")
 
 
@@ -249,7 +237,18 @@ library(forcats)
 library(tibble)
 
 # Load data
-final <- readRDS("final.rds")
+final <- readRDS("data.rds")
+
+# Totals
+table1 <- final |>
+  group_by(type) |>
+  summarise(
+    `n (%)` = sprintf("%d (%.1f)", n(), 100 * n() / nrow(final)),
+    `Appointments - n (%)` = sprintf("%s (%.1f)", comma(sum(appointments, na.rm = TRUE)), 100 * sum(appointments, na.rm = TRUE) / sum(final$appointments, na.rm = TRUE)),
+    `Schedule hours - mean (sd)` = sprintf("%.2f (%.2f)", mean(schedule_hours, na.rm = TRUE), sd(schedule_hours, na.rm = TRUE)),
+    `Messages - n (%)` = sprintf("%s (%.1f)", comma(sum(msg, na.rm = TRUE)), 100 * sum(msg, na.rm = TRUE) / sum(final$msg, na.rm = TRUE))
+    
+  )
 
 # Table 1: Summary statistics by provider type
 sum_vars_nonmsg <- c("appointments","schedule_hours","system_hours","inbasket_hours","afterhours","messages")
@@ -259,7 +258,7 @@ sum_vars        <- c(sum_vars_nonmsg, sum_vars_msg)
 share_vars <- c("appointments_share","inbasket_hours_share","schedule_hours_share",
                 "system_hours_share","afterhours_share")
 
-avg_vars   <- c("avg_dummd","avg_dummd_pc","avg_dummd_mar","avg_dummd_res","avg_dummd_rxa")
+avg_vars   <- c("avg_dtc","avg_dtc_pc","avg_dtc_mar","avg_dtc_res","avg_dtc_rxa")
 
 fmt_n_pct        <- \(n, d) sprintf("%s (%.1f)", comma(n), ifelse(d > 0, 100 * n / d, NA_real_))
 fmt_mean_sd      <- \(x) sprintf("%.2f (%.2f)", mean(x, na.rm=TRUE), sd(x, na.rm=TRUE))
@@ -370,7 +369,7 @@ table2 |>
 cor_vars <- c(
   "appointments", "schedule_hours", "system_hours", "inbasket_hours", "afterhours",
   "messages", "messages_pc", "messages_mar", "messages_res", "messages_rxa",
-  "avg_dummd", "avg_dummd_pc", "avg_dummd_mar", "avg_dummd_res", "avg_dummd_rxa"
+  "avg_dtc", "avg_dtc_pc", "avg_dtc_mar", "avg_dtc_res", "avg_dtc_rxa"
 )
 
 cor_matrix <- final |>
@@ -729,7 +728,7 @@ provider_type_analysis <- final |>
     mean_inbasket_hours = mean(inbasket_hours, na.rm = TRUE),
     median_inbasket_hours = median(inbasket_hours, na.rm = TRUE),
     mean_messages = mean(messages, na.rm = TRUE),
-    mean_response_time = mean(avg_dummd, na.rm = TRUE),
+    mean_response_time = mean(avg_dtc, na.rm = TRUE),
     mean_appointments = mean(appointments, na.rm = TRUE),
     mean_system_hours = mean(system_hours, na.rm = TRUE),
     mean_afterhours = mean(afterhours, na.rm = TRUE),
@@ -774,7 +773,7 @@ print(message_type_analysis)
 top_10_analysis <- final |>
   arrange(desc(inbasket_hours)) |>
   head(10) |>
-  select(id, type, inbasket_hours, messages, appointments, avg_dummd, afterhours) |>
+  select(id, type, inbasket_hours, messages, appointments, avg_dtc, afterhours) |>
   mutate(
     type_label = case_when(
       type == 'MD' ~ 'Attending',
@@ -803,7 +802,7 @@ cat("\nWorkload Distribution Analysis:\n")
 print(workload_distribution)
 
 # Comprehensive correlation analysis
-cor_vars <- c('inbasket_hours', 'messages', 'appointments', 'system_hours', 'afterhours', 'avg_dummd')
+cor_vars <- c('inbasket_hours', 'messages', 'appointments', 'system_hours', 'afterhours', 'avg_dtc')
 cor_data <- final |>
   select(all_of(cor_vars)) |>
   mutate(across(everything(), ~ coalesce(.x, 0)))
@@ -1000,6 +999,199 @@ ggsave('improved_cumulative_impact.png', combined_plot,
 
 cat("Generated: improved_cumulative_impact.png\n")
 
+# Create comprehensive cumulative impact table
+cumulative_impact_table <- cum_df |>
+  filter(rank %in% c(0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60)) |>
+  mutate(
+    `Top-k Providers` = rank,
+    `FTE Freed` = round(fte_freed, 3),
+    `Revenue Recovery ($K)` = round(revenue_recovered/1000, 1),
+    `Additional Appointments` = round(added_appointments, 0),
+    `After-Hours Remaining (K hrs)` = round(afterhours_remaining/1000, 1)
+  ) |>
+  select(`Top-k Providers`, `FTE Freed`, `Revenue Recovery ($K)`, 
+         `Additional Appointments`, `After-Hours Remaining (K hrs)`)
+
+# Add percentage calculations for key metrics
+cumulative_impact_table <- cumulative_impact_table |>
+  mutate(
+    `% of Total FTE` = round(`FTE Freed` / max(`FTE Freed`, na.rm = TRUE) * 100, 1),
+    `% of Max Revenue` = round(`Revenue Recovery ($K)` / max(`Revenue Recovery ($K)`, na.rm = TRUE) * 100, 1),
+    `% of Max Appointments` = round(`Additional Appointments` / max(`Additional Appointments`, na.rm = TRUE) * 100, 1),
+    `After-Hours Reduction (%)` = round((3.962 - `After-Hours Remaining (K hrs)`) / 3.962 * 100, 1)
+  )
+
+# Print the comprehensive table
+cumulative_impact_table |>
+  kable(format = "html", digits = c(0, 3, 1, 0, 1, 1, 1, 1, 1), 
+        caption = "Cumulative Impact of In-Basket Workload Redistribution at Key Milestones") |>
+  kable_styling(
+    full_width = TRUE, 
+    position = "left", 
+    font_size = 11,
+    bootstrap_options = c("striped", "hover", "condensed", "responsive")
+  ) |>
+  add_header_above(c("Provider Milestone" = 1, "Resource Recovery" = 2, "Capacity Creation" = 1, 
+                     "Workload Reduction" = 1, "Percentage Metrics" = 4)) |>
+  footnote(
+    general = c(
+      "FTE calculation: 1 FTE = 1,872 hours/year (40 hours/week × 52 weeks × 0.9 efficiency)",
+      "Revenue rate: $173/hour (FY2025 departmental benchmark)",
+      "Appointment capacity: Based on observed throughput of 0.113 appointments/hour",
+      "Baseline after-hours: 3,962 total hours annually"
+    ),
+    general_title = "Methodological Notes:"
+  )
+
+# Create detailed top providers impact table
+top_providers_impact <- ranked |>
+  head(15) |>
+  mutate(
+    `Rank` = row_number(),
+    `Provider ID` = id,
+    `Provider Type` = case_when(
+      type == 'MD' ~ 'Attending Psychiatrist',
+      type == 'NP' ~ 'Nurse Practitioner', 
+      type == 'RF' ~ 'Resident/Fellow',
+      TRUE ~ as.character(type)
+    ),
+    `In-Basket Hours` = round(inbasket_hours, 1),
+    `Total Messages` = messages,
+    `Appointments` = appointments,
+    `Response Time (days)` = round(avg_dtc, 1),
+    `After-Hours Work` = round(afterhours, 1),
+    `FTE Equivalent` = round(inbasket_hours / (40 * 52 * 0.9), 3),
+    `Revenue Recovery ($K)` = round((inbasket_hours * 173) / 1000, 1),
+    `Additional Appointments` = round(inbasket_hours * (sum(final$appointments, na.rm = TRUE) / sum(final$schedule_hours, na.rm = TRUE)), 0)
+  ) |>
+  select(`Rank`, `Provider ID`, `Provider Type`, `In-Basket Hours`, `Total Messages`, 
+         `Appointments`, `Response Time (days)`, `After-Hours Work`, `FTE Equivalent`, 
+         `Revenue Recovery ($K)`, `Additional Appointments`)
+
+# Print the detailed top providers table
+top_providers_impact |>
+  kable(format = "html", digits = c(0, 0, 0, 1, 0, 0, 1, 1, 3, 1, 0), 
+        caption = "Top 15 Providers: Individual Impact Analysis for Workload Redistribution") |>
+  kable_styling(
+    full_width = TRUE, 
+    position = "left", 
+    font_size = 10,
+    bootstrap_options = c("striped", "hover", "condensed", "responsive")
+  ) |>
+  add_header_above(c("Ranking" = 1, "Provider Details" = 2, "Workload Metrics" = 3, 
+                     "Performance" = 2, "Redistribution Benefits" = 3)) |>
+  footnote(
+    general = c(
+      "Providers ranked by total in-basket hours (highest to lowest)",
+      "FTE calculation based on 1,872 hours/year standard",
+      "Revenue recovery assumes $173/hour opportunity cost",
+      "Additional appointments based on observed throughput of 0.113 appts/hour"
+    ),
+    general_title = "Notes:"
+  )
+
+# Create summary metrics table for cumulative impact
+summary_metrics <- data.frame(
+  `Metric Category` = c(
+    "Baseline Department Metrics",
+    "", "", "", "",
+    "Top 10 Providers (Pilot Target)",
+    "", "", "", "",
+    "Maximum Potential (All Providers)",
+    "", "", "", "",
+    "Financial Impact Analysis",
+    "", "", "", ""
+  ),
+  `Metric` = c(
+    "Total Providers",
+    "Total In-Basket Hours",
+    "Total Messages", 
+    "Total Appointments",
+    "Baseline After-Hours",
+    "Top 10 In-Basket Hours",
+    "Top 10 Messages",
+    "Top 10 FTE Equivalent",
+    "Top 10 Revenue Recovery",
+    "Top 10 After-Hours Reduction",
+    "Maximum FTE Recovery",
+    "Maximum Revenue Recovery", 
+    "Maximum Additional Appointments",
+    "Maximum After-Hours Reduction",
+    "Total After-Hours Elimination",
+    "Pilot Program Cost (2 FTE Nursing)",
+    "Net Annual Benefit (Top 10)",
+    "Return on Investment",
+    "Break-even Point",
+    "Payback Period"
+  ),
+  `Value` = c(
+    nrow(final),
+    paste0(round(sum(final$inbasket_hours, na.rm = TRUE), 1), " hours"),
+    paste0(sum(final$messages, na.rm = TRUE), " messages"),
+    paste0(sum(final$appointments, na.rm = TRUE), " appointments"),
+    paste0(round(sum(final$afterhours, na.rm = TRUE), 0), " hours"),
+    paste0(round(sum(top_10_providers$inbasket_hours, na.rm = TRUE), 1), " hours"),
+    paste0(sum(top_10_providers$messages, na.rm = TRUE), " messages"),
+    paste0(round(sum(top_10_providers$inbasket_hours, na.rm = TRUE) / (40 * 52 * 0.9), 2), " FTE"),
+    paste0("$", format(sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 173, big.mark = ",")),
+    paste0(round(sum(top_10_providers$afterhours, na.rm = TRUE), 0), " hours"),
+    paste0(round(sum(final$inbasket_hours, na.rm = TRUE) / (40 * 52 * 0.9), 2), " FTE"),
+    paste0("$", format(sum(final$inbasket_hours, na.rm = TRUE) * 173, big.mark = ",")),
+    paste0(round(sum(final$inbasket_hours, na.rm = TRUE) * (sum(final$appointments, na.rm = TRUE) / sum(final$schedule_hours, na.rm = TRUE)), 0), " appointments"),
+    paste0(round(sum(final$afterhours, na.rm = TRUE), 0), " hours"),
+    paste0(round(sum(final$afterhours, na.rm = TRUE), 0), " hours"),
+    paste0("$", format(sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78, big.mark = ",")),
+    paste0("$", format((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 173) - (sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78), big.mark = ",")),
+    paste0(round(((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 173) - (sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78)) / (sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78) * 100, 1), "%"),
+    paste0(round((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78) / ((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 173) - (sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78)) * 12, 1), " months"),
+    paste0(round((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78) / ((sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 173) - (sum(top_10_providers$inbasket_hours, na.rm = TRUE) * 78)) * 12, 1), " months")
+  ),
+  `Calculation Notes` = c(
+    "All providers with ≥30 days in system",
+    "Annual total across all providers",
+    "All message types combined",
+    "Annual appointment volume",
+    "Work outside 7 AM–7 PM + weekends",
+    "Sum of top 10 highest-volume providers",
+    "Sum of top 10 highest-volume providers",
+    "Top 10 hours ÷ 1,872 hours/FTE",
+    "Top 10 hours × $173/hour",
+    "After-hours work for top 10 providers",
+    "Total hours ÷ 1,872 hours/FTE",
+    "Total hours × $173/hour",
+    "Total hours × 0.113 appointments/hour",
+    "All after-hours work eliminated",
+    "Complete after-hours elimination",
+    "Top 10 hours × $78/hour nursing rate",
+    "Revenue recovery - nursing costs",
+    "(Net benefit ÷ nursing costs) × 100%",
+    "Nursing costs ÷ net monthly benefit",
+    "Time to recover initial investment"
+  )
+)
+
+# Print the summary metrics table
+summary_metrics |>
+  kable(format = "html", 
+        caption = "Cumulative Impact Analysis: Key Metrics and Financial Projections") |>
+  kable_styling(
+    full_width = TRUE, 
+    position = "left", 
+    font_size = 10,
+    bootstrap_options = c("striped", "hover", "condensed", "responsive")
+  ) |>
+  add_header_above(c("Category" = 1, "Metric Description" = 1, "Value" = 1, "Calculation Method" = 1)) |>
+  footnote(
+    general = c(
+      "FTE calculation: 1,872 hours/year (40 hours/week × 52 weeks × 0.9 efficiency)",
+      "Revenue rate: $173/hour (FY2025 departmental benchmark rate)",
+      "Nursing cost: $78/hour (market rate for clinic nurses)",
+      "Appointment capacity: Based on observed throughput of 0.113 appointments/hour",
+      "Analysis period: July 2024 – June 2025 (12 months)"
+    ),
+    general_title = "Methodological Notes:"
+  )
+
 # Create improved workload distribution plot
 p1_workload <- ggplot(final, aes(x = reorder(id, inbasket_hours), y = inbasket_hours)) +
   geom_col(aes(fill = type), alpha = 0.8) +
@@ -1087,7 +1279,7 @@ summary_stats <- final |>
     mean_hours = mean(inbasket_hours, na.rm = TRUE),
     median_hours = median(inbasket_hours, na.rm = TRUE),
     mean_messages = mean(messages, na.rm = TRUE),
-    mean_response_time = mean(avg_dummd, na.rm = TRUE),
+    mean_response_time = mean(avg_dtc, na.rm = TRUE),
     mean_appointments = mean(appointments, na.rm = TRUE),
     mean_system_hours = mean(system_hours, na.rm = TRUE),
     mean_afterhours = mean(afterhours, na.rm = TRUE),
@@ -1439,7 +1631,7 @@ ggsave('improved_lorenz_curve.png', p_lorenz,
 cat("Generated: improved_lorenz_curve.png\n")
 
 # Enhanced correlation heatmap
-cor_vars <- c('inbasket_hours', 'messages', 'appointments', 'system_hours', 'afterhours', 'avg_dummd')
+cor_vars <- c('inbasket_hours', 'messages', 'appointments', 'system_hours', 'afterhours', 'avg_dtc')
 cor_data <- final |>
   select(all_of(cor_vars)) |>
   mutate(across(everything(), ~ coalesce(.x, 0)))
@@ -1466,12 +1658,12 @@ p_heatmap <- ggplot(cor_df, aes(Var2, Var1, fill = correlation)) +
   scale_x_discrete(
     labels = c('inbasket_hours' = 'In-Basket\nHours', 'messages' = 'Total\nMessages', 
                'appointments' = 'Appointments', 'system_hours' = 'System\nHours',
-               'afterhours' = 'After-Hours', 'avg_dummd' = 'Response\nTime')
+               'afterhours' = 'After-Hours', 'avg_dtc' = 'Response\nTime')
   ) +
   scale_y_discrete(
     labels = c('inbasket_hours' = 'In-Basket Hours', 'messages' = 'Total Messages', 
                'appointments' = 'Appointments', 'system_hours' = 'System Hours',
-               'afterhours' = 'After-Hours Work', 'avg_dummd' = 'Response Time')
+               'afterhours' = 'After-Hours Work', 'avg_dtc' = 'Response Time')
   ) +
   labs(
     title = 'Correlation Matrix: Key Workload Metrics',
@@ -1567,7 +1759,7 @@ cat("  Additional Appointment Capacity:", round(top_10_hours * (sum(final$appoin
 
 # Quality improvement projections
 cat("\nQuality Improvement Projections:\n")
-cat("  Response Time Target: <24 hours (current average: ", round(mean(final$avg_dummd, na.rm = TRUE), 1), " days)\n")
+cat("  Response Time Target: <24 hours (current average: ", round(mean(final$avg_dtc, na.rm = TRUE), 1), " days)\n")
 cat("  Provider Satisfaction Target: >80% approval\n")
 cat("  Patient Satisfaction: Maintain current levels\n")
 cat("  After-Hours Reduction: ", round(sum(top_10_providers$afterhours, na.rm = TRUE), 0), " hours annually\n")
@@ -1678,7 +1870,7 @@ comprehensive_tables <- list(
       "In-Basket Hours" = inbasket_hours,
       "Total Messages" = messages,
       "Appointments" = appointments,
-      "Response Time (days)" = avg_dummd,
+      "Response Time (days)" = avg_dtc,
       "After-Hours Work" = afterhours
     ) |>
     mutate(
