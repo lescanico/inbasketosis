@@ -1,0 +1,14 @@
+"0","# Totals
+table1 <- final |>
+  group_by(type) |>
+  summarise(
+    `n (%)` = sprintf(""%d (%.1f%S)"", n(), 100 * n() / nrow(final)),
+  )
+"
+"1","[1m[33mError[39m in `summarise()`:[22m
+[38;5;255m[36mℹ[38;5;255m In argument: `n (%) = sprintf(""%d (%.1f%S)"", n(), 100 * n()/nrow(final))`.
+[36mℹ[38;5;255m In group 1: `type = Attending`.[39m
+[1mCaused by error in `sprintf()`:[22m
+[33m![39m unrecognised format specification '%S)'
+[90mRun `]8;;x-r-run:rlang::last_trace()rlang::last_trace()]8;;` to see where the error occurred.[39m
+"
