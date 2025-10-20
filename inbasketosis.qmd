@@ -59,7 +59,14 @@ clean <- raw |>
   # select columns
   select(id, type, group, metric, starts_with(c("24-", "25-")))
 
-# Monthly aggregations
+
+# Full
+full <- clean |>
+  pivot_longer(starts_with(c("24-", "25-")), names_to = "month", values_to = "value") |>
+  pivot_wider(names_from = c("metric", "month"), values_from = "value") |> clean_names()
+
+
+# Monthly
 monthly <- clean |>
   summarise(
     across(
@@ -67,18 +74,16 @@ monthly <- clean |>
       ~ as.numeric(case_when(str_starts(metric[1], "Count Of") ~ sum(.x, na.rm = TRUE),
                              TRUE ~ mean(.x, na.rm = TRUE)))),
     .by = metric
+  ) |>
+  pivot_longer(starts_with(c("24-", "25-")), names_to = "month", values_to = "value") |>
+  # convert month to date
+  mutate(
+    month = as.Date(paste0(str_replace(month, "-", "-01-"), "01"), format = "%y-%m"
+    )
   )
-  
-# Pivot longer
-long <- clean |>
-  pivot_longer(starts_with(c("24-", "25-")), names_to = "month", values_to = "value")
 
-# Pivot wider full dataset
-full <- long |>
-  pivot_wider(names_from = c("metric", "month"), values_from = "value") |> clean_names()
-
-# Aggregate
-aggregated <- clean |>
+# Final
+final <- clean |>
   rowwise() |>
   mutate(
     
@@ -90,19 +95,14 @@ aggregated <- clean |>
     
     max = max(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE)
   ) |> ungroup() |>
-  select(id, type, n_months, group, metric, tot, max)
-
-# Pivot wider
-wide <- aggregated |>
+  select(id, type, n_months, group, metric, tot, max) |>
+  
   pivot_wider(
     names_from = metric,
     values_from = c(tot, max),
     names_sep = "_"
-  ) |>
-  clean_names()
-
-# Create final dataset with calculated fields
-final <- wide |>
+  ) |> clean_names() |>
+  
   transmute(
     
     # object identifiers
@@ -125,6 +125,7 @@ final <- wide |>
     # in-basket load
     ib_min = tot_count_of_in_basket_minutes,
     ib_hrs = ib_min / 60,
+    ib_min_per_msg = ifelse(n_msg > 0, ib_min / n_msg, NA),
     ib_sys_ratio = ib_min / sys_min,
     ib_sch_ratio = ib_hrs / n_sch_hrs,
     
@@ -192,12 +193,10 @@ final <- wide |>
 if (!dir.exists("data")) {
   dir.create("data")
 }
+raw |> saveRDS("data/raw.rds")
 clean |> saveRDS("data/clean.rds")
-monthly |> saveRDS("data/monthly.rds")
-long |> saveRDS("data/long.rds")
 full |> saveRDS("data/full.rds")
-aggregated |> saveRDS("data/aggregated.rds")
-wide |> saveRDS("data/wide.rds")
+monthly |> saveRDS("data/monthly.rds")
 final |> saveRDS("data/final.rds")
 
 ```
@@ -205,26 +204,60 @@ final |> saveRDS("data/final.rds")
 ```{r eda, message=FALSE, warning=FALSE}
 
 # Load libraries
-library(dplyr)
-library(tidyr)
-library(readr)
 library(ggplot2)
+library(knitr)
+library(kableExtra)
+library(scales)
+library(reshape2)
+library(corrplot)
+library(RColorBrewer)
+library(gridExtra)
+library(grid)
+library(patchwork)
+library(ggpubr)
+library(viridis)
+library(ggthemes)
+library(ggcorrplot)
+library(broom)
 
 # Load datasets
 final <- readRDS("data/final.rds")
-long <- readRDS("data/long.rds")
 monthly <- readRDS("data/monthly.rds")
 
+# Plot metric values as lines over months
+metrics_to_plot <- c(
+  "Count Of Patient Medical Advice Requests Messages Received",
+  "Count Of Patient Call Messages Received",
+  "Count Of Result Messages Received",
+  "Count Of Rx Auth Messages Received",
+  "Count Of In-Basket Minutes",
+  "Count Of Minutes Active Outside Scheduled Time 30 Min Buffer"
+)
+metric_plots <- lapply(metrics_to_plot, function(metric_name) {
+  metric_data <- monthly %>%
+    filter(metric == metric_name)
+  
+  ggplot(metric_data, aes(x = month, y = value)) +
+    geom_line() +
+    geom_point() +
+    labs(
+      title = metric_name,
+      x = "Month",
+      y = "Value"
+    ) +
+    theme_minimal()
+})
 
-### Table 1: Total Workload by Provider Type
-| Provider            | Appointments | Scheduled Hours | After-hours | In-Basket Hours | Messages Received |
-|---------------------|--------------|-----------------|-------------|-----------------|-------------------|
-| Attending           |              |                 |             |                 |                   |
-| Nurse Practitioner  |              |                 |             |                 |                   |
-| Resident / Fellow   |              |                 |             |                 |                   |
-| Total               |              |                 |             |                 |                   |
-* Values shown as n (%).
 
+```
+
+``` {r table_1}
+
+# Table 1: 
+
+```
+
+``` {r, table_2}
 ### Table 2: Message Volume and Completion Metrics by Type
 
 | Metric                           | Medical Advice Request | Patient Call | Results | Rx Auth |  All  |
@@ -235,22 +268,72 @@ monthly <- readRDS("data/monthly.rds")
 | Correlation to In-Basket Hours*  |                        |              |         |         |       |
 | Correlation to After-Hours*      |                        |              |         |         |       |
 * Pearson Correlation Coefficient.
+```
 
-## Figures
+``` {r, table_3}
+# Table 3:
 
-### Figure 1: Barplot of ranked In-Basket Hours Per Month (colored by Provider Type)
+```
 
-### Figure 2: Cumulative Ranked Share of In-Basket Hours by Providers (ranked by In-Basket Hours)
+``` {r, table_4}
+# Table 4: 
 
-### Figure 3: Cumulative appointment equivalents by Providers (ranked by In-Basket Hours)
+```
 
-### Figure 4: Scatterplot of Total Messages Received per Month vs In-Basket Hours per Month (colored by Provider Type)
 
-### Figure 5: In-Basket Minutes Per Appointment Vs. After-Hours Ratio
+``` {r, figure_1}
+# Figure 1: Barplot of ranked In-Basket Hours Per Month (colored by Provider Type)
+fig1 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pm), y = ib_hrs_pm, fill = type)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "In-Basket Hours Per Month by Provider",
+    x = "Provider ID (ranked)",
+    y = "In-Basket Hours Per Month"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_blank())
 
+```
+
+``` {r, figure_2}
+# Figure 2: Cumulative Ranked Share of In-Basket Hours by Providers (ranked by In-Basket Hours)
+fig2 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pm), y = cumsum(ib_hrs_pm) / sum(ib_hrs_pm), color = type)) +
+  geom_line() +
+  labs(
+    title = "Cumulative Ranked Share of In-Basket Hours by Providers",
+    x = "Provider ID (ranked)",
+    y = "Cumulative Share of In-Basket Hours"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_blank())
+
+```
+
+``` {r, figure_3}
+# Figure 3: Cumulative appointment equivalents by Providers (ranked by In-Basket Hours)
+
+
+```
+
+``` {r, figure_4}
+# Figure 4: Scatterplot of Total Messages Received per Month vs In-Basket Hours per Month (colored by Provider Type)
+
+
+```
+
+``` {r, figure_5}
+# Figure 5: In-Basket Minutes Per Appointment Vs. After-Hours Ratio
+
+
+```
+
+``` {r, figure_6}
 ### Figure 6: Heatmap of key correlations
 
 
+```
+
+``` {r save_outputs}
 
 # Save tables and figures
 if (!dir.exists("outputs")) {
@@ -258,5 +341,5 @@ if (!dir.exists("outputs")) {
 }
 
 
-```
 
+```
