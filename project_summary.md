@@ -1,12 +1,12 @@
 ---
-title: "In-basket In-visible Workload in Outpatient Psychiatry"
+title: "Inboxed Minds: Hidden Digital Work in Outpatient Psychiatry"
 author: "Nicolas Lescano, MD"
 role: "Assistant Professor of Clinical Psychiatry"
 institution: "University of Pennsylvania / Perelmal School of Medicine"
 date: "October 28th, 2025"
-keywords: 
-
+keywords: in-basket, invisible work, psychiatry, EHR, Epic Signal, burnout, message volume, after-hours, workflow, digital health, workload equity, sociotechnical, human factors, provider roles
 ---
+
 # Introduction
 
 ## Problem Statement and Significance
@@ -64,6 +64,49 @@ We used Epic Signal—a robust audit log and analytics tool embedded within the 
 Our study population included all physicians (attending and psychiatric fellows), advanced practice providers (APPs; including nurse practitioners and physician assistants), and resident trainees in the department of psychiatry with any ambulatory schedule during the study period. Clinicians with purely inpatient or consult-liaison roles and those without at least one month of reported in-basket activity were excluded. This yielded a final analytic cohort representing the full landscape of outpatient psychiatry clinicians during the observed year.
 
 ## Outcome Measures
+
+The following outcome variables were defined and engineered to capture different facets of in-basket workload, allowing standardized comparisons across roles, and quantification of both total burden and its distribution.
+
+**Key derived metrics:**
+
+- **Message Volume**
+  - `n_msg_rec`: Total in-basket messages received (all types)
+  - `n_msg_pc_rec`: Patient call messages received
+  - `n_msg_mar_rec`: Patient medical advice request messages received
+  - `n_msg_res_rec`: Result messages received
+  - `n_msg_rxa_rec`: Rx authorization messages received
+
+- **Time Spent**
+  - `n_inbasket_hrs`: Total in-basket work hours (summed Epic Signal time, including after-hours)
+  - `n_inbasket_min`: Total in-basket work minutes
+  - `n_min_in_sys`: Total minutes active in the EHR system
+  - `n_min_ost`: Minutes active outside scheduled time (wi  th 30-min buffer)
+  - `n_afterhrs`: Minutes of afterhours in-basket activity
+
+- **Scheduling and Exposure**
+  - `n_sch_days`: Number of scheduled clinic days
+  - `n_sch_hrs`: Scheduled clinic hours
+  - `n_sys_hrs`: Total system hours
+  - `n_appt`: Number of patient appointments
+  - `n_sat_min`, `n_sun_min`: Minutes of in-basket work on Saturdays/Sundays
+
+**Standardized and Distributional Metrics:**
+  - Rates per scheduled day: e.g., `per_sch_day_n_msg_rec`, `per_sch_day_n_inbasket_hrs`
+  - Rates per appointment: e.g., `per_appt_n_msg_pc_rec`, `per_appt_n_inbasket_min`
+  - Rates per scheduled hour/system hour: e.g., `per_sch_hr_n_msg_rec`, `per_sys_hr_n_inbasket_hrs`
+  - Gini coefficient and Lorenz curves for message/time concentration (quantifying within-role and overall workload inequality)
+  - Ratios: `ratio_afterhrs` (proportion after-hours), `ratio_inbasket` (proportion of EHR time spent in in-basket)
+
+**Timeliness Metrics:**
+  - `avg_dtc_msg`: Average days to completion for all messages
+  - `avg_dtc_msg_pc`: Patient call message completion time
+  - `avg_dtc_msg_mar`: Medical advice request message completion time
+  - `avg_dtc_msg_res`: Result message completion time
+  - `avg_dtc_msg_rxa`: Rx authorization message completion time
+
+These engineered variables enable transparent reporting of both absolute and relative in-basket workload spanning time, message types, scheduling context, and work distribution.
+  
+A full variable dictionary with definitions is provided in Supplementary Table S1; analytic code for all transformations is available in the project's reproducible scripts.
 
 Primary outcomes comprised:
 - **In-basket message volume:** Number of incoming messages by type (e.g., patient messages, results, appointment requests).
@@ -163,3 +206,47 @@ Tawfik, D., Bayati, M., Liu, J., et al. (2024). Predicting primary care physicia
 Worsham, C. M., Barron, H. T., Ratwani, R. M., et al. (2024). Clinician message workload and burnout in outpatient care: A multi-site mixed methods study. BMC Health Services Research, 24(1), 11686. https://doi.org/10.1186/s12913-024-11686-6
 
 Xia, L., Lew, D., Baratta, L., et al. (2025). Association between conversational multitasking and clinician work behaviors at a large US health care system: Cohort study. Journal of Medical Internet Research, 27, e72768. https://doi.org/10.2196/72768
+
+---
+# Appendix
+
+## Tables
+
+### Table 1: Total Workload by Provider Type
+| Provider            | Appointments | Scheduled Hours | After-hours | In-Basket Hours | Messages Received |
+|---------------------|--------------|-----------------|-------------|-----------------|-------------------|
+| Attending           |              |                 |             |                 |                   |
+| Nurse Practitioner  |              |                 |             |                 |                   |
+| Resident / Fellow   |              |                 |             |                 |                   |
+| Total               |              |                 |             |                 |                   |
+* Values shown as n (%).
+
+### Table 2: Message Volume and Completion Metrics by Type
+
+| Metric                           | Medical Advice Request | Patient Call | Results | Rx Auth |  All  |
+|----------------------------------|------------------------|--------------|---------|---------|-------|
+| Total - n (%)                    |                        |              |         |         |       |
+| Per Month - mean (sd)            |                        |              |         |         |       |
+| Days To Complete - mean (sd)     |                        |              |         |         |       |
+| Correlation to In-Basket Hours*  |                        |              |         |         |       |
+| Correlation to After-Hours*      |                        |              |         |         |       |
+* Pearson Correlation Coefficient.
+
+### Table 3: Top 10 providers metrics
+
+### Table 4: 
+
+
+## Figures
+
+### Figure 1: Barplot of ranked In-Basket Hours Per Month (colored by Provider Type)
+
+### Figure 2: Cumulative Ranked Share of In-Basket Hours by Providers (ranked by In-Basket Hours)
+
+### Figure 3: Cumulative appointment equivalents by Providers (ranked by In-Basket Hours)
+
+### Figure 4: Scatterplot of Total Messages Received per Month vs In-Basket Hours per Month (colored by Provider Type)
+
+### Figure 5: In-Basket Minutes Per Appointment Vs. After-Hours Ratio
+
+### Figure 6:

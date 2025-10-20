@@ -1,7 +1,6 @@
 ---
 title: "inbasketosis"
 format: html
-code-fold: true
 ---
 
 ```{r preprocess, message=FALSE, warning=FALSE}
@@ -14,7 +13,7 @@ library(tidyr)
 library(stringr)
 library(janitor)
 
-# Load raw dataset
+# Load raw data
 messages <- read_excel("Epic Signal PEP Data.xlsx", sheet = "Messages")
 time <- read_excel("Epic Signal PEP Data.xlsx", sheet = "Time")
 raw <- bind_rows(messages, time)
@@ -33,17 +32,17 @@ clean <- raw |>
     type = factor(
       case_when(
         Grouper == "PHYSICIAN + PSYCHIATRIST" ~ "MD",
-        Grouper == "NURSE PRACTITIONER" ~ "APP",
-        Grouper == "RESIDENT + FELLOW" ~ "R/F",
+        Grouper == "NURSE PRACTITIONER" ~ "NP",
+        Grouper == "RESIDENT + FELLOW" ~ "RF",
         TRUE ~ Grouper
       ),
-      levels = c("MD", "APP", "R/F")
+      levels = c("MD", "NP", "RF")
     ),
 
     group =
       factor(
         case_when(
-          type %in% c("MD", "APP") ~ "Staff",
+          type %in% c("MD", "NP") ~ "Staff",
           TRUE ~ "Trainee"
           ),
           levels = c("Staff", "Trainee")
@@ -53,442 +52,210 @@ clean <- raw |>
     metric = str_replace(Metric, "Recieved", "Received")
 
   ) |>
-
+  
   # remove duplicates
   distinct(id, type, metric, .keep_all = TRUE) |>
 
   # select columns
   select(id, type, group, metric, starts_with(c("24-", "25-")))
 
-# Long format
+# Monthly aggregations
+monthly <- clean |>
+  summarise(
+    across(
+      starts_with(c("24-", "25-")),
+      ~ as.numeric(case_when(str_starts(metric[1], "Count Of") ~ sum(.x, na.rm = TRUE),
+                             TRUE ~ mean(.x, na.rm = TRUE)))),
+    .by = metric
+  )
+  
+# Pivot longer
 long <- clean |>
   pivot_longer(starts_with(c("24-", "25-")), names_to = "month", values_to = "value")
 
-# remove rows with NAs
-complete <- na.omit(clean)
+# Pivot wider full dataset
+full <- long |>
+  pivot_wider(names_from = c("metric", "month"), values_from = "value") |> clean_names()
 
-# Aggregate month columns into single column (mean for averages, sum for the rest)
+# Aggregate
 aggregated <- clean |>
   rowwise() |>
   mutate(
+    
     n_months = sum(!is.na(c_across(starts_with(c("24-", "25-"))))),
-    value = ifelse(str_starts(metric, "Average"), mean(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE), sum(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE))
+    
+    tot = ifelse(str_starts(metric, "Count Of"),
+                 sum(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE),
+                 mean(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE)),
+    
+    max = max(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE)
   ) |> ungroup() |>
-  select(id, type, group, metric, value, n_months)
+  select(id, type, n_months, group, metric, tot, max)
 
+# Pivot wider
 wide <- aggregated |>
   pivot_wider(
     names_from = metric,
-    values_from = value
+    values_from = c(tot, max),
+    names_sep = "_"
   ) |>
   clean_names()
 
-# Select primary metrics
-selected <- wide |>
-  select(
+# Create final dataset with calculated fields
+final <- wide |>
+  transmute(
+    
+    # object identifiers
     id, type, group, n_months,
+    
+    # general denominators
+    n_appt = tot_count_of_appointments,
+    n_sch_day = tot_count_of_scheduled_days,
+    n_sch_hrs = tot_scheduled_hours_per_day * n_sch_day,
+    sys_min = tot_count_of_minutes_in_the_system,
+    sys_hrs = sys_min / 60,
+    
+    # message counts
+    n_mar = tot_count_of_patient_medical_advice_requests_messages_received,
+    n_pcm = tot_count_of_patient_call_messages_received,
+    n_res = tot_count_of_result_messages_received,
+    n_rxa = tot_count_of_rx_auth_messages_received,
+    n_msg = n_mar + n_pcm + n_res + n_rxa,
+        
+    # in-basket load
+    ib_min = tot_count_of_in_basket_minutes,
+    ib_hrs = ib_min / 60,
+    ib_sys_ratio = ib_min / sys_min,
+    ib_sch_ratio = ib_hrs / n_sch_hrs,
+    
+    # average days to complete (dtc)
+    dtc_mar = tot_average_days_until_patient_medical_advice_request_message_marked_done,
+    dtc_pcm = tot_average_days_until_patient_call_messages_marked_done,
+    dtc_res = tot_average_days_until_result_message_marked_done,
+    dtc_rxa = tot_average_days_until_rx_auth_message_marked_done,
+    dtc_msg = (dtc_mar + dtc_pcm + dtc_res + dtc_rxa) / 4,
 
-    # general load
-    count_of_scheduled_days,
-    scheduled_hours_per_day,
-    count_of_appointments,
-    count_of_minutes_in_the_system,
-
-    # inbasket load
-    count_of_in_basket_minutes,
-    count_of_patient_call_messages_received,
-    count_of_patient_medical_advice_requests_messages_received,
-    count_of_result_messages_received,
-    count_of_rx_auth_messages_received,
-
-    # responsiveness
-    average_days_until_patient_call_messages_marked_done,
-    average_days_until_patient_medical_advice_request_message_marked_done,
-    average_days_until_result_message_marked_done,
-    average_days_until_rx_auth_message_marked_done,
-
-    # afterhours load
-    count_of_minutes_active_outside_scheduled_time_30_min_buffer,
-    count_of_saturday_minutes,
-    count_of_sunday_minutes
+    # afterhours
+    min_ost = tot_count_of_minutes_active_outside_scheduled_time_30_min_buffer,
+    min_oud = tot_count_of_minutes_active_on_unscheduled_days,
+    min_sat = tot_count_of_saturday_minutes,
+    min_sun = tot_count_of_sunday_minutes,
+    ah_min = min_ost + min_oud + min_sat + min_sun,
+    ah_hrs = ah_min / 60,
+    ah_sys_ratio = ah_min / sys_min,
+    
+    # minutes per appointment (mpa)
+    ib_mpa = tot_minutes_in_in_basket_per_appointment,
+    cr_mpa = tot_minutes_in_clinical_review_per_appointment,
+    nl_mpa = tot_minutes_in_notes_letters_per_appointment,
+    or_mpa = tot_minutes_in_orders_per_appointment,
+    mpa = ib_mpa + cr_mpa + nl_mpa + or_mpa,
+    
+    # mpa proportions
+    ib_mpa_pct = ifelse(ib_mpa > 0, ib_mpa / mpa, NA),
+    cr_mpa_pct = ifelse(cr_mpa > 0, cr_mpa / mpa, NA),
+    nl_mpa_pct = ifelse(nl_mpa > 0, nl_mpa / mpa, NA),
+    or_mpa_pct = ifelse(or_mpa > 0, or_mpa / mpa, NA),
+    
+    # per month (pm)
+    appt_pm = n_appt / n_months,
+    sch_day_pm = n_sch_day / n_months,
+    sch_hrs_pm = n_sch_hrs / n_months,
+    sys_hrs_pm = sys_hrs / n_months,
+    ah_hrs_pm = ah_hrs / n_months,
+    ib_hrs_pm = ib_hrs / n_months,
+    msg_pm = n_msg / n_months,
+    mar_pm = n_mar / n_months,
+    pcm_pm = n_pcm / n_months,
+    res_pm = n_res / n_months,
+    rxa_pm = n_rxa / n_months,
+    
+    # monthly max values
+    appt_max = max_count_of_appointments,
+    sch_day_max = max_count_of_scheduled_days,
+    sch_hrs_max = max_scheduled_hours_per_day * sch_day_max,
+    sys_hrs_max = max_count_of_minutes_in_the_system / 60,
+    ah_hrs_max = (max_count_of_minutes_active_outside_scheduled_time_30_min_buffer +
+                    max_count_of_minutes_active_on_unscheduled_days +
+                    max_count_of_saturday_minutes +
+                    max_count_of_sunday_minutes) / 60,
+    ib_hrs_max = max_count_of_in_basket_minutes / 60,
+    mar_max = max_count_of_patient_medical_advice_requests_messages_received,
+    pcm_max = max_count_of_patient_call_messages_received,
+    res_max = max_count_of_result_messages_received,
+    rxa_max = max_count_of_rx_auth_messages_received,
+    msg_max = mar_max + pcm_max + res_max + rxa_max
     
   )
-
-# Final aggregations, calculations, and feature engineering
-final <- selected |>
-  rowwise() |>
-  mutate(
-    
-    # counts and averages
-    count_of_messages_received = sum(
-      count_of_patient_call_messages_received,
-      count_of_patient_medical_advice_requests_messages_received,
-      count_of_result_messages_received,
-      count_of_rx_auth_messages_received,
-      na.rm = TRUE
-    ),
-    average_days_until_message_marked_done = mean(
-      average_days_until_patient_call_messages_marked_done,
-      average_days_until_patient_medical_advice_request_message_marked_done,
-      average_days_until_result_message_marked_done,
-      average_days_until_rx_auth_message_marked_done,
-      na.rm = TRUE
-    ),
-    
-    # hours
-    count_of_system_hours = count_of_minutes_in_the_system / 60,
-    count_of_inbasket_hours = count_of_in_basket_minutes / 60,
-    count_of_schedule_hours = scheduled_hours_per_day * count_of_scheduled_days,
-    count_of_afterhours = sum(count_of_minutes_active_outside_scheduled_time_30_min_buffer,
-                     sum(
-                       count_of_saturday_minutes,
-                       count_of_sunday_minutes,
-                       na.rm = TRUE),
-                     na.rm = TRUE) / 60,
-    
-    # ratios
-    ratio_inbasket = count_of_in_basket_minutes / count_of_minutes_in_the_system,
-    ratio_afterhours = count_of_afterhours / count_of_system_hours,
-  ) |>
-  ungroup() |>
   
-  # feature engineering
-  mutate(
-    
-    # per month
-    across(c(!starts_with(c("average", "ratio_"))
-             &!c(id, type, group, n_months)),
-      ~ .x / n_months,
-      .names = "per_month_{.col}"),
-
-    # per schedule day
-    across(c(!starts_with(c("average", "ratio_", "per_month_"))
-             & !c(id, type, group, n_months, count_of_scheduled_days)),
-      ~ .x / count_of_scheduled_days,
-      .names = "per_sch_day_{.col}"),
-    
-    # per schedule hour
-    across(c(!starts_with(c("average", "ratio_", "per_month_", "per_sch_day_"))
-             & !c(id, type, group, n_months, count_of_schedule_hours)),
-      ~ .x / count_of_schedule_hours,
-      .names = "per_sch_hr_{.col}"),
-    
-    # per appointment
-    across(c(!starts_with(c("average", "ratio_", "per_month_", "per_sch_day_", "per_sch_hr_"))
-             & !c(id, type, group, n_months, count_of_appointments)),
-      ~ .x / count_of_appointments,
-      .names = "per_appt_{.col}"),
-
-    # per system hour
-    across(c(!starts_with(c("average", "ratio_", "per_month_", "per_sch_day_", "per_sch_hr_", "per_appt_"))
-             & !c(id, type, group, n_months, count_of_system_hours)),
-      ~ .x / count_of_system_hours,
-      .names = "per_sys_hr_{.col}")
-
-    ) |>
-
-  # abbreviate column names
-  rename_with(~ .x |>
-      str_replace_all(c(
-        "count_of_" = "n_", 
-        "average_days_until" = "avg_dtc",
-        "the_system" = "sys",
-        "system" = "sys",
-        "active_outside_scheduled_time_30_min_buffer" = "ost",
-        "patient_medical_advice_requests" = "mar",
-        "patient_medical_advice_request" = "mar",
-        "patient_call" = "pc",
-        "rx_auth" = "rxa",
-        "in_basket" = "inbasket",
-        "appointments" = "appt",
-        "appointment" = "appt",
-        "scheduled" = "sch",
-        "schedule" = "sch",
-        "messages" = "msg",
-        "message" = "msg",
-        "minutes" = "min",
-        "hours" = "hrs",
-        "hour" = "hr",
-        "saturday" = "sat",
-        "sunday" = "sun",
-        "result" = "res",
-        "received" = "rec",
-        "_marked_done" = "",
-        "pc_msg" = "msg_pc",
-        "mar_msg" = "msg_mar",
-        "res_msg" = "msg_res",
-        "rxa_msg" = "msg_rxa"
-      ))
-  )
-
-# Reorder columns
-final <- final[, c(
-  "id", "type", "group", "n_months",
-  sort(setdiff(names(final), c("id","type","group","n_months")))
-)]
-
-# Save datasets
+# Save all datasets
 if (!dir.exists("data")) {
   dir.create("data")
 }
-raw |> saveRDS("data/raw.rds")
 clean |> saveRDS("data/clean.rds")
+monthly |> saveRDS("data/monthly.rds")
 long |> saveRDS("data/long.rds")
-complete |> saveRDS("data/complete.rds")
+full |> saveRDS("data/full.rds")
 aggregated |> saveRDS("data/aggregated.rds")
 wide |> saveRDS("data/wide.rds")
-selected |> saveRDS("data/selected.rds")
 final |> saveRDS("data/final.rds")
 
 ```
 
 ```{r eda, message=FALSE, warning=FALSE}
-# ════════════════════════════════════════════════════════════════
-#                Exploratory Data Analysis (EDA)
-# ───────────────────────────────────────────────────────────────
-# Tables:
-#   • Table 1: 
-#   • Table 2: 
-#   • Table 3: 
-#   • Table 4: 
-
-# Figures:
-#   • Figure 1: 
-#   • Figure 2: 
-#   • Figure 3: 
-#   • Figure 4: 
-#   • Figure 5: 
-#   • Figure 6: 
-# ════════════════════════════════════════════════════════════════
 
 # Load libraries
-library(summarytools)
-library(knitr)
-library(kableExtra)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
 
-# Load data
-data <- readRDS("data/final.rds")
+# Load datasets
+final <- readRDS("data/final.rds")
+long <- readRDS("data/long.rds")
+monthly <- readRDS("data/monthly.rds")
 
-# Summarytools
+
+### Table 1: Total Workload by Provider Type
+| Provider            | Appointments | Scheduled Hours | After-hours | In-Basket Hours | Messages Received |
+|---------------------|--------------|-----------------|-------------|-----------------|-------------------|
+| Attending           |              |                 |             |                 |                   |
+| Nurse Practitioner  |              |                 |             |                 |                   |
+| Resident / Fellow   |              |                 |             |                 |                   |
+| Total               |              |                 |             |                 |                   |
+* Values shown as n (%).
+
+### Table 2: Message Volume and Completion Metrics by Type
+
+| Metric                           | Medical Advice Request | Patient Call | Results | Rx Auth |  All  |
+|----------------------------------|------------------------|--------------|---------|---------|-------|
+| Total - n (%)                    |                        |              |         |         |       |
+| Per Month - mean (sd)            |                        |              |         |         |       |
+| Days To Complete - mean (sd)     |                        |              |         |         |       |
+| Correlation to In-Basket Hours*  |                        |              |         |         |       |
+| Correlation to After-Hours*      |                        |              |         |         |       |
+* Pearson Correlation Coefficient.
+
+## Figures
+
+### Figure 1: Barplot of ranked In-Basket Hours Per Month (colored by Provider Type)
+
+### Figure 2: Cumulative Ranked Share of In-Basket Hours by Providers (ranked by In-Basket Hours)
+
+### Figure 3: Cumulative appointment equivalents by Providers (ranked by In-Basket Hours)
+
+### Figure 4: Scatterplot of Total Messages Received per Month vs In-Basket Hours per Month (colored by Provider Type)
+
+### Figure 5: In-Basket Minutes Per Appointment Vs. After-Hours Ratio
+
+### Figure 6: Heatmap of key correlations
 
 
-# Table 1: n (%), mean (sd), median (iqr), sum (min, max)
-tbl1 <- data |>
 
-# Table 2: 
-
-# Table 3:
-
-# Table 4: 
-
-# Figure 1: Provider Type Comparison (Boxplot)
-fig_1 <- ggplot(data, aes(x = type, y = n_inbasket_hrs, fill = type)) +
-  geom_boxplot(alpha = 0.7, outlier.size = 2) +
-  scale_y_continuous(labels = scales::comma_format(accuracy = 1)) +
-  labs(
-    title = "In-Basket Hours by Provider Type",
-    subtitle = "Distribution of invisible work burden across provider types",
-    x = "Provider Type",
-    y = "In-Basket Hours",
-    fill = "Provider Type"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    plot.title = element_text(size = 14, face = "bold"),
-    legend.position = "none",
-    panel.grid.minor = element_blank()
-  )
-
-# Figure 2: Workload vs Afterhours Relationship
-if("ratio_afterhrs" %in% names(data)) {
-  fig_2 <- ggplot(data, aes(x = n_inbasket_hrs, y = ratio_afterhrs)) +
-    geom_point(alpha = 0.6, color = '#2C7FB8', size = 2) +
-    geom_smooth(method = 'lm', color = '#E31A1C', se = TRUE, linewidth = 1) +
-    scale_x_continuous(labels = scales::comma_format(accuracy = 1)) +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-  labs(
-      title = "In-Basket Workload vs Afterhours Activity",
-      subtitle = "Higher in-basket burden correlates with increased afterhours work",
-      x = "In-Basket Hours",
-      y = "Afterhours Ratio",
-      caption = "Afterhours Ratio = Afterhours Hours / Total System Hours"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-      plot.title = element_text(size = 14, face = "bold"),
-      panel.grid.minor = element_blank()
-    )
-} else {
-  # Alternative figure if afterhours data not available
-  fig_2 <- ggplot(data, aes(x = n_inbasket_hrs, y = n_msg_rec)) +
-  geom_point(alpha = 0.6, color = '#2C7FB8', size = 2) +
-  geom_smooth(method = 'lm', color = '#E31A1C', se = TRUE, linewidth = 1) +
-    scale_x_continuous(labels = scales::comma_format(accuracy = 1)) +
-    scale_y_continuous(labels = scales::comma_format(accuracy = 1)) +
-  labs(
-      title = "In-Basket Workload vs Message Volume",
-      subtitle = "Relationship between in-basket hours and total messages received",
-      x = "In-Basket Hours",
-      y = "Messages Received"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-      plot.title = element_text(size = 14, face = "bold"),
-      panel.grid.minor = element_blank()
-    )
+# Save tables and figures
+if (!dir.exists("outputs")) {
+  dir.create("outputs")
 }
-
-# Figure 3: Message Type Distribution
-message_summary <- data |>
-  summarise(
-    `Patient Call` = sum(n_msg_pc_rec, na.rm = TRUE),
-    `Medical Advice` = sum(n_msg_mar_rec, na.rm = TRUE),
-    `Results` = sum(n_msg_res_rec, na.rm = TRUE),
-    `Rx Authorization` = sum(n_msg_rxa_rec, na.rm = TRUE)
-  ) |>
-  pivot_longer(everything(), names_to = "Message_Type", values_to = "Count") |>
-  mutate(
-    Percentage = Count / sum(Count),
-    Message_Type = factor(Message_Type, levels = c("Medical Advice", "Patient Call", "Rx Authorization", "Results"))
-  )
-
-fig_3 <- ggplot(message_summary, aes(x = "", y = Percentage, fill = Message_Type)) +
-  geom_col(width = 1, color = "white") +
-  coord_polar(theta = "y") +
-  geom_text(aes(label = scales::percent(Percentage, accuracy = 0.1)),
-            position = position_stack(vjust = 0.5), size = 4, color = "white", fontface = "bold") +
-  scale_fill_brewer(palette = "Set2") +
-  labs(
-    title = "Distribution of Message Types",
-    subtitle = "Medical advice requests represent the largest share of in-basket workload",
-    fill = "Message Type"
-  ) +
-  theme_void(base_size = 12) +
-  theme(
-    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
-    plot.subtitle = element_text(size = 11, hjust = 0.5),
-    legend.position = "right"
-  )
-
-# Figure 4: Top 10 Providers Bar Chart
-fig_4 <- ggplot(top_10_providers, aes(x = reorder(`Workload Rank`, `In-Basket Hours`), y = `In-Basket Hours`, fill = `Provider Type`)) +
-  geom_col(alpha = 0.8) +
-  geom_text(aes(label = sprintf("%.1f", `In-Basket Hours`)), 
-            hjust = -0.1, size = 3.5, fontface = "bold") +
-  scale_y_continuous(labels = scales::comma_format(accuracy = 1), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_brewer(palette = "Set2") +
-  coord_flip() +
-  labs(
-    title = "Top 10 Providers by In-Basket Workload",
-    subtitle = "Highest burden providers and their workload distribution",
-    x = "Provider Rank",
-    y = "In-Basket Hours",
-    fill = "Provider Type"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    plot.title = element_text(size = 14, face = "bold"),
-    legend.position = "bottom",
-    panel.grid.minor = element_blank()
-  )
-
-# Calculate Gini coefficient function
-gini_coefficient <- function(x) {
-  x <- sort(x[!is.na(x)])
-  n <- length(x)
-  if (n == 0) return(NA)
-  cumsum_x <- cumsum(x)
-  return((2 * sum((1:n) * x)) / (n * sum(x)) - (n + 1) / n)
-}
-
-# Figure 5: Lorenz Curve Analysis
-lorenz_data <- data |>
-  arrange(n_inbasket_hrs) |>  # Sort by workload (lowest to highest for Lorenz curve)
-  mutate(
-    cum_hours = cumsum(n_inbasket_hrs),
-    total_hours = sum(n_inbasket_hrs, na.rm = TRUE),
-    cum_hours_pct = cum_hours / total_hours,
-    cum_providers = row_number(),
-    total_providers = n(),
-    cum_providers_pct = cum_providers / total_providers
-  )
-
-# Calculate Gini coefficient
-gini_value <- gini_coefficient(data$n_inbasket_hrs)
-
-# Add perfect equality line
-lorenz_data$perfect_equality <- lorenz_data$cum_providers_pct
-
-# Create Lorenz curve data with (0,0) starting point
-lorenz_curve_data <- bind_rows(
-  data.frame(cum_providers_pct = 0, cum_hours_pct = 0, perfect_equality = 0),
-  lorenz_data |> select(cum_providers_pct, cum_hours_pct, perfect_equality)
-)
-
-# Find key data points
-top_10_pct_workload <- lorenz_data$cum_hours_pct[lorenz_data$cum_providers_pct >= 0.9][1]
-bottom_50_pct_workload <- lorenz_data$cum_hours_pct[lorenz_data$cum_providers_pct >= 0.5][1]
-top_20_pct_workload <- 1 - lorenz_data$cum_hours_pct[lorenz_data$cum_providers_pct >= 0.8][1]
-
-fig_5 <- ggplot(lorenz_curve_data, aes(x = cum_providers_pct, y = cum_hours_pct)) +
-  # Perfect equality line (dashed)
-  geom_line(aes(x = cum_providers_pct, y = perfect_equality), 
-            linetype = 'dashed', color = '#2C7FB8', linewidth = 1) +
-  # Actual distribution curve (solid)
-  geom_line(color = '#1f4e79', linewidth = 1.5) +
-  # Shaded area between curves
-  geom_ribbon(aes(ymin = perfect_equality, ymax = cum_hours_pct), 
-              fill = '#1f4e79', alpha = 0.2) +
-  # Key data points with annotations
-  annotate('point', x = 0.1, y = top_10_pct_workload, color = '#E31A1C', size = 3) +
-  annotate('text', x = 0.1, y = top_10_pct_workload + 0.05, 
-           label = paste0('Top 10%\n', round(top_10_pct_workload * 100, 1), '%'), 
-           size = 3.5, color = '#E31A1C', hjust = 0.5) +
-  annotate('point', x = 0.5, y = bottom_50_pct_workload, color = '#E31A1C', size = 3) +
-  annotate('text', x = 0.5, y = bottom_50_pct_workload - 0.05, 
-           label = paste0('Bottom 50%\n', round(bottom_50_pct_workload * 100, 1), '%'), 
-           size = 3.5, color = '#E31A1C', hjust = 0.5) +
-  # Gini coefficient annotation
-  annotate('text', x = 0.7, y = 0.25, 
-           label = paste0('Gini Coefficient = ', round(gini_value, 3)), 
-           size = 4, color = 'gray30', fontface = 'bold') +
-  # Scale and labels
-  scale_x_continuous(labels = scales::percent_format(accuracy = 1), 
-                     limits = c(0, 1), expand = expansion(mult = c(0, 0.02))) +
-  scale_y_continuous(labels = scales::percent_format(accuracy = 1), 
-                     limits = c(0, 1), expand = expansion(mult = c(0, 0.02))) +
-  labs(
-    title = 'Lorenz Curve: Workload Distribution Inequality',
-    subtitle = paste0('Top 10% of providers handle ', round(top_10_pct_workload * 100, 1), '% of workload'),
-    x = 'Cumulative Proportion of Providers (ranked by workload)',
-    y = 'Cumulative Proportion of Total Workload',
-    caption = 'Source: Epic Signal, July 2024-June 2025.'
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    plot.title = element_text(size = 14, face = 'bold'),
-    plot.subtitle = element_text(size = 11),
-    plot.caption = element_text(size = 9, color = 'gray50'),
-    panel.grid.minor = element_blank(),
-    legend.position = 'none'
-  ) +
-  # Add legend manually
-  annotate('text', x = 0.15, y = 0.85, label = 'Perfect Equality (Gini = 0)', 
-           size = 3.5, color = '#2C7FB8', angle = 45) +
-  annotate('text', x = 0.25, y = 0.45, label = paste0('Actual Distribution (Gini = ', round(gini_value, 3), ')'), 
-           size = 3.5, color = '#1f4e79')
-
-# Save outputs
-if (!dir.exists("tables")) dir.create("tables")
-if (!dir.exists("figures")) dir.create("figures")
-
-# Figure 6: 
-
-
-# Save tables
-
-
-# Save figures
 
 
 ```
