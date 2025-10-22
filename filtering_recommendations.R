@@ -4,7 +4,7 @@
 library(dplyr)
 
 # Load the final dataset
-final <- readRDS("data/final.rds")
+final <- readRDS("data/engineered.rds")
 
 # RECOMMENDED FILTERING APPROACH
 
@@ -12,8 +12,8 @@ final <- readRDS("data/final.rds")
 filtered_conservative <- final %>%
   filter(
     n_months >= 6,           # At least 6 months of data
-    n_appt >= 50,            # At least 50 appointments
-    n_sch_hrs >= 50,         # At least 50 scheduled hours
+    apt_tot >= 50,            # At least 50 appointments
+    sch_hrs_tot >= 50,         # At least 50 scheduled hours
     ib_hrs >= 10             # At least 10 in-basket hours
   )
 
@@ -21,8 +21,8 @@ filtered_conservative <- final %>%
 filtered_restrictive <- final %>%
   filter(
     n_months >= 9,           # At least 9 months of data
-    n_appt >= 100,           # At least 100 appointments
-    n_sch_hrs >= 100,        # At least 100 scheduled hours
+    apt_tot >= 100,           # At least 100 appointments
+    sch_hrs_tot >= 100,        # At least 100 scheduled hours
     ib_hrs >= 20             # At least 20 in-basket hours
   )
 
@@ -30,8 +30,8 @@ filtered_restrictive <- final %>%
 filtered_minimal <- final %>%
   filter(
     n_months >= 3,           # At least 3 months of data
-    n_appt >= 25,            # At least 25 appointments
-    n_sch_hrs >= 25,         # At least 25 scheduled hours
+    apt_tot >= 25,            # At least 25 appointments
+    sch_hrs_tot >= 25,         # At least 25 scheduled hours
     ib_hrs >= 5              # At least 5 in-basket hours
   )
 
@@ -76,7 +76,7 @@ cat("4. Balances sample size vs data quality: Conservative approach recommended\
 # PROVIDERS EXCLUDED BY CONSERVATIVE FILTERING
 excluded <- final %>%
   filter(
-    n_months < 6 | n_appt < 50 | n_sch_hrs < 50 | ib_hrs < 10
+    n_months < 6 | apt_tot < 50 | sch_hrs_tot < 50 | ib_hrs < 10
   )
 
 cat("\nProviders excluded by conservative filtering:\n")
