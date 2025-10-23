@@ -3,8 +3,7 @@ title: "inbasketosis"
 format: html
 ---
 
-```{r preprocess, message=FALSE, warning=FALSE}
-
+``` {r setup, include=FALSE}
 # Load libraries
 library(readxl)
 library(readr)
@@ -13,12 +12,19 @@ library(tidyr)
 library(stringr)
 library(janitor)
 library(lubridate)
+library(ggplot2)
+library(scales)
 
+```
+
+
+```{r preprocess, message=FALSE, warning=FALSE}
 
 # Load raw data
-messages <- read_excel("Epic Signal PEP Data.xlsx", sheet = "Messages")
-time <- read_excel("Epic Signal PEP Data.xlsx", sheet = "Time")
-raw <- bind_rows(messages, time)
+raw <- bind_rows(
+  read_excel("Epic Signal PEP Data.xlsx", sheet = "Messages"),
+  read_excel("Epic Signal PEP Data.xlsx", sheet = "Time")
+  )
 
 
 # Initial exploration
@@ -85,8 +91,6 @@ aggregated <- clean |>
   rowwise() |>
   mutate(
     
-    n_months = sum(!is.na(c_across(starts_with(c("24-", "25-"))))),
-    
     tot = ifelse(str_starts(metric, "Count Of"),
                  sum(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE),
                  mean(c_across(starts_with(c("24-", "25-"))), na.rm = TRUE)),
@@ -97,7 +101,7 @@ aggregated <- clean |>
     
   ) |> ungroup() |>
   
-  select(id, type, n_months, group, metric, tot, min, max) |>
+  select(id, type, group, metric, tot, min, max) |>
   
   pivot_wider(
     names_from = metric,
@@ -107,41 +111,31 @@ aggregated <- clean |>
   ) |> clean_names()
 
 # Engineer
-engineered <- aggregated |>
+full <- aggregated |>
   
   transmute(
     
     # object identifiers
-    id, type, group, n_months,
+    id, type, group,
+    
+    
+    days = tot_count_of_days_in_reporting_period,
+    weeks = days / 7,
+    months = days / 28,
     
     # --- General Metrics ---
-    
-    # schedule (sch) metrics
-    sch_day_tot = tot_count_of_scheduled_days,
-    sch_day_pmo = sch_day_tot / n_months,
-    sch_day_max = max_count_of_scheduled_days, 
-    sch_hrs_tot = tot_scheduled_hours_per_day * sch_day_tot,
-    sch_hrs_pmo = sch_hrs_tot / n_months,
-    
-    # system (sys) metrics
-    sys_mts_tot = tot_count_of_minutes_in_the_system,
-    sys_hrs_tot = sys_mts_tot / 60,
-    sys_hrs_pmo = sys_hrs_tot / n_months,
-    
-    # afterhours (aft) metrics
-    aft_mts_ost = tot_count_of_minutes_active_outside_scheduled_time_30_min_buffer,
-    aft_mts_oud = tot_count_of_minutes_active_on_unscheduled_days,
-    aft_mts_sat = tot_count_of_saturday_minutes,
-    aft_mts_sun = tot_count_of_sunday_minutes,
-    aft_mts = aft_mts_ost + aft_mts_oud + aft_mts_sat + aft_mts_sun,
-    aft_hrs = aft_mts / 60,
-    aft_hrs_sys_rat = aft_mts / sys_mts_tot,
-    
-    # appointment (apt) metrics
-    apt_tot = tot_count_of_appointments,
-    apt_pmo = apt_tot / n_months, # pmo = per month
-    apt_min = min_count_of_appointments,
-    apt_max = max_count_of_appointments,
+
+    sch_days = tot_count_of_scheduled_days,
+    sch_hrs = tot_scheduled_hours_per_day * sch_days,
+
+    sys_hrs = tot_count_of_minutes_in_the_system / 60,
+
+    aft_hrs = (tot_count_of_minutes_active_outside_scheduled_time_30_min_buffer +
+      tot_count_of_minutes_active_on_unscheduled_days +
+      tot_count_of_saturday_minutes +
+      tot_count_of_sunday_minutes) / 60,
+
+    appts = tot_count_of_appointments,
     
     # minutes per appointment (mpa)
     mpa_ib = tot_minutes_in_in_basket_per_appointment,
@@ -158,47 +152,26 @@ engineered <- aggregated |>
     # --- Inbox metrics ---
     
     # message (msg) metrics
-    msg_mar_tot = tot_count_of_patient_medical_advice_requests_messages_received,
-    msg_pcm_tot = tot_count_of_patient_call_messages_received,
-    msg_res_tot = tot_count_of_result_messages_received,
-    msg_rxa_tot = tot_count_of_rx_auth_messages_received,
-    msg_all_tot = msg_mar_tot + msg_pcm_tot + msg_res_tot + msg_rxa_tot,
+    msg_mar = tot_count_of_patient_medical_advice_requests_messages_received,
+    msg_pcm = tot_count_of_patient_call_messages_received,
+    msg_res = tot_count_of_result_messages_received,
+    msg_rxa = tot_count_of_rx_auth_messages_received,
+    msg_all = msg_mar + msg_pcm + msg_res + msg_rxa,
     
-    msg_mar_pmo = msg_mar_tot / n_months,
-    msg_pcm_pmo = msg_pcm_tot / n_months,
-    msg_res_pmo = msg_res_tot / n_months,
-    msg_rxa_pmo = msg_rxa_tot / n_months,
-    msg_all_pmo = msg_all_tot / n_months,
+    dtc_mar = tot_average_days_until_patient_medical_advice_request_message_marked_done,
+    dtc_pcm = tot_average_days_until_patient_call_messages_marked_done,
+    dtc_res = tot_average_days_until_result_message_marked_done,
+    dtc_rxa = tot_average_days_until_rx_auth_message_marked_done,
+    dtc_all = (dtc_mar + dtc_pcm + dtc_res + dtc_rxa) / 4,
     
-    msg_mar_max = max_count_of_patient_medical_advice_requests_messages_received,
-    msg_pcm_max = max_count_of_patient_call_messages_received,
-    msg_res_max = max_count_of_result_messages_received,
-    msg_rxa_max = max_count_of_rx_auth_messages_received,
-        
-    msg_mar_dtc = tot_average_days_until_patient_medical_advice_request_message_marked_done,
-    msg_pcm_dtc = tot_average_days_until_patient_call_messages_marked_done,
-    msg_res_dtc = tot_average_days_until_result_message_marked_done,
-    msg_rxa_dtc = tot_average_days_until_rx_auth_message_marked_done,
-    msg_all_dtc = (msg_mar_dtc + msg_pcm_dtc + msg_res_dtc + msg_rxa_dtc) / 4,
-    
-    # in-basket (ib) metrics
-    ib_mts = tot_count_of_in_basket_minutes,
-    ib_mts_max = max_count_of_in_basket_minutes,
-    ib_hrs = ib_mts / 60,
-    ib_hrs_max = ib_mts_max / 60,
-    ib_hrs_pmo = ib_hrs / n_months,
-    ib_mts_per_apt = ib_mts / apt_tot,
-    ib_sys_rat = ib_mts / sys_mts_tot,
-    ib_sch_rat = ib_hrs / sch_hrs_tot
+    ib_hrs = tot_count_of_in_basket_minutes / 60,
+    fte = round(sch_hrs / (max(aggregated) * weeks), 2)
 
-  ) |>
-  select(
-    id, type, group, n_months,
-    starts_with(c("msg_", "ib_", "sch_", "sys_", "aft_", "apt_", "mpa_"))
   )
 
-# Filter to providers with at least 0.1 FTE (schedule hours per month >= 16 hours)
-final <- engineered |> filter(sch_hrs_pmo >= 16)
+# Filter to providers with at least 0.1 FTE (at least one month with >= 16 hours scheduled)
+final <- full |> filter(sch_hrs_pwk >= 4)
+excluded <- anti_join(full, final, by = "id")
 
 # Save all datasets
 if (!dir.exists("data")) {
@@ -210,36 +183,18 @@ wide |> saveRDS("data/wide.rds")
 long |> saveRDS("data/long.rds")
 monthly |> saveRDS("data/monthly.rds")
 aggregated |> saveRDS("data/aggregated.rds")
-engineered |> saveRDS("data/engineered.rds")
+full |> saveRDS("data/full.rds")
 final |> saveRDS("data/final.rds")
+excluded |> saveRDS("data/excluded.rds")
 
 ```
 
-```{r eda, message=FALSE, warning=FALSE}
+``` {r eda}
 
-# Load libraries
-library(ggplot2)
-library(knitr)
-library(kableExtra)
-library(scales)
-library(reshape2)
-library(corrplot)
-library(RColorBrewer)
-library(gridExtra)
-library(grid)
-library(patchwork)
-library(ggpubr)
-library(viridis)
-library(ggthemes)
-library(ggcorrplot)
-library(broom)
-
-# Load datasets
+# Load processed data
 final <- readRDS("data/final.rds")
-long <- readRDS("data/long.rds")
-
-
-
+monthly <- readRDS("data/monthly.rds")
+full <- readRDS("data/full.rds")
 
 
 ```
@@ -247,75 +202,114 @@ long <- readRDS("data/long.rds")
 ``` {r table_1}
 
 # Table 1: Inbox Workload Metrics
-tbl1 <- engineered |>
+msg <- full |>
   summarise(
-    `Medical Advice Requests` = sprintf("%d (%.1f)", sum(msg_mar_tot, na.rm = TRUE), mean(msg_mar_pct, na.rm = TRUE) * 100),
-    `Patient Calls` = sprintf("%d (%.1f)", sum(msg_pcm_tot, na.rm = TRUE), mean(msg_pcm_pct, na.rm = TRUE) * 100),
-    `Results` = sprintf("%d (%.1f)", sum(msg_res_tot, na.rm = TRUE), mean(msg_res_pct, na.rm = TRUE) * 100),
-    `Rx Auth` = sprintf("%d (%.1f)", sum(msg_rxa_tot, na.rm = TRUE), mean(msg_rxa_pct, na.rm = TRUE) * 100),
-    `All` = sprintf("%d (%.0f)", sum(msg_all_tot, na.rm = TRUE), 100)
+    `Messages (All)` = sprintf("%d (%.0f)", sum(msg_all_tot, na.rm = TRUE), 100),
+    `   Medical Advice Requests` = sprintf("%d (%.1f)", sum(msg_mar_tot, na.rm = TRUE), mean(msg_mar_tot / msg_all_tot, na.rm = TRUE) * 100),
+    `   Patient Calls` = sprintf("%d (%.1f)", sum(msg_pcm_tot, na.rm = TRUE), mean(msg_pcm_tot / msg_all_tot, na.rm = TRUE) * 100),
+    `   Results` = sprintf("%d (%.1f)", sum(msg_res_tot, na.rm = TRUE), mean(msg_res_tot / msg_all_tot, na.rm = TRUE) * 100),
+    `   Rx Authorizations` = sprintf("%d (%.1f)", sum(msg_rxa_tot, na.rm = TRUE), mean(msg_rxa_tot / msg_all_tot, na.rm = TRUE) * 100)
   ) |>
-  pivot_longer(everything(), names_to = "Messages", values_to = "n (%)") |>
-  bind_cols(
-    engineered |>
-      summarise(
-        a = sprintf("%.1f (%.1f)", mean(msg_mar_tot, na.rm = TRUE), sd(msg_mar_tot, na.rm = TRUE)),
-        b = sprintf("%.1f (%.1f)", mean(msg_pcm_tot, na.rm = TRUE), sd(msg_pcm_tot, na.rm = TRUE)),
-        c = sprintf("%.1f (%.1f)", mean(msg_res_tot, na.rm = TRUE), sd(msg_res_tot, na.rm = TRUE)),
-        d = sprintf("%.1f (%.1f)", mean(msg_rxa_tot, na.rm = TRUE), sd(msg_rxa_tot, na.rm = TRUE)),
-        e = sprintf("%.1f (%.1f)", mean(msg_all_tot, na.rm = TRUE), sd(msg_all_tot, na.rm = TRUE))
-      ) |>
-      pivot_longer(everything(), values_to = "mean (sd)") |> select(-name)
-    ) |>
-  bind_cols(
-    engineered |>
-      summarise(
-        a = sprintf("%.1f (%.1f)", median(msg_mar_tot, na.rm = TRUE), quantile(msg_mar_tot, 0.75, na.rm = TRUE) - quantile(msg_mar_tot, 0.25, na.rm = TRUE)),
-        b = sprintf("%.1f (%.1f)", median(msg_pcm_tot, na.rm = TRUE), quantile(msg_pcm_tot, 0.75, na.rm = TRUE) - quantile(msg_pcm_tot, 0.25, na.rm = TRUE)),
-        c = sprintf("%.1f (%.1f)", median(msg_res_tot, na.rm = TRUE), quantile(msg_res_tot, 0.75, na.rm = TRUE) - quantile(msg_res_tot, 0.25, na.rm = TRUE)),
-        d = sprintf("%.1f (%.1f)", median(msg_rxa_tot, na.rm = TRUE), quantile(msg_rxa_tot, 0.75, na.rm = TRUE) - quantile(msg_rxa_tot, 0.25, na.rm = TRUE)),
-        e = sprintf("%.1f (%.1f)", median(msg_all_tot, na.rm = TRUE), quantile(msg_all_tot, 0.75, na.rm = TRUE) - quantile(msg_all_tot, 0.25, na.rm = TRUE))
+  pivot_longer(everything(), names_to = "Metric", values_to = "n (%)")
+
+prv <- full |>
+  summarise(
+    `Providers` = sprintf("%d (%.f)", n(), 100),
+    `   Staff` = sprintf("%d (%.1f)", sum(group == "Staff"), mean(group == "Staff") * 100),
+    `      MDs` = sprintf("%d (%.1f)", sum(type == "MD"), mean(type == "MD") * 100),
+    `      NPs` = sprintf("%d (%.1f)", sum(type == "NP"), mean(type == "NP") * 100),  
+    `  Trainee` = sprintf("%d (%.1f)", sum(group == "Trainee"), mean(group == "Trainee") * 100)
   ) |>
-    pivot_longer(everything(), values_to = "median (IQR)") |> select(-name)
+  pivot_longer(everything(), names_to = "Metric", values_to = "n (%)")
+
+ibh <- full |>
+  summarise(
+    `In-Basket Hours` = sprintf("%.1f (%.1f)", sum(ib_hrs, na.rm = TRUE), mean(ib_hrs_pmo, na.rm = TRUE))
   ) |>
+  pivot_longer(everything(), names_to = "Metric", values_to = "Total (Avg/Month)")
+
   bind_cols(
-    engineered |>
+    full |>
       summarise(
+        x = "mean (sd)",
         a = sprintf("%.1f (%.1f)", mean(msg_mar_dtc, na.rm = TRUE), sd(msg_mar_dtc, na.rm = TRUE)),
         b = sprintf("%.1f (%.1f)", mean(msg_pcm_dtc, na.rm = TRUE), sd(msg_pcm_dtc, na.rm = TRUE)),
         c = sprintf("%.1f (%.1f)", mean(msg_res_dtc, na.rm = TRUE), sd(msg_res_dtc, na.rm = TRUE)),
         d = sprintf("%.1f (%.1f)", mean(msg_rxa_dtc, na.rm = TRUE), sd(msg_rxa_dtc, na.rm = TRUE)),
         e = sprintf("%.1f (%.1f)", mean(msg_all_dtc, na.rm = TRUE), sd(msg_all_dtc, na.rm = TRUE))
       ) |>
-      pivot_longer(everything(), values_to = "Days To Complete - mean (sd)") |> select(-name)
+      pivot_longer(everything(), values_to = "Days To") |> select(-name)
   ) |> 
   bind_cols(
-    engineered |>
+    full |>
       summarise(
-        # Pearson correlations
-        a = cor(msg_mar_tot, ib_hrs_pmo, use = "complete.obs"),
-        b = cor(msg_pcm_tot, ib_hrs_pmo, use = "complete.obs"),
-        c = cor(msg_res_tot, ib_hrs_pmo, use = "complete.obs"),
-        d = cor(msg_rxa_tot, ib_hrs_pmo, use = "complete.obs"),
-        e = cor(msg_all_tot, ib_hrs_pmo, use = "complete.obs")
+        x = "median (IQR)",
+        a = sprintf("%.1f (%.1f)", median(msg_mar_dtc, na.rm = TRUE), IQR(msg_mar_dtc, na.rm = TRUE)),
+        b = sprintf("%.1f (%.1f)", median(msg_pcm_dtc, na.rm = TRUE), IQR(msg_pcm_dtc, na.rm = TRUE)),
+        c = sprintf("%.1f (%.1f)", median(msg_res_dtc, na.rm = TRUE), IQR(msg_res_dtc, na.rm = TRUE)),
+        d = sprintf("%.1f (%.1f)", median(msg_rxa_dtc, na.rm = TRUE), IQR(msg_rxa_dtc, na.rm = TRUE)),
+        e = sprintf("%.1f (%.1f)", median(msg_all_dtc, na.rm = TRUE), IQR(msg_all_dtc, na.rm = TRUE))
       ) |>
-      pivot_longer(everything(), values_to = "Correlation to In-Basket Hours*") |> select(-name)
+      pivot_longer(everything(), values_to = "Complete") |> select(-name)
+  ) |>
+  bind_cols(
+    full |>
+      summarise(
+        x = "Pearson Coefficient",
+        a = sprintf("%.2f", cor(msg_mar_tot, ib_hrs_pmo, use = "complete.obs")),
+        b = sprintf("%.2f", cor(msg_pcm_tot, ib_hrs_pmo, use = "complete.obs")),
+        c = sprintf("%.2f", cor(msg_res_tot, ib_hrs_pmo, use = "complete.obs")),
+        d = sprintf("%.2f", cor(msg_rxa_tot, ib_hrs_pmo, use = "complete.obs")),
+        e = sprintf("%.2f", cor(msg_all_tot, ib_hrs_pmo, use = "complete.obs"))
+      ) |>
+      pivot_longer(everything(), values_to = "Correlation to In-Basket Hours") |>
+      select(-name)
   )
+  
     
 
 ```
 
-``` {r, table_2}
-### Table 2: Message Volume and Completion Metrics by Type
 
-| Metric                           | Medical Advice Request | Patient Call | Results | Rx Auth |  All  |
-|----------------------------------|------------------------|--------------|---------|---------|-------|
-| Total - n (%)                    |                        |              |         |         |       |
-| Per Month - mean (sd)            |                        |              |         |         |       |
-| Days To Complete - mean (sd)     |                        |              |         |         |       |
-| Correlation to In-Basket Hours*  |                        |              |         |         |       |
-| Correlation to After-Hours*      |                        |              |         |         |       |
-* Pearson Correlation Coefficient.
+``` {r, table_2}
+
+# Table 2: 
+tbl2 <- full |>
+  summarise(
+    `Total` = "n (range)",
+    `Appointments` = sprintf("%.0f (%.0f-%.0f)", sum(apt_tot, na.rm = TRUE), min(apt_min), max(apt_max)),
+    `Scheduled Hours` = sprintf("%.1f (%.1f-%.1f)", sum(sch_hrs_tot, na.rm = TRUE), min(sch_hrs_min), max(sch_hrs_peak)),
+    `System Hours` = sprintf("%.1f (%.1f-%.1f)", sum(sys_hrs_tot, na.rm = TRUE), min(sys_hrs_min), max(sys_hrs_max)),
+    `Afterhours Hours` = sprintf("%.1f (%.1f-%.1f)", sum(aft_hrs, na.rm = TRUE), min(aft_hrs_min), max(aft_hrs_max)),
+    `In-Basket Hours` = sprintf("%.1f (%.1f-%.1f)", sum(ib_hrs, na.rm = TRUE), min(ib_hrs_min), max(ib_hrs_max))
+  ) |>
+  pivot_longer(everything(), names_to = "Metric", values_to = "Global") |>
+  bind_cols(
+    full |>
+      summarise(
+        x = "mean (sd)",
+        a = sprintf("%.1f (%.1f)", mean(apt_tot, na.rm = TRUE), sd(apt_tot, na.rm = TRUE)),
+        b = sprintf("%.1f (%.1f)", mean(sch_hrs_tot, na.rm = TRUE), sd(sch_hrs_tot, na.rm = TRUE)),
+        c = sprintf("%.1f (%.1f)", mean(sys_hrs_tot, na.rm = TRUE), sd(sys_hrs_tot, na.rm = TRUE)),
+        d = sprintf("%.1f (%.1f)", mean(aft_hrs, na.rm = TRUE), sd(aft_hrs, na.rm = TRUE)),
+        e = sprintf("%.1f (%.1f)", mean(ib_hrs, na.rm = TRUE), sd(ib_hrs, na.rm = TRUE))
+      ) |>
+      pivot_longer(everything(), values_to = "Per") |> select(-name)
+  ) |>
+  bind_cols(
+    full |>
+      summarise(
+        x = "median (IQR)",
+        a = sprintf("%.1f (%.1f)", median(apt_tot, na.rm = TRUE), IQR(apt_pmo, na.rm = TRUE)),
+        b = sprintf("%.1f (%.1f)", median(sch_hrs_tot, na.rm = TRUE), IQR(sch_hrs_tot, na.rm = TRUE)),
+        c = sprintf("%.1f (%.1f)", median(sys_hrs_tot, na.rm = TRUE), IQR(sys_hrs_tot, na.rm = TRUE)),
+        d = sprintf("%.1f (%.1f)", median(aft_hrs, na.rm = TRUE), IQR(aft_hrs, na.rm = TRUE)),
+        e = sprintf("%.1f (%.1f)", median(ib_hrs, na.rm = TRUE), IQR(ib_hrs, na.rm = TRUE))
+      ) |>
+      pivot_longer(everything(), values_to = "Month") |> select(-name)
+  )
+
+
 ```
 
 ``` {r, table_3}
@@ -331,11 +325,11 @@ tbl1 <- engineered |>
 
 ``` {r, figure_1}
 # Figure 1: Barplot of ranked In-Basket Hours Per Month (colored by Provider Type)
-fig1 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pmo), y = ib_hrs_pmo, fill = type)) +
+fig1 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pwk), y = ib_hrs_pwk, fill = type)) +
   geom_bar(stat = "identity") +
   labs(
     title = "In-Basket Hours Per Month by Provider",
-    x = "Provider ID (ranked)",
+    x = "Provider (ranked)",
     y = "In-Basket Hours Per Month"
   ) +
   theme_minimal() +
@@ -344,16 +338,62 @@ fig1 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pmo), y = ib_hrs_pmo, fill = t
 ```
 
 ``` {r, figure_2}
-# Figure 2: Cumulative Ranked Share of In-Basket Hours by Providers (ranked by In-Basket Hours)
-fig2 <- ggplot(final, aes(x = reorder(id, -ib_hrs_pmo), y = cumsum(ib_hrs_pmo) / sum(ib_hrs_pmo), color = type)) +
-  geom_line() +
+
+# Figure 2: Lorenz Curve of In-Basket Minutes by Providers, with squared frame
+fig2_data <- full |>
+  arrange(desc(ib_mts)) |>
+  mutate(
+    cum_provider = row_number(),
+    cum_provider_pct = cum_provider / n(),
+    cum_ib_mts = cumsum(ib_mts),
+    cum_ib_mts_pct = cum_ib_mts / sum(ib_mts, na.rm = TRUE)
+  ) |>  
+  filter(cum_provider_pct < 1)
+
+# Prepend (0, 0) so that the Lorenz curve starts at the origin
+fig2_data0 <- tibble(
+    cum_provider_pct = 0,
+    cum_ib_mts_pct = 0
+  ) |> 
+  bind_rows(fig2_data)
+
+# Find x at which y (cum_ib_mts_pct) passes closest to 0.5, using new fig2_data0
+cross50_idx <- which.min(abs(fig2_data0$cum_ib_mts_pct - 0.5))
+cross50_x <- fig2_data0$cum_provider_pct[cross50_idx]
+
+# Custom function to set only one 0% on axes
+one_zero_percent_labels <- function(labels) {
+  # For percent axis, labels are strings like "0%", "10%", ..., "100%"
+  # Keep only the first "0%" if multiple present
+  zero_idxs <- which(labels == "0%")
+  if (length(zero_idxs) > 1) {
+    labels[zero_idxs[-1]] <- ""
+  }
+  labels
+}
+
+fig2 <- ggplot(fig2_data0, aes(x = cum_provider_pct, y = cum_ib_mts_pct)) +
+  geom_line(size = 1.2, color = "#0072B2") +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "grey50") +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red", size = 1) +
+  geom_vline(xintercept = cross50_x, linetype = "dashed", color = "red", size = 1) +
+  scale_x_continuous(
+    labels = function(x) one_zero_percent_labels(scales::percent_format(accuracy = 1)(x)),
+    limits = c(0,1), expand = c(0, 0)
+  ) +
+  scale_y_continuous(
+    labels = function(x) one_zero_percent_labels(scales::percent_format(accuracy = 1)(x)),
+    limits = c(0,1), expand = c(0, 0)
+  ) +
   labs(
-    title = "Cumulative Ranked Share of In-Basket Hours by Providers",
-    x = "Provider ID (ranked)",
-    y = "Cumulative Share of In-Basket Hours"
+    title = "Lorenz Curve: In-Basket Time by Providers",
+    x = "Cummulative % of Providers",
+    y = "Cummulative % of In-Basket Time"
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_blank())
+  coord_fixed(ratio = 1)  # ensures x and y axes are the same length (square frame)
+
+fig2
 
 ```
 
