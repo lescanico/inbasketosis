@@ -165,12 +165,45 @@ full <- aggregated |>
     dtc_all = (dtc_mar + dtc_pcm + dtc_res + dtc_rxa) / 4,
     
     ib_hrs = tot_count_of_in_basket_minutes / 60,
-    fte = round(sch_hrs / (max(aggregated) * weeks), 2)
+    
+    # FTE calculations using multiple methods
+    fte_standard = round(sch_hrs / (40 * weeks), 2),  # Standard: 40 hrs/week = 1.0 FTE
+    fte_pct = fte_standard * 100,  # FTE as percentage
+    
+    # Provider-type adjusted FTE (different standards by role)
+    fte_adjusted = case_when(
+      type == "MD" ~ round(sch_hrs / (40 * weeks), 2),      # Full-time MD = 40 hrs/week
+      type == "NP" ~ round(sch_hrs / (40 * weeks), 2),      # Full-time NP = 40 hrs/week  
+      type == "RF" ~ round(sch_hrs / (60 * weeks), 2),      # Full-time resident = 60 hrs/week
+      TRUE ~ round(sch_hrs / (40 * weeks), 2)
+    ),
+    
+    # Clinical FTE (based on clinical hours, excluding admin)
+    fte_clinical = round(sch_hrs / (32 * weeks), 2),  # 32 clinical hours = 1.0 FTE
+    
+    # Appointment-based FTE (assuming 1 FTE = 20 appointments/week)
+    fte_appt = round(appts / (20 * weeks), 2),
+    
+    # Use standard FTE as primary metric
+    fte = fte_standard,
+    
+    # Additional FTE-related metrics
+    fte_category = case_when(
+      fte >= 0.9 ~ "Full-time (0.9+)",
+      fte >= 0.5 ~ "Part-time (0.5-0.89)",
+      fte >= 0.1 ~ "Reduced (0.1-0.49)",
+      TRUE ~ "Minimal (<0.1)"
+    ),
+    
+    # Workload intensity metrics
+    hrs_per_fte = ifelse(fte > 0, sch_hrs / fte, NA),  # Hours per FTE unit
+    appts_per_fte = ifelse(fte > 0, appts / fte, NA),  # Appointments per FTE unit
+    ib_hrs_per_fte = ifelse(fte > 0, ib_hrs / fte, NA)  # In-basket hours per FTE unit
 
   )
 
-# Filter to providers with at least 0.1 FTE (at least one month with >= 16 hours scheduled)
-final <- full |> filter(sch_hrs_pwk >= 4)
+# Filter to providers with at least 0.1 FTE (at least 4 hours per week scheduled)
+final <- full |> filter(fte >= 0.1)
 excluded <- anti_join(full, final, by = "id")
 
 # Save all datasets
@@ -313,7 +346,36 @@ tbl2 <- full |>
 ```
 
 ``` {r, table_3}
-# Table 3:
+# Table 3: FTE Distribution and Workload Metrics by Provider Type
+
+fte_summary <- final |>
+  group_by(type) |>
+  summarise(
+    n = n(),
+    `Mean FTE` = sprintf("%.2f (%.2f)", mean(fte, na.rm = TRUE), sd(fte, na.rm = TRUE)),
+    `Median FTE` = sprintf("%.2f (%.2f-%.2f)", median(fte, na.rm = TRUE), 
+                          quantile(fte, 0.25, na.rm = TRUE), 
+                          quantile(fte, 0.75, na.rm = TRUE)),
+    `Mean Hours/FTE` = sprintf("%.1f (%.1f)", mean(hrs_per_fte, na.rm = TRUE), sd(hrs_per_fte, na.rm = TRUE)),
+    `Mean Appts/FTE` = sprintf("%.1f (%.1f)", mean(appts_per_fte, na.rm = TRUE), sd(appts_per_fte, na.rm = TRUE)),
+    `Mean IB Hours/FTE` = sprintf("%.1f (%.1f)", mean(ib_hrs_per_fte, na.rm = TRUE), sd(ib_hrs_per_fte, na.rm = TRUE))
+  ) |>
+  ungroup()
+
+fte_distribution <- final |>
+  count(type, fte_category) |>
+  group_by(type) |>
+  mutate(
+    pct = round(n / sum(n) * 100, 1),
+    display = sprintf("%d (%.1f%%)", n, pct)
+  ) |>
+  select(type, fte_category, display) |>
+  pivot_wider(names_from = fte_category, values_from = display, values_fill = "0 (0.0%)")
+
+print("FTE Summary by Provider Type:")
+print(fte_summary)
+print("\nFTE Distribution by Category:")
+print(fte_distribution)
 
 ```
 
@@ -416,8 +478,35 @@ fig2
 ```
 
 ``` {r, figure_6}
-### Figure 6: Heatmap of key correlations
+# Figure 6: FTE Distribution by Provider Type
+fig6 <- ggplot(final, aes(x = type, y = fte, fill = type)) +
+  geom_boxplot(alpha = 0.7) +
+  geom_jitter(width = 0.2, alpha = 0.6) +
+  labs(
+    title = "FTE Distribution by Provider Type",
+    x = "Provider Type",
+    y = "FTE (Full-Time Equivalent)",
+    subtitle = "1.0 FTE = 40 hours/week scheduled"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(0, max(final$fte, na.rm = TRUE) * 1.1))
 
+fig6
+
+# Figure 7: FTE vs In-Basket Hours Relationship
+fig7 <- ggplot(final, aes(x = fte, y = ib_hrs, color = type)) +
+  geom_point(alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", se = TRUE, alpha = 0.3) +
+  labs(
+    title = "FTE vs In-Basket Hours by Provider Type",
+    x = "FTE (Full-Time Equivalent)",
+    y = "Total In-Basket Hours",
+    color = "Provider Type"
+  ) +
+  theme_minimal()
+
+fig7
 
 ```
 
