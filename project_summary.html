@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicolas Lescano, MD">
+
+<title>Inboxed Minds: A Human Factors Analysis of In-Basket Messaging in Outpatient Psychiatry</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="project_summary_files/libs/clipboard/clipboard.min.js"></script>
+<script src="project_summary_files/libs/quarto-html/quarto.js"></script>
+<script src="project_summary_files/libs/quarto-html/popper.min.js"></script>
+<script src="project_summary_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="project_summary_files/libs/quarto-html/anchor.min.js"></script>
+<link href="project_summary_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="project_summary_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="project_summary_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="project_summary_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="project_summary_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Inboxed Minds: A Human Factors Analysis of In-Basket Messaging in Outpatient Psychiatry</h1>
+<p class="subtitle lead">BMIN 5070-001: Human Factors in Biomedical Informatics</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nicolas Lescano, MD </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Outpatient psychiatry work is visible to institutions in only one form: billable appointment slots on the clinic schedule. These are the units through which productivity, compensation, and staffing decisions are defined. Every slot is assumed to contain the full scope of psychiatric care, including evaluation, diagnosis, treatment, documentation, and closure, all within the limits of the scheduled time. In this view, care appears orderly and complete, beginning and ending within the electronic calendar’s grid.</p>
+<p>In practice, much of psychiatric work takes place outside those visible appointments. An entire layer of invisible work sustains patient care but receives no dedicated time, credit, or recognition. Psychiatrists spend large parts of their day returning phone calls, clarifying pharmacy requests, completing prior authorizations, navigating insurance barriers, coordinating with therapists and case managers, reviewing outside records and lab results, resolving scheduling conflicts, and responding to patient portal messages that often arrive after hours. These tasks are not secondary to care; they are the glue that holds the clinical system together. Yet they remain absent from official metrics and unsupported by formal workflows.</p>
+<p>The accumulation of invisible work steadily erodes the boundaries between clinical and personal time. Lunch breaks vanish, academic work is postponed, and evenings are consumed by message backlogs and unresolved coordination tasks. Each task may seem small, but together they form a parallel workload that is essential to patient safety and continuity yet invisible to the institution. The schedule shows completion, while the clinician’s experience reveals an ongoing and unacknowledged obligation.</p>
+<p>This divide exposes a deeper sociotechnical problem. The technical system, which includes the EHR and billing infrastructure, captures only what can be billed. The human system, composed of clinicians, absorbs everything else. What remains invisible to the institution is deeply tangible to the people doing the work. Recognizing this mismatch is the first step toward redesigning systems that account for the full scope of psychiatric care, not just the portion that fits neatly into the visible calendar.</p>
+<section id="problem-statement-and-significance" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement-and-significance">Problem Statement and Significance</h2>
+<p>The growing burden of “invisible work” imposed by electronic health record (EHR) in-basket messaging has received increasing attention across medical specialties. Managing multiple asynchronous communication streams exceeds the bounds of distributed cognition designed into current workflows. The problem therefore exemplifies misalignment between the technical subsystem (EHR architecture) and the social subsystem (organizational workload expectations). In psychiatry, complex case management and highly individualized care coordination amplify the unseen workload managed via secure EHR messaging, where “message burden” encompasses both task load (quantitative volume) and mental workload (cognitive demands of context-switching and clinical decision-making). This study addresses these knowledge gaps by analyzing Epic Signal data from all outpatient psychiatry clinicians at one large academic medical center, mapping message volume, time spent, and after-hours activity to make invisible work visible and provide an evidence base for targeted interventions.</p>
+</section>
+<section id="literature-review" class="level2">
+<h2 class="anchored" data-anchor-id="literature-review">Literature Review</h2>
+<p>The growing burden of electronic health record (EHR) in-basket messaging has emerged as a critical challenge across medical specialties, with mounting evidence linking message volume to clinician burnout and work-life imbalance. Recent literature reveals both the scale of this invisible workload and promising approaches to mitigation.</p>
+<p><strong>Quantifying the In-Basket Burden</strong></p>
+<p>Multiple studies have documented the dramatic growth of patient portal messaging and its impact on clinician workload. North et al.&nbsp;(2020) found that patient portal enrollment nearly doubled (from 33% to 62%) while message volume nearly tripled in some specialties, with physicians performing the majority of responses and substantial portions handled during evenings and weekends. The COVID-19 pandemic further exacerbated this trend, with Nath et al.&nbsp;(2021) reporting that patient medical advice requests more than doubled in primary care (105% increase) and total inbox time increased by 15-17% during the pandemic period.</p>
+<p>Holmgren et al.&nbsp;(2022) demonstrated that weekly patient advice messages jumped from 8 to 16 per primary care physician post-COVID, while mean active EHR time increased by 6.5% for primary care physicians. Martinez et al.&nbsp;(2024) found that each additional 10 patient messages per quarter was associated with 12 minutes of extra after-hours EHR time, confirming that message volume directly translates to work-life boundary erosion.</p>
+<p><strong>The Documentation and In-Basket Connection</strong></p>
+<p>Arndt et al.&nbsp;(2017) provided landmark evidence that physicians spend 5.9 hours of an 11.4-hour workday on EHR tasks, including nearly 1 hour daily on in-basket management and clerical tasks. This “tethered to the EHR” phenomenon means that for every hour of direct clinical time, physicians spend nearly two hours on electronic and administrative labor. Yan et al.&nbsp;(2021) systematically reviewed 30+ studies and found consistent evidence that excessive EHR time, high message volume, and after-hours work are all correlated with provider burnout.</p>
+<p><strong>Burnout and Turnover Implications</strong></p>
+<p>The human and financial costs of this burden are substantial. Hamidi et al.&nbsp;(2018) found that physicians with burnout were more than twice as likely to plan on leaving their practice, with burnout accounting for 13-17% of physician departures and costing $15-55 million in recruitment costs over two years. Lou et al.&nbsp;(2022) demonstrated that while EHR workload metrics alone cannot reliably predict burnout, the combination of heavy after-hours use and high message volume significantly contributes to emotional exhaustion.</p>
+<p><strong>Clinician Perspectives and Coping Strategies</strong></p>
+<p>Qualitative studies reveal the psychological toll of constant message management. Lieu et al.&nbsp;(2019) found that primary care physicians often receive 70+ messages daily and feel “unbounded” by patient expectations for rapid responses. Physicians have developed numerous personal coping strategies, including one-touch processing rules and setting response time expectations, but many feel that message management remains a constant, stressful addition not accounted for in productivity metrics.</p>
+<p>Murphy et al.&nbsp;(2019) synthesized clinician recommendations into five key areas: reducing low-value notifications, preventing message loss, improving inbox user interface, implementing team delegation, and providing protected time for inbox work. These findings highlight the need for both technological and organizational solutions.</p>
+<p><strong>Emerging Technological Solutions</strong></p>
+<p>Recent studies have evaluated AI-assisted approaches to in-basket management. Tai-Seale et al.&nbsp;(2024) and Garcia et al.&nbsp;(2024) both found that AI-generated message drafts achieved 20% utilization rates and significantly reduced clinician cognitive load and burnout scores, even when actual time savings were minimal. Small et al.&nbsp;(2024) demonstrated that AI-generated responses were rated as more empathetic and usable than human-authored ones in 69% of cases.</p>
+<p>Ambient AI documentation tools have also shown promise. Balloch et al.&nbsp;(2024) found that AI scribes improved documentation quality while reducing consultation times by 26%, and Haberle et al.&nbsp;(2024) reported that Nuance DAX users showed improved work engagement and satisfaction with no negative impact on patient safety.</p>
+<p><strong>Workflow Redesign Successes</strong></p>
+<p>Organizational interventions have demonstrated measurable impact. Hadeed et al.&nbsp;(2025) implemented “Best Practice Standards” and “Routing Guides” that reduced physician message volume by 16% and carbon copy messages by 65%. Lukela et al.&nbsp;(2025) found that structured “portal practice sessions” (protected inbox time) led to 93% of physicians reporting improved ability to handle urgent messages and 88% reporting decreased after-hours work, despite minimal changes in objective after-hours metrics.</p>
+<p>Liu et al.&nbsp;(2024) reported that an AI-assisted triage program resolved 31.9% of messages at the staff level before reaching physicians, demonstrating the potential for team-based approaches to reduce individual provider burden.</p>
+<p><strong>Psychiatry-Specific Gaps</strong></p>
+<p>While these studies span multiple specialties, the unique cognitive demands of psychiatric care involving complex medication management, crisis intervention, and emotionally nuanced communication remain underexplored. The combination of frequent patient communications, detailed documentation requirements, and the sensitive nature of mental health discussions creates distinct challenges that warrant specialty-specific evaluation and intervention strategies.</p>
+</section>
+<section id="sociotechnical-and-human-centered-design-framework" class="level2">
+<h2 class="anchored" data-anchor-id="sociotechnical-and-human-centered-design-framework">Sociotechnical and Human-Centered Design Framework</h2>
+<p>This study applies the <strong>sociotechnical systems</strong> framework central to human factors, recognizing that in-basket workload emerges from the dynamic interaction between EHR technology (the “technical” subsystem), organizational practice, provider role expectations, and patient demand (the “social” subsystem). Following Carayon’s (2019) framework, we examine in-basket workload across four interconnected levels: (1) <strong>System Level:</strong> EHR architecture, triage protocols, and automation tools shape baseline load; (2) <strong>Organizational Level:</strong> delegation policies, team structure, and time allocation affect message volume; (3) <strong>Individual Level:</strong> provider role, clinical volume, and work patterns influence burden; (4) <strong>Patient Level:</strong> population complexity, portal adoption, and message types shape communication frequency.</p>
+<p>This multilevel perspective recognizes that interventions addressing in-basket overload must engage the entire work ecosystem. We operationalize in-basket workload as volume metrics (message counts), time metrics (total and after-hours hours), and distributional metrics (Gini coefficient and Lorenz curves). The inequality metrics directly measure work system imbalance, where cognitive demands are unevenly distributed across providers, creating conditions where some individuals exceed their cognitive capacity while others operate below optimal efficiency.</p>
+</section>
+</section>
+<section id="materials-and-methods" class="level1">
+<h1>Materials and Methods</h1>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<p>We used Epic Signal, a robust audit log and analytics tool embedded within the Epic electronic health record (EHR), to quantify in-basket activity among outpatient psychiatry clinicians at a large academic medical center. Signal extracts standardized metrics related to clinical messaging, system use time, and after-hours patterns. We obtained two datasets from the EHR informatics team: (1) a “Messages” extract summarizing counts of in-basket messages by type and by provider; and (2) a companion “Time” extract detailing provider time spent on in-basket activities, including date-stamped information, for a one-year period (July 2024–June 2025).</p>
+</section>
+<section id="study-population-and-outcome-measures" class="level2">
+<h2 class="anchored" data-anchor-id="study-population-and-outcome-measures">Study Population and Outcome Measures</h2>
+<p>This study was conducted at Penn Behavioral Health Outpatient Psychiatry Clinic (Philadelphia, PA), where providers operate in a unique organizational context without dedicated support staff for message triage, and must cross-cover colleagues’ in-baskets during absences. Our study population included all psychiatric physicians (attendings, residents and fellows) and advanced practice providers with ambulatory schedules during the study period (July 2024–June 2025). All metrics were averaged monthly per provider. Primary outcomes comprised in-basket message volume by type, total and after-hours work hours, intensity metrics (rates per appointment/scheduled hour), and workload inequality measures (Gini coefficient and Lorenz curves). Secondary outcomes included message subcategories and descriptive statistics by provider role.</p>
+</section>
+<section id="data-processing-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-processing-and-analysis">Data Processing and Analysis</h2>
+<p>Data were imported from Excel exports using R, merged by provider identifier, and cleaned through standardized ID conversion, message type categorization, and monthly aggregation. Analyses were performed in R (v4.5.1) using descriptive statistics, comparative group analyses (Welch’s t-tests/Wilcoxon rank-sum), and inequality measures (Gini coefficients, Lorenz curves). All data manipulation steps are fully reproducible (see inbasketosis.qmd).</p>
+<p><strong>Data Processing Pipeline:</strong> Epic Signal Analytics → Excel Export → R Processing → Analysis &amp; Visualization</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="descriptive-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h2>
+<p>The study cohort consisted of 64 providers from the Department of Psychiatry at an academic medical center. Table 1 presents comprehensive descriptive statistics across provider types, workload metrics, message patterns, and temporal characteristics.</p>
+<section id="table-1.-summary-statistics-for-opc-july-2024---june-2025" class="level3">
+<h3 class="anchored" data-anchor-id="table-1.-summary-statistics-for-opc-july-2024---june-2025">Table 1. Summary Statistics for OPC (July 2024 - June 2025)</h3>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Characteristic</th>
+<th>n (%)</th>
+<th>Range</th>
+<th>Mean (SD)</th>
+<th>Median (IQR)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Provider type</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Attending physician</td>
+<td>26 (40.6)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Nurse practitioner</td>
+<td>4 (6.2)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Resident/Fellow</td>
+<td>34 (53.1)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;All</td>
+<td>64 (100)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><strong>Scheduled Workload</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Appointments</td>
+<td>28,424 (—)</td>
+<td>5.0-41.2</td>
+<td>17.8 (9.2)</td>
+<td>15.6 (8.5)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Schedule Hours</td>
+<td>21,480 (—)</td>
+<td>5.0-26.8</td>
+<td>13.5 (5.9)</td>
+<td>11.9 (7.2)</td>
+</tr>
+<tr class="odd">
+<td><strong>Digital Workload</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;In-Basket Hours</td>
+<td>1,941.2 (12.4)</td>
+<td>0.1-6.3</td>
+<td>1.3 (1.0)</td>
+<td>1.0 (0.8)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;After Hours</td>
+<td>6,605.2 (42.1)</td>
+<td>0.0-19.6</td>
+<td>4.1 (4.4)</td>
+<td>2.8 (4.9)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;All</td>
+<td>15,674.4 (100)</td>
+<td>0.4-36.9</td>
+<td>10.8 (7.6)</td>
+<td>8.9 (7.3)</td>
+</tr>
+<tr class="odd">
+<td><strong>Message Counts</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Medical Advice Request</td>
+<td>13,841 (43.6)</td>
+<td>0.0-45.9</td>
+<td>8.8 (8.9)</td>
+<td>6.6 (10.4)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Patient Call</td>
+<td>6,744 (21.3)</td>
+<td>0.0-19.5</td>
+<td>4.0 (4.4)</td>
+<td>2.5 (4.8)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Result</td>
+<td>5,220 (16.5)</td>
+<td>0.0-27.5</td>
+<td>3.2 (5.5)</td>
+<td>1.0 (2.8)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Rx Authorization</td>
+<td>5,920 (18.7)</td>
+<td>0.0-30.5</td>
+<td>3.7 (5.8)</td>
+<td>1.6 (2.8)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;All</td>
+<td>31,725 (100)</td>
+<td>0.0-94.6</td>
+<td>19.6 (17.9)</td>
+<td>15.1 (19.4)</td>
+</tr>
+<tr class="odd">
+<td><strong>Days To Complete</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Medical Advice Request</td>
+<td>—</td>
+<td>0.0-16.6</td>
+<td>2.7 (3.7)</td>
+<td>1.3 (2.2)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Patient Call</td>
+<td>—</td>
+<td>0.0-17.0</td>
+<td>3.2 (4.2)</td>
+<td>1.5 (3.6)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Result</td>
+<td>—</td>
+<td>0.0-29.0</td>
+<td>4.4 (6.0)</td>
+<td>2.5 (5.5)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Rx Authorization</td>
+<td>—</td>
+<td>0.0-5.4</td>
+<td>0.4 (0.8)</td>
+<td>0.2 (0.4)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;All</td>
+<td>—</td>
+<td>0.0-11.5</td>
+<td>2.7 (3.0)</td>
+<td>1.5 (3.0)</td>
+</tr>
+<tr class="odd">
+<td><strong>Minutes per Message</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Medical Advice Request</td>
+<td>—</td>
+<td>1.0-87.0</td>
+<td>15.2 (16.1)</td>
+<td>8.2 (11.8)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Patient Call</td>
+<td>—</td>
+<td>3.7-375.0</td>
+<td>37.4 (52.7)</td>
+<td>23.6 (18.4)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Result</td>
+<td>—</td>
+<td>2.5-1,992.5</td>
+<td>164.6 (398.4)</td>
+<td>38.8 (86.2)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Rx Authorization</td>
+<td>—</td>
+<td>3.1-375.0</td>
+<td>52.2 (62.8)</td>
+<td>32.2 (51.2)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;All</td>
+<td>—</td>
+<td>1.0-50.0</td>
+<td>6.6 (8.2)</td>
+<td>4.1 (4.4)</td>
+</tr>
+<tr class="odd">
+<td><strong>Minutes per Appointment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;In-Basket</td>
+<td>183.0 (14.1)</td>
+<td>0.0-9.6</td>
+<td>2.9 (2.4)</td>
+<td>2.9 (3.6)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Clinical Review</td>
+<td>189.2 (14.5)</td>
+<td>0.0-22.5</td>
+<td>3.0 (3.4)</td>
+<td>2.5 (3.9)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;Notes/Letters</td>
+<td>806.7 (62.0)</td>
+<td>0.0-98.0</td>
+<td>12.6 (15.0)</td>
+<td>10.2 (16.3)</td>
+</tr>
+<tr class="odd">
+<td>&nbsp;&nbsp;Orders</td>
+<td>121.7 (9.4)</td>
+<td>0.0-8.2</td>
+<td>1.9 (1.7)</td>
+<td>1.8 (2.7)</td>
+</tr>
+<tr class="even">
+<td>&nbsp;&nbsp;All</td>
+<td>1,300.7 (100)</td>
+<td>0.0-129.7</td>
+<td>20.3 (20.9)</td>
+<td>18.5 (26.4)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1.</strong> Characteristics of 64 Providers in the Department of Psychiatry (July 2024 - June 2025). Data from Epic Signal Analytics. SD = Standard Deviation; IQR = Interquartile Range. All metrics normalized per scheduled hour.</p>
+</section>
+<section id="provider-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="provider-distribution">Provider Distribution</h3>
+<p>The cohort included 26 attending physicians (40.6%), 4 nurse practitioners (6.2%), and 34 trainees (53.1%) including residents and fellows, representing the full spectrum of outpatient psychiatry providers at the institution.</p>
+</section>
+<section id="figure-1-in-basket-hours-by-provider" class="level3">
+<h3 class="anchored" data-anchor-id="figure-1-in-basket-hours-by-provider">Figure 1: In-Basket Hours by Provider</h3>
+<p><img src="outputs/fig1.png" class="img-fluid"></p>
+<p><strong>Figure 1.</strong> Distribution of in-basket hours per month across all providers, ranked from lowest to highest workload. The visualization reveals that while most providers have manageable monthly in-basket hours (under 10 hours), a smaller subset, predominantly attending physicians, bears a disproportionate burden with some exceeding 25 hours per month. This pattern highlights significant in-basket workload inequity within the clinic, demonstrating work system imbalance where cognitive demands exceed individual provider capacity for a subset of clinicians.</p>
+</section>
+</section>
+<section id="workload-and-after-hours-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="workload-and-after-hours-patterns">Workload and After-Hours Patterns</h2>
+<p>Providers spent an average of 1.3 hours per month on in-basket messaging activities (range: 0.1–6.3 hours), representing 12.4% of total digital workload. <strong>Critically, after-hours system usage constituted 42.1% of total digital workload</strong>, with providers averaging 4.1 hours per month outside standard clinical hours. This substantial spillover into personal time represents a major boundary erosion between work and life domains. Collectively, the 1,941 annual hours spent on in-basket messaging across all providers represents 1.2 full-time employees, $266,817 in professional revenue, or approximately 3,882 patient appointments.</p>
+<p>Providers received an average of 19.6 messages per observation period (SD = 17.9), with medical advice requests representing the largest category (43.6% of total messages). Mean response times varied by message type: Medical Advice (2.7 days), Patient Calls (3.2 days), Results (4.4 days), and Rx Authorization (0.4 days). This pattern reveals that messaging work routinely extends beyond business hours, creating “pajama time” where providers manage in-basket communications during evenings and weekends.</p>
+<section id="figure-2-inequality-in-workload-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="figure-2-inequality-in-workload-distribution">Figure 2: Inequality in Workload Distribution</h3>
+<p><img src="outputs/fig2.png" class="img-fluid"></p>
+<p><strong>Figure 2.</strong> Lorenz curve quantifying the inequality in workload distribution. The Gini coefficient of 0.39 indicates moderate inequality, meaning that in-basket hours are not evenly distributed across providers. Approximately 50% of providers handle only 20-25% of total in-basket hours, while the top 25% of providers manage about 50% of the workload. This concentration of work has important implications for burnout risk and resource allocation, reflecting distributed cognition challenges where work system balance is disrupted by uneven cognitive load distribution.</p>
+</section>
+</section>
+<section id="workload-distribution-and-inequality" class="level2">
+<h2 class="anchored" data-anchor-id="workload-distribution-and-inequality">Workload Distribution and Inequality</h2>
+<p>Workload distribution demonstrated significant variation, with total system time ranging from 0.4 to 36.9 hours annually per provider. Gini coefficient analysis revealed moderate inequality in workload distribution, with attending physicians bearing a disproportionate share of messaging burden compared to trainees.</p>
+<section id="figure-3-relationship-between-in-basket-and-after-hours-work" class="level3">
+<h3 class="anchored" data-anchor-id="figure-3-relationship-between-in-basket-and-after-hours-work">Figure 3: Relationship Between In-Basket and After-Hours Work</h3>
+<p><img src="outputs/fig3.png" class="img-fluid"></p>
+<p><strong>Figure 3.</strong> Scatter plot demonstrating a positive correlation between in-basket and after-hours work. Providers with higher in-basket hours per scheduled week tend to also work more after-hours, suggesting that in-basket burden is not fully contained within standard clinical time. Several outliers exist, including providers with very high after-hours work (&gt;18 hours) despite moderate in-basket loads, indicating that after-hours patterns are complex and may reflect both workload demands and individual work styles.</p>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The analysis revealed that, collectively, providers spent an astonishing 1,941 hours over the course of a year managing in-basket messages, a workload equivalent to employing 1.2 full-time clinicians (based on 54 working weeks per year, 40 hours per week, and 0.9 clinical effort). Framed differently, this messaging labor represented $266,817 in professional revenue (at a rate of $137 per hour), or the time needed to conduct nearly 3,882 30-minute patient appointments. The distribution of this messaging burden was far from equal. The Gini coefficient of 0.39 reflects a moderate concentration of workload, where a smaller subset of providers shouldered much of the overall in-basket responsibility. Notably, this messaging workload often bled into after-hours periods, with 42% of total EHR activity taking place outside of standard clinical hours. This significant spillover highlights a pervasive erosion of the boundary between work and personal life for many clinicians.</p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<section id="implementation-and-optimization-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-and-optimization-challenges">Implementation and Optimization Challenges</h2>
+<p>Current productivity metrics focus exclusively on scheduled face-to-face encounters, creating a disconnect between actual work performed and work that “counts” for compensation. Recently implemented policies plan to use message completion timeliness in salary calculations, creating perverse incentives where providers are financially penalized for taking appropriate clinical time. Epic Signal metrics represent only the tip of the iceberg, as they exclude telephone calls, paperwork, prior authorizations, and mental processing time, meaning actual invisible work burden is substantially higher than quantifiable through EHR audit logs alone.</p>
+</section>
+<section id="human-factors-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="human-factors-interpretation">Human Factors Interpretation</h2>
+<p>The observed patterns reveal fundamental work system imbalances that extend beyond simple workload management. The uneven distribution of messaging burden (Gini = 0.39) represents a classic work system imbalance where some providers exceed their cognitive capacity while others operate below optimal efficiency. This inequality creates conditions where the most experienced clinicians, who often handle the most complex cases, also bear disproportionate administrative burden, leading to cognitive overload and potential burnout.</p>
+<p>The constant task-switching between patient care and messaging exemplifies the exponential cost increases predicted by mental workload theory (Wickens, 2008). Each context switch requires cognitive resources that could otherwise be devoted to clinical reasoning, creating a compounding effect where message management fragments attention throughout the day. The 42% after-hours work spillover further compounds this problem through the lens of attention restoration theory (Kaplan, 1995), where constant digital interruptions prevent the cognitive recovery necessary for sustained clinical performance.</p>
+<p>Cross-coverage burden spikes represent a distributed cognition breakdown, where individual workload becomes unpredictable during colleague absences, disrupting the carefully calibrated work system balance. Finally, the speed versus quality pressure creates perverse incentives where financial penalties discourage the thorough clinical consideration that quality care requires.</p>
+<p>The positive correlation between in-basket hours and after-hours work suggests that messaging burden spills beyond scheduled clinical time, creating persistent cognitive load that follows providers home and fragments attention, disrupting clinical reasoning throughout the day.</p>
+</section>
+<section id="problem-solution-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="problem-solution-mapping">Problem-Solution Mapping</h2>
+<p>These human factors challenges demand targeted interventions grounded in sociotechnical design principles. For uneven workload distribution, real-time workload monitoring with automatic redistribution can restore work system balance by ensuring cognitive demands remain within individual capacity limits. Task-switching costs can be reduced by embedding messaging within patient context, allowing providers to maintain clinical focus while managing communications.</p>
+<p>After-hours work spillover requires boundary management interventions, including protected in-basket time and response time limits that respect cognitive recovery needs. Message prioritization difficulty, reflecting information density overload, can be addressed through AI-powered urgency classification and visual cues that help providers quickly identify critical communications. Cross-coverage burden spikes demand distributed cognition solutions, such as shared team in-baskets with role-based access that maintain system continuity during absences.</p>
+<p>Finally, the speed versus quality pressure requires fundamental incentive restructuring, replacing timeliness metrics with quality-weighted measures that reward thorough clinical consideration rather than penalize it.</p>
+</section>
+<section id="design-and-policy-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="design-and-policy-recommendations">Design and Policy Recommendations</h2>
+<p>Following the course’s emphasis on implementation and optimization, we propose solutions grounded in sociotechnical design principles. Current Epic in-basket interfaces exemplify poor integration with clinical workflows, lack of intelligent prioritization, and inadequate search capabilities. The system needs intelligent prioritization for urgent vs.&nbsp;routine messages, better search capabilities, and improved mobile design for after-hours access. Routine message types (Rx authorizations, results) are suitable for automated responses with provider override capabilities. AI-powered triage systems could reduce cognitive load but must be transparent and subject to clinician oversight.</p>
+<p>Organizational changes require team-based approaches to in-basket management, including dedicated message management staff, shared responsibility models, and structured time allocation. Systems to monitor individual provider message loads could prevent extreme workload inequity while balancing safety monitoring with individual autonomy. Current productivity metrics that fail to account for invisible work burden must be reformed to capture the full scope of clinical work.</p>
+<p><strong>Multi-Level Intervention Framework:</strong> - <strong>Technical Subsystem:</strong> AI-powered message triage, integrated messaging within patient context, automated response templates, real-time workload monitoring dashboards - <strong>Organizational Subsystem:</strong> Protected in-basket management time, team-based message routing, cross-coverage protocols with workload limits, quality-weighted metrics over timeliness<br>
+- <strong>Individual/Patient Subsystem:</strong> Provider training on efficient in-basket management, patient education on appropriate message use, boundary management strategies, workload redistribution based on capacity</p>
+<p>This multi-level approach ensures that human factors principles guide sociotechnical system redesign rather than placing adaptation burden solely on individual providers.</p>
+</section>
+<section id="ethical-policy-and-cybersecurity-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-policy-and-cybersecurity-considerations">Ethical, Policy, and Cybersecurity Considerations</h2>
+<p><strong>Compensation Equity:</strong> Providers who bear disproportionate messaging burden may not be adequately compensated for this work. Current productivity metrics focus primarily on face-to-face patient encounters, effectively rendering hundreds of hours of in-basket work invisible to compensation systems. A provider spending 40 hours monthly on in-basket management, equivalent to one full week of clinical work, may receive no direct recognition of this labor in compensation calculations.</p>
+<p><strong>Professional Autonomy:</strong> The positive correlation between in-basket and after-hours work suggests that messaging burden extends beyond standard work hours, potentially compromising work-life boundaries and provider autonomy. Following Emanuel &amp; Wachter’s (2019) analysis of digital surveillance in healthcare, loss of professional control over work boundaries increases cognitive load and burnout risk, creating a vicious cycle where autonomy loss compounds workload stress.</p>
+<p><strong>Data Surveillance and Privacy Risk:</strong> The use of Epic Signal Analytics to monitor provider behavior raises questions about privacy, surveillance, and appropriate boundaries of organizational oversight. Following Walker and Koppel’s (2016) analysis, the fragmentation of healthcare cybersecurity creates vulnerabilities, where the proliferation of messaging systems and after-hours access patterns may create security risks not adequately addressed by current frameworks.</p>
+</section>
+<section id="limitations-and-future-research" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-future-research">Limitations and Future Research</h2>
+<p>This analysis has several limitations: the study is limited to a single department (psychiatry) at one institution, which may limit generalizability to other specialties and healthcare settings; the analysis relies on Epic Signal Analytics data, which may not capture all aspects of provider workload; the 12-month observation period may not capture seasonal variations or long-term trends; and the analysis focuses on quantitative metrics but does not capture qualitative aspects of message complexity, clinical urgency, or provider satisfaction. A critical next step involves qualitative interviews with high-burden providers to triangulate quantitative findings with lived experiences of cognitive load, task switching challenges, and work-life boundary management. Future research should include longitudinal studies examining seasonal variations and policy changes, multi-site studies across different specialties and organizational structures, and intervention studies testing AI-powered triage systems and workflow optimization strategies with rigorous evaluation of both quantitative outcomes and qualitative provider experience measures.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>This analysis of in-basket messaging workload in outpatient psychiatry reveals both the scale of the challenge and opportunities for improvement. The moderate inequality in workload distribution (Gini = 0.39) and strong correlation between in-basket hours and after-hours work highlight the need for targeted interventions grounded in human factors principles. Addressing in-basket messaging burden requires a comprehensive approach including technological solutions, organizational changes, and policy reforms, with a focus on workflow optimization rather than crisis management. By making this invisible work visible, we provide an evidence base for targeted interventions and contribute to more sustainable digital work environments in healthcare. Reducing in-basket burden is not about doing digital work faster, but designing systems that honor human cognitive limits.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Apathy, N. C., Hicks, K., Bocknek, L., Arndt, B. G., Rule, A., &amp; Sinsky, C. A. (2024). Inbox message prioritization and management approaches in primary care. JAMIA Open, 7(4), ooae135. https://doi.org/10.1093/jamiaopen/ooae135</p>
+<p>Apathy, N. C., Rule, A., McAlearney, A. S., Arndt, B. G., &amp; Sinsky, C. A. (2025). Clinician perspectives on delegation and shared work in the EHR inbox: Qualitative study. Journal of General Internal Medicine, 40(9), 2198–2207. https://doi.org/10.1007/s11606-025-09478-7</p>
+<p>Carayon, P. (2019). Human Factors in Health(care) Informatics: Toward Continuous Sociotechnical System Design. Studies in Health Technology and Informatics, 265, 22-27.</p>
+<p>Cresswell, K. M., Bates, D. W., &amp; Sheikh, A. (2017). Ten key considerations for the successful optimization of large-scale health information technology. Journal of the American Medical Informatics Association, 24(1), 182-187.</p>
+<p>Emanuel, E. J., &amp; Wachter, R. M. (2019). Artificial intelligence in health care: Will the value match the hype? JAMA, 321(23), 2281-2282.</p>
+<p>Holmgren, A. J., Lin, S. C., Downing, N. L., et al.&nbsp;(2025). Trends in physician electronic health record time and message volume. JAMA Internal Medicine, 185(4), 461–463. https://doi.org/10.1001/jamainternmed.2024.8138</p>
+<p>Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169-182.</p>
+<p>Karsh, B. T., Weinger, M. B., Abbott, P. A., &amp; Wears, R. L. (2010). Health information technology: fallacies and sober realities. Journal of the American Medical Informatics Association, 17(6), 617-623.</p>
+<p>Koppel, R., &amp; Lehmann, C. U. (2015). Implications of an emerging EHR monoculture for hospitals and healthcare systems. Journal of the American Medical Informatics Association, 22(2), 465-71.</p>
+<p>Koppel, R., Metlay, J. P., et al.&nbsp;(2005). Role of computerized physician order entry systems in facilitating medication errors. JAMA, 293(10), 1197-203.</p>
+<p>Koppel, R. (2016). Great Promises of Healthcare Information Technology Deliver Less. Chapter 6 in Healthcare Information Management Systems (eds Weaver CA, Ball MJ, Kim GR, Kiel JM). Springer International Publishing.</p>
+<p>Kuziemsky, C. E., Schwartz, D. G., Airan-Javia, S., &amp; Koppel, R. (2019). Context and Meaning in EHR Displays. Studies in Health Technology and Informatics, 265, 69-73.</p>
+<p>Lukela, J. R., Henderson, J., Fan, A., Chapman, J. C., Fontenot, A., et al.&nbsp;(2025). Surprisingly helpful: The introduction of portal practice slots to address the in-basket explosion. Journal of General Internal Medicine, 40(10), 2445–2449. https://doi.org/10.1007/s11606-025-09582-8</p>
+<p>McGreevey, J. D., Hanson, C. W., &amp; Koppel, R. (2020). Chatbots: Clinical, Legal, and Ethical Aspects of Artificial Intelligence–Assisted Conversational Agents in Health Care. JAMA, 324(6), 552-553.</p>
+<p>Small, W. R., Wiesenfeld, B., Brandfield-Harvey, B., et al.&nbsp;(2024). Large language model–based responses to patients’ in-basket messages. JAMA Network Open, 7(7), e2422399. https://doi.org/10.1001/jamanetworkopen.2024.22399</p>
+<p>Smith, S. W., &amp; Koppel, R. (2014). Healthcare information technology’s relativity problems: a typology of how patients’ physical reality, clinicians’ mental models, and healthcare information technology differ. Journal of the American Medical Informatics Association, 21(1), 117-31.</p>
+<p>Thimbleby, H. (2022). Fix IT: See and solve the problems of digital healthcare. Oxford University Press.</p>
+<p>Walker, J., &amp; Koppel, R. (2016). For Healthcare Cybersecurity the Whole is Weaker Than the Sum of the Parts. The Health Care Blog. https://thehealthcareblog.com/blog/2016/09/23/for-healthcare-cybersecurity-the-whole-is-weaker-than-the-sum-of-the-parts/</p>
+<p>Wickens, C. D. (2008). Multiple resources and mental workload. Human Factors, 50(3), 449-455.</p>
+<p>Worsham, C. M., Barron, H. T., Ratwani, R. M., et al.&nbsp;(2024). Clinician message workload and burnout in outpatient care: A multi-site mixed methods study. BMC Health Services Research, 24(1), 11686. https://doi.org/10.1186/s12913-024-11686-6</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
